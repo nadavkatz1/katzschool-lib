@@ -1,0 +1,11 @@
+/*
+  Content-Security-Policy: frame-ancestors 'self' https://nadav-katz.co.il https://www.nadav-katz.co.il
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/catalog/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=300
+/pages/*
+  Cache-Control: public, max-age=3600

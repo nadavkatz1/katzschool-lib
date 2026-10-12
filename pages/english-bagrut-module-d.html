@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>בגרות לתרגול לנבחנים אקסטרניים בלבד, בסגנון שאלון 16484 - אנגלית שאלון ד׳ (MODULE D) | נדב כץ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* =============================================================
+   bagrut.css - authentic Israeli bagrut-paper look. BLACK & WHITE ONLY.
+   Print-like: serif Hebrew type, plain borders, no color, no chrome.
+   Used ONLY by build-bagrut.js pages (modeled bagrut/meitzav/mafmar papers).
+   ============================================================= */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { background: #e8e8e8; }
+body {
+  /* ============ הגופן של השאלון ============
+     השאלונים של משרד החינוך מוטבעים ב-FbDavidNewPro Regular ו-Bold, בעברית
+     וגם באותיות הלטיניות שבהם. נמדד ב-pdffonts על שאלון 172 קיץ תשפ"ו, על
+     שאלון 11281 קיץ 2025 ועל שאלון 16381 קיץ 2026: אותה משפחה בשלושתם.
+     FbDavidNewPro הוא גופן מסחרי של פונטביט ואי אפשר להטמיע אותו בלי רישיון,
+     ולכן כאן עומד David Libre, בן אותו עיצוב (הדויד של איסמר דוד) ברישיון
+     SIL OFL. עד 22.9.2026 עמד כאן Frank Ruhl Libre ראשון, וזו משפחה אחרת
+     לגמרי, ולכן הדף לא נראה כמו השאלון. */
+  font-family: 'David Libre', 'Frank Ruhl Libre', 'Noto Serif Hebrew', 'Times New Roman', serif;
+  color: #000; background: #e8e8e8;
+  font-size: 17px; line-height: 1.75;
+}
+.bg-page {
+  max-width: 800px; margin: 0 auto; background: #fff;
+  padding: 48px 56px 64px; min-height: 100vh;
+  box-shadow: 0 0 14px rgba(0,0,0,.25);
+}
+@media (max-width: 640px) { .bg-page { padding: 24px 18px 48px; } }
+
+/* ---- masthead: plain exam-paper header ---- */
+/* masthead - matches the real bagrut cover: issuer top-right, exam fields top-left,
+   no rule under them (the real paper has none) */
+.bg-masthead { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; font-size: .93rem; line-height: 1.6; }
+.bg-issuer { text-align: start; }
+.bg-issuer .bg-issuer-name { font-weight: 700; font-size: 1.02rem; }
+.bg-issuer .bg-issuer-sub { font-size: .88rem; }
+.bg-fields { text-align: start; }
+.bg-fields .bg-flabel { font-weight: 400; }
+
+/* the boxed "שימו לב" notice the real papers carry above the title */
+.bg-notice { border: 1.5px solid #000; padding: 10px 18px; margin: 26px auto 0; max-width: 78%; text-align: center; font-weight: 700; line-height: 1.65; }
+
+/* the tilted "תוכנית חדשה" stamp */
+.bg-stamp { position: absolute; inset-inline-start: 0; top: 8px; transform: rotate(-8deg); border: 1px solid #000; padding: 3px 12px; font-size: .92rem; font-weight: 700; }
+
+/* running header on continuation pages: underlined caption right, page marker centre */
+.bg-runhead { margin-top: 30px; font-size: .9rem; }
+.bg-runhead .bg-runhead-txt { text-decoration: underline; }
+
+/* page foot: turn-the-page note left, paper code right */
+.bg-pagefoot { display: flex; justify-content: space-between; margin-top: 26px; font-size: .9rem; }
+
+.bg-hora { font-weight: 700; font-size: 1.15rem; margin-top: 14px; }
+
+.bg-title { position: relative; text-align: center; margin: 26px 0 4px; }
+.bg-title h1 { font-size: 1.9rem; font-weight: 700; letter-spacing: .01em; }
+.bg-title .bg-subtitle { font-size: 1.1rem; margin-top: 2px; }
+.bg-title .bg-units { font-size: 1rem; margin-top: 2px; }
+.bg-nispach { text-align: center; font-size: .95rem; margin-top: 6px; }
+
+/* ---- הוראות לנבחן ---- */
+.bg-instructions { padding: 0; margin: 18px 0 8px; font-size: .97rem; }
+.bg-instructions h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+.bg-instructions ol { padding-inline-start: 1.3em; }
+.bg-instructions li { margin: 3px 0; }
+.bg-instructions .bg-struct-table, .bg-solution .bg-struct-table { width: 100%; border-collapse: collapse; margin: 6px 0 2px; font-size: .95rem; }
+.bg-instructions .bg-struct-table td, .bg-instructions .bg-struct-table th, .bg-solution .bg-struct-table td, .bg-solution .bg-struct-table th { border: 1px solid #000; padding: 3px 10px; text-align: center; }
+.bg-gender-note { font-weight: 700; text-align: center; font-size: .95rem; margin: 26px 0 0; line-height: 1.7; }
+
+/* ---- sections (פרקים) ---- */
+.bg-section { margin-top: 34px; }
+.bg-section-title { text-align: center; font-weight: 700; font-size: 1.2rem; }
+.bg-section-title .bg-section-pts { font-weight: 400; font-size: 1rem; }
+.bg-section-note { text-align: center; font-size: .98rem; margin: 4px 0 14px; }
+.bg-section hr, .bg-hr { border: 0; border-top: 1px solid #000; margin: 18px 0; }
+
+/* ---- questions ---- */
+.bg-q { margin: 20px 0 26px; }
+.bg-qhead { display: flex; align-items: baseline; gap: 10px; }
+.bg-qnum { font-weight: 700; font-size: 1.1rem; min-width: 1.6em; }
+.bg-points { font-size: .9rem; white-space: nowrap; }
+.bg-qbody { margin-top: 4px; }
+.bg-sub { display: flex; gap: 8px; margin: 7px 0 7px 0; padding-inline-start: 1.6em; }
+.bg-sub .bg-sublet { font-weight: 700; min-width: 1.3em; }
+.bg-figure { text-align: center; margin: 12px 0; }
+.bg-figure svg { max-width: 100%; }
+.bg-figure .bg-figcap { font-size: .85rem; }
+
+/* math runs stay LTR inside RTL text */
+/* גם הנוסחאות בשאלון האמיתי מוטבעות באותה משפחה, ולא בגופן לטיני אחר. */
+.math, .bg-math { direction: ltr; unicode-bidi: isolate; display: inline-block; font-family: 'David Libre', 'Times New Roman', serif; }
+[dir="ltr"] .bg-sub { padding-inline-start: 1.6em; }
+
+/* ---- multiple choice (module exams / פרק א auto-check) ---- */
+.bg-mc { list-style: none; margin: 8px 0 0; padding-inline-start: 1.6em; }
+.bg-mc li { margin: 4px 0; }
+.bg-mc button {
+  font: inherit; background: none; border: none; cursor: pointer; text-align: start;
+  display: flex; gap: 8px; align-items: baseline; padding: 2px 6px; width: 100%;
+}
+.bg-mc button:hover { background: #f2f2f2; }
+.bg-mc .bg-let { font-weight: 700; min-width: 1.4em; }
+.bg-mc button.bg-picked { outline: 1.5px solid #000; }
+.bg-mc button.bg-right::after { content: "\2713"; font-weight: 700; margin-inline-start: 8px; }
+.bg-mc button.bg-wrong::after { content: "\2717"; margin-inline-start: 8px; }
+.bg-mc button.bg-reveal-right { text-decoration: underline; }
+
+/* ---- solution reveal ---- */
+.bg-reveal {
+  font: inherit; font-size: .92rem; font-weight: 700; cursor: pointer;
+  background: #fff; border: 1.5px solid #000; padding: 3px 14px; margin-top: 8px;
+}
+.bg-reveal:hover { background: #f2f2f2; }
+.bg-solution { border: 1px solid #000; border-inline-start: 4px solid #000; padding: 10px 14px; margin-top: 8px; font-size: .97rem; }
+.bg-solution .bg-sol-label { font-weight: 700; font-size: .9rem; display: block; margin-bottom: 4px; }
+.bg-hidden { display: none; }
+
+/* ---- footer ---- */
+.bg-goodluck { text-align: center; font-weight: 700; font-size: 1.15rem; margin-top: 40px; }
+.bg-footnote { text-align: center; font-size: .8rem; margin-top: 18px; border-top: 1px solid #000; padding-top: 10px; }
+
+/* ---- print ---- */
+@media print {
+  html, body { background: #fff; }
+  .bg-page { box-shadow: none; max-width: none; padding: 0; }
+  .bg-reveal { display: none; }
+  .bg-solution { display: none !important; }
+}
+
+/* ---- fractions ----
+   Division is drawn with a real bar, never a slash. Two batches of papers each shipped
+   their own scoped copy of this with slightly different metrics; this is the single
+   definition they now share. Matches the colourful corpus (core/styles/zz-overrides-pre.css). */
+.frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 .16em; line-height: 1.05; }
+.frac .fn { padding: 0 .3em; }
+.frac .fd { padding: 0 .3em; border-top: 1.4px solid currentColor; }
+
+/* --- 35371: כותרת אשכול ופסקת "דפי טיוטה" (לפי מראה השאלון האמיתי) --- */
+.bg-cluster { text-align: right; font-weight: 400; font-size: 1rem; text-decoration: underline;
+              text-underline-offset: 3px; margin: 26px 0 14px; }
+.bg-draft-note { font-size: .95rem; line-height: 1.7; margin: 26px 0 0; }
+
+/* --- instruction ב: the ministry's plain dash list of chapters (no table, no rules) --- */
+.bg-chapters { margin: 6px 0 8px; }
+.bg-chapters > div { display: flex; gap: 0; align-items: baseline; margin: 2px 0; }
+.bg-chname { flex: 0 0 5.5em; }
+.bg-chdash { flex: 0 0 2.5em; }
+.bg-chapters > div > span:last-child { flex: 1; }
+/* the טיוטה paragraph in instruction ד is unnumbered and indented in the real paper */
+.bg-draftnote { margin: 8px 0 0 0; padding-inline-start: 1.6em; }
+/* the paper closes with a second centred בהצלחה! after the last question */
+.bg-closing { text-align: center; font-weight: 700; font-size: 1.15rem; margin: 26px 0 4px; }
+/* --- candidate-graph batteries for "match the function to its graph" items --- */
+.bg-graphset { display: flex; flex-wrap: wrap; gap: 10px 18px; justify-content: flex-start; margin: 10px 0 4px; }
+.bg-graphset > figure { margin: 0; text-align: center; }
+.bg-graphset figcaption { font-size: .95rem; font-weight: 700; letter-spacing: .04em; margin-top: -2px; }
+
+</style>
+<!--katz-export:head--><link rel="canonical" href="https://nadav-katz.co.il/learning/page/english-bagrut-module-d"><meta property="og:url" content="https://nadav-katz.co.il/learning/page/english-bagrut-module-d"><!--/katz-export:head--></head>
+<body>
+<div class="bg-page">
+
+  <!-- masthead: same geometry as a real bagrut cover. The right-hand block carries the
+       bank's own identity, never a ministry mark - this is practice material, not an
+       official document. -->
+  <div class="bg-masthead">
+    <div class="bg-issuer">
+      <div class="bg-issuer-name">נדב כץ</div>
+      <div class="bg-issuer-sub">מאגר לימוד ותרגול</div>
+    </div>
+    <div class="bg-fields">
+      <div><span class="bg-flabel">סוג הבחינה:</span> בגרות לתרגול, לנבחנים אקסטרניים</div>
+      <div><span class="bg-flabel">מועד הבחינה:</span> מועד לדוגמה, תשפ"ז</div>
+      <div><span class="bg-flabel">מספר השאלון:</span> בסגנון שאלון 16484 · לנבחנים אקסטרניים בלבד</div>
+      
+    </div>
+  </div>
+
+  <div class="bg-notice"><span dir="rtl">שאלון 16484 מיועד לנבחנים אקסטרניים בלבד. תלמידי בית ספר במסלול 4 יח״ל אינם נבחנים עליו: במודול D הם לומדים את תכנית הספרות (שלושה סיפורים קצרים, שלושה שירים וארבעה דוחות קריאה), והציון עליה נקבע בבית הספר.</span></div>
+
+  <div class="bg-title">
+    
+    <h1>אנגלית</h1>
+    <div class="bg-subtitle">שאלון ד׳ (MODULE D) לנבחנים אקסטרניים · גרסה א׳</div>
+    
+    <div class="bg-hora">הוראות</div>
+  </div>
+
+  <div class="bg-instructions">
+    
+    <ol style="list-style-type: hebrew">
+      <li><b>משך הבחינה:</b> שעה וחצי.</li>
+      <li><b>מבנה השאלון ומפתח ההערכה:</b> בשאלון זה שני פרקים.
+        <table class="bg-struct-table">
+          <tr><td>פרק ראשון - הבנת הנקרא</td><td>70 נקודות</td></tr>
+          <tr><td>פרק שני - מטלת כתיבה</td><td>30 נקודות</td></tr>
+          <tr><td>סך הכול</td><td>100 נקודות</td></tr>
+        </table>
+      </li>
+      <li><b>חומר עזר מותר בשימוש:</b> אחד המילונים או אחת המילוניות מן הרשימה שבאתר הפיקוח על הוראת האנגלית ובאתר של אגף הבחינות במשרד החינוך.<br>
+        נבחנים "עולים חדשים" רשאים להשתמש גם במילון דו-לשוני: אנגלי-שפת אימם / שפת אימם-אנגלי. השימוש במילון אחר טעון אישור של הפיקוח על הוראת האנגלית.
+      </li>
+      <li><b>הוראות מיוחדות:</b>
+        <br>(1) יש לכתוב את כל התשובות בגוף השאלון (במקומות המיועדים לכך).
+        <br>(2) יש לכתוב את כל התשובות באנגלית ובעט בלבד.
+        <br>(3) יש לכתוב את הנוסח הסופי של מטלת הכתיבה בעמוד 9.
+        <br>(4) בתום הבחינה יש להחזיר את השאלון למשגיח או למשגיחה.
+      </li>
+    </ol>
+  </div>
+
+  <p class="bg-gender-note">השאלות בשאלון זה מנוסחות בלשון רבים, אף על פי כן על כל תלמידה וכל תלמיד להשיב עליהן באופן אישי.</p>
+
+  <div class="bg-goodluck">בהצלחה!</div>
+
+  <div class="bg-pagefoot"><span class="bg-turn">/המשך מעבר לדף/</span><span class="bg-papercode"></span></div>
+
+  <div class="bg-runhead"><span class="bg-runhead-txt">אנגלית, מועד לדוגמה, תשפ"ז, בסגנון שאלון 16484 · לנבחנים אקסטרניים בלבד</span></div>
+
+
+  <style>
+    /* Hebrew masthead/instructions stay RTL inside the LTR page */
+    .bg-masthead .bg-fields, .bg-masthead .bg-brand, .bg-instructions, .bg-footnote { direction: rtl; }
+    .bg-instructions { text-align: right; }
+    /* line-numbered article */
+    .bgd-atitle { text-align: center; font-weight: 800; letter-spacing: .05em; margin: 16px 0 12px; }
+    .bgd-article { margin: 0 0 8px; }
+    .bgd-line { display: flex; gap: 18px; }
+    .bgd-num { min-width: 2em; text-align: right; font-size: .78rem; flex-shrink: 0; padding-top: .3em; }
+    .bgd-t { flex: 1; }
+    .bgd-pbreak { height: 13px; }
+    /* answer blanks + writing lines */
+    .bgd-blank { display: inline-block; min-width: 300px; border-bottom: 1.2px dotted #000; }
+    .bgd-pts { text-align: right; font-size: .9rem; margin-top: 4px; }
+    .bgd-box { display: inline-block; width: .95em; height: .95em; border: 1.5px solid #000; vertical-align: -.12em; margin-right: 10px; }
+    .bgd-check li { margin: 5px 0; list-style: none; }
+    .bgd-check { padding-left: 1.6em; margin-top: 8px; }
+    .bgd-important { border: 1.5px solid #000; padding: 10px 16px; margin: 14px 0; text-align: center; font-size: .97rem; }
+    .bgd-writelines div { border-bottom: 1px solid #000; height: 2.1em; }
+    .bgd-writelabel { font-weight: 700; margin: 16px 0 4px; }
+  </style>
+
+  <!-- ===================== PART I - WRITTEN RECEPTION (70) ===================== -->
+  <div class="bg-section">
+    <div class="bg-section-title">PART I: WRITTEN RECEPTION <span class="bg-section-pts">(70 points)</span></div>
+    <div class="bg-section-note">(ACCESS TO INFORMATION FROM WRITTEN TEXTS)</div>
+    <p>Read the text below and then answer questions 1-8.</p>
+
+    <div class="bgd-atitle">WORKING IN SPACE</div>
+    <div class="bgd-article">
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t"><b>I</b>&nbsp;&nbsp;&nbsp;Laura Mitchell is an astronaut from Canada. Last year, she spent six months on the</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">International Space Station (ISS), a large research station that goes around the Earth</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">every 90 minutes. Mitchell still remembers her first morning in space. “I could not find</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">my pen,” she says. “Then I looked up, and there it was, floating above my head.” On the</span></div>
+      <div class="bgd-line"><span class="bgd-num">5</span><span class="bgd-t">ISS there is almost no gravity, so everything floats - pens, food, water and even the</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">astronauts themselves. “You cannot pour water into a cup,” Mitchell explains. “It would</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">simply float away. Instead, we drink from special bags.”</span></div>
+      <div class="bgd-pbreak"></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t"><b>II</b>&nbsp;&nbsp;&nbsp;Because of this, astronauts must learn new ways to do simple everyday things. When</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">they go to sleep, they attach themselves to the wall so that they will not float around</span></div>
+      <div class="bgd-line"><span class="bgd-num">10</span><span class="bgd-t">the station at night. Even eating and washing become a challenge. In addition, the</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">astronauts must exercise for two hours every day, because without gravity the muscles</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">and bones of the human body slowly become weaker. “Space changes the body,” says Dr.</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">Alan Peters, a scientist who prepares astronauts for their missions. “Daily exercise is</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">the only way to keep them strong and healthy.”</span></div>
+      <div class="bgd-pbreak"></div>
+      <div class="bgd-line"><span class="bgd-num">15</span><span class="bgd-t"><b>III</b>&nbsp;&nbsp;&nbsp;The astronauts do not travel to space just for the adventure. On the station, they</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">carry out scientific experiments that cannot be done on Earth. For example, they study</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">how plants grow without gravity, and how the human body changes after months in space.</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">They also repair the station and test new equipment. “This research is important for the</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">future,” says Peters. “One day, it may help people travel to Mars.”</span></div>
+      <div class="bgd-pbreak"></div>
+      <div class="bgd-line"><span class="bgd-num">20</span><span class="bgd-t"><b>IV</b>&nbsp;&nbsp;&nbsp;Life on the station is not always easy. The astronauts work long hours, far from</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">home. Because the ISS goes around the Earth so quickly, they see sixteen sunrises and</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">sunsets every day, and this makes sleeping difficult. Many astronauts also say that they</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">miss their families. Video calls help them keep in touch, but they cannot hug their</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">children from space.</span></div>
+      <div class="bgd-pbreak"></div>
+      <div class="bgd-line"><span class="bgd-num">25</span><span class="bgd-t"><b>V</b>&nbsp;&nbsp;&nbsp;So why do they do it? Most astronauts say that the difficulties are a small price to</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">pay. “Every evening, I looked down at the Earth,” says Mitchell. “It is the most</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">beautiful thing I have ever seen. I would return to the station tomorrow.” Peters is not</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">surprised. Every year, thousands of people apply to become astronauts. “Not many jobs</span></div>
+      <div class="bgd-line"><span class="bgd-num"></span><span class="bgd-t">are harder,” he says. “But very few jobs are more special.”</span></div>
+    </div>
+  </div>
+
+  <!-- ===================== QUESTIONS (70 points) ===================== -->
+  <div class="bg-section">
+    <div class="bg-section-title">QUESTIONS <span class="bg-section-pts">(70 points)</span></div>
+    <div class="bg-section-note">Answer questions 1-8 <b>in English</b>, according to the text.
+      In questions <b>1 and 4</b>, circle the number of the correct answer.
+      In the other questions, follow the instructions.</div>
+    <hr class="bg-hr">
+
+    <!-- Q1: MC, 8 pts -->
+    <div class="bg-q">
+      <div class="bg-qhead"><span class="bg-qnum">1.</span><span>What are we told about Laura Mitchell in paragraph I?</span></div>
+      <div class="bg-qbody">
+        <ul class="bg-mc" data-correct="1">
+          <li><button><span class="bg-let">i)</span><span>Why she wanted to become an astronaut.</span></button></li>
+          <li><button><span class="bg-let">ii)</span><span>How long she stayed on the space station.</span></button></li>
+          <li><button><span class="bg-let">iii)</span><span>How she was chosen for her mission.</span></button></li>
+          <li><button><span class="bg-let">iv)</span><span>When she returned to Canada.</span></button></li>
+        </ul>
+        <div class="bgd-pts">(8 points)</div>
+        <button class="bg-reveal">Show answer</button>
+        <div class="bg-solution"><span class="bg-sol-label">Answer</span>
+          <b>The route · הדרך:</b> This is a multiple-choice question about what the text does and does not tell us. Read only paragraph I (lines 1-7) and test the four options one by one: if you cannot put your finger on the words in the text, the option is wrong, however reasonable it sounds. Only one of them can be matched to something actually written there. <span dir="rtl">שאלה אמריקאית על מה שכתוב בפסקה I ומה לא כתוב בה. עוברים על כל אפשרות בנפרד מול שורות 1-7, וכל אפשרות שאי אפשר להצביע על המילים שלה בטקסט - נפסלת.</span><br>
+          <b>ii)</b> How long she stayed on the space station.<br>
+          <b>Check:</b> line 1: “Last year, she spent six months on the International Space Station.” The text never says why she wanted the job, how she was chosen, or when she returned to Canada.
+        </div>
+      </div>
+    </div>
+
+    <!-- Q2: complete the answer, 8 pts -->
+    <div class="bg-q">
+      <div class="bg-qhead"><span class="bg-qnum">2.</span><span>Why do the astronauts drink from special bags? Give ONE answer from paragraph I.</span></div>
+      <div class="bg-qbody">
+        <b>COMPLETE THE ANSWER.</b><br><br>
+        Because on the ISS you cannot <span class="bgd-blank"></span> .
+        <div class="bgd-pts">(8 points)</div>
+        <button class="bg-reveal">Show answer</button>
+        <div class="bg-solution"><span class="bg-sol-label">Answer</span>
+          <b>The route · הדרך:</b> A detail question that asks for a reason, and it already tells you where to look: paragraph I. The special bags are mentioned at the very end of the paragraph, so the reason sits in the sentence just before them (lines 6-7). Complete the frame with a verb phrase, so that the finished sentence still reads correctly. <span dir="rtl">שאלת פרט שמבקשת סיבה, והשאלה כבר מפנה לפסקה I. השקיות מופיעות בסוף הפסקה, והסיבה נמצאת במשפט שלפניהן (שורות 6-7). ההשלמה צריכה להתחיל בפועל, כדי שהמשפט כולו יישמע תקין.</span><br>
+          Because on the ISS you cannot <b>pour water into a cup</b> (the water would simply float away).<br>
+          <b>Check:</b> lines 6-7: “You cannot pour water into a cup... It would simply float away. Instead, we drink from special bags.”
+        </div>
+      </div>
+    </div>
+
+    <!-- Q3: complete the sentence, 8 pts -->
+    <div class="bg-q">
+      <div class="bg-qhead"><span class="bg-qnum">3.</span><span>What do the astronauts do so that they will not float around the station at night? (paragraph II)</span></div>
+      <div class="bg-qbody">
+        <b>COMPLETE THE SENTENCE.</b><br><br>
+        When they go to sleep, they <span class="bgd-blank"></span> .
+        <div class="bgd-pts">(8 points)</div>
+        <button class="bg-reveal">Show answer</button>
+        <div class="bg-solution"><span class="bg-sol-label">Answer</span>
+          <b>The route · הדרך:</b> Another completion question, and here the question almost quotes the text. Find the words about not floating around the station at night in paragraph II (lines 8-10), and take what comes immediately before them. After “they” you need a verb in the present simple, so the sentence you hand in matches the frame. <span dir="rtl">שאלת השלמה נוספת, והניסוח שלה כמעט מצטט את הטקסט. מאתרים בפסקה II את המילים על כך שהאסטרונאוטים לא יצופו בתחנה בלילה (שורות 8-10) ולוקחים את מה שכתוב מיד לפניהן. ההשלמה היא פועל בהווה פשוט.</span><br>
+          When they go to sleep, they <b>attach themselves to the wall</b>.<br>
+          <b>Check:</b> lines 8-10: “When they go to sleep, they attach themselves to the wall so that they will not float around the station at night.”
+        </div>
+      </div>
+    </div>
+
+    <!-- Q4: MC, 8 pts -->
+    <div class="bg-q">
+      <div class="bg-qhead"><span class="bg-qnum">4.</span><span>What does Dr. Peters explain in paragraph II?</span></div>
+      <div class="bg-qbody">
+        <ul class="bg-mc" data-correct="2">
+          <li><button><span class="bg-let">i)</span><span>Which sports astronauts enjoy most.</span></button></li>
+          <li><button><span class="bg-let">ii)</span><span>What astronauts eat on the station.</span></button></li>
+          <li><button><span class="bg-let">iii)</span><span>Why astronauts must exercise every day.</span></button></li>
+          <li><button><span class="bg-let">iv)</span><span>How long astronauts sleep at night.</span></button></li>
+        </ul>
+        <div class="bgd-pts">(8 points)</div>
+        <button class="bg-reveal">Show answer</button>
+        <div class="bg-solution"><span class="bg-sol-label">Answer</span>
+          <b>The route · הדרך:</b> This multiple-choice question asks what one person explains, so the answer must come from his own words. Find the sentence about exercise and the quotation that belongs to Dr. Peters in paragraph II (lines 11-14), and choose the option that says the same thing in other words. Options about subjects he never mentions are out, even when they sound like they belong to this topic. <span dir="rtl">שאלה אמריקאית על מה שאדם מסוים מסביר, ולכן התשובה חייבת לבוא מדבריו שלו. מאתרים בפסקה II את המשפט על האימון ואת הציטוט של ד״ר פיטרס (שורות 11-14) ובוחרים את האפשרות שאומרת את אותו דבר במילים אחרות.</span><br>
+          <b>iii)</b> Why astronauts must exercise every day.<br>
+          <b>Check:</b> lines 11-14: without gravity the muscles and bones slowly become weaker, and “Daily exercise is the only way to keep them strong and healthy.” Peters says nothing about sports, food or hours of sleep.
+        </div>
+      </div>
+    </div>
+
+    <!-- Q5: open answer, 8 pts -->
+    <div class="bg-q">
+      <div class="bg-qhead"><span class="bg-qnum">5.</span><span>What do the astronauts study on the station? Give ONE answer from paragraph III.</span></div>
+      <div class="bg-qbody">
+        <br>
+        ANSWER: <span class="bgd-blank" style="min-width:420px"></span> .
+        <div class="bgd-pts">(8 points)</div>
+        <button class="bg-reveal">Show answer</button>
+        <div class="bg-solution"><span class="bg-sol-label">Answer</span>
+          <b>The route · הדרך:</b> An open detail question with a free line, but the answer still comes out of the text. The words “For example” in paragraph III (line 16) always point forward to a list, and the things the astronauts study are written right there (lines 16-17). One of them is enough. Write it as a short phrase that fits after “ANSWER:”, not as a full sentence. <span dir="rtl">שאלת פרט פתוחה, אבל התשובה עדיין מגיעה מהטקסט. הצירוף For example בפסקה III (שורה 16) מוביל לרשימה, ושם כתוב מה האסטרונאוטים חוקרים (שורות 16-17). מספיק פריט אחד, בצורת צירוף קצר ולא משפט שלם.</span><br>
+          Any ONE of: <b>how plants grow without gravity</b> / <b>how the human body changes after months in space</b>.<br>
+          <b>Check:</b> lines 16-17: “For example, they study how plants grow without gravity, and how the human body changes after months in space.”
+        </div>
+      </div>
+    </div>
+
+    <!-- Q6: complete the answer, 8 pts -->
+    <div class="bg-q">
+      <div class="bg-qhead"><span class="bg-qnum">6.</span><span>According to Peters, why is the research done on the station important? (lines 18-19)</span></div>
+      <div class="bg-qbody">
+        <b>COMPLETE THE ANSWER.</b><br><br>
+        Because one day it may <span class="bgd-blank"></span> .
+        <div class="bgd-pts">(8 points)</div>
+        <button class="bg-reveal">Show answer</button>
+        <div class="bg-solution"><span class="bg-sol-label">Answer</span>
+          <b>The route · הדרך:</b> The question hands you the lines (18-19), so the work is choosing the right part of them. Those two lines carry two ideas: that the research is important for the future, and what it may lead to one day. The frame “Because one day it may...” matches the second idea, and after “may” you need a verb in the base form. <span dir="rtl">השאלה כבר נותנת את השורות (18-19), ולכן העבודה היא לבחור מתוכן את החלק הנכון. יש שם שני חלקים: שהמחקר חשוב לעתיד, ומה הוא עשוי לאפשר יום אחד. תחילת המשפט מתאימה לחלק השני, ואחרי may בא פועל בצורת הבסיס.</span><br>
+          Because one day it may <b>help people travel to Mars</b>.<br>
+          <b>Check:</b> lines 18-19: “This research is important for the future... One day, it may help people travel to Mars.”
+        </div>
+      </div>
+    </div>
+
+    <!-- Q7: complete the answer, 8 pts -->
+    <div class="bg-q">
+      <div class="bg-qhead"><span class="bg-qnum">7.</span><span>Why is it difficult for the astronauts to sleep? Give ONE answer from paragraph IV.</span></div>
+      <div class="bg-qbody">
+        <b>COMPLETE THE ANSWER.</b><br><br>
+        Because they see <span class="bgd-blank"></span> .
+        <div class="bgd-pts">(8 points)</div>
+        <button class="bg-reveal">Show answer</button>
+        <div class="bg-solution"><span class="bg-sol-label">Answer</span>
+          <b>The route · הדרך:</b> A reason question again, and the text puts the cause and the result inside one sentence: the difficulty of sleeping is the result, so the cause is what stands just before it in lines 21-22. Work backwards from the result to the cause, and complete the frame with what the astronauts see. <span dir="rtl">שוב שאלת סיבה. בטקסט הסיבה והתוצאה נמצאות באותו משפט: הקושי להירדם הוא התוצאה, ומה שכתוב לפניו בשורות 21-22 הוא הסיבה. משלימים את תחילת המשפט הנתונה במה שהאסטרונאוטים רואים בכל יום.</span><br>
+          Because they see <b>sixteen sunrises and sunsets every day</b>.<br>
+          <b>Check:</b> lines 21-22: “they see sixteen sunrises and sunsets every day, and this makes sleeping difficult.”
+        </div>
+      </div>
+    </div>
+
+    <!-- Q8: double, 2x7=14 pts -->
+    <div class="bg-q">
+      <div class="bg-qhead"><span class="bg-qnum">8.</span><span>What do we learn in paragraphs IV-V about being an astronaut?</span></div>
+      <div class="bg-qbody">
+        <b>PUT A √ BY THE TWO CORRECT ANSWERS.</b>
+        <ul class="bgd-check">
+          <li><span class="bgd-box"></span>i) Most astronauts think the job is worth the difficulties.</li>
+          <li><span class="bgd-box"></span>ii) Astronauts cannot speak with their families.</li>
+          <li><span class="bgd-box"></span>iii) Astronauts get a long holiday after every mission.</li>
+          <li><span class="bgd-box"></span>iv) Many people want to become astronauts.</li>
+          <li><span class="bgd-box"></span>v) Peters thinks the job is easier than most jobs.</li>
+          <li><span class="bgd-box"></span>vi) Mitchell does not want to go back to space.</li>
+        </ul>
+        <div class="bgd-pts">(2x7=14 points)</div>
+        <button class="bg-reveal">Show answer</button>
+        <div class="bg-solution"><span class="bg-sol-label">Answer</span>
+          <b>The route · הדרך:</b> This is the double question, two answers of seven points each, so tick exactly two boxes and no more. Take the six statements one at a time and test each one against paragraphs IV-V (lines 20-29). Two of them can be matched to a line in the text; the others either say the opposite of what is written or deal with something the text never mentions at all. <span dir="rtl">זו השאלה הכפולה, שתי תשובות של 7 נקודות, ולכן מסמנים בדיוק שני סעיפים ולא יותר. בודקים כל אחד מששת המשפטים בנפרד מול פסקאות IV-V (שורות 20-29): שניים אפשר להצמיד לשורה בטקסט, והשאר סותרים את הכתוב או מדברים על משהו שלא מופיע בו כלל.</span><br>
+          <b>i)</b> Most astronauts think the job is worth the difficulties, and <b>iv)</b> many people want to become astronauts.<br>
+          <b>Check:</b> lines 25-26: “Most astronauts say that the difficulties are a small price to pay” (= i); line 28: “Every year, thousands of people apply to become astronauts” (= iv). The text says video calls help astronauts keep in touch (not ii), Mitchell would return to the station tomorrow (not vi), Peters says not many jobs are harder (not v), and holidays are never mentioned (not iii).
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== PART II - WRITTEN PRODUCTION (30) ===================== -->
+  <div class="bg-section">
+    <div class="bg-section-title">PART II: WRITTEN PRODUCTION <span class="bg-section-pts">(30 points)</span></div>
+    <div class="bg-section-note">(WRITTEN PRESENTATION)</div>
+
+    <div class="bgd-important">
+      <b>IMPORTANT:</b> You may use words and/or phrases from the text in Part I.<br>
+      However, you must NOT copy a sentence or sentences from the text.
+    </div>
+
+    <p>Write <b>80-100 words</b> in English on the following topic.</p>
+
+    <div class="bg-q">
+      <div class="bg-qhead"><span class="bg-qnum">9.</span><span>Would you like to spend six months on the space station?
+        Write a composition explaining why you would or would not.</span></div>
+      <div class="bg-qbody">
+        <p style="margin-top:10px">Use this page and the next (pages 7-8) for writing a rough draft.</p>
+        <div class="bgd-writelines">
+          <div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="bgd-writelabel">Write your final version here:</div>
+        <div class="bgd-writelines">
+          <div></div><div></div><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <button class="bg-reveal">Show a model composition</button>
+        <div class="bg-solution"><span class="bg-sol-label">Model composition (92 words)</span>
+          <b>The route · הדרך:</b> The task asks a yes or no question and then asks for reasons, so plan before you write. Decide your answer first, and then build four moves: an opening sentence that states your choice, two or three reasons with a small detail or example for each, one sentence about the difficult side of such a mission, and a closing sentence that comes back to your choice. Keep the register semi-formal - no slang and no short forms - stay inside 80-100 words, and borrow single words and phrases from the text without copying a whole sentence. <span dir="rtl">מטלת כתיבה של הבעת דעה. קודם מחליטים מה התשובה, ואז בונים ארבעה מהלכים: משפט פתיחה שמציג את הבחירה, שתיים-שלוש סיבות עם פרט או דוגמה לכל אחת, משפט אחד על הצד הקשה של משימה כזאת, ומשפט סיום שחוזר לבחירה. סגנון חצי רשמי, 80-100 מילים, ומותר לשאול מילים וצירופים מהטקסט - אבל לא להעתיק משפט שלם.</span><br>
+          <p style="margin-bottom:8px">I would love to spend six months on the space station. I have always been interested in science, and on the station I could carry out experiments that are impossible on Earth. Floating without gravity must be an amazing feeling, and very few people ever get the chance to try it. Of course, the mission would be difficult. I would have to exercise every day and stay far from my family. However, we could talk through video calls. In my opinion, the view of the Earth from space is worth every difficulty.</p>
+          <b>How the composition is assessed:</b> Content (a clear answer to the question, with reasons and examples) · Organization (an opening, connected ideas, a closing sentence) · Language (vocabulary and grammar).<br>
+          <b>Note:</b> the model uses words and phrases from the text (carry out experiments, video calls, worth every difficulty) but does not copy any complete sentence - exactly what the IMPORTANT box allows. Points are taken off for compositions that are much shorter or longer than 80-100 words.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== מחוון - Answer Key ===================== -->
+  <div class="bg-section"><hr class="bg-hr"><div class="bg-section-title">מחוון - תשובות סופיות / Answer Key</div><div class="bg-section-note">לבדיקה עצמית מהירה; הפתרונות המלאים בגוף השאלון.</div><button class="bg-reveal">הצג מחוון / Show key</button><div class="bg-solution"><table class="bg-struct-table" style="width:100%;border-collapse:collapse">
+    <tr><th style="border:1px solid #000;padding:4px 10px">Question</th><th style="border:1px solid #000;padding:4px 10px">Answer</th></tr>
+    <tr><td style="border:1px solid #000;padding:4px 10px;text-align:center">1</td><td style="border:1px solid #000;padding:4px 10px"><b>ii) How long she stayed on the space station.</b></td></tr>
+    <tr><td style="border:1px solid #000;padding:4px 10px;text-align:center">2</td><td style="border:1px solid #000;padding:4px 10px">Because on the ISS you cannot <b>pour water into a cup</b></td></tr>
+    <tr><td style="border:1px solid #000;padding:4px 10px;text-align:center">3</td><td style="border:1px solid #000;padding:4px 10px">When they go to sleep, they <b>attach themselves to the wall</b></td></tr>
+    <tr><td style="border:1px solid #000;padding:4px 10px;text-align:center">4</td><td style="border:1px solid #000;padding:4px 10px"><b>iii) Why astronauts must exercise every day.</b></td></tr>
+    <tr><td style="border:1px solid #000;padding:4px 10px;text-align:center">5</td><td style="border:1px solid #000;padding:4px 10px">Any ONE of: <b>how plants grow without gravity</b> / <b>how the human body changes after months in space</b></td></tr>
+    <tr><td style="border:1px solid #000;padding:4px 10px;text-align:center">6</td><td style="border:1px solid #000;padding:4px 10px">Because one day it may <b>help people travel to Mars</b></td></tr>
+    <tr><td style="border:1px solid #000;padding:4px 10px;text-align:center">7</td><td style="border:1px solid #000;padding:4px 10px">Because they see <b>sixteen sunrises and sunsets every day</b></td></tr>
+    <tr><td style="border:1px solid #000;padding:4px 10px;text-align:center">8</td><td style="border:1px solid #000;padding:4px 10px"><b>i) Most astronauts think the job is worth the difficulties.</b> + <b>iv) Many people want to become astronauts.</b></td></tr>
+    <tr><td style="border:1px solid #000;padding:4px 10px;text-align:center">9</td><td style="border:1px solid #000;padding:4px 10px">Open task - see model</td></tr>
+  </table></div></div>
+
+  <div class="bg-footnote">שאלון תרגול בסגנון בחינת הבגרות · נדב כץ · אין זה שאלון רשמי של משרד החינוך</div>
+</div>
+<script>
+(function(){
+  // solution reveals
+  document.querySelectorAll('.bg-reveal').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var sol = btn.nextElementSibling;
+      if(!sol || !sol.classList.contains('bg-solution')) return;
+      var hidden = sol.classList.toggle('bg-hidden');
+      btn.textContent = hidden ? btn.dataset.show : btn.dataset.hide;
+    });
+    if(btn.nextElementSibling && btn.nextElementSibling.classList.contains('bg-solution')){
+      btn.dataset.show = btn.textContent;
+      btn.dataset.hide = '\u05D4\u05E1\u05EA\u05E8 \u05E4\u05EA\u05E8\u05D5\u05DF';
+      btn.nextElementSibling.classList.add('bg-hidden');
+    }
+  });
+  // MC self-check: ul.bg-mc[data-correct="1"] (0-based index of the right option)
+  document.querySelectorAll('.bg-mc[data-correct]').forEach(function(ul){
+    var right = parseInt(ul.dataset.correct, 10);
+    var btns = Array.prototype.slice.call(ul.querySelectorAll('button'));
+    btns.forEach(function(b, i){
+      b.addEventListener('click', function(){
+        if(ul.dataset.done) return;
+        ul.dataset.done = '1';
+        b.classList.add('bg-picked');
+        if(i === right){ b.classList.add('bg-right'); }
+        else { b.classList.add('bg-wrong'); btns[right].classList.add('bg-reveal-right'); }
+      });
+    });
+  });
+})();</script>
+
+<script>
+/* ============================================================================
+   שכבת הכיוון המשותפת של הדף.
+
+   נדב, 21.9.2026: "אם אתה כותב משפט בעברית ויש בו מילים באנגלית אתה עדיין
+   צריך לכתוב מימין לשמאל, וזה משום שהמשפט בעברית ותלמידים דוברי עברית
+   קוראים אותו."
+
+   עד כאן הכיוון הוצהר פעם אחת בכל נושא, ב-topics/<slug>/visual.css, ולכן
+   היה נכון בדיוק במקומות שבהם מישהו זכר להצהיר עליו. כל השאר ירש את כיוון
+   הדף, ובדף אנגלית כיוון הדף הוא ltr, ולכן משפט עברי שלם נפרש שם משמאל
+   לימין. כל מה שנכתב אל הדף בזמן ריצה (רמז, הסבר שאחרי בדיקה, לוח המשחק,
+   בועת הקמע) לא היה יכול לקבל הצהרה כזאת כלל.
+
+   ארבעה כללים, ולא יותר:
+   1. יחידה שהכותב הצהיר עליה כתב (class="he", class="en", dir="rtl") מקבלת
+      את ההצהרה שלו. עטיפה מוטבעת שהוצהרה אנגלית ורוב מילותיה עבריות אינה
+      מתארת את הטקסט, ושם הטקסט מכריע.
+   2. יחידה שלא הוצהרה והטקסט שבה מערב כתבים: סופרים מילים, וסימון אינו
+      מילה (אות בודדת, ספרה רומית, תווית של שלוש אותיות גדולות). אם יש בה
+      מילה עברית או ערבית אחת לפחות והרוב הלועזי אינו מכריע, זהו משפט עברי
+      ובסיסו rtl. רק רוב לועזי מכריע - פי שלושה ולפחות שש מילים - קובע
+      אנגלית. בין השניים לא נוגעים בכיוון כלל, כי אין שם הוכחה. הספירה
+      אינה קובעת סדר מילים אלא באיזה קצה מתחילים לקרוא: הבידוד כבר מבטיח
+      שכל רצף נקרא בכיוון שלו ובסדר שבו נכתב.
+   3. בכל יחידה, בין שנגענו בכיוונה ובין שלא, כל רצף של הכתב הנגדי נכנס
+      לתיבת בידוד אחת - אחת, ולא אחת לכל תגית, אחרת שני חלקים של אותו
+      צירוף נפרשים בסדר הבסיס. פסקה עברית שלמה בדף ltr מקבלת rtl, כדי
+      שהנקודה תיפול בשמאל והשוליים המשוננים יהיו בצד הנכון.
+   4. כיוון אינו משנה פריסה. מי שמשנה כיוון על תיבה גמישה, על רשת או על
+      שורת טבלה מהפך גם את סדר הפריטים שבה, וזה עיצוב מחדש ולא סדר קריאה.
+      לכן התיבות האלה אינן מקבלות כיוון לעולם; הטקסט שיושב בהן ישירות עוטף
+      את עצמו. מאותה סיבה בלוק שיורש rtl אינו מקבל ltr: זה היה מזיז את
+      היישור ואת מספר הפריט אל הצד ההפוך. במקרה כזה מבודדים את הרצף הלועזי
+      שבתוכו ומשאירים את התיבה במקומה.
+
+   חמש הערות שנלמדו במדידה:
+   1. direction על תיבה מוטבעת בלי unicode-bidi אינו עושה דבר. הדפדפן מדווח
+      direction:rtl ופורש את הטקסט משמאל לימין. כאן תמיד נכתבים שניהם יחד.
+   2. dir="auto" אינו הפתרון: הוא הולך לפי התו החזק הראשון, ויש בקורפוס
+      אלפי משפטים עבריים שנפתחים במילה לועזית.
+   3. הסימן שנוסע עם המילה הלועזית הוא סוגר שהפותח שלו כבר בתוך הקטע,
+      ועוד סימן קריאה. נקודה, פסיק, נקודתיים **וסימן שאלה** שייכים למשפט
+      שסביב, ואת מקומם הנכון אלגוריתם הדו-כיווניות כבר נותן להם לבדו;
+      משיכתם פנימה הזיזה אותם אל הצד הלא נכון בכל הקורפוס.
+
+      סימן השאלה עבר לכאן ב-28.9.2026, וזהו שינוי של הכרעה קודמת.
+      נדב: "כשאתה כותב נקודה או סימן שאלה בסוף משפט אז זה בצורה נכונה
+      באמת בסוף המשפט בצד הנכון של המשפט בעברית וגם אם זה באנגלית ללא
+      טעויות... וזהו העיקר, שלא ייראה בינה מלאכותית."
+      עד כאן נכתב כאן ש-"הוא עונה על Where?" בלי משיכה נקרא "?Where",
+      וזו הייתה קריאה של המסך ולא של המסמכים. הנמדד במסמכי משרד החינוך
+      (‎.work/proof-punct/ministry-convention.md §1, §2, §6): 925 מופעים
+      של משפט עברי שנגמר במילה לועזית ו-363 שנגמרים במספר, ובכולם
+      **הנקודה היא התו השמאלי ביותר בשורה**; 47 מופעים של שאלה עברית
+      שנגמרת במילה לועזית או במספר, ובכל 47 **סימן השאלה הוא התו
+      השמאלי ביותר**. מופעים נגדיים בשאלוני הבגרות: 0.
+      סימן קריאה נשאר נמשך עם המילה: בכל 279 שאלוני הבגרות אין אף מופע
+      של סימן קריאה שסוגר משפט עברי שנגמר במילה לועזית (§6), כלומר אין
+      מה לחקות, ואילו בקורפוס שלנו סימן הקריאה שאחרי אות לטינית הוא
+      כמעט תמיד עצרת בנוסחה ("n!", "4!/(1!·3!)"). זה נאמר כאן
+      במפורש כדי שלא ייקרא כהכרעה.
+   3א. גבול משפט חותך רצף, ‎30.9.2026. עד כאן רצף של הכתב הנגדי נמתח עד
+      התו החזק הבא של הבסיס, ולכן הוא בלע סימני סיום שיושבים בתוכו:
+      "…נמצא עליו: On the roof. On Tuesday, In the afternoon ו-At night
+      מוסרים מתי…" קיבל תיבת בידוד אחת מ-On עד afternoon, והנקודה
+      שסוגרת את המשפט העברי נצבעה בתוכה, צמודה מימין ל-roof. עכשיו
+      סימן סיום שיש רווח אחריו (SENTBREAK: ‎. ? : ;) סוגר את הרצף,
+      ומה שבא אחריו מקבל תיבה חדשה. אותו כלל בדיוק בשלושת הנתיבים:
+      oppSegments בתוך צומת טקסט, isPunctBreak בנתיב האיחוד,
+      ו-releaseRunTail לזנב שבסוף.
+      מה שמצייר משרד החינוך במצב הזה נמדד ומופיע ב-§7.3.1 של
+      ‎.work/proof-punct/ministry-convention.md: "אנשי פוליטיקלי קורקט הם
+      הגזענים ביותר. TheMarker." מצויר משמאל לימין כ-".TheMarker.אנשי",
+      כלומר הנקודה של המשפט העברי צמודה לעברית - מימין לרצף הלטיני
+      שבא אחריה - והנקודה של "TheMarker." היא השמאלית ביותר. הפיצול
+      נותן בדיוק את הגאומטריה הזאת, ונמדד תו בתו בקנרית seg-themarker.
+   3ב. מה שבסוגריים אינו קובע את שפת היחידה, ‎30.9.2026. ספירת המילים
+      הכריעה rtl על "moved = came to live there (עברה לגור)." - חמש
+      מילים לועזיות מול שתיים עבריות, כלומר בלי רוב מכריע - וכל השורה
+      נצבעה עברית, כך שהנקודה נצבעה בקצה השמאלי. §5.3 של המפרט מעיד
+      על הצורה הזאת במסמכי משרד החינוך: משפט אנגלי שהאסימון האחרון בו
+      הוא מילה עברית בסוגריים נסגר בקצה הימני שלו. לכן יחידה שבלי מה
+      שבסוגריים אין בה אף מילה עברית אינה משפט עברי, והיא נמסרת אל
+      הטיפול של "יחידה שכולה לועזית".
+
+   4. הדף נצבע פעם אחת לפני השכבה, ורק אז מתוקן. זו תכונה ידועה ולא שקופה:
+     הסריקה הראשונה יכולה לרוץ רק על DOM שלם, כלומר ב-DOMContentLoaded,
+     ולכן בקו תקשורת איטי התלמיד רואה את הדף בסדר הקודם עד שהבית האחרון
+     מגיע, ואז הוא קופץ. שתי ההצעות לתקן נבדקו ונמדדו ונדחו:
+       - העברת הבלוק אל <head> עם סריקה ב-DOMContentLoaded אינה מקצרת את
+         החלון כלל. נמדד ב-.work/proof-bidi/r3/tools/fouc2.js: אותו דף
+         מוגש בשני חלקים, והחיתוך ב-50%, ב-90% וב-99% מן הבתים. בשתי
+         ההצבות, בסוף הגוף וב-head, בזמן ההמתנה יש 0 איברים שקיבלו כיוון
+         והתווית נקראת "כיתה ה׳ · English"; רק אחרי 100% מן הבתים היא
+         נעשית "English · כיתה ה׳". ההמתנה היא למסמך השלם, לא לבלוק.
+       - הצהרת הכיוון כ-CSS בגיליון הנושא אינה מתקנת את מה שקופץ. נמדד
+         ב-.work/proof-bidi/r3/tools/cssdecl.js על 26 דפים: 21,925 איברים
+         הושוו עם השכבה ובלעדיה, 1,643 מהם שינו כיוון, ו-0 מתוכם נושאים
+         הצהרה של הכותב (מאפיין dir או כלל CSS שקובע direction). כל מה
+         שמשתנה הוא הלא-מוצהר, וכלל (2) מכריע אותו בספירת מילים בזמן
+         ריצה - החלטה שאין דרך לכתוב אותה בגיליון סגנון.
+     מה שכן היה סוגר את החלון הוא הסתרת הגוף עד לסריקה, וזו החלטת מוצר
+     (מסך ריק במקום דף בסדר הקודם) ולא החלטה של השכבה.
+  5. אסור להזריק תווי בקרה (LRM, RLM, בידוד). מנוע המשחק משווה טקסט גולמי,
+      ותו בלתי נראה אחד היה מרוקן את מאגר המילים או פוסל תשובה נכונה. לכן
+      כל התיקון הוא מאפיין, סגנון ועטיפה בלבד, והטקסט עצמו אינו נוגע:
+      textContent לפני ואחרי זהה תו בתו.
+   ============================================================================ */
+(function(){
+  "use strict";
+
+  /* אותיות בלבד. ניקוד, גרש, גרשיים, מקף ופיסוק אינם "מילה". */
+  /* גרש וגרשיים עבריים (U+05F3, U+05F4) הם חלק מן המילה: "ג׳", "יח״ל".
+     בלעדיהם הם נשארים מחוץ לתיבת הבידוד, ובדף ltr הם נגררים אל הצד השני
+     של המילה. */
+  var RTL_SRC = '[\\u05D0-\\u05EA\\u05EF-\\u05F4\\uFB1D-\\uFB4F' +
+                '\\u0620-\\u064A\\u066E\\u066F\\u0671-\\u06D3\\u06D5\\u06E5\\u06E6' +
+                '\\u06EE\\u06EF\\u06FA-\\u06FF\\uFB50-\\uFDFF\\uFE70-\\uFEFC]';
+  /* בטווח הלאטיני המורחב יושבים שני סימני חשבון, U+00D7 ו-U+00F7,
+     והם אינם אותיות. בלי החריגה הזאת "3×2 + 3×35." נספר כמילה
+     לועזית, והנקודה שאחריה נגררה איתה. */
+  var LTR_SRC = '[A-Za-z\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u024F\\u0370-\\u03FF\\u0400-\\u04FF]';
+  var RTL_W = new RegExp(RTL_SRC + '+', 'g');
+  var LTR_W = new RegExp(LTR_SRC + '+', 'g');
+  function nWords(t, re){ re.lastIndex = 0; var n = 0; while (re.exec(t)) n++; return n; }
+  /* מילה לועזית לעומת סימון. אות בודדת ("x", "y") וספרה רומית ("II", "III")
+     אינן מילים באנגלית, והן מופיעות בתוך משפט עברי כסימון. בלי ההבחנה
+     הזאת כותרת ערבית "II \u00b7 פיעל \u00b7 III" נספרת כשני מילים לועזיות מול
+     אחת עברית ונקבעת ltr, וגם תווית הרמה "A2 / B1 / B2 \u00b7 3-5 יח״ל".
+     הספירה הזאת משמשת רק להכרעת בסיס הכיוון; לזיהוי "יחידה שכולה לועזית"
+     נשארת הספירה הגולמית, אחרת נוסחה טהורה הייתה יוצאת מחוץ לטיפול. */
+  var ROMAN = /^[IVXLCDM]+$/;
+  var LABEL = /^[A-Z]{1,3}$/;
+  function nLatinWords(t){
+    LTR_W.lastIndex = 0;
+    var m, n = 0;
+    while ((m = LTR_W.exec(t))){
+      if (m[0].length < 2) continue;
+      if (ROMAN.test(m[0])) continue;
+      /* תווית גאומטרית או קיצור: "BD : DC = AB : AC" אינו משפט אנגלי. */
+      if (LABEL.test(m[0])) continue;
+      n++;
+    }
+    return n;
+  }
+  /* מה שבסוגריים הוא פירוש ואינו קובע את שפת היחידה. נמדד על דף אמיתי,
+     english-g7-reading-my-best-friend: "moved = came to live there
+     (עברה לגור)." הוא חמש מילים לועזיות מול שתי עבריות, ולכן ספירת
+     המילים (paraW < 3·paraR) הכריעה rtl, וכל השורה נצבעה עברית -
+     והנקודה, שבמסמכי משרד החינוך מצוירת בקצה הימני של משפט אנגלי
+     שהאסימון האחרון בו הוא מילה עברית בסוגריים (‎.work/proof-punct/
+     ministry-convention.md §5.3, 3 מופעים מצוירים ונמדדים), נצבעה
+     בקצה השמאלי: השער מדד אותה ב-x=75.4 והרצף ב-[84…112.8].
+     לכן הסוגריים מוסרים לספירה שנייה, והיא מכריעה רק כשהיא חד-משמעית:
+     יחידה שבלי מה שבסוגריים אין בה מילה עברית אחת אינה משפט עברי.
+     זו אותה נפילה בדיוק שכתובה בשער (check-punct-placement, "ספירת
+     המילים בלי מה שבסוגריים"), ומכאן שהשניים מודדים אותו דבר.
+     סוגריים שאינם מאוזנים בתוך אותו צומת אינם מוסרים כלל, ולכן
+     הספירה השנייה נופלת חזרה אל הראשונה ולא אל ניחוש. */
+  var PARENS = /\([^()]*\)/g;
+  function outsideParens(t){ return t.indexOf('(') < 0 ? t : t.replace(PARENS, ' '); }
+
+  var RTL_C = new RegExp(RTL_SRC), LTR_C = new RegExp(LTR_SRC);
+  var SPACE = /\s/;
+  var OPENER = /[([{"'“‘«‹]/;
+
+  /* תווים חלשים: ספרה, סימן חשבון, סימן יחס, מפריד עשרוני. אלגוריתם
+     הדו-כיווניות מצרף אותם מאליו אל הרצף שלידם, ולכן "x = 6" הוא ביטוי
+     אחד שנקרא משמאל לימין. אם מבודדים את ה-x לבדו, "= 6" נשאר בבסיס
+     העברי ונמשך ימינה, והתלמיד קורא "6 = x". הסימנים נכתבים כ-escape
+     כדי שקו מפריד לא יופיע כתו בקובץ. */
+  var WEAK  = new RegExp('[0-9\\u0660-\\u0669+\\-\\u2212\\u2013=\\u2248\\u2245\\u2261\\u00D7\\u00F7*/^<>\\u2264\\u2265\\u2260\\u00B1\\u00B7.,%\\u00B0]');
+  /* כדי לספוח רצף חלש צריך שיהיה בו סימן ולא רק ספרה: "מקור 5 times"
+     אינו ביטוי, והספרה שם שייכת למילה הבאה.
+     הנקודה האמצעית (U+00B7) אינה כאן. היא סימן כפל רק כשהיא בין שני
+     אגפים, ובקורפוס הזה היא כמעט תמיד מפריד עיצובי: "English · כיתה ה׳".
+     כשהיא נספרה כסימן חשבון היא הפכה כל מפריד כזה ל"ביטוי", והנקודה
+     נגררה אל תוך תיבת הבידוד הלועזית ונצבעה בקצה החיצוני שלה. */
+  var WEAKOP = new RegExp('[+\\-\\u2212\\u2013=\\u2248\\u2245\\u2261\\u00D7\\u00F7*/^<>\\u2264\\u2265\\u2260\\u00B1%]');
+  /* אחורה סופחים רק ספרה וכפל צמודים ("2·x"). מקף לעולם לא: הוא מחבר
+     תחילית עברית ("ו-the"), ולקיחתו הייתה קורעת אותה מן המילה שלה. */
+  var BACKWEAK = new RegExp('[0-9\\u0660-\\u0669.,\\u00B7]');
+
+  /* גבול משפט: סימן שסוגר משפט ואחריו רווח. אותו סט בדיוק משמש
+     ב-isPunctBreak בנתיב האיחוד, כדי ששני הנתיבים יחתכו באותו מקום.
+     סימן קריאה אינו כאן: המפרט מסמן אותו UNATTESTED (§6), ובקורפוס הזה
+     הוא כמעט תמיד עצרת בנוסחה ("n!", "4!/(1!·3!)"), ולכן חיתוך בו היה
+     מפרק ביטוי. */
+  var SENTBREAK = /[.?:;]/;
+
+  /* קטעי הכתב הנגדי בתוך מחרוזת אחת, יחד עם סימני הפיסוק הצמודים להם
+     ועם הביטוי החשבוני שנמשך מהם. בלי זה "הוא עונה על Where?" מצייר את
+     סימן השאלה משמאל למילה, כלומר על המסך נראה "?Where". */
+  function oppSegments(v, opp){
+    var S_OPP = opp === 'ltr' ? LTR_C : RTL_C;
+    var S_BASE = opp === 'ltr' ? RTL_C : LTR_C;
+    var out = [], i = 0, n = v.length;
+    while (i < n){
+      if (!S_OPP.test(v.charAt(i))){ i++; continue; }
+      var s = i, e = i, j = i;
+      /* הרצף נגמר גם בגבול משפט שבתוכו, ולא רק בתו של הבסיס. סימן סיום
+         שיש רווח אחריו סוגר את המשפט של **הבסיס**, ולכן הוא אינו נכנס
+         לתיבת הבידוד; מה שבא אחריו הוא משפט חדש, ותיבה חדשה.
+         נמדד על דף אמיתי, english-g5-practice-prepositions-time-place:
+         הכתוב הוא "…והחתול נמצא עליו: On the roof. On Tuesday, In the
+         afternoon ו-At night מוסרים מתי…", והלולאה מתחה את הרצף עד
+         ה-n האחרון של afternoon, כלומר בלעה את הנקודה שסוגרת את המשפט
+         העברי ואת הפסיק שאחרי Tuesday. השער מדד את הנקודה ב-x=341.4
+         בתוך תיבת הבידוד [248…590], כלומר צמודה מימין ל-roof.
+         מה שמצייר משרד החינוך בדיוק במצב הזה כתוב ב-§7.3.1 של המפרט:
+         "‎\u2013 מרגלית, ל' (2020). אנשי פוליטיקלי קורקט הם הגזענים ביותר.
+         TheMarker." (התו הראשון במקור הוא מקף קצר; הוא כתוב כאן כקוד,
+         כי הקובץ הזה נשתל בכל דף, וכלל המקפים חל גם עליו) מצויר משמאל לימין כ-".TheMarker.אנשי…", כלומר
+         הנקודה של המשפט העברי מצוירת צמודה לעברית - מימין לרצף
+         הלטיני שבא אחריה - והנקודה של "TheMarker." היא השמאלית ביותר.
+         חיתוך הרצף בגבול המשפט נותן בדיוק את הגאומטריה הזאת: הסימן
+         נשאר בזרימה העברית בין שתי תיבות הבידוד.
+         פסיק ונקודה אמצעית אינם כאן: הם ממשיכים משפט ולא סוגרים אותו,
+         וחיתוך בהם היה מפרק "In the afternoon, At night" לשתי תיבות
+         בלי שיש גבול משפט ביניהן. */
+      while (j < n && !S_BASE.test(v.charAt(j))){
+        if (j > e && e > i - 1 && S_OPP.test(v.charAt(e)) &&
+            SENTBREAK.test(v.charAt(j)) && j + 1 < n && SPACE.test(v.charAt(j + 1))) break;
+        if (S_OPP.test(v.charAt(j))) e = j;
+        j++;
+      }
+      var end = e + 1;
+      while (end < n && attaches(v, end, e, s)) end++;
+      end = absorbWeak(v, end, S_BASE, S_OPP);
+      var st = s, floor = out.length ? out[out.length - 1][1] : 0;
+      while (st > floor && !SPACE.test(v.charAt(st - 1)) && BACKWEAK.test(v.charAt(st - 1))) st--;
+      /* סוגר פותח שצמוד לרצף, כשהסוגר הסוגר שלו כבר בתוך הרצף, נכנס איתו.
+         נמדד ב-summer-math-g9-g10-5u-ch3: "מהם פתרונות המשוואה (x − 3)(x + 8)
+         = 0?" נחתך כך שה-"(" הראשון נשאר בזרימה העברית ובן הזוג שלו בתוך
+         תיבת הבידוד. סוגר שאין לו בן זוג באותו רצף מצויר בבסיס העברי בצורה
+         ההפוכה, והתלמיד ראה "x − 3)(x + 8) = 0)". "המילה (cat)" אינה
+         משתנה: הסוגר הסוגר שלה אינו בתוך הרצף. */
+      if (st > floor){
+        var op0 = v.charAt(st - 1), cl0 = PAIR[op0];
+        if (cl0 && closesOutside(v, st, end, op0, cl0)) st--;
+      }
+      out.push([st, end]);
+      i = j;
+    }
+    return out;
+  }
+
+  /* איזה סימן נוסע עם המילה ואיזה שייך למשפט שסביבה. זו ההבחנה שנמדדה
+     ונמצאה הפוכה בסבב הראשון: שם כל סימן צמוד נלקח אל תוך המילה הלועזית,
+     ובפועל נקודה, פסיק ונקודתיים שייכים כמעט תמיד למשפט העברי שסביבה, ואת
+     המקום הנכון שלהם - משמאל למילה - אלגוריתם הדו-כיווניות כבר נותן להם
+     לבדו. לקיחתם פנימה הזיזה אותם אל הצד הלא נכון, ונמדד ש-"צירוף אחד:
+     under the bed." הפך ל-". under the bed".
+     נדב, 28.9.2026, וזה מבטל את ההכרעה של 21.9 בעניין סימן השאלה: סימן
+     שאלה שסוגר משפט הוא סופו של המשפט, ומקומו בקצה של המשפט - בעברית
+     בקצה השמאלי. מה שנכתב כאן קודם ("בלי זה נקרא ?Where") היה תיאור של
+     המסך ולא של המסמכים, ובמסמכי משרד החינוך הנמדדים
+     (‎.work/proof-punct/ministry-convention.md §6) סימן השאלה הוא התו
+     השמאלי ביותר בשורה בכל 47 המופעים, בלי מופע נגדי אחד.
+     לכן נשאר נמשך עם המילה: סימן קריאה בלבד - שהוא בקורפוס הזה כמעט
+     תמיד עצרת בנוסחה, ושבשאלוני הבגרות אין לו אף מופע כסימן סיום אחרי
+     מילה לועזית, כלומר אין קונבנציה שאפשר לחקות - וסוגר או מרכאה סוגרת
+     שהפותח שלהם כבר בתוך הקטע.
+     מדוע זה מספיק: הלולאה שלמעלה מותחת את e עד לתו הנגדי האחרון שלפני
+     תו הבסיס, ולכן כל סימן שמגיע לכאן יושב בין רצף לועזי לבין תו בסיס
+     או סוף הטקסט - בדיוק המקרה שבו נדב קבע שהסימן אינו נבלע. סימן שיושב
+     בין שתי אותיות לטיניות ("Yes?No") נמצא כבר בתוך הקטע ואינו עובר
+     כאן כלל. */
+  var MARK_ATTACH = /[!]/;
+  /* מרכאה ישרה אינה מבחינה בין פתיחה לסגירה, ולכן היא לעולם אינה נלקחת:
+     נמדד שלקיחתה הצמידה את שתי המרכאות זו לזו בצד אחד. סוגר של ממש נלקח
+     רק אם הפותח שלו כבר בתוך הקטע עצמו. */
+  var CLOSER = { ')': '(', ']': '[', '}': '{',
+                 '\u201D': '\u201C', '\u2019': '\u2018', '\u00BB': '\u00AB', '\u203A': '\u2039' };
+  /* זוגות סוגריים, ומבחן אחד לשני הנתיבים: האם בקטע t[from..to) יש סוגר
+     סוגר שהפותח שלו יושב לפני הקטע, כלומר מחוץ לתיבת הבידוד. */
+  var PAIR = { '(': ')', '[': ']', '{': '}' };
+  function closesOutside(t, from, to, op, cl){
+    var d = 0;
+    for (var q = from; q < to; q++){
+      var c = t.charAt(q);
+      if (c === op) d++;
+      else if (c === cl){ if (d === 0) return true; d--; }
+    }
+    return false;
+  }
+  function attaches(v, k, lastLetter, segStart){
+    var c = v.charAt(k);
+    if (SPACE.test(c)) return false;
+    if (MARK_ATTACH.test(c)) return true;
+    var op = CLOSER[c];
+    if (!op) return false;
+    for (var i = lastLetter; i >= segStart; i--) if (v.charAt(i) === op) return true;
+    return false;
+  }
+
+  /* הרצף החלש שאחרי הקטע נכנס אליו כל עוד לא הגיעה אות: כך "x = 6",
+     "x + 1" ו-"A2 / B1 · 3-5" נשארים ביטוי אחד. */
+  function absorbWeak(v, end, S_BASE, S_OPP){
+    var j = end, last = end, sawOp = false, sawDigit = false;
+    while (j < v.length){
+      var c = v.charAt(j);
+      if (SPACE.test(c)){ j++; continue; }
+      if (S_BASE.test(c) || S_OPP.test(c)) break;
+      if (!WEAK.test(c)) break;
+      /* גבול משפט עוצר גם כאן, כמו בלולאה של oppSegments (3א): "N חלקי X.
+         25% זה רבע" בלע את הנקודה ואת "25%" אל תוך הבידוד של X, והנקודה
+         שסוגרת את המשפט העברי צוירה מימין ל-X (g6-percent-basics-practice). */
+      if (SENTBREAK.test(c) && j + 1 < v.length && SPACE.test(v.charAt(j + 1))) break;
+      if (WEAKOP.test(c)) sawOp = true;
+      if (c >= '0' && c <= '9') sawDigit = true;
+      j++; last = j;
+    }
+    if (last === end) return end;
+    /* סופחים ביטוי, לא פיסוק. סימן חשבון מעיד על ביטוי גם כשיש רווח
+       ("x = 6"); ספרה מעידה על ביטוי גם כשיש רווח ("Unit 3", "Text 1",
+       "grade 8"); פסיק או נקודה לבדם אינם ביטוי, והם שייכים למשפט
+       שסביב ("II," ו-"bed.").
+
+       הרווח לפני הספרה: עד 28.9.2026 נדרשה כאן צמידות (attached), ולכן
+       "Unit 3" נשאר "Unit" בתוך הבידוד ו-" 3" בחוץ, ובבסיס עברי הספרה
+       נמשכה אל הקצה השני: נמדד ב-numside.js על 1,667 הדפים הבנויים -
+       13 זוגות "<מילה לועזית> <מספר>" מצוירים בצד הלא נכון בלי השכבה,
+       38 איתה, 31 מהם התהפכו. בפועל זו הייתה רגרסיה מול אלגוריתם
+       הדו-כיווניות עצמו: כלל W7 שלו הופך ספרה ל-L כשהתו החזק שלפניה
+       הוא L, בלי קשר לרווחים שביניהם, ולכן הדפדפן לבדו צייר "Unit 3"
+       נכון. תיבת הבידוד מנתקת את הספרה מאותו תו חזק, ולכן היא נופלת
+       לכיוון הפסקה. הספיחה מחזירה בדיוק את מה שהדפדפן עשה.
+       הכיוון האחורי לא נגע: "מקור 5 times" עדיין אינו ביטוי, משום
+       שהספרה שם נמצאת לפני הקטע ומטופלת ב-BACKWEAK, שם רווח עוצר. */
+    if (!sawOp && !sawDigit) return end;
+    /* מקף תלוי משתחרר רק כשמה שעצר את הספיחה הוא אות של הבסיס. "∠C = ?" נעצר
+       בסימן השאלה, וה-"=" שם הוא חלק מביטוי עם מקום ריק, לא מקף מפריד. */
+    return releaseTrail(v, end, last, j < v.length && S_BASE.test(v.charAt(j)));
+  }
+
+  /* נדב, 22.9.2026: "סימן חלש נבלע רק בין שני תווים חזקים מאותו כיוון.
+     x = 6 שומר על סימן השוויון שלו כי אות לטינית עומדת בצד אחד וספרה
+     בצד השני. נקודה אמצעית, פסיק, נקודה או נקודתיים שנגררים אחרי רצף
+     לטיני שייכים למשפט העברי שסביבו ונשארים מחוץ לבידוד."
+     לכן: אחרי שהרצף החלש נספח, משחררים את הזנב שלו - כל רצף של סימני
+     פיסוק ורווחים שיושב בסופו. מה שנשאר מסתיים תמיד בתו שאינו פיסוק,
+     כלומר בספרה או באות, ולכן הוא באמת ביטוי. תווית הרמה
+     "A2 / B1 · 3-5 יח״ל" שורדת משום שהזנב שלה נגמר בספרה 5. */
+  var TRAILMARK = new RegExp('[.,:;\\u00B7]');
+  /* וסימן חשבון שנשאר תלוי בסוף, אחרי רווח ובלי אגף אחריו, אינו חלק
+     מביטוי אלא מקף מפריד של המשפט העברי: "the girl who won the race -
+     מה התפקיד של who כאן?" צייר את המקף בקצה הימני של תיבת הבידוד,
+     כלומר לפני המשפט האנגלי בקריאה מימין לשמאל. מקף צמוד למילה ("re-",
+     "-teen") נשאר: הוא חלק מן האסימון. אחוז אינו כאן, הוא שייך למספר. */
+  var DANGLE = new RegExp('[+\\-\\u2212\\u2013=\\u2248\\u2245\\u2261\\u00D7\\u00F7*/^<>\\u2264\\u2265\\u2260\\u00B1]');
+  function dangles(v, k){ return k >= 2 && DANGLE.test(v.charAt(k - 1)) && SPACE.test(v.charAt(k - 2)); }
+  function releaseTrail(v, end, last, dangleOk){
+    var k = last;
+    while (k > end){
+      var c = v.charAt(k - 1);
+      if (SPACE.test(c) || TRAILMARK.test(c) || (dangleOk && k - 1 > end && dangles(v, k))) k--; else break;
+    }
+    return k > end ? k : end;
+  }
+
+  /* ------------------------------------------------------------------
+     המבנה של הדף אינו זז.
+
+     נדב, 22.9.2026: "השכבה לא מזיזה כלום. היא מוסיפה מאפיינים וסגנון,
+     ומותר לה לעטוף צומת טקסט חשוף. אסור לה להוציא ממקומו, להחליף,
+     לשכפל או לסדר מחדש איבר שיש לו id, מאפיין data או class, משום
+     שהסקריפטים של הדף מחזיקים בהם: כך #storyEq איבד את הילד #storyKind
+     והמעבדה מתה."
+
+     מה שקרה באמת ב-g10-3u-word-problems, נמדד: המעבדה כותבת
+     eqEl.childNodes[0].nodeValue, והשכבה החליפה שם את צומת הטקסט
+     בפרגמנט בן שלושה צמתים. childNodes[0] הפך לאיבר, הכתיבה הפכה
+     לפעולה ריקה, ו-#storyKind נדחף ממקום 1 למקום 2. המשוואה קפאה על
+     התרחיש הראשון בזמן שהכותרת שלידה המשיכה להתחלף, והתלמיד ראה
+     משוואה קווית שכתוב מעליה "משוואה ריבועית".
+
+     שתי מגבלות, ושתיהן נמדדות ב-.work/proof-bidi/r3/tools/ids.js:
+     1. איבר שיש לו id אינו מועבר לעולם אל תוך עטיפה: רצף שיש בו איבר
+        כזה אינו מאוחד כלל.
+     2. בתיבה שיש לה ילד עם id לא נוגעים במבנה כלל אלא חותמים בלבד, וכך
+        גם בתיבה שיש לה id בעצמה כשהיא יושבת בתוך מעבדה, תרשים, משחק או
+        מחשבון. זו התיבה שהסקריפט של הדף מגיע אליה לפי getElementById
+        ומדלג בה לפי מקום, וגם צומת הטקסט הראשון שלה הוא ממשק.
+     המדידה: 33 דפים, 22,955 איברים נושאי id / class / data, 2,228 מהם
+     עם id - 0 מהם שינו הורה, מקום בין אחים או זהות.
+
+     מה שלא נאסר כאן, ולמה.
+     א. האיסור המלא - גם על איבר שיש לו רק class או רק מאפיין data -
+        נמדד על מדגם של 139 דפי dist ועלה מ-1 ממצא ל-189 (order=35
+        run=76 attach=77), כלומר 188 פגמי קריאה נוספים על 56 דפים
+        נוספים. הסיבה היא ש-.math מבודד בגיליון עצמו (01-base.css:32),
+        ולכן "AM = 40" שכתוב בשני span.math חייב עטיפה אחת משותפת, ואי
+        אפשר להשיג אותה בלי להעביר אותם.
+     ב. חוץ מתוך המעבדה, איבר שיש לו id ופותח בצומת טקסט אינו מוקפא,
+        ולכן childNodes[0] שלו יכול לחדול להיות צומת טקסט. ההקפאה הגורפת
+        שם הייתה משאירה את טיפ הקמע <p id="mascotTip">Hi! ...</p> שבור
+        ב-26 מתוך 139 דפי המדגם. מה שנשאר חשוף נמדד ונקרא בשמו
+        (ids.js --soft): #mascotTip, #modeChip ו-#dhookMeanTag על מדגם
+        של 139 דפים, ובמדידה נוספת על 73 דפים (inject.js) גם #dvLbl,
+        #pyL1 ו-#pyL2. כולם נכתבים ב-textContent או אינם נכתבים כלל
+        (topics/g7-pythagoras/solver.js:6,
+        topics/g11-4u-optimization/solver.js:6-7). הרשימה נמדדה על
+        מדגמים ולא על הקורפוס כולו, ולכן היא אינה רשימה סגורה.
+     כל 26 סקריפטי הנושא שמדלגים ב-DOM לפי מקום (childNodes[n],
+     children[n], firstChild, nextSibling) נוהגו כאן לחיצה אחר לחיצה,
+     129 לחיצות ו-155 שלבים, ונמצאו זהים תו בתו לפני ואחרי
+     (.work/proof-bidi/r3/tools/drive.js). אותו כלי על שכבת הסבב הקודם
+     נכשל על g10-3u-word-problems, וזו ההוכחה שהוא יודע לראות את הפגם.
+     ------------------------------------------------------------------ */
+  function isOurWrap(el){
+    return !!(el && el.nodeType === 1 && el.getAttribute &&
+              el.getAttribute('data-bidi-wrap') !== null);
+  }
+  /* איבר שיש לו id: הדף מגיע אליו לפי שם, ולכן הוא לעולם אינו זז. */
+  function isPinnedEl(node){
+    if (!node || node.nodeType !== 1) return false;
+    if (isOurWrap(node)) return false;
+    return !!node.id;
+  }
+  function hasPinned(list){
+    for (var i = 0; i < list.length; i++) if (isPinnedEl(list[i])) return true;
+    return false;
+  }
+  /* בתוך מעבדה, תרשים, משחק או מחשבון - גם התיבה עצמה קפואה, ולא רק
+     תיבה שיש לה ילד עם id. שם יושבים הסקריפטים שמחזיקים במבנה: הם
+     מגיעים לאיבר לפי getElementById ואז מדלגים בו לפי מקום, ולכן גם
+     צומת הטקסט הראשון שלו הוא ממשק. זהו בדיוק #storyEq, שהמעבדה שלו
+     כותבת eqEl.childNodes[0].nodeValue.
+     הבוררות הן השורשים שקיימים באמת בקורפוס (.gm-wrap, .game, .sorter
+     ו-.builder נמדדו ב-0 דפים והוצאו). המחיר נמדד ונאמר: 0 ממצאים
+     נוספים על מדגם של 139 דפים, ושניים על הקורפוס כולו - שתי נוסחאות
+     בתוך מעבדה שאינן מבודדות עכשיו, ‎#spReset ב-g10-3u-paths-speed
+     ו-‎#exState ב-g7-algebraic-expressions. זה המחיר של הכלל, והוא
+     נמוך ממחירו של ווידג׳ט מת.
+     מחוץ למעבדה אין הקפאה של התיבה עצמה, ובכוונה: טיפ הקמע
+     <p id="mascotTip">Hi! ...</p> פותח באנגלית, וכל דף אנגלי צריך את
+     הבידוד שלה. הקפאת כל איבר שיש לו id הייתה מותירה את הטיפ שבור
+     ב-26 מתוך 139 דפי המדגם. מה שנשאר חשוף נמדד אחד אחד
+     (tools/ids.js --soft): #mascotTip, #modeChip ו-#dhookMeanTag, ושלושתם
+     נכתבים ב-textContent או אינם נכתבים כלל, ואף אחד מהם אינו נקרא
+     לפי מקום. */
+  var WIDGET_SEL = '.grapher,.ps-lab,.lab,.gm,.diagram,.calc';
+  function inWidget(el){
+    if (!el.closest) return false;
+    try { return !!el.closest(WIDGET_SEL); } catch (e) { return false; }
+  }
+  function structFrozen(el){
+    if (!el || el.nodeType !== 1) return true;
+    if (el.id && inWidget(el)) return true;
+    for (var n = el.firstElementChild; n; n = n.nextElementSibling) if (n.id) return true;
+    return false;
+  }
+
+  /* עטיפה בלבד. הטקסט עצמו אינו נוגע: textContent לפני ואחרי זהה, ולכן
+     מנוע המשחק, מפתח התשובות וכל השוואת מחרוזת ממשיכים לראות אותו דבר. */
+  /* בתוך SVG אין <span>: הוא אינו נצבע כלל. שם העוטפת היא <tspan>. */
+  function mkWrap(node, opp, mark){
+    var owner = node.parentNode;
+    var svg = owner && (owner.ownerSVGElement || owner.tagName === 'svg');
+    var sp = svg ? document.createElementNS('http://www.w3.org/2000/svg', 'tspan')
+                 : document.createElement('span');
+    sp.setAttribute(mark || 'data-bidi-run', opp);
+    /* סימן שהעטיפה הזאת נוצרה כאן ואינה איבר של הדף: כך אפשר להסיר את
+       השכבה לגמרי ולמדוד את אותו קובץ בדיוק לפניה ואחריה. */
+    sp.setAttribute('data-bidi-wrap', '');
+    sp.style.direction = opp;
+    sp.style.unicodeBidi = 'isolate';
+    return sp;
+  }
+
+  function isolateTextNode(tn, opp){
+    var v = tn.nodeValue;
+    if (!v) return;
+    if (structFrozen(tn.parentNode)) return;
+    var segs = oppSegments(v, opp);
+    if (!segs.length) return;
+    var frag = document.createDocumentFragment(), pos = 0;
+    for (var k = 0; k < segs.length; k++){
+      if (segs[k][0] > pos) frag.appendChild(document.createTextNode(v.slice(pos, segs[k][0])));
+      var sp = mkWrap(tn, opp);
+      sp.appendChild(document.createTextNode(v.slice(segs[k][0], segs[k][1])));
+      frag.appendChild(sp);
+      pos = segs[k][1];
+    }
+    if (pos < v.length) frag.appendChild(document.createTextNode(v.slice(pos)));
+    /* למה פרגמנט ולא עטיפה אחת. הניסיון לשמור על אורך childNodes של
+       ההורה - צומת אחד יוצא, צומת אחד נכנס - נמדד ונדחה: העטיפה הבודדת
+       הפכה את הזנב " going to." לאיבר אחד, ואיחוד הרצפים בלע אותו כולו,
+       יחד עם הנקודה, אל תוך תיבת בידוד לועזית אחת. הנקודה נצבעה אז בקצה
+       החיצוני של הרצף, כלומר בדיוק הפגם שהסבב הזה בא לתקן: נמדד
+       ב-english-g5-going-to (#summary) וב-english-g11-writing-descriptive
+       (.compare), ובסריקת הקורפוס היא הוסיפה ממצא ב-62 דפים. השמירה על
+       מקומם של צמתים אינה נחוצה כאן משום ש-structFrozen כבר מקפיא כל
+       תיבה שיש בה ילד עם id, ולכן אף איבר שהדף מגיע אליו לפי שם אינו
+       זז - וזו הטענה שמוכיחה tools/ids.js. */
+    if (tn.parentNode) tn.parentNode.replaceChild(frag, tn);
+  }
+
+  /* אותו סט מצומצם, כשהסימן יושב בצומת אחר מן המילה. סימן השאלה יצא מכאן
+     ב-28.9.2026 יחד עם MARK_ATTACH: זהו בדיוק הנתיב שיצר את הצורה
+     <span data-bidi-run="ltr"><b>X</b>?</span> ב-arabic-g10-derived-forms,
+     כלומר "מהי תבנית העבר של בניין X?" שצויר "X?" במקום "?X" - 1,182
+     ממצאי R1q בשער הפיסוק מול 102 בלי השכבה. */
+  var ATTACH = '!';
+
+  /* סימן שצמוד למילה אך יושב בצומת אחר: "<b>book</b>, וזהו" - המילה בתוך
+     <b> והפסיק בטקסט שאחריו. עטיפה לכל צומת בנפרד הייתה משאירה את הפסיק
+     בחוץ, והוא היה נמשך אל צד הבסיס ומצויר משמאל למילה. כאן עוטפים את
+     האיבר ואת הסימנים יחד בתיבת בידוד אחת. הטקסט אינו זז: אותו רצף
+     תווים בדיוק, רק בתוך עטיפה נוספת. */
+  function mergeBoundaryMarks(texts, opp, sink){
+    var jobs = [];
+    for (var i = 0; i < texts.length; i++){
+      var tn = texts[i];
+      if (!tn.parentNode || tn.parentNode.nodeType !== 1) continue;
+      if (tn.parentNode.getAttribute && tn.parentNode.getAttribute('data-bidi-run')) continue;
+      if (structFrozen(tn.parentNode)) continue;
+      /* בתיבה גמישה או בטבלה איחוד של שני אחים לעטיפה אחת הוא איחוד של
+         שני פריטי פריסה, ולכן שם לא נוגעים. */
+      if (isItemBoxEl(tn.parentNode)) continue;
+      var v = tn.nodeValue; if (!v) continue;
+      var m = 0;
+      while (m < v.length && ATTACH.indexOf(v.charAt(m)) >= 0) m++;
+      if (!m) continue;
+      var prev = tn.previousSibling;
+      if (!prev || prev.nodeType !== 1) continue;
+      /* האיבר הזה עומד לעבור אל תוך עטיפה. איבר שיש לו id, class או
+         מאפיין data אינו זז לעולם; רק איבר חשוף לגמרי (<b>, <i>, <span>
+         בלי שום מאפיין) נכנס לעטיפה. */
+      if (isPinnedEl(prev)) continue;
+      var pt = prev.textContent || '';
+      if (!pt.length || SPACE.test(pt.charAt(pt.length - 1))) continue;
+      var last = null;
+      for (var k = pt.length - 1; k >= 0; k--){
+        var c = pt.charAt(k);
+        if (SPACE.test(c)) break;
+        if (RTL_C.test(c)) { last = 'rtl'; break; }
+        if (LTR_C.test(c)) { last = 'ltr'; break; }
+      }
+      if (last !== opp) continue;
+      /* האיבר כולו חייב להיות מן הכתב הנגדי, ולא רק להסתיים בו.
+         <b>ביחס לציר ה-<span class="math">y</span></b>: מסתיים ב-y אבל רובו עברית,
+         ועטיפה שלו בתיבת ltr הייתה מפרשת את כל הביטוי העברי
+         משמאל לימין. במקרה כזה הסימן שייך למשפט העברי, לא למילה. */
+      var base = (opp === 'ltr') ? RTL_C : LTR_C;
+      if (base.test(pt)) continue;
+      jobs.push([tn, m, prev]);
+    }
+    for (var j = 0; j < jobs.length; j++){
+      var t = jobs[j][0], cut = jobs[j][1], pv = jobs[j][2];
+      var rest = null;
+      if (cut < t.nodeValue.length) rest = t.splitText(cut);
+      var sp = mkWrap(t, opp);
+      pv.parentNode.insertBefore(sp, pv);
+      sp.appendChild(pv);
+      sp.appendChild(t);
+      if (rest) sink.push(rest);
+    }
+  }
+
+  /* שני רצפים לועזיים שכנים שנפרדו רק ברווח או בתגית: "Choose <b>said</b>
+     or <b>told</b>". אם כל אחד מהם מקבל תיבת בידוד משלו, שתי התיבות
+     נפרשות בסדר של הבסיס, ובבסיס עברי המילים נפגשות הפוך: "told or said
+     Choose". לכן אחרי הבידוד לפי צומת עובר מעבר שמאחד שכנים: כל רצף של
+     שכנים שכולם מן הכתב הנגדי, עם רווחים וסימנים ביניהם, נכנס לתיבה אחת.
+     תיבות בידוד מקוננות באותו כיוון אינן מזיקות, ולכן אין צורך לפרק את
+     הפנימיות. */
+  function classifyNeighbour(node, opp){
+    if (node.nodeType === 3){
+      var v = node.nodeValue || '';
+      if (RTL_C.test(v) || LTR_C.test(v)) return 'other';
+      return 'neutral';
+    }
+    if (node.nodeType !== 1) return 'neutral';
+    var tg = (node.tagName || '').toUpperCase();
+    if (SKIP_TAG[tg]) return 'other';
+    var d = null;
+    try { d = window.getComputedStyle(node).display; } catch (e) {}
+    /* איבר מוסתר שהוא בלוק כשהוא נגלה (div, p, button) שובר את הרצף כמו
+       בלוק גלוי. נמדד ב-english-bagrut-module-a: אחרי שאלה 4 באים כפתור
+       "הצג תשובה" ו-div.bg-solution מוסתר; הכפתור נספר כרצף עברי, הפתרון
+       המוסתר נספר כשכן ניטרלי, ושניהם נעטפו בתיבה מוטבעת אחת. בסריקה
+       הבאה כל עברית הפתרון נספרה כטקסט של גוף השאלה, גוף שאלה אנגלית
+       נצבע rtl, ו-"ANSWER:" קיבל את הנקודתיים בצד שמאל. */
+    if (d === 'none') return breaksLine(node, null) ? 'other' : 'neutral';
+    if (breaksLine(node, d)) return 'other';
+    var t = node.textContent || '';
+    var base = opp === 'ltr' ? RTL_C : LTR_C;
+    var mine = opp === 'ltr' ? LTR_C : RTL_C;
+    if (base.test(t)) return 'other';
+    if (mine.test(t)) return 'opp';
+    return 'neutral';
+  }
+
+  function mergeNeighbours(el, opp){
+    if (!el || el.nodeType !== 1) return;
+    if (isItemBoxEl(el)) return;
+    if (structFrozen(el)) return;
+    var kids = [], n;
+    for (n = el.firstChild; n; n = n.nextSibling) kids.push(n);
+    var run = [], strong = 0;
+    /* רצף חלש שנמשך אל הצומת הבא: "<span class="math">AM</span> = <span
+       class="math">40</span>" ו-"פיתול ב-x = <b>1</b>", שבו המספר נכתב
+       אל הדף בזמן ריצה. הסימן והמספר אינם אותיות, ולכן הם נשארים בבסיס
+       העברי ונמשכים ימינה, והתלמיד קורא "40 = AM". הם חייבים להיכנס אל
+       אותה תיבת בידוד עם האות שלפניהם. */
+    /* ביטוי, לא פיסוק: ספרה או סימן חשבון. נקודה או פסיק לבדם שייכים
+       למשפט שסביב, ומשיכתם אל תוך תיבת הבידוד הזיזה אותם לצד הלא נכון. */
+    function isWeakish(node){
+      var t = node.nodeType === 3 ? node.nodeValue : (node.textContent || '');
+      for (var k = 0; k < t.length; k++){
+        var c = t.charAt(k);
+        if ((c >= '0' && c <= '9') || WEAKOP.test(c)) return true;
+      }
+      return false;
+    }
+    function trimTail(){
+      while (run.length && classifyNeighbour(run[run.length - 1], opp) === 'neutral' &&
+             !isWeakish(run[run.length - 1])) run.pop();
+    }
+    /* אותו כלל של נדב, בנתיב האיחוד: סימן חלש נבלע רק בין שני תווים
+       חזקים מאותו כיוון. ב-"בא <b>ten</b> (10)." הסוגריים והספרות הם
+       חלק מן הביטוי - ספרה עומדת משני צדי הסוגר - אבל הנקודה נגררת
+       אחרי הרצף כולו והיא סופו של המשפט העברי. absorbWeak כבר משחררת
+       זנב כזה כשהיא עובדת על צומת טקסט אחד; כאן הרצף פרוש על כמה
+       צמתים, ולכן חותכים את צומת הטקסט האחרון כך שהזנב יישאר בחוץ.
+       בלי החיתוך הזה הנקודה נצבעה בקצה הימני של התיבה, כלומר בין
+       "בא" לבין "ten", והמשפט העברי נגמר באמצע השורה. נמדד: 40 ממצאי
+       mark על פני הקורפוס, מהם "P(6):", "x = 15 (15, 16, 17)." ו-
+       "|f(x)| ≥ 0;". */
+    /* הזנב שיושב **בתוך** האיבר האחרון של הרצף: <b>more.</b>, <b>2:</b>,
+       <b>0;</b>. עד 28.9.2026 השחרור עבד רק כשהצומת האחרון של הרצף היה
+       צומת טקסט, ולכן תג אחד הספיק כדי שהנקודה תיבלע אל תוך הבידוד
+       ותצויר בצדו החיצוני - בדיוק הפגם שהסבב הזה בא לסגור. נמדד לפני
+       התיקון (.work/proof-punct-r4/fx-r4.json, דף ltr): "בא אלינו
+       <b>ten</b> and <b>more.</b> ואז הלך משם" יצא על המסך
+       "םשמךלהזאוtenandmore.ונילאאב", כלומר הנקודה בין "בא אלינו" לבין
+       ten, ואילו הצורה עם צומת הטקסט, "<b>more</b>.", יצאה נכון.
+       דפוס התיקון: מוציאים את הזנב מן האיבר אל מחוץ לעטיפה. זו העברת
+       צומת טקסט בלבד, ולכן textContent של הדף אינו משתנה תו אחד; מה
+       שמשתנה הוא textContent של ה-<b> עצמו, ולכן אסור לעשות זאת כשיש
+       id באיבר או בדרך אליו (הסקריפט של הדף מגיע אליו לפי שם), וגם לא
+       כשהרצף בכלל אינו עומד להתאחד. */
+    function lastTextIn(el0){
+      var n = el0.lastChild;
+      while (n){
+        if (n.nodeType === 3 && /\S/.test(n.nodeValue || '')) return n;
+        if (n.nodeType === 1 && !SKIP_TAG[(n.tagName || '').toUpperCase()]){
+          var inner = lastTextIn(n);
+          if (inner) return inner;
+        }
+        n = n.previousSibling;
+      }
+      return null;
+    }
+    function pathClear(tn, top){
+      for (var p = tn.parentNode; p && p !== top.parentNode; p = p.parentNode){
+        if (p.nodeType === 1 && p.id) return false;
+        if (p === top) return true;
+      }
+      return false;
+    }
+    function hasOtherText(el0, skip){
+      var tw = null;
+      try { tw = document.createTreeWalker(el0, NodeFilter.SHOW_TEXT, null); } catch (e) { return true; }
+      var n;
+      while ((n = tw.nextNode())){
+        if (n === skip) continue;
+        if (/\S/.test(n.nodeValue || '')) return true;
+      }
+      return false;
+    }
+    /* הזנב שיוצא מן הרצף: רווחים ו-TRAILMARK כמו קודם, ועוד שניים.
+       סימן שאלה שסוגר את המשפט, ‎6.10.2026: בנתיב האיחוד הוא נשאר בתוך
+       התיבה, ולכן "מהו log₂ 32?" ו-"y = x² − 3?" בלוח המשחק ובכרטיסי
+       התרגול צוירו עם סימן השאלה מימין למספר (R2q, 84 מדידות בשער
+       הפיסוק, ו-18 ממצאי mark ב-check-bidi). בנתיב של צומת אחד הוא מעולם
+       לא נבלע (הערה 3 בראש הקובץ), וכאן הוא מקבל אותו דין. סימן שאלה
+       שאחרי סימן חשבון ("x = ?") הוא מקום ריק בביטוי ולא סוף משפט, והוא
+       נשאר בפנים.
+       וסוגר סוגר שהפותח שלו מחוץ לרצף: "(רמז: הקדומה היא x³/3.)" - הפותח
+       בזרימה העברית, ולכן גם הסוגר שייך לשם, ובלעדיו הנקודה שלפניו לא
+       יכלה לצאת. pre הוא הטקסט של הרצף שלפני הצומת הזה. */
+    function opBefore(t, k){
+      while (k > 0 && SPACE.test(t.charAt(k - 1))) k--;
+      return k > 0 && WEAKOP.test(t.charAt(k - 1));
+    }
+    function markTail(v, pre){
+      var k = v.length, w = (pre || '') + v, off = w.length - v.length;
+      while (k > 0){
+        var c0 = v.charAt(k - 1);
+        if (SPACE.test(c0) || TRAILMARK.test(c0) || dangles(v, k)){ k--; continue; }
+        if (c0 === '?' && !opBefore(w, off + k - 1)){ k--; continue; }
+        var op1 = CLOSER[c0];
+        if (op1 && PAIR[op1] === c0 && closesOutside(w, 0, off + k, op1, c0)){ k--; continue; }
+        break;
+      }
+      return k;
+    }
+    function runPrefix(stop){
+      var t = '';
+      for (var q = 0; q < run.length; q++){
+        var nd = run[q];
+        if (nd === stop) return t;
+        if (nd.nodeType === 3){ t += nd.nodeValue || ''; continue; }
+        if (nd.nodeType !== 1) continue;
+        var tw0 = document.createTreeWalker(nd, NodeFilter.SHOW_TEXT, null), x0;
+        while ((x0 = tw0.nextNode())){ if (x0 === stop) return t; t += x0.nodeValue || ''; }
+      }
+      return t;
+    }
+    function releaseRunTail(){
+      if (!run.length) return;
+      var lastN = run[run.length - 1];
+      if (lastN.nodeType === 3){
+        var lv = lastN.nodeValue || '', lk = markTail(lv, runPrefix(lastN));
+        if (lk === 0) run.pop();
+        else if (lk < lv.length) lastN.splitText(lk);
+        return;
+      }
+      if (lastN.nodeType !== 1) return;
+      if (isPinnedEl(lastN)) return;
+      var tn = lastTextIn(lastN);
+      if (!tn || !pathClear(tn, lastN)) return;
+      var tv = tn.nodeValue || '', tk = markTail(tv, runPrefix(tn));
+      if (tk >= tv.length) return;
+      /* צומת שכולו סימנים ("." לבדו, אחרי שהבידוד לפי צומת כבר חתך את
+         המילה) יוצא כולו; צומת מעורב ("more.") נחתך והזנב יוצא. בשני
+         המקרים חייב להישאר באיבר טקסט ממשי, אחרת יצרנו <b> ריק. */
+      var tail = tk === 0 ? tn : tn.splitText(tk);
+      if (tk === 0 && !hasOtherText(lastN, tn)) return;
+      el.insertBefore(tail, lastN.nextSibling);
+    }
+    function willMerge(){
+      var weakTail = false;
+      for (var w = 0; w < run.length; w++){
+        if (classifyNeighbour(run[w], opp) === 'neutral' && isWeakish(run[w])) weakTail = true;
+      }
+      /* רצף שיש בו איבר מוגן אינו מאוחד כלל: איחוד הוא העברה. */
+      return (strong >= 2 || (strong >= 1 && weakTail)) && !hasPinned(run);
+    }
+    function flush(){
+      trimTail();
+      if (willMerge()) releaseRunTail();
+      trimTail();
+      if (willMerge()){
+        var sp = mkWrap(run[0], opp);
+        el.insertBefore(sp, run[0]);
+        for (var q = 0; q < run.length; q++) sp.appendChild(run[q]);
+      }
+      run = []; strong = 0;
+    }
+    /* סימן פיסוק בין שני ביטויים אינו מחבר אותם אלא מפריד ביניהם.
+       "בדיקה ב-<span class="math">x = 2</span>: <span class="math">שבר
+       </span>" - הנקודתיים סוגרות את הפסוקית העברית, והאיחוד בלע אותן
+       אל תוך תיבה לועזית אחת יחד עם שני הביטויים, כך שהן צוירו בין
+       "בדיקה ב-" לבין x. רווח לבדו עדיין מחבר, וכך גם סימן חשבון או
+       ספרה ("AM = 40"): ההבדל הוא בין מה שממשיך ביטוי לבין מה שסוגר
+       משפט. */
+    /* ועד 30.9.2026 המבחן הזה דרש שהצומת כולו יהיה פיסוק ורווחים, ולכן
+       תו אחד נוסף בתוכו הספיק כדי שהסימן ייבלע. נמדד על דף אמיתי,
+       g11-5u-sequences-series-practice: הכתוב הוא
+       "ולכן <span class="math">q = 2</span>. (<span class="math">d</span>
+       הוא הפרש…)", והצומת שבין שני הביטויים הוא ". (" - נקודה, רווח,
+       סוגר פותח. מפני שהסוגר אינו TRAILMARK החזיר המבחן false, שני
+       הביטויים אוחדו לתיבת ltr אחת, והנקודה שסוגרת את המשפט העברי נבלעה
+       אל תוכה ונצבעה מימין ל-2: השער מדד אותה ב-x=180.2 והספרה
+       ב-[168…177.8]. זהו בדיוק הפגם של §2 במפרט (363 מופעים בשאלונים,
+       0 נגדיים), ובצורה אחרת של אותה מכונה שסגרה releaseRunTail.
+       הכלל של נדב הוא שסימן חלש נבלע רק בין שני תווים חזקים; סימן שיש
+       רווח אחריו אינו במצב הזה, והוא סוגר משפט. לכן: צומת שכולו פיסוק
+       ורווחים שובר כמו קודם, וצומת מעורב שובר אם יש בו סימן סיום
+       (SENTBREAK, אותו סט של oppSegments) שאחריו רווח. פסיק ונקודה
+       אמצעית אינם ברשימה הזאת
+       בכוונה - הם ממשיכים ביטוי ("(1, 2)", "0.5, ") - והזנב שבסוף הצומת
+       (" (10).") אינו נוגע כאן כלל, כי אין אחריו רווח, והוא ממילא
+       משוחרר ב-releaseRunTail. */
+    function isPunctBreak(node){
+      if (node.nodeType !== 3) return false;
+      var t = node.nodeValue || '', sawMark = false, onlyMarks = true, k;
+      for (k = 0; k < t.length; k++){
+        var c2 = t.charAt(k);
+        if (SPACE.test(c2)) continue;
+        if (TRAILMARK.test(c2)){ sawMark = true; continue; }
+        onlyMarks = false; break;
+      }
+      if (onlyMarks) return sawMark;
+      for (k = 0; k < t.length - 1; k++){
+        if (SENTBREAK.test(t.charAt(k)) && SPACE.test(t.charAt(k + 1))) return true;
+      }
+      return false;
+    }
+    for (var i = 0; i < kids.length; i++){
+      var c = classifyNeighbour(kids[i], opp);
+      if (c === 'opp'){ run.push(kids[i]); strong++; continue; }
+      if (c === 'neutral'){
+        if (run.length){ if (isPunctBreak(kids[i])) flush(); else run.push(kids[i]); }
+        continue;
+      }
+      flush();
+    }
+    flush();
+    /* ירידה אל צאצאים מוטבעים בלבד: בלוק מחליט על עצמו. */
+    for (n = el.firstChild; n; n = n.nextSibling){
+      if (n.nodeType !== 1) continue;
+      if (SKIP_TAG[n.tagName && n.tagName.toUpperCase()]) continue;
+      if (n.getAttribute && n.getAttribute('data-bidi-run')) continue;
+      var dd = null;
+      try { dd = window.getComputedStyle(n).display; } catch (e) {}
+      if (dd === 'none') dd = null;
+      if (isBlockLevel(n, dd)) continue;
+      mergeNeighbours(n, opp);
+    }
+  }
+
+  function isolateRuns(el, texts, base){
+    var opp = base === 'rtl' ? 'ltr' : 'rtl';
+    mergeBoundaryMarks(texts, opp, texts);
+    for (var i = 0; i < texts.length; i++){
+      var tn = texts[i];
+      if (!tn.parentNode || tn.parentNode.nodeType !== 1) continue;
+      var pe = tn.parentNode;
+      if (pe.getAttribute && pe.getAttribute('data-bidi-run')) continue;
+      isolateTextNode(tn, opp);
+    }
+    mergeNeighbours(el, opp);
+  }
+
+  var SKIP_TAG = { SCRIPT:1, STYLE:1, NOSCRIPT:1, TEMPLATE:1, HEAD:1, LINK:1, META:1, TITLE:1, CANVAS:1 };
+
+  /* גם כשהדפדפן מדווח display:none (רמז שטרם נחשף, כרטיס שטרם הוצג) צריך
+     להחליט, ולכן יש נפילה לאחור לפי שם התגית. */
+  var BLOCK_TAG = { DIV:1, P:1, LI:1, UL:1, OL:1, TD:1, TH:1, TR:1, TABLE:1, THEAD:1, TBODY:1,
+    TFOOT:1, CAPTION:1, SECTION:1, ARTICLE:1, HEADER:1, FOOTER:1, MAIN:1, ASIDE:1, NAV:1,
+    H1:1, H2:1, H3:1, H4:1, H5:1, H6:1, BLOCKQUOTE:1, FIGURE:1, FIGCAPTION:1, DETAILS:1,
+    SUMMARY:1, DL:1, DT:1, DD:1, FORM:1, FIELDSET:1, LEGEND:1, BUTTON:1, LABEL:1, PRE:1, HR:1 };
+
+  /* הצהרות הכתב של הקורפוס עצמו. הן הראיה הטובה ביותר לכוונת הכותב:
+     <span class="en">When?</span> הוא אנגלית גם כשהוא יושב במשפט עברי. */
+  var CLS_RTL = /^(he|ar|heb|he-inline|gl-t|gl-he|ar-word|ar-syl|ar-line|.+-he|.+-ar)$/;
+  var CLS_LTR = /^(en|eng|en-block|en-quote|gl-w|gl-en|.+-en)$/;
+
+  function classesOf(el){
+    var c = el.className;
+    if (typeof c !== 'string') c = (el.getAttribute && el.getAttribute('class')) || '';
+    return c ? c.split(/\s+/) : [];
+  }
+
+  /* מאפיין dir שנכתב על האיבר עצמו הוא הצהרה מפורשת של הכותב, ומעמדו כשל
+     שם מחלקה. הוא נכתב ב-3,001 קבצי נושא ועד כה לא נקרא כאן כלל, ולכן
+     <span dir="rtl"> שבמחוון הבגרות לא נספר כהצהרה. dir של אב אינו נקרא:
+     כמעט כל מעבדה יושבת בתוך <div class="ps-lab" dir="ltr">, וגם הוראה
+     עברית לגמרי יושבת שם. */
+  function declOf(el){
+    var d = el.getAttribute && el.getAttribute('dir');
+    if (d === 'rtl' || d === 'ltr') return d;
+    var cs = classesOf(el);
+    for (var i = 0; i < cs.length; i++){ if (cs[i] && CLS_RTL.test(cs[i])) return 'rtl'; }
+    for (var j = 0; j < cs.length; j++){ if (cs[j] && CLS_LTR.test(cs[j])) return 'ltr'; }
+    return null;
+  }
+
+  function isBlockLevel(el, disp){
+    if (disp && disp !== 'none'){
+      if (disp === 'inline' || disp === 'contents' || disp.indexOf('ruby') === 0) return false;
+      return true;
+    }
+    var t = el.tagName;
+    return !!BLOCK_TAG[t && t.toUpperCase()] || t === 'text';
+  }
+
+  /* בתיבות האלה הכיוון קובע את סדר הפריטים ולא רק את סדר המילים: שורת
+     מילון, כותרת גמישה, רשת אפשרויות, סרגל עליון. שינוי כיוון שם הוא
+     עיצוב מחדש, ולכן הן אינן מקבלות כיוון לעולם. */
+  function isItemBox(disp){
+    return disp === 'flex' || disp === 'inline-flex' || disp === 'grid' || disp === 'inline-grid' ||
+           disp === 'table' || disp === 'inline-table' || disp === 'table-row' ||
+           disp === 'table-row-group' || disp === 'table-header-group' || disp === 'table-footer-group';
+  }
+  /* שובר שורה: תיבה בלוקית ממש, או <br>. תיבה מוטבעת-בלוקית
+     (inline-block, inline-flex) יושבת בתוך השורה ואינה שוברת אותה, ולכן
+     היא אינה מפרידה בין שני חלקים של אותו משפט. בלעדי ההבחנה הזאת
+     "The pupils ___ in the ___" נשבר סביב שדה ההקלדה לשתי תיבות בידוד,
+     והן נפרשות בסדר של הבסיס. */
+  function breaksLine(el, disp){
+    var t = (el.tagName || '').toUpperCase();
+    if (t === 'BR') return true;
+    if (disp){
+      return disp === 'block' || disp === 'flow-root' || disp === 'list-item' ||
+             disp === 'flex' || disp === 'grid' || disp === 'table' || disp.indexOf('table-') === 0;
+    }
+    return !!BLOCK_TAG[t];
+  }
+
+  var TAILMARK_END = new RegExp('[.,:;\\u00B7][\\s\\u200f\\u200e]*$');
+  function tailMarkOnly(el, target){
+    var t = el.textContent || '';
+    if (!TAILMARK_END.test(t)) return false;
+    var other = target === 'ltr' ? RTL_C : LTR_C;
+    var mine  = target === 'ltr' ? LTR_C : RTL_C;
+    return !other.test(t) && mine.test(t);
+  }
+
+  function isItemBoxEl(el){
+    if (!el || el.nodeType !== 1) return false;
+    var d = null;
+    try { d = window.getComputedStyle(el).display; } catch (e) {}
+    return !!d && d !== 'none' && isItemBox(d);
+  }
+
+  /* כלל (4) במלואו: שינוי כיוון אינו מזיז פריסה. תכונה לוגית
+     (border-inline-start, padding-inline-*, margin-inline-*) מתהפכת
+     יחד עם הכיוון, וזה מזיז דבר שהתלמיד רואה. נמדד: כרטיס הפתרון
+     בשאלוני הבגרות באנגלית נושא border-inline-start:4px
+     (bagrut/bagrut.css), ו-92 מתוך 254 כרטיסים נצבעו rtl, כך שפס
+     ההדגשה קפץ מן הצד השמאלי אל הימני - ובאותו שאלון עצמו נשארו
+     כרטיסים עם פס משמאל וכרטיסים עם פס מימין. לכן מודדים את
+     הגאומטריה הפיזית לפני, ומחזירים אותה אחרי. */
+  var PHYS = ['marginLeft','marginRight','paddingLeft','paddingRight',
+              'borderLeftWidth','borderRightWidth','borderLeftStyle','borderRightStyle',
+              'borderLeftColor','borderRightColor'];
+  function pinPhysical(el, before){
+    var cs;
+    try { cs = window.getComputedStyle(el); } catch (e) { return; }
+    for (var i = 0; i < PHYS.length; i++){
+      var k = PHYS[i];
+      if (before[k] !== undefined && before[k] !== cs[k]) el.style[k] = before[k];
+    }
+  }
+  function readPhysical(el){
+    var out = {}, cs;
+    try { cs = window.getComputedStyle(el); } catch (e) { return out; }
+    for (var i = 0; i < PHYS.length; i++) out[PHYS[i]] = cs[PHYS[i]];
+    return out;
+  }
+
+  /* הכיוון יורד גם אל הצאצאים, ולכן תכונה לוגית שיושבת על צאצא
+     מתהפכת אף שלא נגענו בו. נמדד: ul.bg-mc בשאלון בגרות באנגלית ירש
+     rtl מ-div.bg-qbody שנחתם, וההזחה של רשימת האפשרויות קפצה מצד אל
+     צד (padding-inline-start של ברירת המחדל של הדפדפן).
+     כדי לא לסרוק את כל תת-העץ על כל חתימה, נאספות פעם אחת הבוררות
+     של כל כלל CSS בדף שיש בו תכונה לוגית באופק, ואליהן מצטרפות
+     התגיות שברירת המחדל של הדפדפן נותנת להן ריפוד או שוליים לוגיים. */
+  var LOGICAL_SEL = null;
+  function collectLogical(rules, out){
+    for (var i = 0; i < rules.length; i++){
+      var r = rules[i];
+      if (r.cssRules){ collectLogical(r.cssRules, out); continue; }
+      if (!r.selectorText || !r.style) continue;
+      var t = r.style.cssText || '';
+      if (t.indexOf('-inline-start') < 0 && t.indexOf('-inline-end') < 0) continue;
+      out.push(r.selectorText);
+    }
+  }
+  function logicalSelectors(){
+    if (LOGICAL_SEL !== null) return LOGICAL_SEL;
+    var out = ['ul', 'ol', 'menu', 'dd', 'blockquote'];
+    try {
+      var sh = document.styleSheets;
+      for (var i = 0; i < sh.length; i++){
+        var rules = null;
+        try { rules = sh[i].cssRules; } catch (e) { continue; }
+        if (rules) collectLogical(rules, out);
+      }
+    } catch (e) {}
+    LOGICAL_SEL = out.join(',');
+    return LOGICAL_SEL;
+  }
+  function logicalKids(el){
+    var sel = logicalSelectors();
+    if (!sel || !el.querySelectorAll) return [];
+    try { return el.querySelectorAll(sel); } catch (e) { return []; }
+  }
+
+  function stamp(el, target){
+    if (el.getAttribute('data-bidi') === target) return;
+    var ta0 = null;
+    try { ta0 = window.getComputedStyle(el).textAlign; } catch (e) {}
+    var cur0 = null;
+    try { cur0 = window.getComputedStyle(el).direction; } catch (e) {}
+    var phys0 = readPhysical(el);
+    var kids0 = null, kids = null;
+    if (cur0 && cur0 !== target){
+      kids = logicalKids(el);
+      kids0 = [];
+      for (var kk = 0; kk < kids.length; kk++) kids0.push(readPhysical(kids[kk]));
+    }
+    el.setAttribute('data-bidi', target);
+    el.style.direction = target;
+    el.style.unicodeBidi = 'isolate';
+    try {
+      var ta1 = window.getComputedStyle(el).textAlign;
+      if (target === 'rtl'){
+        /* text-align לוגי (start) מסתדר לבדו ברגע שהכיוון נכון. מה שנשאר
+           "left" אחרי שקבענו rtl נכתב כך פיזית באחד מ-1,023 גיליונות
+           הנושא, והוא משאיר פסקה עברית משוננת בצד הלא נכון.
+           מרכוז ויישור לשני הצדדים אינם נוגעים. */
+        if (ta1 === 'left') el.style.textAlign = 'right';
+      } else if (ta0 && ta1 !== ta0){
+        el.style.textAlign = ta0;
+      }
+    } catch (e) {}
+    pinPhysical(el, phys0);
+    if (kids0) for (var k2 = 0; k2 < kids.length; k2++) pinPhysical(kids[k2], kids0[k2]);
+  }
+
+  /* עטיפת כל התוכן המוטבע של בלוק בתיבת בידוד אחת, במקום לשנות את כיוון
+     הבלוק עצמו. הבלוק שומר על היישור שלו, על מספר הפריט שלו ועל הריפוד
+     הלוגי שלו, והטקסט שבתוכו נקרא בכיוון הנכון. הכול בעטיפה אחת ולא
+     באחת לכל רצף: שתי תיבות בידוד באותה שורה נפרשות בסדר של הבסיס, וכך
+     הוראה אנגלית שנשברה בין <b> ל-<b> הייתה מתפזרת לרסיסים הפוכים. */
+  function wrapInlineRuns(el, target){
+    if (structFrozen(el)) return [];
+    var kids = [], n;
+    for (n = el.firstChild; n; n = n.nextSibling) kids.push(n);
+    var run = [], made = [];
+    function flush(){
+      if (!run.length) return;
+      var strong = false;
+      for (var k = 0; k < run.length; k++){
+        var t = run[k].nodeType === 3 ? run[k].nodeValue : (run[k].textContent || '');
+        if (RTL_C.test(t) || LTR_C.test(t)){ strong = true; break; }
+      }
+      /* העטיפה כבר קיימת: הסריקה החוזרת של המשקיף הייתה עוטפת אותה שוב
+         ושוב, שכבה על שכבה. */
+      if (run.length === 1 && run[0].nodeType === 1 && run[0].getAttribute &&
+          run[0].getAttribute('data-bidi-wrap') !== null &&
+          run[0].getAttribute('data-bidi') === target){ run = []; return; }
+      if (strong && !hasPinned(run)){
+        var sp = mkWrap(run[0], target, 'data-bidi');
+        el.insertBefore(sp, run[0]);
+        for (var q = 0; q < run.length; q++) sp.appendChild(run[q]);
+        made.push(sp);
+      }
+      run = [];
+    }
+    for (var i = 0; i < kids.length; i++){
+      var c = kids[i];
+      if (c.nodeType === 3){ run.push(c); continue; }
+      if (c.nodeType !== 1){ flush(); continue; }
+      if (SKIP_TAG[c.tagName && c.tagName.toUpperCase()]){ flush(); continue; }
+      var d = null;
+      try { d = window.getComputedStyle(c).display; } catch (e) {}
+      if (d === 'none') d = null;
+      if (breaksLine(c, d)){ flush(); continue; }
+      run.push(c);
+    }
+    flush();
+    return made;
+  }
+
+  /* שינוי כיוון על בלוק מזיז גם פריסה: מספר הפריט ברשימה עובר אל הצד
+     ההפוך, והריפוד הלוגי מתהפך איתו. תשובה אחת במפתח התשובות קפצה כך אל
+     השוליים הנגדיים והמספר שלה נגרר מחוץ לכרטיס.
+     לכן: כשהכיוון המבוקש כבר הוא הכיוון של האיבר, או כשהאיבר מוטבע, פשוט
+     חותמים. פסקה עברית בדף אנגלית כן מקבלת rtl, כי השוליים המשוננים
+     והנקודה בסוף הם בדיוק מה שצריך לתקן ואין שם מספר פריט. בכל מקרה אחר
+     (פריט ברשימה, או בלוק שצריך ltr בתוך הקשר rtl) התיבה נשארת במקומה
+     והתוכן המוטבע שלה נכנס לתיבת בידוד אחת. */
+  function applyDir(el, texts, target, blockLevel, disp){
+    /* בתוך SVG המיקום של תווית תלוי ב-text-anchor, ו-text-anchor="start"
+       או "end" מתהפך יחד עם הכיוון: תווית ציר שקיבלה כיוון אחר קופצת
+       ברוחב שלה. לכן שם לעולם לא משנים כיוון של איבר, אלא עוטפים את
+       הטקסט שבתוכו ב-tspan מבודד. העוגן אינו זז, והסדר מתוקן. */
+    if (el.ownerSVGElement){
+      wrapInlineRuns(el, target);
+      if (texts.length) isolateRuns(el, texts, target);
+      return;
+    }
+    var cur = 'ltr';
+    try { cur = window.getComputedStyle(el).direction; } catch (e) {}
+    var listItem = disp === 'list-item' || (el.tagName || '').toUpperCase() === 'LI';
+    if (cur === target || !blockLevel || (target === 'rtl' && !listItem)){
+      stamp(el, target);
+      if (texts.length) isolateRuns(el, texts, target);
+      return;
+    }
+    wrapInlineRuns(el, target);
+    if (texts.length) isolateRuns(el, texts, target);
+  }
+
+  /* קישוט אינו פריט.
+
+     כלל (4) נועל תיבה גמישה על הכיוון שהיה לה, כדי שסדר הפריטים שבה
+     לא יתהפך. בתווית שבראש הדף ובשורת הפתיח אין סדר פריטים בכלל: יש
+     נקודה מעוצבת (span.dot) או קו מעוצב (::before), ואחריהם רצף טקסט
+     אחד. הנעילה השאירה את הקישוט בקצה השמאלי הפיזי בזמן שהטקסט שלידו
+     נעשה עברי ומתחיל מימין, כלומר הסימן שמסמן את תחילת השורה נשאר
+     בסופה. נמדד: הנקודה ב-x=951 בתוך תיבה 933..1116, והמילה הראשונה
+     שנקראת ב-x=1099.
+
+     תיבה שכל תוכנה הוא קישוט אחד או יותר בלי טקסט ורצף טקסט אחד אינה
+     נושאת סדר פריטים שיש מה לשמר בו, ולכן היא מקבלת row-reverse: זהו
+     סגנון בלבד, שום צומת אינו זז, והשוליים הלוגיים של התיבה עצמה
+     (margin-inline-start:auto של התווית) אינם מושפעים משום שכיוון
+     התיבה לא השתנה. */
+  function decorContent(el, which){
+    var c = null;
+    try { c = window.getComputedStyle(el, which).content; } catch (e) { return 0; }
+    if (!c || c === 'none' || c === 'normal') return 0;
+    return (c === '""' || c === "''") ? 1 : 2;   /* 1 = קישוט ריק, 2 = טקסט */
+  }
+  /* קישוט הוא סימן בלי צורה משלו ובלי תוכן משלו: <span class="dot"></span>
+     ריק, או ::before ריק שה-CSS צובע. שתי משפחות אינן קישוט:
+       - איבר מוחלף או פקד טופס (IMG, SVG, VIDEO, CANVAS, INPUT, SELECT,
+         TEXTAREA, BUTTON, OBJECT, IFRAME). הוא מצייר את עצמו והוא תוכן:
+         הלוגו של האתר, ושדה שהתלמיד מקליד בו.
+       - איבר שיש בתוכו איבר כלשהו: אייקון. אייקון הוא תוכן, ויש
+         מקרים שבהם מקומו נקבע במשמעות שלו ולא בסדר הקריאה
+         (חץ "הקודם" מול חץ "הבא" הם זוג מראה).
+
+     עד כאן נכתב כאן n.firstElementChild, וזו בדיקה שאינה יכולה
+     להידלק לעולם על איבר שאין לו ילדים כלל: <img> ו-<input> הם
+     עלים, ולכן נספרו כקישוט. נמדד על 1,667 הדפים הבנויים
+     (.work/proof-bidi/review5/decor.js): 676 תיבות DIV.brand התהפכו סביב
+     IMG.logo, ו-810 תיבות DIV.eqn-row התהפכו סביב שדה קלט ש-visit
+     נמנע ממנו במכוון.
+
+     לא נבדקת תיבת הגבול של הילד הריק עצמו, משום שקישוט
+     שה-CSS צובע הוא בדיוק איבר ריק שיש לו תיבה: span.dot הוא
+     9x9 (core/styles/03-header.css:19) ו-span.kpe הוא 9x9. פסילה לפי
+     תיבת הגבול של הילד עצמו הייתה מוחקת את כל 338 תיבות
+     .badge ו-446 מתוך 892 תיבות .kpow, כלומר את התכונה עצמה.
+     מה שנבדק הוא מה שיש בתוכו, והוא הכלל הרחב מן הקודם:
+     כל מה שנפסל עד כאן נפסל גם עכשיו, ולכן אין תיבה
+     שמתהפכת עכשיו ולא התהפכה קודם. */
+  var DECOR_NEVER = { IMG:1, SVG:1, VIDEO:1, CANVAS:1, INPUT:1, SELECT:1,
+                      TEXTAREA:1, BUTTON:1, OBJECT:1, IFRAME:1 };
+  function isDecorKid(n){
+    if (DECOR_NEVER[(n.tagName || '').toUpperCase()]) return false;
+    var deep = n.getElementsByTagName ? n.getElementsByTagName('*') : null;
+    if (deep && deep.length) return false;
+    return true;
+  }
+  function flipDecor(el){
+    var pin = el.getAttribute && el.getAttribute('data-bidi-pin');
+    if (!pin) return;
+    if (el.style.flexDirection === 'row-reverse') return;
+    var cs; try { cs = window.getComputedStyle(el); } catch (e) { return; }
+    if (cs.display !== 'flex' && cs.display !== 'inline-flex') return;
+    if (cs.flexDirection !== 'row') return;
+    var textKid = null, withText = 0, decor = 0;
+    for (var n = el.firstChild; n; n = n.nextSibling){
+      if (n.nodeType === 3){ if (/\S/.test(n.nodeValue || '')) withText++; continue; }
+      if (n.nodeType !== 1) continue;
+      if (SKIP_TAG[(n.tagName || '').toUpperCase()]) continue;
+      if (/\S/.test(n.textContent || '')){ withText++; textKid = n; continue; }
+      if (!isDecorKid(n)) return;   /* תוכן, לא קישוט */
+      decor++;
+    }
+    var b = decorContent(el, '::before'), a = decorContent(el, '::after');
+    if (b === 2 || a === 2) return;
+    decor += (b ? 1 : 0) + (a ? 1 : 0);
+    if (withText !== 1 || !textKid || decor < 1) return;
+    var td = null;
+    try { td = window.getComputedStyle(textKid).direction; } catch (e) { return; }
+    if (!td || td === pin) return;
+    /* השכבה מבטלת רק מה שהיא עצמה עשתה. מה שהיא עשתה כאן הוא
+       צומת טקסט אנונימי שיושב ישירות בתיבה הגמישה: אין לו איבר,
+       ולכן wrapOwnText יצר לו אחד ונתן לו כיוון, וזה הרגע שבו קצה
+       הקריאה עבר אל הצד השני והקישוט נשאר מאחור. כשהטקסט יושב
+       באיבר של הכותב, סדר הפריטים הוא של הכותב: השכבה משנה שם
+       את הכיוון בתוך הפריט ולא את מקומו של הפריט, ואין לה מה
+       לבטל. זה מה שמוציא מכאן את DIV.eqn-row, SPAN.rad, DIV.bg-pagefoot,
+       DIV.example-head ו-DIV.ul-step.
+       המבחן הוא data-bidi-wrap, כלומר עטיפה שהשכבה עצמה יצרה;
+       mkWrap כותב בה direction ו-unicode-bidi:isolate, ולכן הכיוון של
+       עטיפה הוא תמיד מעשה של השכבה. שתי בדיקות קרובות נמדדו
+       ונפסלו (.work/proof-bidi/review5/decor-class.js, 1,667 דפים):
+         - data-bidi לבדו אינו עדות שהשכבה שינתה משהו: stamp חותם
+           אותו גם על איבר של הכותב וגם כשהכיוון זהה לקודם.
+           SPAN.rad-b, SPAN.bg-turn, SPAN.tag ו-SPAN.ul-badge כולם נושאים
+           data-bidi="rtl", ולכן הבדיקה הזאת לבדה הייתה משאירה
+           784 תיבות מתהפכות, מהן 108 שאין כלל אחר הפוסל אותן.
+         - דרישת data-bidi על העטיפה הייתה מוחקת את SPAN.kpow: שם
+           העטיפה נולדה ב-isolateRuns ונושאת data-bidi-run, 892 תיבות. */
+    if (!isOurWrap(textKid)) return;
+    el.style.flexDirection = 'row-reverse';
+    el.setAttribute('data-bidi-decor', td);
+  }
+
+  /* טקסט שיושב ישירות בתיבת פריטים הוא פריט אנונימי. אי אפשר לעצב אותו,
+     ולכן הוא מקבל עטיפה משלו: כך "English · כיתה ה׳" בתווית שבראש הדף
+     נקרא נכון, והנקודה המעוצבת שלידו נשארת בצד שבו צוירה. */
+  function wrapOwnText(el, target){
+    var made = [];
+    if (structFrozen(el)) return made;
+    var kids = [];
+    for (var n = el.firstChild; n; n = n.nextSibling) kids.push(n);
+    for (var i = 0; i < kids.length; i++){
+      var tn = kids[i];
+      if (tn.nodeType !== 3 || !tn.nodeValue) continue;
+      if (!RTL_C.test(tn.nodeValue) && !LTR_C.test(tn.nodeValue)) continue;
+      var sp = mkWrap(tn, target, 'data-bidi');
+      el.insertBefore(sp, tn);
+      sp.appendChild(tn);
+      made.push(tn);
+    }
+    return made;
+  }
+
+  /* visit מחזיר את ספירת המילים של הפסקה של האיבר עצמו, כלומר הטקסט שלו
+     ושל כל צאצא מוטבע, גם צאצא מוצהר וגם צאצא שה-CSS בידד: span מוצהר
+     עברית הוא עדיין חלק מן המשפט שסביבו.
+     blockLevel ו-decides אינם אותה שאלה: תיבה מוטבעת שה-CSS בידד אותה
+     (span.math) מחליטה על כיוונה בעצמה, אבל היא עדיין נספרת בפסקה שסביבה. */
+  /* האם הצומת עומד בשורה משלו: מה שלפניו ומה שאחריו הוא <br> או קצה
+     ההורה. רווחים בלבד אינם נחשבים שכן. */
+  function ownLine(n){
+    var p = n.previousSibling;
+    while (p && p.nodeType === 3 && !/\S/.test(p.nodeValue || '')) p = p.previousSibling;
+    var q = n.nextSibling;
+    while (q && q.nodeType === 3 && !/\S/.test(q.nodeValue || '')) q = q.nextSibling;
+    var pb = !p || (p.nodeType === 1 && (p.tagName || '').toUpperCase() === 'BR');
+    var qb = !q || (q.nodeType === 1 && (q.tagName || '').toUpperCase() === 'BR');
+    return pb && qb;
+  }
+
+  /* הטקסט שההכרעה נמדדת עליו, נבנה מחדש מן הצמתים ולא מן המונים.
+     המונים paraR/paraW נצברים לכל צומת טקסט בנפרד, ולכן אחרי שהשכבה
+     כבר עטפה רצף אחד הם מפוצלים אחרת: "(עברה לגור)" נעשה
+     "(" + <span>עברה לגור</span> + ")", והבדיקה "כל העברית בסוגריים"
+     הייתה מחזירה תשובה אחרת בסריקה השנייה של המשקיף מאשר בראשונה -
+     כלומר הכרעה שאינה מתכנסת. הטקסט עצמו לעולם אינו משתנה (זו התכונה
+     שהשכבה מבטיחה), ולכן ההכרעה נמדדת עליו. אותם דילוגים בדיוק שבספירה:
+     תגית שאינה טקסט, ילד בלוקי (בלוק מחליט על עצמו) וילד מוצהר שהוא
+     שורה בפני עצמה. */
+  function decisionText(el){
+    var out = '';
+    for (var n = el.firstChild; n; n = n.nextSibling){
+      if (n.nodeType === 3){ out += n.nodeValue || ''; continue; }
+      if (n.nodeType !== 1) continue;
+      if (SKIP_TAG[(n.tagName || '').toUpperCase()]) continue;
+      var d = null;
+      try { d = window.getComputedStyle(n).display; } catch (e) {}
+      if (d === 'none') d = null;
+      if (isBlockLevel(n, d)) continue;
+      if (declOf(n) && ownLine(n)) continue;
+      out += decisionText(n);
+    }
+    return out;
+  }
+
+  function visit(el){
+    /* עטיפת רצף שאנחנו יצרנו: היא כבר מבודדת, והטקסט שבתוכה כבר טופל.
+       בלעדי היציאה הזאת כל סריקה חוזרת הייתה עוטפת אותו שוב, וזו גם
+       הסיבה שהסריקה החוזרת של המשקיף מתכנסת. */
+    if (el.getAttribute && el.getAttribute('data-bidi-run')){
+      var t0 = el.textContent || '';
+      return { paraR: nWords(t0, RTL_W), paraL: nWords(t0, LTR_W), paraW: nLatinWords(t0),
+               blockLevel: false, decided: true, texts: [], pending: [] };
+    }
+    /* שדה שהתלמיד כותב בתוכו, ושדה נוסחה: הקלדה, סמן ו-serializeNodes
+       תלויים במבנה הצמתים, ולכן לא נוגעים בהם כלל. */
+    var tag = (el.tagName || '').toUpperCase();
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' ||
+        (el.getAttribute && el.getAttribute('contenteditable') !== null)){
+      return { paraR: 0, paraL: 0, paraW: 0, blockLevel: true, decided: false, texts: [], pending: [] };
+    }
+    var disp = null;
+    try { disp = window.getComputedStyle(el).display; } catch (e) {}
+    if (disp === 'none') disp = null;
+
+    var decl       = declOf(el);
+    var blockLevel = isBlockLevel(el, disp);
+    var itemBox    = isItemBox(disp);
+
+    /* כלל (4), בצורתו החזקה: תיבת פריטים נועלת את הכיוון שיש לה עכשיו.
+       הילדים נסרקים לפני שההורה מחליט, ולכן ברגע הזה עוד לא נגענו באף
+       אב, והכיוון שננעל הוא הכיוון המקורי של הדף. מכאן והלאה שום עטיפה
+       ושום חתימה של אב אינה יכולה להפוך את סדר הפריטים שבה. */
+    if (itemBox && el.getAttribute && el.getAttribute('data-bidi-pin') === null){
+      var d0 = null;
+      try { d0 = window.getComputedStyle(el).direction; } catch (e) {}
+      if (d0){ el.setAttribute('data-bidi-pin', d0); el.style.direction = d0; }
+    }
+
+    var decides = blockLevel;
+    if (!decides && disp){
+      try {
+        var ub = window.getComputedStyle(el).unicodeBidi;
+        if (ub && ub !== 'normal') decides = true;
+      } catch (e) {}
+    }
+    var paraR = 0, paraL = 0, paraW = 0, texts = [], pending = [];
+    for (var n = el.firstChild; n; n = n.nextSibling){
+      if (n.nodeType === 3){
+        var t = n.nodeValue;
+        if (t){
+          paraR += nWords(t, RTL_W);
+          paraL += nWords(t, LTR_W);
+          paraW += nLatinWords(t);
+          texts.push(n);
+        }
+        continue;
+      }
+      if (n.nodeType !== 1) continue;
+      if (SKIP_TAG[n.tagName && n.tagName.toUpperCase()]) continue;
+      var r = visit(n);
+      if (r.pending.length) pending = pending.concat(r.pending);
+      if (!r.blockLevel){
+        /* ילד מוצהר שהוא שורה בפני עצמה אינו מצביע על כיוון השורות
+           שסביבו. span מוצהר עברית שיושב בתוך משפט הוא חלק מן המשפט
+           וכן מצביע; span מוצהר עברית ש-<br> חוצץ בינו לבין מה שלפניו
+           ואחריו הוא פסקה שלמה משלו, והכותב כבר הכריע בה.
+           נמדד: כרטיס הפתרון בשאלוני הבגרות באנגלית בנוי
+           <b>The route · הדרך:</b> אנגלית ארוכה <br> <span dir="rtl">
+           פסקה עברית</span> <br> אנגלית. הספירה הכוללת נתנה rtl לכרטיס
+           כולו, והפרוזה האנגלית שבו נקראה מן הקצה הלא נכון: 4 ממצאי
+           סדר של השער בשלושה שאלונים, והפס המוזכר בהערה 6 של הסבב. */
+        /* המבחן הוא מפריד השורה ולא האורך. סף אורך נוסה ונמדד ונדחה:
+           "יחידה מוצהרת בת שש מילים ומעלה אינה מצביעה" הפך את
+           english-g9-relative-clauses-no-pronoun לעברי, שם הציטוט
+           <span class="en">The boy who won the race is my neighbour.</span>
+           הוא תשע מילים לועזיות מול שלוש עבריות, והשורה באמת נקראת
+           משמאל לימין. ציטוט אנגלי בתוך משפט עברי הוא חלק מן המשפט; רק
+           <br> אומר "כאן נגמרת שורה ומתחילה אחרת". */
+        if (!(declOf(n) && ownLine(n))){
+          paraR += r.paraR; paraL += r.paraL; paraW += r.paraW;
+        }
+        if (!r.decided && r.texts.length) texts = texts.concat(r.texts);
+      }
+    }
+
+    /* עטיפה שהוצהרה עברית ואין בה מילה עברית אחת: "If + past simple,
+       would + base." בתוך span class="he". ההצהרה שם אינה מתארת את
+       הטקסט, וקביעת rtl עליה מושכת את הנקודה של המשפט האנגלי אל הצד
+       הלא נכון. זו אותה בדיקה שכבר נעשית על הצהרת אנגלית, בראי. */
+    if (decl === 'rtl' && paraR === 0 && paraL > 0) decl = null;
+
+    var target = null;
+    if (decl === 'rtl') target = 'rtl';
+    else if (decl === 'ltr'){
+      /* עטיפה מוטבעת שהטקסט שבתוכה מכחיש אותה: <b class="en">as + תואר
+         בצורת בסיס + as</b> מוצהר אנגלית ורוב מילותיו עבריות, ואז ההצהרה
+         אינה מתארת את הטקסט. רק עטיפה מוטבעת, לעולם לא בלוק: p.en-block
+         הוא אזור אנגלי מכוון (מאגר מילים, קטע קריאה), ושורת מילון שיש בה
+         שתי מילים עבריות אינה הופכת אותו לעברי. */
+      target = (!blockLevel && paraR > paraW) ? 'rtl' : 'ltr';
+    }
+    /* יחידה מעורבת שלא הוצהרה. המידה אינה "מי הרוב" אלא "האם זה משפט
+       עברי שיש בו מילים לועזיות". משפט עברי שמצטט משפט אנגלי שלם יכול
+       להיות ברוב לועזי ועדיין להיות משפט עברי, ולכן נדרש רוב מכריע כדי
+       לקבוע אנגלית: פי שלושה לפחות, ולפחות שש מילים. נמדד: "הוא שאל
+       "When will you do your homework?" ואז חיכה" הוא ארבע מילים עבריות
+       מול שש לועזיות, ורוב פשוט היה מהפך אותו. */
+    else if (decides && paraR > 0 && paraW < 3 * paraR){
+      /* היוצא מן הכלל, ‎30.9.2026: אם כל העברית שביחידה יושבת בסוגריים,
+         היחידה אינה משפט עברי אלא משפט לועזי עם פירוש (§5.3). אז אין
+         כאן הכרעה של rtl כלל, והיחידה נמסרת אל הטיפול של "יחידה שכולה
+         לועזית": היא תיצבע ltr רק אם אב שלה נצבע rtl. */
+      var dt = decisionText(el), dtx = dt.indexOf('(') < 0 ? dt : outsideParens(dt);
+      if (dtx !== dt && nWords(dtx, RTL_W) === 0 && nLatinWords(dtx) > 1){
+        pending = pending.concat([{ el: el, texts: texts, blockLevel: blockLevel, disp: disp }]);
+      } else target = 'rtl';
+    }
+    else if (decides && paraR > 0 && paraW >= 6) target = 'ltr';
+    else if (decides && paraR === 0 && paraL > 1){
+      /* יחידה שכולה לועזית צריכה טיפול רק אם הסביבה שלה rtl: תשובה
+         לועזית בת כמה מילים במפתח תשובות עברי, שורת מילון, כותרת
+         אנגלית בת שתי מילים ומעלה. אבל ההורה מחליט על עצמו אחרי ילדיו,
+         ולכן ברגע הזה עדיין אי אפשר לשאול את הדפדפן מה הכיוון שלה.
+         מעבירים את ההחלטה למעלה: האב הראשון שנצבע rtl הוא שמכריע.
+
+         paraL > 1 ולא paraL > 0, מ-28.9.2026: ביחידה שיש בה רצף לועזי
+         **אחד** אין סדר מילים שיש מה לתקן בו, ולכן ההצהרה אינה קונה
+         דבר - והיא כן משלמת: היא מכניסה את סימן הסיום שיושב בקצה
+         היחידה אל תוך תיבת ltr, והוא נצבע בקצה הימני שלה. זהו בדיוק
+         תג המספור של שאלוני הבגרות, <span class="bg-sublet">I.</span>
+         בתוך .bg-qhead שהוא display:flex - התג נעשה פריט גמיש, כלומר
+         בלוק, וקיבל עטיפת ltr יחד עם הנקודה, כך שקורא עברית ראה ".I".
+         שער הפיסוק מדד 39 ממצאי R3 עם השכבה מול 20 בלעדיה, ומתוכם 30
+         תגי ספרה רומית בשאלוני math-bagrut-371/372/471/472/571/572.
+         מה שהדפדפן עושה לבדו הוא בדיוק הקונבנציה של משרד החינוך
+         (§3, 4,921 תגים, 0 מופעים נגדיים): התו הלטיני בשולי הקריאה
+         והנקודה צמודה לו מבפנים, כלומר "I." בקריאה מימין לשמאל.
+         "Unit 3" ו-"x = 6" נשארים נכונים מאותה סיבה: כלל W7 של
+         אלגוריתם הדו-כיווניות הופך את הספרה ל-L אחרי אות לטינית. */
+      pending = pending.concat([{ el: el, texts: texts, blockLevel: blockLevel, disp: disp }]);
+    }
+
+    if (target === 'rtl' && pending.length){
+      for (var q = 0; q < pending.length; q++) resolveForeign(pending[q]);
+      pending = [];
+    }
+
+    var consumed = false;
+    if (target){
+      if (itemBox){
+        /* כלל (4): התיבה עצמה אינה מקבלת כיוון. רק הטקסט שיושב בה ישירות
+           עוטף את עצמו, ולכן סדר הפריטים נשאר בדיוק כפי שהוא. */
+        wrapOwnText(el, target);
+        if (texts.length) isolateRuns(el, texts, target);
+      } else {
+        /* בידוד במקום סידור מחדש ביד: כל רצף של הכתב הנגדי מקבל תיבת בידוד
+           משלו, ולכן הוא נקרא בכיוון שלו והפיסוק הצמוד נשאר איתו. */
+        applyDir(el, texts, target, blockLevel, disp);
+      }
+      consumed = texts.length > 0;
+    } else if (decides && texts.length){
+      /* לא שינינו כיוון, ועדיין מבודדים כל רצף נגדי מול הכיוון שיש לאיבר
+         בפועל. זה מה שמאחד "Choose <b>said</b> or <b>told</b>" לתיבה אחת
+         במקום לארבע, בלי לגעת בתיבה עצמה. */
+      var eff = 'ltr';
+      try { eff = window.getComputedStyle(el).direction; } catch (e) {}
+      isolateRuns(el, texts, eff);
+      consumed = true;
+    }
+    return { paraR: paraR, paraL: paraL, paraW: paraW, blockLevel: blockLevel,
+             decided: !!target || consumed, texts: texts, pending: pending };
+  }
+
+  /* יחידה שכולה לועזית בתוך הקשר עברי. אותו שיקול בדיוק: תיבה מוטבעת
+     נחתמת, ובלוק מקבל עטיפה אחת כדי שמספר הפריט והיישור לא יזוזו. */
+  function resolveForeign(p){
+    applyDir(p.el, p.texts, 'ltr', p.blockLevel, p.disp);
+  }
+
+  function paragraphRoot(node){
+    var el = node.nodeType === 1 ? node : node.parentElement;
+    while (el && el !== document.body){
+      var d = null;
+      try { d = window.getComputedStyle(el).display; } catch (e) {}
+      if (isBlockLevel(el, d === 'none' ? null : d)) return el;
+      el = el.parentElement;
+    }
+    return document.body;
+  }
+
+  function sweep(root){
+    if (!root || root.nodeType !== 1) return;
+    var r = visit(root);
+    /* מה שנותר ממתין: עכשיו כל האבות כבר נצבעו, ואפשר לשאול כל יחידה מה
+       הכיוון שלה בפועל. יחידה שכולה לועזית שיושבת בתיבה שכיוונה rtl
+       צריכה ltr, בין אם ה-rtl הגיע מן הדף, מאב שנצבע כאן, או מכלל
+       בגיליון הנושא: <span class="he">If + past simple, would + base.</span>
+       הוא הצהרה שגויה של הכותב, והנקודה שלו נגררה בגללה שמאלה. */
+    for (var q = 0; q < r.pending.length; q++){
+      var pe = r.pending[q], d = 'ltr';
+      try { d = window.getComputedStyle(pe.el).direction; } catch (e) {}
+      if (d === 'rtl') resolveForeign(pe);
+    }
+    /* עכשיו, כשכל כיוון כבר נקבע: תיבה נעוצה שהטקסט שבה נעשה הפוך
+       לנעיצה מקבלת את הקישוט שלה בקצה שממנו מתחילים לקרוא. זה נעשה
+       כאן ולא בתוך visit משום שהכיוון שנמדד כאן הוא כיוונה של
+       העטיפה, והוא נקבע רק אחרי שכל האבות נצבעו.
+       עד כאן נכתב כאן ש-.rail-btn הוא הדוגמה, כלומר תיבה שהתווית
+       שבה נצבעה והיא עצמה לא. זו אינה דוגמה: התווית של
+       .rail-btn היא איבר של הכותב, ומאז שהמבחן הוא data-bidi-wrap
+       תיבה כזאת אינה מתהפכת כלל. נמדד על 1,667 הדפים הבנויים,
+       שב-17,684 מקומות בהם מופיע .rail-btn: 0 תיבות .rail-btn התהפכו,
+       לפני התיקון ואחריו. */
+    if (root.getAttribute && root.getAttribute('data-bidi-pin')) flipDecor(root);
+    var pins = root.querySelectorAll ? root.querySelectorAll('[data-bidi-pin]') : [];
+    for (var w = 0; w < pins.length; w++) flipDecor(pins[w]);
+  }
+
+  sweep(document.body);
+
+  /* כל מה שנכתב אל הדף אחר כך עובר כאן שוב: קלפי המשחק, ההסבר שאחרי
+     "בדיקה", הרמז שמאחורי הנורה, בועת הקמע, לוח המיון.
+
+     הכתיבה שלנו עצמה כן חוזרת אל המשקיף: isolateTextNode מחליף צומת טקסט
+     בפרגמנט, ו-mergeBoundaryMarks מכניס span ומעביר אליו איבר, ושניהם
+     שינויי childList. הסריקה נעצרת משום שהיא חסרת השפעה בפעם השנייה:
+     visit יוצא מיד מכל איבר שכבר נושא data-bidi או data-bidi-run, stamp
+     יוצא מיד כשהכיוון שכבר נכתב זהה למבוקש, וצומת טקסט שאין בו רצף נגדי
+     אינו משתנה. לכן המעבר השני אינו מחולל שינוי, והלולאה נסגרת. */
+  if (window.MutationObserver){
+    var pendingRoots = [], queued = false;
+    var obs = new MutationObserver(function(recs){
+      for (var i = 0; i < recs.length; i++){
+        var root = paragraphRoot(recs[i].target);
+        if (root) pendingRoots.push(root);
+      }
+      if (!queued && pendingRoots.length){
+        queued = true;
+        var go = function(){
+          queued = false;
+          var list = pendingRoots; pendingRoots = [];
+          var seen = [];
+          for (var k = 0; k < list.length; k++){
+            var el = list[k], skip = false;
+            for (var m = 0; m < seen.length; m++){
+              if (seen[m] === el || seen[m].contains(el)){ skip = true; break; }
+            }
+            if (!skip){ seen.push(el); sweep(el); }
+          }
+        };
+        if (window.requestAnimationFrame) window.requestAnimationFrame(go); else setTimeout(go, 0);
+      }
+    });
+    obs.observe(document.body, { childList: true, subtree: true, characterData: true });
+  }
+
+  /* סריקה מיידית, למי שכותב טקסט חדש ויודע שהוא נראה עכשיו: בועת הקמע
+     מחליפה טיפ כשאזור אחר של הדף נכנס למסך, כלומר מתוך IntersectionObserver
+     ולא מתוך פעולה של התלמיד. המשקיף שלמעלה מטפל בזה רק בפריים הבא, ושער
+     שמודד בין שני הפריימים ראה טיפ אנגלי כמו "He is running · We are eating
+     · I am writing." בסדר הפוך, פעם כן ופעם לא. הקמע קורא לכאן מיד אחרי
+     הכתיבה, והמשקיף שבא אחריו אינו משנה דבר. */
+  window.katzBidiNow = function(node){
+    if (!node) return;
+    var r = paragraphRoot(node);
+    if (r) sweep(r);
+  };
+
+  /* גיליון העבודה וההדפסה הם אותו DOM בדיוק, ולכן הם מקבלים את התיקון בלי
+     מערכת כללים שנייה. פתיחת details לפני הדפסה מגלה טקסט שהיה מוסתר. */
+  window.addEventListener('beforeprint', function(){ sweep(document.body); });
+})();
+</script>
+
+<!--katz-export:body--><style>@media screen{html.katz-embed header.topbar{display:none}}</style><script>(function(){
+var SITE="https://nadav-katz.co.il/learning/page/",SLUG="english-bagrut-module-d";
+var framed;try{framed=window.self!==window.top;}catch(e){framed=true;}
+if(framed)document.documentElement.classList.add('katz-embed');
+function sheet(s){return SITE+s;}
+function say(m){var t=document.getElementById('toast');if(!t)return;t.textContent=m;t.classList.add('show');clearTimeout(t._k);t._k=setTimeout(function(){t.classList.remove('show');},2600);}
+function copy(u){
+ function ok(){say('\u05d4\u05e7\u05d9\u05e9\u05d5\u05e8 \u05d4\u05d5\u05e2\u05ea\u05e7');}
+ function old(){try{var a=document.createElement('textarea');a.value=u;a.setAttribute('readonly','');a.style.position='absolute';a.style.left='-9999px';document.body.appendChild(a);a.select();var d=document.execCommand('copy');document.body.removeChild(a);if(d){ok();return;}}catch(e){}window.prompt('',u);}
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(ok,old);}else{old();}
+}
+document.addEventListener('click',function(e){
+ var el=e.target;if(!el||!el.closest)return;
+ if(el.closest('#btnShare')){e.preventDefault();e.stopImmediatePropagation();copy(sheet(SLUG));return;}
+ var a=el.closest('a[href]');if(!a)return;
+ var m=/^([a-z0-9-]+)\.html$/.exec(a.getAttribute('href')||'');if(!m)return;
+ e.preventDefault();
+ if(framed){window.parent.postMessage({type:'katz:open',slug:m[1]},'*');}else{window.location.href=sheet(m[1]);}
+},true);
+if(framed)window.parent.postMessage({type:'katz:ready',slug:SLUG},'*');
+})();</script><!--/katz-export:body--></body>
+</html>
