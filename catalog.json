@@ -1,11 +1,11 @@
 {
  "schema": "katz-catalog-all/1",
- "generated": "2026-10-12T17:02:19.945Z",
+ "generated": "2026-10-12T18:14:14.737Z",
  "libUrl": "https://nadavkatz1.github.io/katzschool-lib/",
  "bagrutUrl": "https://nadavkatz1.github.io/katzschool-bagrut/",
  "total": 2110,
- "free": 1527,
- "paid": 583,
+ "free": 1520,
+ "paid": 590,
  "items": [
   {
    "slug": "english-g11-relative-whole-clause",
@@ -14512,9 +14512,8 @@
    "gradeTrack": "g12",
    "kind": "summary",
    "topic": null,
-   "access": "free",
-   "track": "arabic",
-   "url": "https://nadavkatz1.github.io/katzschool-lib/pages/arabic-g12-summary-18371.html"
+   "access": "paid",
+   "track": "arabic"
   },
   {
    "slug": "english-g12-summary-module-a",
@@ -14641,9 +14640,8 @@
    "gradeTrack": "g11",
    "kind": "summary",
    "topic": null,
-   "access": "free",
-   "track": "hebrew",
-   "url": "https://nadavkatz1.github.io/katzschool-lib/pages/hebrew-g11-summary-11281.html"
+   "access": "paid",
+   "track": "hebrew"
   },
   {
    "slug": "math-g1-summary-end-of-year",
@@ -14677,9 +14675,8 @@
    "gradeTrack": "g12-3u",
    "kind": "summary",
    "topic": null,
-   "access": "free",
-   "track": "math",
-   "url": "https://nadavkatz1.github.io/katzschool-lib/pages/math-g12-3u-summary-372.html"
+   "access": "paid",
+   "track": "math"
   },
   {
    "slug": "math-g12-4u-summary-471",
@@ -14713,9 +14710,8 @@
    "gradeTrack": "g11-5u",
    "kind": "summary",
    "topic": null,
-   "access": "free",
-   "track": "math",
-   "url": "https://nadavkatz1.github.io/katzschool-lib/pages/math-g12-5u-summary-571.html"
+   "access": "paid",
+   "track": "math"
   },
   {
    "slug": "math-g12-5u-summary-572",
@@ -14749,9 +14745,8 @@
    "gradeTrack": "g3",
    "kind": "summary",
    "topic": null,
-   "access": "free",
-   "track": "math",
-   "url": "https://nadavkatz1.github.io/katzschool-lib/pages/math-g3-summary-end-of-year.html"
+   "access": "paid",
+   "track": "math"
   },
   {
    "slug": "math-g4-summary-end-of-year",
@@ -14785,9 +14780,8 @@
    "gradeTrack": "g6",
    "kind": "summary",
    "topic": null,
-   "access": "free",
-   "track": "math",
-   "url": "https://nadavkatz1.github.io/katzschool-lib/pages/math-g6-summary-end-of-year.html"
+   "access": "paid",
+   "track": "math"
   },
   {
    "slug": "arabic-g10-exam-quarter-a",
@@ -16336,9 +16330,8 @@
    "gradeTrack": "g8",
    "kind": "reading",
    "topic": null,
-   "access": "free",
-   "track": "arabic",
-   "url": "https://nadavkatz1.github.io/katzschool-lib/pages/arabic-g8-reading-texts.html"
+   "access": "paid",
+   "track": "arabic"
   },
   {
    "slug": "english-g10-reading-space",
@@ -17083,9 +17076,8 @@
    "gradeTrack": "g10",
    "kind": "vocab",
    "topic": null,
-   "access": "free",
-   "track": "hebrew",
-   "url": "https://nadavkatz1.github.io/katzschool-lib/pages/hebrew-g10-vocabulary-context.html"
+   "access": "paid",
+   "track": "hebrew"
   },
   {
    "slug": "summer-english-g4-g5",
@@ -18994,8 +18986,9 @@
    "gradeTrack": "g8",
    "kind": "summer",
    "topic": "חוברת קיץ במתמטיקה למסיימי כיתה ז׳ · מופ\"ת",
-   "access": "paid",
-   "track": "math"
+   "access": "free",
+   "track": "math",
+   "url": "https://nadavkatz1.github.io/katzschool-lib/pages/summer-math-g7-g8-mofet.html"
   },
   {
    "slug": "summer-math-g7-g8-mofet-ch1",
@@ -19251,8 +19244,9 @@
    "gradeTrack": "g9",
    "kind": "summer",
    "topic": "חוברת קיץ במתמטיקה למסיימי כיתה ח׳",
-   "access": "paid",
-   "track": "math"
+   "access": "free",
+   "track": "math",
+   "url": "https://nadavkatz1.github.io/katzschool-lib/pages/summer-math-g8-g9-b.html"
   },
   {
    "slug": "summer-math-g8-g9-b-ch1",
@@ -19321,8 +19315,9 @@
    "gradeTrack": "g9",
    "kind": "summer",
    "topic": "חוברת קיץ במתמטיקה למסיימי כיתה ח׳ · מסלול מואץ עם הרחבת מופ״ת",
-   "access": "paid",
-   "track": "math"
+   "access": "free",
+   "track": "math",
+   "url": "https://nadavkatz1.github.io/katzschool-lib/pages/summer-math-g8-g9-muatz.html"
   },
   {
    "slug": "summer-math-g8-g9-muatz-ch1",
@@ -19800,9 +19795,8 @@
    "gradeTrack": "11281",
    "kind": "bagrut",
    "topic": "11281",
-   "access": "free",
-   "track": "hebrew",
-   "url": "https://nadavkatz1.github.io/katzschool-lib/pages/hebrew-bagrut-11281-b.html"
+   "access": "paid",
+   "track": "hebrew"
   },
   {
    "slug": "arabic-bagrut-18371",
@@ -19824,9 +19818,8 @@
    "gradeTrack": "18371",
    "kind": "bagrut",
    "topic": "18371",
-   "access": "free",
-   "track": "arabic",
-   "url": "https://nadavkatz1.github.io/katzschool-lib/pages/arabic-bagrut-18371-b.html"
+   "access": "paid",
+   "track": "arabic"
   },
   {
    "slug": "math-bagrut-371",
