@@ -1118,6 +1118,21 @@
   .mascot-restore svg{width:22px; height:22px;}
   @media (max-width:640px){ .mascot-restore{inset:auto 10px 10px auto; padding:9px 14px; font-size:.92rem;} }
   @media print{ #actionRail, #toast, .mascot-restore{display:none !important;} }
+
+  /* ===== example header: the worked-example line is light on the dark header, in every subject =====
+     .example-head is var(--grad-navy), the darkest tone of each palette. Topic stylesheets coloured the
+     line itself: 360 English topics set .formula to var(--blue-deep) (#7a1c39 on #3d0f22, 1.59:1), one
+     Hebrew topic did the same (2.25:1), and the Hebrew grade 1-3 example word .exw was var(--ink) or
+     var(--blue-deep) (1.03:1 and 2.25:1). This layer comes after topics/{topic}/visual.css and is more specific
+     than any of those rules. The sheet view, and so print and PDF, draws the header light (09-print.css):
+     there .formula was already black, but three spans inside it kept the colour their topic chose for the
+     dark header: .exw white on two grade 1 pages and .ex-q white on two grade 4 pages (1.14:1 on paper),
+     .rd-q gold on one English summer chapter (2.34:1). On the sheet they are black. */
+  html:not([data-view="sheet"]) .example-head .formula,
+  html:not([data-view="sheet"]) .example-head .exw{color:#fff;}
+  html[data-view="sheet"] .example-head .exw,
+  html[data-view="sheet"] .example-head .ex-q,
+  html[data-view="sheet"] .example-head .rd-q{color:#000;}
 </style>
 
 <!-- ===== UPGRADE LAYER: Hero entrance choreography (additive, non destructive) ===== -->
