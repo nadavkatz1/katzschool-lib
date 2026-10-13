@@ -1552,12 +1552,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'In my opinion, homework', opts:['is','are'], answer:'is', post:'useful, but not every day.', example:true },
+      { kind:'choose', pre:'In my opinion, homework', opts:['are','is'], answer:'is', post:'useful, but not every day.', example:true },
       { kind:'choose', pre:'First, homework helps us', opts:['practice','practices'], answer:'practice', post:'our lessons.' },
-      { kind:'choose', pre:'We remember the lesson', opts:['better','more good'], answer:'better', post:'when we study at home.' },
+      { kind:'choose', pre:'We remember the lesson', opts:['more good','better'], answer:'better', post:'when we study at home.' },
       { kind:'choose', pre:'Homework is useful', opts:['because','however'], answer:'because', post:'we practice at home.' },
       { kind:'choose', pre:'Teachers should give less homework,', opts:['so','because'], answer:'so', post:'we can enjoy our free time.' },
-      { kind:'choose', pre:'In conclusion, I', opts:['believe','believes'], answer:'believe', post:'homework is useful but not every day.' }
+      { kind:'choose', pre:'In conclusion, I', opts:['believes','believe'], answer:'believe', post:'homework is useful but not every day.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

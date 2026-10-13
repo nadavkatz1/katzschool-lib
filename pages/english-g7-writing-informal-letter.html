@@ -1551,12 +1551,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'', opts:['Dear','Are'], answer:'Dear', post:'Dan,', example:true },
+      { kind:'choose', pre:'', opts:['Are','Dear'], answer:'Dear', post:'Dan,', example:true },
       { kind:'choose', pre:'Thank you', opts:['for','to'], answer:'for', post:'your letter.' },
-      { kind:'choose', pre:'Last week, I', opts:['went','go'], answer:'went', post:'to the beach.' },
+      { kind:'choose', pre:'Last week, I', opts:['go','went'], answer:'went', post:'to the beach.' },
       { kind:'choose', pre:'What', opts:['did','do'], answer:'did', post:'you do?' },
       { kind:'choose', pre:'Next month, I am', opts:['going','go'], answer:'going', post:'to visit my grandmother.' },
-      { kind:'choose', pre:'Write back', opts:['soon','soonly'], answer:'soon', post:'.' }
+      { kind:'choose', pre:'Write back', opts:['soonly','soon'], answer:'soon', post:'.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

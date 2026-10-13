@@ -1633,10 +1633,10 @@
     var ROWS = [
       { kind:'choose', tag:'circle', pre:'Noa lives with her parents and her little', opts:['sister','brother'], answer:'brother', post:'.', example:true },
       { kind:'choose', tag:'circle', pre:'The house has a green gate and a wide', opts:['window','door'], answer:'window', post:'.' },
-      { kind:'choose', tag:'circle', pre:'Every morning the family walked for', opts:['two hours','one hour'], answer:'one hour', post:'.' },
+      { kind:'choose', tag:'circle', pre:'Every morning the family walked for', opts:['one hour','two hours'], answer:'one hour', post:'.' },
       { kind:'type', tag:'find', pre:'The month when Noa’s father was sick was', base:'one word', answer:'June', post:'.' },
       { kind:'type', tag:'find', pre:'What Noa put on her bedroom wall was a', base:'one word', answer:'photo', post:'.' },
-      { kind:'choose', tag:'circle', pre:'Now Noa says that it was her', opts:['best','worst'], answer:'best', post:'summer.' }
+      { kind:'choose', tag:'circle', pre:'Now Noa says that it was her', opts:['worst','best'], answer:'best', post:'summer.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

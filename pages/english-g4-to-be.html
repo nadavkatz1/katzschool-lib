@@ -1572,10 +1572,10 @@
     var ROWS = [
       {"kind": "choose", "pre": "I", "opts": ["am", "is"], "answer": "am", "post": "a pupil.", "example": true},
       {"kind": "choose", "pre": "Sara", "opts": ["is", "are"], "answer": "is", "post": "my friend."},
-      {"kind": "choose", "pre": "We", "opts": ["are", "am"], "answer": "are", "post": "in class."},
-      {"kind": "choose", "pre": "The book", "opts": ["is", "are"], "answer": "is", "post": "new."},
+      {"kind": "choose", "pre": "We", "opts": ["am", "are"], "answer": "are", "post": "in class."},
+      {"kind": "choose", "pre": "The book", "opts": ["are", "is"], "answer": "is", "post": "new."},
       {"kind": "choose", "pre": "The cats", "opts": ["are", "is"], "answer": "are", "post": "small."},
-      {"kind": "choose", "pre": "They", "opts": ["are not", "is not"], "answer": "are not", "post": "at home."}
+      {"kind": "choose", "pre": "They", "opts": ["is not", "are not"], "answer": "are not", "post": "at home."}
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

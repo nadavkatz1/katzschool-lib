@@ -1624,12 +1624,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', tag:'circle', pre:'I saw', opts:['a car red','a red car'], answer:'a red car', post:'near the gate.', example:true },
+      { kind:'choose', tag:'circle', pre:'I saw', opts:['a red car','a car red'], answer:'a red car', post:'near the gate.', example:true },
       { kind:'choose', tag:'circle', pre:'The answer was very', opts:['quick','quickly'], answer:'quick', post:'.' },
       { kind:'choose', tag:'circle', pre:'He opened the door', opts:['careful','carefully'], answer:'carefully', post:'.' },
       { kind:'type', tag:'read', pre:'The blue bag is heavier than the green bag. The heavier bag is the', base:'blue or green', answer:'blue', post:'one.' },
       { kind:'type', tag:'read', pre:'The boys ran quickly to the gate. The word that tells you HOW they ran is', base:'one word', answer:'quickly', post:'.' },
-      { kind:'choose', tag:'circle', pre:'I', opts:['always','never'], answer:'always', post:'eat breakfast before school, every day.' }
+      { kind:'choose', tag:'circle', pre:'I', opts:['never','always'], answer:'always', post:'eat breakfast before school, every day.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

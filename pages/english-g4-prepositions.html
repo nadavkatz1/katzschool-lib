@@ -1557,12 +1557,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      {"kind": "choose", "pre": "The book is", "opts": ["on", "in"], "answer": "on", "post": "the table.", "example": true},
+      {"kind": "choose", "pre": "The book is", "opts": ["in", "on"], "answer": "on", "post": "the table.", "example": true},
       {"kind": "choose", "pre": "The pen is", "opts": ["in", "on"], "answer": "in", "post": "the bag."},
       {"kind": "choose", "pre": "The ball is", "opts": ["under", "on"], "answer": "under", "post": "the chair."},
-      {"kind": "choose", "pre": "The lesson starts", "opts": ["at", "on"], "answer": "at", "post": "eight."},
+      {"kind": "choose", "pre": "The lesson starts", "opts": ["on", "at"], "answer": "at", "post": "eight."},
       {"kind": "choose", "pre": "We have English", "opts": ["on", "at"], "answer": "on", "post": "Monday."},
-      {"kind": "choose", "pre": "My birthday is", "opts": ["in", "on"], "answer": "in", "post": "April."}
+      {"kind": "choose", "pre": "My birthday is", "opts": ["on", "in"], "answer": "in", "post": "April."}
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

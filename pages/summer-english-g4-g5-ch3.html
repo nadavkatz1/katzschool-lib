@@ -1626,12 +1626,10 @@
   /* ===== Reading worksheet (summer-english-g4-g5, chapter 3)
      Six questions on Text A, the short text printed above them. Circling asks the pupil to
      RECOGNISE the answer among two; typing asks the pupil to lift it out of the text and
-     write it. The right option sits in a different place from row to row.      KEY SPREAD: check-lab-key.js cannot read this lab, because the key here is a
-     STRING in `answer` and not a positional index, so it reports it as unreadable.
-     Unreadable is not an approval, so the same measure was taken by hand, with the
-     tool's own rule: the position of the right option inside `opts`, row by row.
-       0,1,0,1     (2 על 0, 2 על 1, ריכוז 0.50)
-     The tool flags at 0.75. ===== */
+     write it. The right option sits in a different place from row to row.      KEY SPREAD: check-lab-key.js reads the key here, a STRING in `answer`, as the
+     position of the right option inside `opts`, row by row, the example row included:
+       1,1,0,0    (2 על 0, 2 על 1, ריכוז 0.50)
+     The tool flags at 0.75, and on a fixed cycle such as 0,1,0,1. ===== */
   (function(){
     var host = document.getElementById('psRows');
     if(!host) return;
@@ -1640,12 +1638,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      {"kind": "choose", "tag": "circle", "pre": "Who writes Text A?", "opts": ["Noa", "Tal"], "answer": "Noa", "post": "", "example": true},
+      {"kind": "choose", "tag": "circle", "pre": "Who writes Text A?", "opts": ["Tal", "Noa"], "answer": "Noa", "post": "", "example": true},
       {"kind": "choose", "tag": "circle", "pre": "Who reads it?", "opts": ["Tal", "Mom"], "answer": "Mom", "post": ""},
       {"kind": "type", "tag": "type", "pre": "Noa is at", "base": "who?", "answer": "Tal's", "post": "house."},
       {"kind": "choose", "tag": "circle", "pre": "What are Noa and Tal doing?", "opts": ["homework", "dinner"], "answer": "homework", "post": ""},
       {"kind": "type", "tag": "type", "pre": "Noa can come home at", "base": "a word for a time", "answer": "six", "post": "."},
-      {"kind": "choose", "tag": "circle", "pre": "What does Noa ask for?", "opts": ["a new bag", "a late dinner"], "answer": "a late dinner", "post": ""}
+      {"kind": "choose", "tag": "circle", "pre": "What does Noa ask for?", "opts": ["a late dinner", "a new bag"], "answer": "a late dinner", "post": ""}
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

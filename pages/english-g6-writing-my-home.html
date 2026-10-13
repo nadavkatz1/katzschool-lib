@@ -1559,7 +1559,7 @@
       { kind:'choose', pre:'There', opts:['are','is'], answer:'are', post:'two doors in my bedroom.' },
       { kind:'choose', pre:'My dog is', opts:['under','on'], answer:'on', post:'the bed. (על)' },
       { kind:'type', pre:'My flat', base:'have', answer:'has', post:'three rooms.' },
-      { kind:'choose', pre:'My favorite room is the', opts:['bedroom','window'], answer:'bedroom', post:'.' }
+      { kind:'choose', pre:'My favorite room is the', opts:['window','bedroom'], answer:'bedroom', post:'.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

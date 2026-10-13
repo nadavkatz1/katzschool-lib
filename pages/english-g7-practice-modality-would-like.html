@@ -1563,10 +1563,10 @@
 
     // Choose the correct form after would / like; the last row: build an invitation and type it.
     var ROWS = [
-      { kind:'choose', pre:'', opts:['Would','Do'], answer:'Would', post:'you like to see the moon tonight?', example:true },
+      { kind:'choose', pre:'', opts:['Do','Would'], answer:'Would', post:'you like to see the moon tonight?', example:true },
       { kind:'choose', pre:'They would like', opts:['to sign up','sign up'], answer:'to sign up', post:'for the night tour.' },
-      { kind:'choose', pre:'I would like', opts:['a warm blanket','to a warm blanket'], answer:'a warm blanket', post:'for the roof.' },
-      { kind:'choose', pre:'Would you like', opts:['to bring','bringing'], answer:'to bring', post:'your camera?' },
+      { kind:'choose', pre:'I would like', opts:['to a warm blanket','a warm blanket'], answer:'a warm blanket', post:'for the roof.' },
+      { kind:'choose', pre:'Would you like', opts:['bringing','to bring'], answer:'to bring', post:'your camera?' },
       { kind:'choose', pre:'The guide', opts:['would like','will likes'], answer:'would like', post:'to start the tour at eight.' },
       { kind:'type', pre:'', base:'invitation: you + join the science club', answer:'Would you like to join the science club?', post:'', whole:true }
     ];

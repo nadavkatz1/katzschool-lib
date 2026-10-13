@@ -1555,10 +1555,10 @@
     var ROWS = [
       { kind:'choose', pre:'My mother and father are my', opts:['parents','sisters'], answer:'parents', post:'.', example:true },
       { kind:'choose', pre:'My mother’s mother is my', opts:['grandmother','aunt'], answer:'grandmother', post:'.' },
-      { kind:'choose', pre:'My father’s brother is my', opts:['uncle','grandchild'], answer:'uncle', post:'.' },
+      { kind:'choose', pre:'My father’s brother is my', opts:['grandchild','uncle'], answer:'uncle', post:'.' },
       { kind:'choose', pre:'A girl with my parents is my', opts:['sister','aunt'], answer:'sister', post:'.' },
-      { kind:'choose', pre:'My grandfather is my', opts:['father’s father','mother’s sister'], answer:'father’s father', post:'.' },
-      { kind:'choose', pre:'My grandmother calls me her', opts:['grandchild','brother'], answer:'grandchild', post:'.' }
+      { kind:'choose', pre:'My grandfather is my', opts:['mother’s sister','father’s father'], answer:'father’s father', post:'.' },
+      { kind:'choose', pre:'My grandmother calls me her', opts:['brother','grandchild'], answer:'grandchild', post:'.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

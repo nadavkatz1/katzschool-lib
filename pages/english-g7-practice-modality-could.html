@@ -1564,11 +1564,11 @@
 
     // Build the polite request; the last row: rewrite a "can" request politely and type it.
     var ROWS = [
-      { kind:'choose', pre:'', opts:['Could you','Do you could'], answer:'Could you', post:'carry the box of paints?', example:true },
+      { kind:'choose', pre:'', opts:['Do you could','Could you'], answer:'Could you', post:'carry the box of paints?', example:true },
       { kind:'choose', pre:'Could you', opts:['wash','washes'], answer:'wash', post:'the brushes in the sink?' },
-      { kind:'choose', pre:'Could you', opts:['to bring','bring'], answer:'bring', post:'the paper from the shelf?' },
-      { kind:'choose', pre:'Could', opts:['he','him'], answer:'he', post:'tidy the paint table, please?' },
-      { kind:'choose', pre:'Could you', opts:['hold','held'], answer:'hold', post:'the chair for a minute?' },
+      { kind:'choose', pre:'Could you', opts:['bring','to bring'], answer:'bring', post:'the paper from the shelf?' },
+      { kind:'choose', pre:'Could', opts:['him','he'], answer:'he', post:'tidy the paint table, please?' },
+      { kind:'choose', pre:'Could you', opts:['held','hold'], answer:'hold', post:'the chair for a minute?' },
       { kind:'type', pre:'', base:'polite: Can you close the cupboard?', answer:'Could you close the cupboard?', post:'', whole:true }
     ];
 

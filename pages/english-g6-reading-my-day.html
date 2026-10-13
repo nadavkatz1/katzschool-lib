@@ -1557,10 +1557,10 @@
     var ROWS = [
       { kind:'choose', pre:'Maya gets up at', opts:['seven','eight'], answer:'seven', post:'o’clock.', example:true },
       { kind:'choose', pre:'She walks to school with her', opts:['friend','dog'], answer:'friend', post:'.' },
-      { kind:'choose', pre:'School starts at', opts:['eight','ten'], answer:'eight', post:'o’clock.' },
-      { kind:'choose', pre:'Her first lesson is', opts:['English','science'], answer:'English', post:'.' },
+      { kind:'choose', pre:'School starts at', opts:['ten','eight'], answer:'eight', post:'o’clock.' },
+      { kind:'choose', pre:'Her first lesson is', opts:['science','English'], answer:'English', post:'.' },
       { kind:'choose', pre:'After school she does her', opts:['homework','breakfast'], answer:'homework', post:'.' },
-      { kind:'choose', pre:'She goes to bed at', opts:['nine','seven'], answer:'nine', post:'o’clock.' }
+      { kind:'choose', pre:'She goes to bed at', opts:['seven','nine'], answer:'nine', post:'o’clock.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

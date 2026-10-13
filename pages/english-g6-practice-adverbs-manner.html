@@ -1554,12 +1554,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'quick →', opts:['quickly','quicky'], answer:'quickly', example:true },
+      { kind:'choose', pre:'quick →', opts:['quicky','quickly'], answer:'quickly', example:true },
       { kind:'choose', pre:'careful →', opts:['carefully','carefuly'], answer:'carefully' },
-      { kind:'choose', pre:'good → (adverb)', opts:['well','goodly'], answer:'well' },
+      { kind:'choose', pre:'good → (adverb)', opts:['goodly','well'], answer:'well' },
       { kind:'choose', pre:'He runs', opts:['quickly','quick'], answer:'quickly', post:'.' },
       { kind:'choose', pre:'She sings', opts:['perfectly','perfect'], answer:'perfectly', post:'.' },
-      { kind:'choose', pre:'The bus goes', opts:['slowly','slow'], answer:'slowly', post:'.' }
+      { kind:'choose', pre:'The bus goes', opts:['slow','slowly'], answer:'slowly', post:'.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

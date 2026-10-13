@@ -1556,12 +1556,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      {"kind": "choose", "pre": "Rachel likes apples", "opts": ["and", "or"], "answer": "and", "post": "bananas.", "example": true},
+      {"kind": "choose", "pre": "Rachel likes apples", "opts": ["or", "and"], "answer": "and", "post": "bananas.", "example": true},
       {"kind": "choose", "pre": "Do you want tea", "opts": ["or", "and"], "answer": "or", "post": "water?"},
       {"kind": "choose", "pre": "The bag is small", "opts": ["but", "and"], "answer": "but", "post": "heavy."},
-      {"kind": "choose", "pre": "We walked home", "opts": ["because", "but"], "answer": "because", "post": "the bus was late."},
+      {"kind": "choose", "pre": "We walked home", "opts": ["but", "because"], "answer": "because", "post": "the bus was late."},
       {"kind": "choose", "pre": "I am happy", "opts": ["because", "or"], "answer": "because", "post": "it is my birthday."},
-      {"kind": "choose", "pre": "The book is old", "opts": ["but", "or"], "answer": "but", "post": "good."}
+      {"kind": "choose", "pre": "The book is old", "opts": ["or", "but"], "answer": "but", "post": "good."}
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

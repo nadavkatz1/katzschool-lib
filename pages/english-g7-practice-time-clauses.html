@@ -1567,11 +1567,11 @@
 
     // Choose the time conjunction; the last row: move the time clause to the end and type it.
     var ROWS = [
-      { kind:'choose', pre:'The driver checks the boxes', opts:['before','after'], answer:'before', post:'he starts the truck.', example:true },
+      { kind:'choose', pre:'The driver checks the boxes', opts:['after','before'], answer:'before', post:'he starts the truck.', example:true },
       { kind:'choose', pre:'Maya washes her hands', opts:['before','after'], answer:'before', post:'she touches the bread.' },
       { kind:'choose', pre:'The shop is quiet again', opts:['after','before'], answer:'after', post:'the busy hour ends.' },
-      { kind:'choose', pre:'Last winter, the stoves stopped', opts:['when','before'], answer:'when', post:'the electricity went off.' },
-      { kind:'choose', pre:'When the phone', opts:['rang, Maya','rang Maya'], answer:'rang, Maya', post:'was counting the change.' },
+      { kind:'choose', pre:'Last winter, the stoves stopped', opts:['before','when'], answer:'when', post:'the electricity went off.' },
+      { kind:'choose', pre:'When the phone', opts:['rang Maya','rang, Maya'], answer:'rang, Maya', post:'was counting the change.' },
       { kind:'type', pre:'', base:'time clause to the end: When the shop opens, the customers come in.', answer:'The customers come in when the shop opens.', post:'', whole:true }
     ];
 

@@ -1554,10 +1554,10 @@
     var ROWS = [
       { kind:'choose', pre:'You write with a', opts:['pen','chair'], answer:'pen', post:'.', example:true },
       { kind:'choose', pre:'You read a', opts:['book','desk'], answer:'book', post:'.' },
-      { kind:'choose', pre:'You sit on a', opts:['chair','board'], answer:'chair', post:'.' },
-      { kind:'choose', pre:'You look at the time on the', opts:['clock','bag'], answer:'clock', post:'.' },
+      { kind:'choose', pre:'You sit on a', opts:['board','chair'], answer:'chair', post:'.' },
+      { kind:'choose', pre:'You look at the time on the', opts:['bag','clock'], answer:'clock', post:'.' },
       { kind:'choose', pre:'You open the', opts:['window','pencil'], answer:'window', post:'to let the air in.' },
-      { kind:'choose', pre:'You take your things to school in a', opts:['bag','board'], answer:'bag', post:'.' }
+      { kind:'choose', pre:'You take your things to school in a', opts:['board','bag'], answer:'bag', post:'.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

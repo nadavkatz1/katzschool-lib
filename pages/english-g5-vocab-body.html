@@ -1556,10 +1556,10 @@
     var ROWS = [
       { kind:'choose', pre:'I see with my two', opts:['eyes','ears'], answer:'eyes', post:'.', example:true },
       { kind:'choose', pre:'I hear with my two', opts:['ears','hands'], answer:'ears', post:'.' },
-      { kind:'choose', pre:'On my face I have one', opts:['nose','arm'], answer:'nose', post:'.' },
-      { kind:'choose', pre:'I write with my', opts:['hand','leg'], answer:'hand', post:'.' },
+      { kind:'choose', pre:'On my face I have one', opts:['arm','nose'], answer:'nose', post:'.' },
+      { kind:'choose', pre:'I write with my', opts:['leg','hand'], answer:'hand', post:'.' },
       { kind:'choose', pre:'I walk on my two', opts:['legs','arms'], answer:'legs', post:'.' },
-      { kind:'choose', pre:'One foot, but two', opts:['feet','foots'], answer:'feet', post:'.' }
+      { kind:'choose', pre:'One foot, but two', opts:['foots','feet'], answer:'feet', post:'.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

@@ -1669,11 +1669,11 @@
     // Choose the correct form - one item per topic the quarterly exam covers.
     var ROWS = [
       { kind:'choose', pre:'She', opts:['has been studying','has studying'], answer:'has been studying', post:'since noon.  - present perfect continuous (duration)', example:true },
-      { kind:'choose', pre:'When I arrived, the train', opts:['had already left','has left'], answer:'had already left', post:'.  - past perfect (the earlier action)' },
+      { kind:'choose', pre:'When I arrived, the train', opts:['has left','had already left'], answer:'had already left', post:'.  - past perfect (the earlier action)' },
       { kind:'choose', pre:'By 2030, I', opts:['will have finished','will finish'], answer:'will have finished', post:'university.  - future perfect (before a future point)' },
       { kind:'choose', pre:'If she had studied, she', opts:['would have passed','would pass'], answer:'would have passed', post:'the exam.  - third conditional (would have + V3)' },
-      { kind:'choose', pre:'This work', opts:['must be done','must done'], answer:'must be done', post:'today.  - passive (modal + be + V3)' },
-      { kind:'choose', pre:'The TV is off. Please', opts:['turn it on','turn on it'], answer:'turn it on', post:'.  - phrasal verb (pronoun in the middle)' }
+      { kind:'choose', pre:'This work', opts:['must done','must be done'], answer:'must be done', post:'today.  - passive (modal + be + V3)' },
+      { kind:'choose', pre:'The TV is off. Please', opts:['turn on it','turn it on'], answer:'turn it on', post:'.  - phrasal verb (pronoun in the middle)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

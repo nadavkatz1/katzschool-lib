@@ -1564,10 +1564,10 @@
 
     // Subject pronoun stays, object pronoun may be dropped; the last row: build the sentence (type it).
     var ROWS = [
-      { kind:'choose', pre:'the man', opts:['who called','called'], answer:'who called', post:'- subject, the pronoun stays.', example:true },
+      { kind:'choose', pre:'the man', opts:['called','who called'], answer:'who called', post:'- subject, the pronoun stays.', example:true },
       { kind:'choose', pre:'the bus', opts:['that goes','goes'], answer:'that goes', post:'to the beach - subject, the pronoun stays.' },
-      { kind:'choose', pre:'the film', opts:['we saw','we saw it'], answer:'we saw', post:'last night - object, no extra "it".' },
-      { kind:'choose', pre:'the photos my cousin', opts:['sent','sent them'], answer:'sent', post:'from Cyprus.' },
+      { kind:'choose', pre:'the film', opts:['we saw it','we saw'], answer:'we saw', post:'last night - object, no extra "it".' },
+      { kind:'choose', pre:'the photos my cousin', opts:['sent them','sent'], answer:'sent', post:'from Cyprus.' },
       { kind:'choose', pre:'This is the best book I have', opts:['ever read','ever read it'], answer:'ever read', post:'.' },
       { kind:'type', pre:'', base:'join with no pronoun: This is the film. / We watched it last night.', answer:'This is the film we watched last night.', post:'', whole:true }
     ];

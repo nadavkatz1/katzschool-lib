@@ -1615,12 +1615,10 @@
   /* ===== Interactive worksheet (summer-english-g4-g5, chapter 1)
      Two kinds of item, both required by the chapter: circling a form the pupil only has
      to RECOGNISE, and typing a form the pupil has to PRODUCE. The position of the right
-     option moves from row to row on purpose, so the pattern cannot be guessed.      KEY SPREAD: check-lab-key.js cannot read this lab, because the key here is a
-     STRING in `answer` and not a positional index, so it reports it as unreadable.
-     Unreadable is not an approval, so the same measure was taken by hand, with the
-     tool's own rule: the position of the right option inside `opts`, row by row.
+     option moves from row to row on purpose, so the pattern cannot be guessed.      KEY SPREAD: check-lab-key.js reads the key here, a STRING in `answer`, as the
+     position of the right option inside `opts`, row by row, the example row included:
        0,0,1,1,0  (3 על 0, 2 על 1, ריכוז 0.60)
-     The tool flags at 0.75. ===== */
+     The tool flags at 0.75, and on a fixed cycle such as 0,1,0,1. ===== */
   (function(){
     var host = document.getElementById('psRows');
     if(!host) return;

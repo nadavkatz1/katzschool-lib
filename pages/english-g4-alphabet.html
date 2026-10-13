@@ -1556,10 +1556,10 @@
     var ROWS = [
       { kind:'choose', pre:'The letter after B is', opts:['C','A'], answer:'C', post:'.', example:true },
       { kind:'choose', pre:'The letter before D is', opts:['C','E'], answer:'C', post:'.' },
-      { kind:'choose', pre:'The last letter of the alphabet is', opts:['Z','Y'], answer:'Z', post:'.' },
-      { kind:'choose', pre:'The small letter of D is', opts:['d','b'], answer:'d', post:'.' },
+      { kind:'choose', pre:'The last letter of the alphabet is', opts:['Y','Z'], answer:'Z', post:'.' },
+      { kind:'choose', pre:'The small letter of D is', opts:['b','d'], answer:'d', post:'.' },
       { kind:'choose', pre:'The capital letter of m is', opts:['M','N'], answer:'M', post:'.' },
-      { kind:'choose', pre:'A vowel is', opts:['a','k'], answer:'a', post:'.' }
+      { kind:'choose', pre:'A vowel is', opts:['k','a'], answer:'a', post:'.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

@@ -1555,10 +1555,10 @@
     var ROWS = [
       { kind:'choose', pre:'On my feet I wear', opts:['shoes','a hat'], answer:'shoes', post:'.', example:true },
       { kind:'choose', pre:'On my head I wear a', opts:['hat','sock'], answer:'hat', post:'.' },
-      { kind:'choose', pre:'When it is cold, I wear a', opts:['coat','t-shirt'], answer:'coat', post:'.' },
+      { kind:'choose', pre:'When it is cold, I wear a', opts:['t-shirt','coat'], answer:'coat', post:'.' },
       { kind:'choose', pre:'A girl can wear a pretty', opts:['dress','shoe'], answer:'dress', post:'.' },
-      { kind:'choose', pre:'On my legs I wear', opts:['jeans','shoes'], answer:'jeans', post:'.' },
-      { kind:'choose', pre:'Before my shoes I put on my', opts:['socks','coat'], answer:'socks', post:'.' }
+      { kind:'choose', pre:'On my legs I wear', opts:['shoes','jeans'], answer:'jeans', post:'.' },
+      { kind:'choose', pre:'Before my shoes I put on my', opts:['coat','socks'], answer:'socks', post:'.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

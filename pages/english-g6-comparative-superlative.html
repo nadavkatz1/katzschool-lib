@@ -1559,10 +1559,10 @@
     var ROWS = [
       { kind:'choose', pre:'A car is', opts:['more comfortable','comfortabler'], answer:'more comfortable', post:'than a bus.', example:true },
       { kind:'choose', pre:'This film is', opts:['more interesting','interestinger'], answer:'more interesting', post:'than that one.' },
-      { kind:'choose', pre:'She is', opts:['the tallest','the most tall'], answer:'the tallest', post:'in the class.' },
+      { kind:'choose', pre:'She is', opts:['the most tall','the tallest'], answer:'the tallest', post:'in the class.' },
       { kind:'choose', pre:'It is', opts:['the most beautiful','the beautifulest'], answer:'the most beautiful', post:'flower.' },
-      { kind:'choose', pre:'My phone is', opts:['better','gooder'], answer:'better', post:'than yours.' },
-      { kind:'choose', pre:'Today is', opts:['the best','the goodest'], answer:'the best', post:'day.' }
+      { kind:'choose', pre:'My phone is', opts:['gooder','better'], answer:'better', post:'than yours.' },
+      { kind:'choose', pre:'Today is', opts:['the goodest','the best'], answer:'the best', post:'day.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

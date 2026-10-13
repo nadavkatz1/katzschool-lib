@@ -1559,10 +1559,10 @@
     // Match the verb to the intent, then give it the right shape.
     var ROWS = [
       { kind:'choose', pre:'I', opts:['apologize for','apologize about'], answer:'apologize for', post:'the late reply.', example:true },
-      { kind:'choose', pre:'The guide', opts:['recommends visiting','recommends to visit'], answer:'recommends visiting', post:'the old city first.' },
+      { kind:'choose', pre:'The guide', opts:['recommends to visit','recommends visiting'], answer:'recommends visiting', post:'the old city first.' },
       { kind:'choose', pre:'I', opts:['suggest meeting','suggest to meet'], answer:'suggest meeting', post:'outside the library.' },
       { kind:'choose', pre:'She', opts:['apologized to','apologized at'], answer:'apologized to', post:'her teacher for the delay.' },
-      { kind:'choose', pre:'The report', opts:['recommends that the council review','recommends the council to review'], answer:'recommends that the council review', post:'the plan.' },
+      { kind:'choose', pre:'The report', opts:['recommends the council to review','recommends that the council review'], answer:'recommends that the council review', post:'the plan.' },
       { kind:'type', pre:'', base:'make a suggestion: I / we / start earlier', answer:'I suggest that we start earlier.', post:'', whole:true }
     ];
 

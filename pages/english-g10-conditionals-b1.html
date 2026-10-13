@@ -1563,10 +1563,10 @@
 
     // Choose the condition word and form; the last row: rewrite with unless (type it).
     var ROWS = [
-      { kind:'choose', pre:'If you', opts:['hurry','will hurry'], answer:'hurry', post:', you will catch the bus.', example:true },
+      { kind:'choose', pre:'If you', opts:['will hurry','hurry'], answer:'hurry', post:', you will catch the bus.', example:true },
       { kind:'choose', pre:'We will miss the ferry', opts:['unless','if'], answer:'unless', post:'we leave now.' },
-      { kind:'choose', pre:'Unless you', opts:['book','do not book'], answer:'book', post:'early, you will not get a seat.' },
-      { kind:'choose', pre:'If you', opts:['are going','will go'], answer:'are going', post:'to the market, buy some lemons.' },
+      { kind:'choose', pre:'Unless you', opts:['do not book','book'], answer:'book', post:'early, you will not get a seat.' },
+      { kind:'choose', pre:'If you', opts:['will go','are going'], answer:'are going', post:'to the market, buy some lemons.' },
       { kind:'choose', pre:'If you are going to drive tonight, you', opts:['should not','will not'], answer:'should not', post:'have a drink.' },
       { kind:'type', pre:'', base:'rewrite with unless: If you do not water the plants, they will die.', answer:'Unless you water the plants, they will die.', post:'', whole:true }
     ];

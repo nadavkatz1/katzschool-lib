@@ -1555,12 +1555,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'Dan has a pet', opts:['dog','cat'], answer:'dog', post:'.', example:true },
+      { kind:'choose', pre:'Dan has a pet', opts:['cat','dog'], answer:'dog', post:'.', example:true },
       { kind:'choose', pre:'The dog’s name is', opts:['Rex','Dan'], answer:'Rex', post:'.' },
-      { kind:'choose', pre:'Rex is big and', opts:['brown','black'], answer:'brown', post:'.' },
+      { kind:'choose', pre:'Rex is big and', opts:['black','brown'], answer:'brown', post:'.' },
       { kind:'choose', pre:'Rex likes to run in the', opts:['garden','room'], answer:'garden', post:'.' },
       { kind:'choose', pre:'At night, Rex sleeps in Dan’s', opts:['room','car'], answer:'room', post:'.' },
-      { kind:'choose', pre:'Dan says Rex is his best', opts:['friend','food'], answer:'friend', post:'.' }
+      { kind:'choose', pre:'Dan says Rex is his best', opts:['food','friend'], answer:'friend', post:'.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

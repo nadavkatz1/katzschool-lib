@@ -1564,10 +1564,10 @@
     // Track-structure facts (spec-grounded); the last row: type a full-sentence answer.
     var ROWS = [
       { kind:'choose', pre:'The 3-point English track is Modules', opts:['A + B + C','E + F + G'], answer:'A + B + C', example:true },
-      { kind:'choose', pre:'Module A gives you', opts:['two reading texts','one writing task'], answer:'two reading texts' },
+      { kind:'choose', pre:'Module A gives you', opts:['one writing task','two reading texts'], answer:'two reading texts' },
       { kind:'choose', pre:'The Module C composition is', opts:['70-90 words','120-140 words'], answer:'70-90 words' },
-      { kind:'choose', pre:'Module B, the literature programme, is graded by', opts:['an external paper','the school'], answer:'the school' },
-      { kind:'choose', pre:'To give a REASON, use', opts:['because','so'], answer:'because' },
+      { kind:'choose', pre:'Module B, the literature programme, is graded by', opts:['the school','an external paper'], answer:'the school' },
+      { kind:'choose', pre:'To give a REASON, use', opts:['so','because'], answer:'because' },
       { kind:'type', pre:'', base:'answer: Which module has a writing task (30 points)?', answer:'Module C.', post:'', whole:true }
     ];
 

@@ -1563,10 +1563,10 @@
 
     // Choose the verb that matches the intent, and give it the form it takes.
     var ROWS = [
-      { kind:'choose', pre:'My best friend', opts:['suggests I save','suggests me to save'], answer:'suggests I save', post:'my pocket money.', example:true },
+      { kind:'choose', pre:'My best friend', opts:['suggests me to save','suggests I save'], answer:'suggests I save', post:'my pocket money.', example:true },
       { kind:'choose', pre:'I', opts:['apologize for','apologize about'], answer:'apologize for', post:'the change of plan.' },
-      { kind:'choose', pre:'The committee', opts:['recommends taking','recommends to take'], answer:'recommends taking', post:'a shorter route.' },
-      { kind:'choose', pre:'I', opts:['suggest that we meet','suggest to meet'], answer:'suggest that we meet', post:'at six.' },
+      { kind:'choose', pre:'The committee', opts:['recommends to take','recommends taking'], answer:'recommends taking', post:'a shorter route.' },
+      { kind:'choose', pre:'I', opts:['suggest to meet','suggest that we meet'], answer:'suggest that we meet', post:'at six.' },
       { kind:'choose', pre:'The report', opts:['recommends that the city build','recommends the city to build'], answer:'recommends that the city build', post:'a new bridge.' },
       { kind:'type', pre:'', base:'apologize in writing: I / the late reply', answer:'I apologize for the late reply.', post:'', whole:true }
     ];

@@ -1553,11 +1553,11 @@
 
     var ROWS = [
       { kind:'choose', pre:'As the first light', opts:['spills','spill'], answer:'spills', post:'over the rooftops, the market wakes.', example:true },
-      { kind:'choose', pre:'Steam curls', opts:['like','very'], answer:'like', post:'grey silk into the pale sky.' },
-      { kind:'choose', pre:'He stacks the oranges into bright,', opts:['glowing','nice'], answer:'glowing', post:'pyramids.' },
+      { kind:'choose', pre:'Steam curls', opts:['very','like'], answer:'like', post:'grey silk into the pale sky.' },
+      { kind:'choose', pre:'He stacks the oranges into bright,', opts:['nice','glowing'], answer:'glowing', post:'pyramids.' },
       { kind:'choose', pre:'The air carries the warm', opts:['smell','sound'], answer:'smell', post:'of fresh bread.' },
       { kind:'choose', pre:'Her weathered hands move as gently', opts:['as','than'], answer:'as', post:'falling leaves.' },
-      { kind:'choose', pre:'Standing there, you', opts:['feel','feels'], answer:'feel', post:'as though the town is coming home.' }
+      { kind:'choose', pre:'Standing there, you', opts:['feels','feel'], answer:'feel', post:'as though the town is coming home.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

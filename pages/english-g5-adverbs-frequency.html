@@ -1553,10 +1553,10 @@
     var ROWS = [
       { kind:'choose', pre:'I', opts:['always','never'], answer:'always', post:'wash my hands. (100%)', example:true },
       { kind:'choose', pre:'He is', opts:['never','ever'], answer:'never', post:'late. (0%)' },
-      { kind:'choose', pre:'We', opts:['sometimes','never'], answer:'sometimes', post:'watch films. (some days)' },
+      { kind:'choose', pre:'We', opts:['never','sometimes'], answer:'sometimes', post:'watch films. (some days)' },
       { kind:'choose', pre:'She', opts:['usually','usual'], answer:'usually', post:'walks to school. (most days)' },
-      { kind:'choose', pre:'They are', opts:['always','all ways'], answer:'always', post:'kind. (100%)' },
-      { kind:'choose', pre:'My dad', opts:['never','ever'], answer:'never', post:'drinks coffee. (0%)' }
+      { kind:'choose', pre:'They are', opts:['all ways','always'], answer:'always', post:'kind. (100%)' },
+      { kind:'choose', pre:'My dad', opts:['ever','never'], answer:'never', post:'drinks coffee. (0%)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

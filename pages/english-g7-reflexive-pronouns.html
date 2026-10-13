@@ -1566,10 +1566,10 @@
     // Choose the reflexive pronoun; the last row: repair the sentence and type it out.
     var ROWS = [
       { kind:'choose', pre:'Ronen burned', opts:['himself','him'], answer:'himself', post:'on the hot plate.', example:true },
-      { kind:'choose', pre:'I looked at', opts:['myself','me'], answer:'myself', post:'in the mirror.' },
-      { kind:'choose', pre:'The new machine turns', opts:['itself','it'], answer:'itself', post:'off.' },
+      { kind:'choose', pre:'I looked at', opts:['me','myself'], answer:'myself', post:'in the mirror.' },
+      { kind:'choose', pre:'The new machine turns', opts:['it','itself'], answer:'itself', post:'off.' },
       { kind:'choose', pre:'Class, please introduce', opts:['yourselves','yourself'], answer:'yourselves', post:'to the nurse.' },
-      { kind:'choose', pre:'Ronen and I protected', opts:['ourselves','us'], answer:'ourselves', post:'with gloves.' },
+      { kind:'choose', pre:'Ronen and I protected', opts:['us','ourselves'], answer:'ourselves', post:'with gloves.' },
       { kind:'type', pre:'', base:'fix: I hurt me on the knife.', answer:'I hurt myself on the knife.', post:'', whole:true }
     ];
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

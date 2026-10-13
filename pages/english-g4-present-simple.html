@@ -1565,11 +1565,11 @@
 
     var ROWS = [
       {"kind": "choose", "pre": "I", "opts": ["play", "plays"], "answer": "play", "post": "ball games every day.", "example": true},
-      {"kind": "choose", "pre": "She", "opts": ["reads", "read"], "answer": "reads", "post": "a book every evening."},
-      {"kind": "choose", "pre": "We", "opts": ["eat", "eats"], "answer": "eat", "post": "bread in the morning."},
+      {"kind": "choose", "pre": "She", "opts": ["read", "reads"], "answer": "reads", "post": "a book every evening."},
+      {"kind": "choose", "pre": "We", "opts": ["eats", "eat"], "answer": "eat", "post": "bread in the morning."},
       {"kind": "choose", "pre": "The cat", "opts": ["drinks", "drink"], "answer": "drinks", "post": "milk."},
       {"kind": "choose", "pre": "I", "opts": ["don’t", "doesn’t"], "answer": "don’t", "post": "like sport."},
-      {"kind": "choose", "pre": "She", "opts": ["doesn’t", "don’t"], "answer": "doesn’t", "post": "watch films."}
+      {"kind": "choose", "pre": "She", "opts": ["don’t", "doesn’t"], "answer": "doesn’t", "post": "watch films."}
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

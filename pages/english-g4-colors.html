@@ -1554,11 +1554,11 @@
 
     var ROWS = [
       { kind:'choose', pre:'The sky is', opts:['blue','brown'], answer:'blue', post:'.', example:true },
-      { kind:'choose', pre:'The grass is', opts:['green','red'], answer:'green', post:'.' },
+      { kind:'choose', pre:'The grass is', opts:['red','green'], answer:'green', post:'.' },
       { kind:'choose', pre:'The sun is', opts:['yellow','black'], answer:'yellow', post:'.' },
       { kind:'choose', pre:'Paper is', opts:['white','green'], answer:'white', post:'.' },
-      { kind:'choose', pre:'Chocolate is', opts:['brown','blue'], answer:'brown', post:'.' },
-      { kind:'choose', pre:'"pink" in Hebrew is', opts:['ורוד','סגול'], answer:'ורוד', post:'.' }
+      { kind:'choose', pre:'Chocolate is', opts:['blue','brown'], answer:'brown', post:'.' },
+      { kind:'choose', pre:'"pink" in Hebrew is', opts:['סגול','ורוד'], answer:'ורוד', post:'.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

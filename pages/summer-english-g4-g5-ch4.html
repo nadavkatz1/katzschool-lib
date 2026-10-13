@@ -1619,12 +1619,10 @@
      to PRODUCE. The right option sits in a different place from row to row.
      NOTE: the checker lowercases and drops end punctuation, so no row here is allowed to
      turn on a capital letter or on a full stop - those two are tested in the quiz, where
-     the pupil picks a whole written sentence and the difference is visible.      KEY SPREAD: check-lab-key.js cannot read this lab, because the key here is a
-     STRING in `answer` and not a positional index, so it reports it as unreadable.
-     Unreadable is not an approval, so the same measure was taken by hand, with the
-     tool's own rule: the position of the right option inside `opts`, row by row.
-       0,1,0,1     (2 על 0, 2 על 1, ריכוז 0.50)
-     The tool flags at 0.75. ===== */
+     the pupil picks a whole written sentence and the difference is visible.      KEY SPREAD: check-lab-key.js reads the key here, a STRING in `answer`, as the
+     position of the right option inside `opts`, row by row, the example row included:
+       0,0,1,1    (2 על 0, 2 על 1, ריכוז 0.50)
+     The tool flags at 0.75, and on a fixed cycle such as 0,1,0,1. ===== */
   (function(){
     var host = document.getElementById('psRows');
     if(!host) return;
@@ -1635,9 +1633,9 @@
     var ROWS = [
       {"kind": "choose", "tag": "circle", "pre": "My sister", "opts": ["is", "are"], "answer": "is", "post": "in the garden.", "example": true},
       {"kind": "type", "tag": "type", "pre": "My brother", "base": "the verb", "answer": "is", "post": "nine."},
-      {"kind": "choose", "tag": "circle", "pre": "I like fish,", "opts": ["and", "but"], "answer": "but", "post": "I do not like meat."},
+      {"kind": "choose", "tag": "circle", "pre": "I like fish,", "opts": ["but", "and"], "answer": "but", "post": "I do not like meat."},
       {"kind": "type", "tag": "type", "pre": "I am happy", "base": "says why", "answer": "because", "post": "my aunt is here."},
-      {"kind": "choose", "tag": "circle", "pre": "", "opts": ["There are", "There is"], "answer": "There are", "post": "four chairs in the classroom."},
+      {"kind": "choose", "tag": "circle", "pre": "", "opts": ["There is", "There are"], "answer": "There are", "post": "four chairs in the classroom."},
       {"kind": "type", "tag": "type", "pre": "Adi goes to the art club.", "base": "not Adi again", "answer": "She", "post": "draws with her friends."},
       {"kind": "choose", "tag": "circle", "pre": "", "opts": ["When", "Where"], "answer": "Where", "post": "do you live?"},
       {"kind": "type", "tag": "type", "pre": "This is", "base": "Noa + bag", "answer": "Noa's", "post": "bag."}

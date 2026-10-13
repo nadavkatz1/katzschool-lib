@@ -1551,12 +1551,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'I am happy', opts:['because','so'], answer:'because', post:'it is my birthday.', example:true },
+      { kind:'choose', pre:'I am happy', opts:['so','because'], answer:'because', post:'it is my birthday.', example:true },
       { kind:'choose', pre:'He is cold', opts:['because','and'], answer:'because', post:'it is snowing.' },
-      { kind:'choose', pre:'It rained,', opts:['so','because'], answer:'so', post:'we stayed inside.' },
+      { kind:'choose', pre:'It rained,', opts:['because','so'], answer:'so', post:'we stayed inside.' },
       { kind:'choose', pre:'We are tired', opts:['because','but'], answer:'because', post:'we ran a lot.' },
       { kind:'choose', pre:'I drink water', opts:['because','or'], answer:'because', post:'I am thirsty.' },
-      { kind:'choose', pre:'She was late,', opts:['so','because'], answer:'so', post:'she ran.' }
+      { kind:'choose', pre:'She was late,', opts:['because','so'], answer:'so', post:'she ran.' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

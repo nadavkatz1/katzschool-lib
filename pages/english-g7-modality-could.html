@@ -1568,10 +1568,10 @@
     // Build the polite request; the last row: rewrite a "can" request politely and type it.
     var ROWS = [
       { kind:'choose', pre:'', opts:['Could you','Do you could'], answer:'Could you', post:'open the paint box?', example:true },
-      { kind:'choose', pre:'Could you', opts:['hold','holds'], answer:'hold', post:'the frame for a second?' },
-      { kind:'choose', pre:'Could you', opts:['lend','to lend'], answer:'lend', post:'me your scissors, please?' },
+      { kind:'choose', pre:'Could you', opts:['holds','hold'], answer:'hold', post:'the frame for a second?' },
+      { kind:'choose', pre:'Could you', opts:['to lend','lend'], answer:'lend', post:'me your scissors, please?' },
       { kind:'choose', pre:'Could', opts:['we','us'], answer:'we', post:'work in the art room after school?' },
-      { kind:'choose', pre:'Could you', opts:['turn on','turned on'], answer:'turn on', post:'the lamp above the table?' },
+      { kind:'choose', pre:'Could you', opts:['turned on','turn on'], answer:'turn on', post:'the lamp above the table?' },
       { kind:'type', pre:'', base:'polite: Can you move your chair?', answer:'Could you move your chair?', post:'', whole:true }
     ];
 
