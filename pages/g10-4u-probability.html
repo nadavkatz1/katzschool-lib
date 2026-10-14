@@ -1461,7 +1461,7 @@
     <img class="logo" src="https://nadavkatz1.github.io/katzschool-lib/assets/caa8d263f13248ef.png" alt="נדב כץ">
     <div class="brand-name" style="text-align:start;">נדב כץ</div>
   </div>
-  <p class="disc">דף לימוד. נבנה ונבדק על ידי צוות נדב כץ.</p>
+  <p class="disc">דף לימוד. נבנה על ידי נדב כץ.</p>
   <p class="copyright">© כל הזכויות שמורות לנדב כץ. אין לשכפל, להעתיק, לצלם, להקליט, לתרגם, לאחסן במאגר מידע, לשדר או לקלוט בכל דרך או אמצעי אלקטרוני, אופטי, מכני או אחר, כל חלק שהוא מן החומר שבדף זה. הפצה או שימוש מסחרי כלשהו בחומר אסורים בהחלט ללא אישור מפורש בכתב מנדב כץ.</p>
 </footer>
 
@@ -2144,7 +2144,14 @@
     wordToEn:'איזו מילה באנגלית מתאימה?', score:'%d מתוך %t',
     grpQ:'מהשאלות שבדף', grpLex:'מאוצר המילים שבדף',
     mScramble:'ערבוב אותיות', mScrambleD:'האותיות מעורבבות, ואתם מרכיבים מהן את המילה.',
-    scramblePrompt:'הרכיבו את המילה מן האותיות, לפי הפירוש שלמעלה.', undo:'למחוק אות'
+    scramblePrompt:'הרכיבו את המילה מן האותיות, לפי הפירוש שלמעלה.', undo:'למחוק אות',
+    // נוסח לכל סוג של מילון: ערבית מול עברית, מונח עברי מול הגדרה, ומילון שמעורבים בו כמה כתבים.
+    // הנוסח של מילון באנגלית הוא המחרוזות שלמעלה, והוא נבחר בזמן ריצה (ראו LEXT למטה).
+    mWordDAra:'ארבע אפשרויות: רואים מילה בערבית ובוחרים את המשמעות שלה בעברית.', mMemoryDAra:'להפוך שני קלפים ולמצוא מילה בערבית מול המשמעות שלה בעברית.', memPromptAra:'הפכו שני קלפים ומצאו מילה בערבית מול המשמעות שלה בעברית.',
+    mWordDHeb:'ארבע אפשרויות: רואים מונח ובוחרים את ההגדרה שלו.', mMemoryDHeb:'להפוך שני קלפים ולמצוא מונח מול ההגדרה שלו.', memPromptHeb:'הפכו שני קלפים ומצאו מונח מול ההגדרה שלו.',
+    wordToHeHeb:'מה ההגדרה של המונח?',
+    mWordDMix:'ארבע אפשרויות: מילה מן המילון מול הפירוש שלה.', mMemoryDMix:'להפוך שני קלפים ולמצוא מילה מול הפירוש שלה.', memPromptMix:'הפכו שני קלפים ומצאו מילה מול הפירוש שלה.',
+    wordToEnMix:'איזו מילה מן המילון מתאימה?'
   };
   /* ===== לוח המשחק =====
      ההבדל בין חידון למשחק לימודי הוא לא שעון עצר אלא מה שנשאר אחרי שסוגרים את הדף.
@@ -2653,7 +2660,7 @@
         // הגדרה באורך משפט אינה קלף. נמדד: 31 הגדרות ארוכות בקורפוס,
         // ואף אחת מהן אינה על ערך אנגלי - כלומר הסינון הזה נוגע רק
         // במילוני המונחים של דפי העברית.
-        seen[k] = 1; out.push({ en:en, he:he, lat:lat, short:(he.length <= 34) });
+        seen[k] = 1; out.push({ en:en, he:he, lat:lat, heb:heb, ara:ara, short:(he.length <= 34) });
       }
       // ערך שהדף עצמו מצהיר עליו כמעל רצועת הכיתה נושא gl-above, והוא נשאר
       // בדף כאוצר מילים נלמד אבל אינו נכנס לאף משחק: משחק כאן צובר שליטה,
@@ -2685,6 +2692,25 @@
     // אנגרמה, ומילה בת שתי אותיות אין בה מה לערבב.
     var PAIRS_SCR   = PAIRS_LAT.filter(function(p){ return /^[A-Za-z]{3,10}$/.test(p.en); });
     var PAIRS_SHORT = PAIRS.filter(function(p){ return p.short; });
+
+    // ---- איך מתארים את משחקי אוצר המילים בדף הזה ----
+    // הנוסח נבחר לפי הזוגות שהמשחק טען בפועל, ולא לפי שם המקצוע. מילון שכל ערכיו
+    // באנגלית מקבל את הנוסח שהיה עד כה, בלי שינוי. מילון ערבי מתאר מילה בערבית מול
+    // המשמעות שלה בעברית. מילון מונחים עברי מתאר מונח מול ההגדרה שלו: אין בו תרגום,
+    // ושני הצדדים בעברית. קודם כל דף קיבל את הנוסח של אנגלית, ובדפדפן נמדדו 38 דפים
+    // (31 בערבית, 7 בעברית) שהבטיחו "מאנגלית לעברית ובחזרה" ו"מילה מול התרגום שלה".
+    // מילון שמעורבים בו כמה כתבים מקבל נוסח שאינו נוקב בשם של שפה. כיוון "מה המילה
+    // באנגלית" עולה רק לערך לטיני, ולכן במילון ערבי או עברי הוא אינו נשאל כלל.
+    var LEXK = PAIRS.every(function(p){ return p.lat; }) ? 'lat'
+             : PAIRS.every(function(p){ return p.ara; }) ? 'ara'
+             : PAIRS.every(function(p){ return p.heb; }) ? 'heb' : 'mix';
+    var LEXT = {
+      lat: { wordD:T.mWordD,    memD:T.mMemoryD,    mem:T.memPrompt,    toHe:T.wordToHe,    toEn:T.wordToEn },
+      ara: { wordD:T.mWordDAra, memD:T.mMemoryDAra, mem:T.memPromptAra, toHe:T.wordToHe,    toEn:T.wordToEnMix },
+      heb: { wordD:T.mWordDHeb, memD:T.mMemoryDHeb, mem:T.memPromptHeb, toHe:T.wordToHeHeb, toEn:T.wordToEnMix },
+      mix: { wordD:T.mWordDMix, memD:T.mMemoryDMix, mem:T.memPromptMix, toHe:T.wordToHe,    toEn:T.wordToEnMix }
+    }[LEXK];
+
     function pickPairs(n, src){
       src = src || PAIRS;
       var live = src.filter(function(it){ var s = state[it.id]; return !(s && s.rest > 0); });
@@ -2719,7 +2745,7 @@
         q.textContent = toHe ? it.en : it.he;
         if(toHe) q.classList.add('gm-en');
         var wrap = board.querySelector('.gm-opts');
-        say(toHe ? T.wordToHe : T.wordToEn);
+        say(toHe ? LEXT.toHe : LEXT.toEn);
         opts.forEach(function(o){
           var b = document.createElement('button');
           b.type = 'button'; b.className = 'gm-card' + (toHe ? '' : ' gm-en'); b.textContent = o;
@@ -2796,7 +2822,7 @@
       roundRight = 0; roundTotal = round.length; setCombo(0); setProg(0, roundTotal);
       board.innerHTML = '<div class="gm-mem"></div>';
       var grid = board.querySelector('.gm-mem');
-      say(T.memPrompt);
+      say(LEXT.mem);
       function reveal(b, on){
         b.classList.toggle('gm-tile-up', on);
         b.querySelector('.gm-tile-face').hidden = on;
@@ -2947,11 +2973,11 @@
         ok:function(){ return POOL.length >= 4; } },
       // אוצר מילים. הגבול הוא כמה זוגות המילון של הדף באמת נותן: ארבעה
       // לשאלה רב-ברירה ולכרטיסייה ולאיות, שישה ללוח הזיכרון (שנים-עשר קלפים).
-      { id:'word',    fn:playWord,    ico:'◇', name:T.mWord,    desc:T.mWordD,    grp:'lex',
+      { id:'word',    fn:playWord,    ico:'◇', name:T.mWord,    desc:LEXT.wordD,  grp:'lex',
         ok:function(){ return PAIRS.length >= 4; } },
       { id:'flash',   fn:playFlash,   ico:'❑', name:T.mFlash,   desc:T.mFlashD,   grp:'lex',
         ok:function(){ return PAIRS.length >= 4; } },
-      { id:'memory',  fn:playMemory,  ico:'⧉', name:T.mMemory,  desc:T.mMemoryD,  grp:'lex',
+      { id:'memory',  fn:playMemory,  ico:'⧉', name:T.mMemory,  desc:LEXT.memD,   grp:'lex',
         ok:function(){ return PAIRS_SHORT.length >= 6; } },
       { id:'spell',   fn:playSpell,   ico:'✎', name:T.mSpell,   desc:T.mSpellD,   grp:'lex',
         ok:function(){ return PAIRS_LAT.length >= 4; } },
