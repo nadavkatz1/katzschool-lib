@@ -1598,12 +1598,12 @@
     // Row 6 is the two-modes case (two values share the largest frequency).
     // '+' add, '=' equals, ASCII hyphen only for minus/other dashes.
     var ROWS = [
-      { kind:'choose', pre:'טבלת הספרים (שכיחויות 4, 5, 8, 5, 3): מהי השכיחות של "5 ספרים"?', opts:['8','5'], answer:'8', post:'בשורה של 5 ספרים רשומה השכיחות 8', example:true },
+      { kind:'choose', pre:'טבלת הספרים (שכיחויות 4, 5, 8, 5, 3): מהי השכיחות של "5 ספרים"?', opts:['5','8'], answer:'8', post:'בשורה של 5 ספרים רשומה השכיחות 8', example:true },
       { kind:'choose', pre:'בטבלת הספרים, מהי השכיחות של "4 ספרים"?', opts:['5','4'], answer:'5', post:'הערך "4 ספרים" מופיע 5 פעמים' },
-      { kind:'choose', pre:'מהו סך כל התלמידים בטבלת הספרים?', opts:['25','20'], answer:'25', post:'4 + 5 + 8 + 5 + 3 = 25' },
+      { kind:'choose', pre:'מהו סך כל התלמידים בטבלת הספרים?', opts:['20','25'], answer:'25', post:'4 + 5 + 8 + 5 + 3 = 25' },
       { kind:'choose', pre:'כמה קראו יותר מ-5 ספרים? (6 ו-7 בלבד)', opts:['8','16'], answer:'8', post:'5 + 3 = 8, לא כולל את 5' },
       { kind:'choose', pre:'השלמת טבלה: 8, 7, ?, סך הכול 20 - מהי השכיחות החסרה?', opts:['5','15'], answer:'5', post:'20 - 15 = 5' },
-      { kind:'choose', pre:'צבעים: כחול 7, אדום 7, ירוק 4, צהוב 2 - מהי השכיחות היחסית של ירוק?', opts:['4 מתוך 20','4 מתוך 16'], answer:'4 מתוך 20', post:'סך הכול 7+7+4+2 = 20, אז 4 מתוך 20' }
+      { kind:'choose', pre:'צבעים: כחול 7, אדום 7, ירוק 4, צהוב 2 - מהי השכיחות היחסית של ירוק?', opts:['4 מתוך 16','4 מתוך 20'], answer:'4 מתוך 20', post:'סך הכול 7+7+4+2 = 20, אז 4 מתוך 20' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

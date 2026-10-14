@@ -1536,10 +1536,10 @@
     var ROWS = [
       { kind:'choose', pre:'סֵפֶר', opts:['צירי','קמץ'], answer:'צירי', post:'- התנועה של האות הראשונה', example:true },
       { kind:'choose', pre:'שָׁלוֹם', opts:['קמץ','חולם'], answer:'קמץ', post:'- התנועה של האות הראשונה' },
-      { kind:'choose', pre:'חֹם', opts:['חולם','שורוק'], answer:'חולם', post:'- התנועה של האות' },
+      { kind:'choose', pre:'חֹם', opts:['שורוק','חולם'], answer:'חולם', post:'- התנועה של האות' },
       { kind:'choose', pre:'קִיר', opts:['חיריק','צירי'], answer:'חיריק', post:'- התנועה של האות הראשונה' },
-      { kind:'choose', pre:'סוּס', opts:['ו','ס'], answer:'ו', post:'- אם הקריאה במילה' },
-      { kind:'choose', pre:'בָּא', opts:['א','ב'], answer:'א', post:'- אם הקריאה במילה' }
+      { kind:'choose', pre:'סוּס', opts:['ס','ו'], answer:'ו', post:'- אם הקריאה במילה' },
+      { kind:'choose', pre:'בָּא', opts:['ב','א'], answer:'א', post:'- אם הקריאה במילה' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

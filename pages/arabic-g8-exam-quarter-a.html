@@ -1651,12 +1651,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'הצירוף התקני ל"ספר התלמיד" (סמיכות)', opts:['كِتَابُ الطَّالِبِ','الْكِتَابُ الطَّالِبِ'], answer:'كِتَابُ الطَّالِبِ', post:'(נסמך בלי ال)', example:true },
+      { kind:'choose', pre:'הצירוף התקני ל"ספר התלמיד" (סמיכות)', opts:['الْكِتَابُ الطَّالِبِ','كِتَابُ الطَّالِبِ'], answer:'كِتَابُ الطَّالِبِ', post:'(נסמך בלי ال)', example:true },
       { kind:'choose', pre:'הצירוף שפירושו "חדר השינה"', opts:['غُرْفَةُ النَّوْمِ','بَيْتُ الجَدِّ'], answer:'غُرْفَةُ النَّوْمِ', post:'(ghurfat an-nawm)' },
       { kind:'choose', pre:'הבית שלנו (קניין ברבים)', opts:['بَيْتُنَا','بَيْتُكُم'], answer:'بَيْتُنَا', post:'(baytunā)' },
-      { kind:'choose', pre:'הבית שלכן (פנייה אל נשים)', opts:['بَيْتُكُنَّ','بَيْتُكُم'], answer:'بَيْتُكُنَّ', post:'(baytukunna, ـنَّ)' },
+      { kind:'choose', pre:'הבית שלכן (פנייה אל נשים)', opts:['بَيْتُكُم','بَيْتُكُنَّ'], answer:'بَيْتُكُنَّ', post:'(baytukunna, ـنَّ)' },
       { kind:'choose', pre:'הם כתבו (עבר, נסתרים)', opts:['كَتَبُوا','كَتَبْنَا'], answer:'كَتَبُوا', post:'(katabū)' },
-      { kind:'choose', pre:'אנחנו לא כתבנו (שלילה)', opts:['مَا كَتَبْنَا','لا كَتَبْنَا'], answer:'مَا كَتَبْنَا', post:'(שלילה במ־مَا)' }
+      { kind:'choose', pre:'אנחנו לא כתבנו (שלילה)', opts:['لا كَتَبْنَا','مَا كَتَبْنَا'], answer:'مَا كَتَبْنَا', post:'(שלילה במ־مَا)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

@@ -1587,12 +1587,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'כינוי הזיקה לזכר יחיד', opts:['الَّذِي','الَّتِي'], answer:'الَّذِي', post:'(alladhī - זכר יחיד)', example:true },
-      { kind:'choose', pre:'כינוי הזיקה לנקבה יחידה', opts:['الَّذِي','الَّتِي'], answer:'الَّتِي', post:'(allatī - נקבה יחידה)' },
-      { kind:'choose', pre:'כינוי הזיקה לזכר רבים', opts:['الَّذِينَ','اللَّاتِي'], answer:'الَّذِينَ', post:'(alladhīna - זכר רבים)' },
+      { kind:'choose', pre:'כינוי הזיקה לזכר יחיד', opts:['الَّتِي','الَّذِي'], answer:'الَّذِي', post:'(alladhī - זכר יחיד)', example:true },
+      { kind:'choose', pre:'כינוי הזיקה לנקבה יחידה', opts:['الَّتِي','الَّذِي'], answer:'الَّتِي', post:'(allatī - נקבה יחידה)' },
+      { kind:'choose', pre:'כינוי הזיקה לזכר רבים', opts:['اللَّاتِي','الَّذِينَ'], answer:'الَّذِينَ', post:'(alladhīna - זכר רבים)' },
       { kind:'choose', pre:'כינוי הזיקה לנקבה רבים', opts:['اللَّاتِي','الَّذِينَ'], answer:'اللَّاتِي', post:'(allātī - נקבה רבים)' },
       { kind:'choose', pre:'המתאים ל־المَدِينَة (עיר, נקבה יחידה)', opts:['الَّتِي','الَّذِي'], answer:'الَّتِي', post:'(المَدِينَةُ الَّتِي زُرْتُهَا)' },
-      { kind:'choose', pre:'המתאים ל־الطُّلَّاب (תלמידים, זכר רבים)', opts:['الَّذِينَ','الَّذِي'], answer:'الَّذِينَ', post:'(الطُّلَّابُ الَّذِينَ نَجَحُوا)' }
+      { kind:'choose', pre:'המתאים ל־الطُّلَّاب (תלמידים, זכר רבים)', opts:['الَّذِي','الَّذِينَ'], answer:'الَّذِينَ', post:'(الطُّلَّابُ الَّذِينَ نَجَحُوا)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

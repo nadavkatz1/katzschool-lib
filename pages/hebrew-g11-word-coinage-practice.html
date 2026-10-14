@@ -1612,12 +1612,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:"המנהלת ___ את הצוות לישיבה", opts:["כַּנֵּס","הִכָּנֵס"], answer:"כַּנֵּס", post:"", example:true },
+      { kind:'choose', pre:"המנהלת ___ את הצוות לישיבה", opts:["הִכָּנֵס","כַּנֵּס"], answer:"כַּנֵּס", post:"", example:true },
       { kind:'choose', pre:"___ ושב במקומך", opts:["כַּנֵּס","הִכָּנֵס"], answer:"הִכָּנֵס", post:"" },
       { kind:'choose', pre:"המילים החדשות ה___ בכל שנה נבדקות", opts:["נוֹצָרוֹת","נוֹצְרוֹת"], answer:"נוֹצָרוֹת", post:"" },
       { kind:'choose', pre:"הכלבות ה___ על העדר", opts:["נוֹצָרוֹת","נוֹצְרוֹת"], answer:"נוֹצְרוֹת", post:"" },
       { kind:'choose', pre:"הוא ___ אנגלית בחטיבה", opts:["יְלַמֵּד","יִלָּמֵד"], answer:"יְלַמֵּד", post:"" },
-      { kind:'choose', pre:"הפרק הזה ___ רק בכיתה י\"ב", opts:["יְלַמֵּד","יִלָּמֵד"], answer:"יִלָּמֵד", post:"" }
+      { kind:'choose', pre:"הפרק הזה ___ רק בכיתה י\"ב", opts:["יִלָּמֵד","יְלַמֵּד"], answer:"יִלָּמֵד", post:"" }
     ];
 
     var norm = function(s){ return String(s||'').trim().replace(/\s+/g,' ').replace(/[.?!]+$/,''); };

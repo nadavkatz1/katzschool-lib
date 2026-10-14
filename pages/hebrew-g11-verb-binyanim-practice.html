@@ -1519,10 +1519,10 @@
     var ROWS = [
       { kind:'choose', pre:'הפועל "כָּתַב" שייך לבניין', opts:['קל','נפעל'], answer:'קל', post:'- הבניין', example:true },
       { kind:'choose', pre:'הפועל "נִכְתַּב" שייך לבניין', opts:['נפעל','קל'], answer:'נפעל', post:'- הבניין' },
-      { kind:'choose', pre:'הפועל "הִתְלַבֵּשׁ" שייך לבניין', opts:['התפעל','הפעיל'], answer:'התפעל', post:'- הבניין' },
-      { kind:'choose', pre:'הפועל "מְדַבֵּר" נמצא בזמן', opts:['הווה','עבר'], answer:'הווה', post:'- הזמן' },
+      { kind:'choose', pre:'הפועל "הִתְלַבֵּשׁ" שייך לבניין', opts:['הפעיל','התפעל'], answer:'התפעל', post:'- הבניין' },
+      { kind:'choose', pre:'הפועל "מְדַבֵּר" נמצא בזמן', opts:['עבר','הווה'], answer:'הווה', post:'- הזמן' },
       { kind:'choose', pre:'הפועל "הֻדְלַק" שייך לבניין', opts:['הופעל','הפעיל'], answer:'הופעל', post:'- הבניין' },
-      { kind:'choose', pre:'הפועל "סֻפַּר" שייך לבניין', opts:['פוּעל','פיעל'], answer:'פוּעל', post:'- הבניין' }
+      { kind:'choose', pre:'הפועל "סֻפַּר" שייך לבניין', opts:['פיעל','פוּעל'], answer:'פוּעל', post:'- הבניין' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

@@ -1647,11 +1647,11 @@
 
     var ROWS = [
       { kind:'choose', pre:'ההברה של האות ب עם فَتْحَة (a)', opts:['بَ','بِ'], answer:'بَ', post:'(a, ba)', example:true },
-      { kind:'choose', pre:'המילה שפירושה בית ספר', opts:['مَدْرَسَة','كِتَاب'], answer:'مَدْرَسَة', post:'(madrasa)' },
-      { kind:'choose', pre:'הצורה המיודעת של قَمَر (ירח)', opts:['قَمَر','الْقَمَر'], answer:'الْقَمَر', post:'(הירח)' },
+      { kind:'choose', pre:'המילה שפירושה בית ספר', opts:['كِتَاب','مَدْرَسَة'], answer:'مَدْرَسَة', post:'(madrasa)' },
+      { kind:'choose', pre:'הצורה המיודעת של قَمَر (ירח)', opts:['الْقَمَر','قَمَر'], answer:'الْقَمَر', post:'(הירח)' },
       { kind:'choose', pre:'הבית שלי (כינוי קניין)', opts:['بَيْتِي','بَيْتُهَا'], answer:'بَيْتِي', post:'(baytī)' },
-      { kind:'choose', pre:'זו בית ספר: مَدْرَسَة נקבה, ולכן', opts:['هٰذِهِ','هٰذَا'], answer:'هٰذِهِ', post:'(התאמה למין)' },
-      { kind:'choose', pre:'הוא כתב (עבר, נסתר)', opts:['كَتَبَ','كَتَبْتُ'], answer:'كَتَبَ', post:'(kataba)' }
+      { kind:'choose', pre:'זו בית ספר: مَدْرَسَة נקבה, ולכן', opts:['هٰذَا','هٰذِهِ'], answer:'هٰذِهِ', post:'(התאמה למין)' },
+      { kind:'choose', pre:'הוא כתב (עבר, נסתר)', opts:['كَتَبْتُ','كَتَبَ'], answer:'كَتَبَ', post:'(kataba)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

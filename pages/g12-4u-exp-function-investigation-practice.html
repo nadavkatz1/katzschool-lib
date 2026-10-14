@@ -1659,10 +1659,10 @@
     // and f'(x)=0 for extrema (eˣ>0 so only the polynomial factor matters).
     // Every value re-derived by hand (product rule, chain rule, substitution).
     var ROWS = [
-      { kind:'choose', pre:'מהי הנגזרת של x·eˣ בכלל המכפלה?', expr:'x·eˣ', opts:['(1+x)eˣ','eˣ'], answer:'(1+x)eˣ', post:'1·eˣ + x·eˣ = (1+x)eˣ (מאגר)', example:true },
-      { kind:'choose', pre:'היכן מתאפסת הנגזרת (1+x)eˣ?', expr:'(1+x)eˣ = 0', opts:['x = -1','x = 1'], answer:'x = -1', post:'eˣ > 0, ולכן 1+x = 0 ונותן x = -1 (מאגר)' },
+      { kind:'choose', pre:'מהי הנגזרת של x·eˣ בכלל המכפלה?', expr:'x·eˣ', opts:['eˣ','(1+x)eˣ'], answer:'(1+x)eˣ', post:'1·eˣ + x·eˣ = (1+x)eˣ (מאגר)', example:true },
+      { kind:'choose', pre:'היכן מתאפסת הנגזרת (1+x)eˣ?', expr:'(1+x)eˣ = 0', opts:['x = 1','x = -1'], answer:'x = -1', post:'eˣ > 0, ולכן 1+x = 0 ונותן x = -1 (מאגר)' },
       { kind:'choose', pre:'מהי האסימפטוטה האופקית של x·eˣ כאשר x שואף ל-∞ שלילי?', expr:'x·eˣ', opts:['y = 0','y = 1'], answer:'y = 0', post:'הדעיכה של eˣ מנצחת ולכן x·eˣ שואף ל-0 (מאגר)' },
-      { kind:'choose', pre:'מהי הנגזרת של e<sup>-x²</sup> בכלל השרשרת?', expr:'e<sup>-x²</sup>', opts:['-2x·e<sup>-x²</sup>','-2x'], answer:'-2x·e<sup>-x²</sup>', post:'כלל השרשרת עם u = -x²: מכפילים בנגזרת -2x (מאגר)' },
+      { kind:'choose', pre:'מהי הנגזרת של e<sup>-x²</sup> בכלל השרשרת?', expr:'e<sup>-x²</sup>', opts:['-2x','-2x·e<sup>-x²</sup>'], answer:'-2x·e<sup>-x²</sup>', post:'כלל השרשרת עם u = -x²: מכפילים בנגזרת -2x (מאגר)' },
       { kind:'choose', pre:'היכן הקיצון של (x-2)eˣ, שנגזרתה (x-1)eˣ?', expr:'(x-1)eˣ = 0', opts:['x = 1','x = 2'], answer:'x = 1', post:'eˣ > 0, ולכן x-1 = 0 ונותן x = 1' },
       { kind:'choose', pre:'מהו ערך המקסימום של e<sup>-x²</sup>?', expr:'f(0)', opts:['1','0'], answer:'1', post:'f(0) = e⁰ = 1, ולכן המקסימום הוא (0, 1) (מאגר)' }
     ];

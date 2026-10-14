@@ -1544,12 +1544,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'שיחקנו [בחצר]', opts:['תיאור','מושא','לוואי'], answer:'תיאור', post:'- התפקיד התחבירי', example:true },
+      { kind:'choose', pre:'שיחקנו [בחצר]', opts:['לוואי','מושא','תיאור'], answer:'תיאור', post:'- התפקיד התחבירי', example:true },
       { kind:'choose', pre:'המורה לימדה [את התלמידים]', opts:['מושא','תיאור','לוואי'], answer:'מושא', post:'- התפקיד התחבירי' },
-      { kind:'choose', pre:'קנתה אימא לחם [טרי]', opts:['לוואי','תיאור','מושא'], answer:'לוואי', post:'- התפקיד התחבירי' },
+      { kind:'choose', pre:'הכלב נבח [על הדוור]', opts:['תיאור','מושא','לוואי'], answer:'מושא', post:'- התפקיד התחבירי' },
       { kind:'choose', pre:'נשארנו בבית [בגלל הגשם]', opts:['תיאור','מושא','לוואי'], answer:'תיאור', post:'- התפקיד התחבירי' },
-      { kind:'choose', pre:'הכלב נבח [על הדוור]', opts:['מושא','תיאור','לוואי'], answer:'מושא', post:'- התפקיד התחבירי' },
-      { kind:'choose', pre:'הילד [שישב בפינה] קרא', opts:['לוואי','תיאור','מושא'], answer:'לוואי', post:'- התפקיד התחבירי' }
+      { kind:'choose', pre:'קנתה אימא לחם [טרי]', opts:['מושא','תיאור','לוואי'], answer:'לוואי', post:'- התפקיד התחבירי' },
+      { kind:'choose', pre:'הילד [שישב בפינה] קרא', opts:['תיאור','לוואי','מושא'], answer:'לוואי', post:'- התפקיד התחבירי' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

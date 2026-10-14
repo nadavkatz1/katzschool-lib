@@ -1708,10 +1708,10 @@
     // range, standard deviation, weighted mean from a frequency table.
     // Every statistic re-computed by hand from the listed set (sort first; clean answers).
     var ROWS = [
-      { kind:'choose', pre:'מהו הממוצע?', expr:'3, 5, 5, 7, 10', opts:['6','7'], answer:'6', post:'סכום 30 חלקי 5 = 6', example:true },
+      { kind:'choose', pre:'מהו הממוצע?', expr:'3, 5, 5, 7, 10', opts:['7','6'], answer:'6', post:'סכום 30 חלקי 5 = 6', example:true },
       { kind:'choose', pre:'מהו החציון?', expr:'4, 6, 8, 10', opts:['7','8'], answer:'7', post:'מספר זוגי - ממוצע שני האמצעיים: (6 + 8) / 2 = 7' },
-      { kind:'choose', pre:'מהו השכיח?', expr:'3, 5, 5, 7, 10', opts:['5','7'], answer:'5', post:'הערך 5 מופיע פעמיים - יותר מכל ערך אחר' },
-      { kind:'choose', pre:'מהו הטווח?', expr:'3, 5, 5, 7, 10', opts:['7','10'], answer:'7', post:'מקסימום פחות מינימום: 10 - 3 = 7' },
+      { kind:'choose', pre:'מהו השכיח?', expr:'3, 5, 5, 7, 10', opts:['7','5'], answer:'5', post:'הערך 5 מופיע פעמיים - יותר מכל ערך אחר' },
+      { kind:'choose', pre:'מהו הטווח?', expr:'3, 5, 5, 7, 10', opts:['10','7'], answer:'7', post:'מקסימום פחות מינימום: 10 - 3 = 7' },
       { kind:'choose', pre:'מהי סטיית התקן?', expr:'3, 5, 5, 7, 10', opts:['2.37','5.6'], answer:'2.37', post:'שורש הממוצע של ריבועי הסטיות: sqrt(28 / 5) ~ 2.37 (5.6 היא השונות, בלי השורש)' },
       { kind:'choose', pre:'מהו הממוצע המשוקלל?', expr:'2(x3), 4(x2), 9(x5)', opts:['5.9','5'], answer:'5.9', post:'(2 * 3 + 4 * 2 + 9 * 5) / 10 = 59 / 10 = 5.9' }
     ];

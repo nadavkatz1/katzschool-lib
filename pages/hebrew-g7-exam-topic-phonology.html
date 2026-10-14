@@ -1669,12 +1669,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'קובוץ', opts:['קבוצה U','קבוצה I'], answer:'קבוצה U', post:'- קבוצת התנועה', example:true },
+      { kind:'choose', pre:'קובוץ', opts:['קבוצה I','קבוצה U'], answer:'קבוצה U', post:'- קבוצת התנועה', example:true },
       { kind:'choose', pre:'סוּס', opts:['ס','ו'], answer:'ו', post:'- אם הקריאה במילה' },
       { kind:'choose', pre:'שָׁלוֹם', opts:['קמץ','חולם'], answer:'קמץ', post:'- התנועה של האות הראשונה' },
       { kind:'choose', pre:'חֹם', opts:['קבוצה U','קבוצה O'], answer:'קבוצה O', post:'- קבוצת התנועה' },
       { kind:'choose', pre:'קִיר', opts:['עיצור','אם קריאה'], answer:'עיצור', post:'- תפקידה של האות ק' },
-      { kind:'choose', pre:'בָּא', opts:['ב','א'], answer:'א', post:'- אם הקריאה במילה' }
+      { kind:'choose', pre:'בָּא', opts:['א','ב'], answer:'א', post:'- אם הקריאה במילה' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

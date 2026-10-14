@@ -1710,11 +1710,11 @@
     //   cos- -> II,III ; tan+ -> I,III (solutions 180 apart); cos x = 0 -> 90, 270.
     var ROWS = [
       { kind:'choose', pre:'sin x = 1/2 בתחום 0-360: הפתרון ברביע II הוא', expr:'x = 180 - 30 =', opts:['150','210'], answer:'150', post:'sin חיובי ← רביעים I, II; ברביע II: x = 180 - 30 = 150', example:true },
-      { kind:'choose', pre:'cos x = 0 בתחום 0-360: הפתרון הגדול הוא', expr:'x =', opts:['270','180'], answer:'270', post:'cos x = 0 על ציר ה-y: x = 90 ו-x = 270; הגדול הוא 270' },
+      { kind:'choose', pre:'cos x = 0 בתחום 0-360: הפתרון הגדול הוא', expr:'x =', opts:['180','270'], answer:'270', post:'cos x = 0 על ציר ה-y: x = 90 ו-x = 270; הגדול הוא 270' },
       { kind:'choose', pre:'tan x = 1 בתחום 0-360: הפתרון ברביע III הוא', expr:'x = 180 + 45 =', opts:['225','135'], answer:'225', post:'tan חיובי ← רביעים I, III; פתרונות tan במרחק 180: x = 45 ו-x = 225' },
       { kind:'choose', pre:'sin x = -1/2 בתחום 0-360: הפתרון הקטן הוא', expr:'x = 180 + 30 =', opts:['210','330'], answer:'210', post:'sin שלילי ← רביעים III, IV: x = 210 ו-x = 330; הקטן הוא 210' },
-      { kind:'choose', pre:'cos x = 1/2 בתחום 0-360: הפתרון ברביע IV הוא', expr:'x = 360 - 60 =', opts:['300','240'], answer:'300', post:'cos חיובי ← רביעים I, IV; זווית ייחוס 60: x = 60 ו-x = 300' },
-      { kind:'choose', pre:'כמה פתרונות יש ל-sin x = 1/2 בתחום 0-360?', expr:'מספר הפתרונות =', opts:['2','1'], answer:'2', post:'שתי נקודות באותו גובה על המעגל: x = 30 ו-x = 150, ולכן שני פתרונות' }
+      { kind:'choose', pre:'cos x = 1/2 בתחום 0-360: הפתרון ברביע IV הוא', expr:'x = 360 - 60 =', opts:['240','300'], answer:'300', post:'cos חיובי ← רביעים I, IV; זווית ייחוס 60: x = 60 ו-x = 300' },
+      { kind:'choose', pre:'כמה פתרונות יש ל-sin x = 1/2 בתחום 0-360?', expr:'מספר הפתרונות =', opts:['1','2'], answer:'2', post:'שתי נקודות באותו גובה על המעגל: x = 30 ו-x = 150, ולכן שני פתרונות' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

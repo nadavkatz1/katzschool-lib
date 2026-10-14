@@ -1665,12 +1665,12 @@
     // diagonal sqrt(a²+b²+c²), pyramid volume ⅓·(base area)·height, distance in space
     // sqrt(Δx²+Δy²+Δz²). Every value re-computed by hand (clean / bank answers).
     var ROWS = [
-      { kind:'choose', pre:'מהו נפח התיבה?', expr:'3 × 4 × 5', opts:['60','12'], answer:'60', post:'נפח תיבה = a·b·c = 3·4·5 = 60 (מאגר)', example:true },
+      { kind:'choose', pre:'מהו נפח התיבה?', expr:'3 × 4 × 5', opts:['12','60'], answer:'60', post:'נפח תיבה = a·b·c = 3·4·5 = 60 (מאגר)', example:true },
       { kind:'choose', pre:'מהו המרחק מהראשית?', expr:'(1, 2, 2)', opts:['3','9'], answer:'3', post:'√(1+4+4) = √9 = 3 (מאגר)' },
-      { kind:'choose', pre:'מהו נפח הפירמידה (בסיס ריבוע צלע 6, גובה 10)?', expr:'⅓ · 36 · 10', opts:['120','360'], answer:'120', post:'V = ⅓·36·10 = 120 (מאגר)' },
+      { kind:'choose', pre:'מהו נפח הפירמידה (בסיס ריבוע צלע 6, גובה 10)?', expr:'⅓ · 36 · 10', opts:['360','120'], answer:'120', post:'V = ⅓·36·10 = 120 (מאגר)' },
       { kind:'choose', pre:'מהו ריבוע אלכסון התיבה 3 × 4 × 5?', expr:'a² + b² + c²', opts:['50','12'], answer:'50', post:'9+16+25 = 50, ולכן האלכסון √50 (מאגר)' },
       { kind:'choose', pre:'מהו אלכסון התיבה 2 × 3 × 6?', expr:'√(4 + 9 + 36)', opts:['7','49'], answer:'7', post:'√49 = 7' },
-      { kind:'choose', pre:'מהו נפח הקובייה שצלעה 4?', expr:'4 · 4 · 4', opts:['64','12'], answer:'64', post:'קובייה: 4³ = 64' }
+      { kind:'choose', pre:'מהו נפח הקובייה שצלעה 4?', expr:'4 · 4 · 4', opts:['12','64'], answer:'64', post:'קובייה: 4³ = 64' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

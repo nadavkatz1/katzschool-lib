@@ -1661,10 +1661,10 @@
     var ROWS = [
       { kind:'choose', pre:'מהו הקצה התחתון של תחום ההגדרה?', expr:'f(x) = x·√(x+3)', opts:['-3','3'], answer:'-3', post:'x + 3 ≥ 0, ולכן x ≥ -3', example:true },
       { kind:'choose', pre:'מהו הקצה התחתון של תחום ההגדרה?', expr:'g(x) = √(x-4)', opts:['4','-4'], answer:'4', post:'x - 4 ≥ 0, ולכן x ≥ 4' },
-      { kind:'choose', pre:"באיזה x מתאפסת הנגזרת?", expr:"f'(x) = (3x+6)/(2√(x+3))", opts:['-2','2'], answer:'-2', post:'המונה 3x + 6 = 0, ולכן x = -2' },
+      { kind:'choose', pre:"באיזה x מתאפסת הנגזרת?", expr:"f'(x) = (3x+6)/(2√(x+3))", opts:['2','-2'], answer:'-2', post:'המונה 3x + 6 = 0, ולכן x = -2' },
       { kind:'choose', pre:'מהו ערך המינימום f(-2)?', expr:'f(x) = x·√(x+3)', opts:['-2','1'], answer:'-2', post:'f(-2) = -2·√1 = -2' },
-      { kind:'choose', pre:"באיזה x מתאפסת הנגזרת?", expr:"g'(x) = (3x+12)/(2√(x+6))", opts:['-4','4'], answer:'-4', post:'המונה 3x + 12 = 0, ולכן x = -4' },
-      { kind:'choose', pre:'מהו שיעור ה-x של החיתוך הנוסף עם הצירים?', expr:'f(x) = x·√(x+3)', opts:['0','-3'], answer:'0', post:'f(0) = 0·√3 = 0, כלומר (0, 0)' }
+      { kind:'choose', pre:"באיזה x מתאפסת הנגזרת?", expr:"g'(x) = (3x+12)/(2√(x+6))", opts:['4','-4'], answer:'-4', post:'המונה 3x + 12 = 0, ולכן x = -4' },
+      { kind:'choose', pre:'מהו שיעור ה-x של החיתוך הנוסף עם הצירים?', expr:'f(x) = x·√(x+3)', opts:['-3','0'], answer:'0', post:'f(0) = 0·√3 = 0, כלומר (0, 0)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

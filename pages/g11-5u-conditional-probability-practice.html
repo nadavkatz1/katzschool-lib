@@ -1728,12 +1728,12 @@
     //   teaching page: P(A|B) = P(A∩B)/P(B) ; table = intersection / row-or-column total ;
     //   tree without replacement = updated conditional branch ; independent iff P(A|B) = P(A).
     var ROWS = [
-      { kind:'choose', pre:'100 אנשים, 40 גברים, 30 מרכיבים משקפיים. P(משקפיים | גבר)', expr:'P = 30 / 40 =', opts:['0.75','0.6'], answer:'0.75', post:'מצמצמים ל-40 הגברים', example:true },
+      { kind:'choose', pre:'100 אנשים, 40 גברים, 30 מרכיבים משקפיים. P(משקפיים | גבר)', expr:'P = 30 / 40 =', opts:['0.6','0.75'], answer:'0.75', post:'מצמצמים ל-40 הגברים', example:true },
       { kind:'choose', pre:'נתון P(A∩B) = 0.2 ו-P(B) = 0.5. P(A|B)', expr:'P = 0.2 / 0.5 =', opts:['0.4','0.1'], answer:'0.4', post:'חיתוך חלקי המרחב המצומצם P(B)' },
-      { kind:'choose', pre:'טבלה: 60 נשים, 30 מהן מרכיבות משקפיים. P(משקפיים | אישה)', expr:'P = 30 / 60 =', opts:['0.5','0.75'], answer:'0.5', post:'המרחב עכשיו הוא 60 הנשים' },
+      { kind:'choose', pre:'טבלה: 60 נשים, 30 מהן מרכיבות משקפיים. P(משקפיים | אישה)', expr:'P = 30 / 60 =', opts:['0.75','0.5'], answer:'0.5', post:'המרחב עכשיו הוא 60 הנשים' },
       { kind:'choose', pre:'כד 5 אדומים 3 כחולים, הוצא אדום, בלי החזרה. P(השני אדום | הראשון אדום)', expr:'P = 4 / 7 =', opts:['0.57','0.63'], answer:'0.57', post:'נשארו 4 אדומים מתוך 7' },
       { kind:'choose', pre:'P(ספורט | בן) = 0.75 ו-P(ספורט) = 0.75. המאורעות', expr:'P(A|B) = P(A)', opts:['בלתי-תלויים','תלויים'], answer:'בלתי-תלויים', post:'שווים ← המידע לא שינה' },
-      { kind:'choose', pre:'P(משקפיים | גבר) = 0.75 אך P(משקפיים) = 0.6. המאורעות', expr:'0.75 ≠ 0.6', opts:['תלויים','בלתי-תלויים'], answer:'תלויים', post:'שונים ← המידע שינה' }
+      { kind:'choose', pre:'P(משקפיים | גבר) = 0.75 אך P(משקפיים) = 0.6. המאורעות', expr:'0.75 ≠ 0.6', opts:['בלתי-תלויים','תלויים'], answer:'תלויים', post:'שונים ← המידע שינה' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

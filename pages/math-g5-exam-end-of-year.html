@@ -1798,12 +1798,12 @@
     // opts = answer pills (LTR) · post = short Hebrew rule reminder (RTL). Every answer bank-checked
     // against the g5 teaching pages (fractions, decimal, division, area, average).
     var ROWS = [
-      { kind:'choose', pre:'בחרו את הסכום של', expr:'1/2 + 1/3', opts:['5/6','2/5'], answer:'5/6', post:'מכנה משותף 6: 3/6 + 2/6', example:true },
+      { kind:'choose', pre:'בחרו את הסכום של', expr:'1/2 + 1/3', opts:['2/5','5/6'], answer:'5/6', post:'מכנה משותף 6: 3/6 + 2/6', example:true },
       { kind:'choose', pre:'בחרו את התוצאה של', expr:'384 / 16', opts:['24','22'], answer:'24', post:'16 x 24 = 384' },
       { kind:'choose', pre:'בחרו את שטח המשולש (סמ"ר), בסיס 6 גובה 4', expr:'6 x 4 / 2', opts:['12','24'], answer:'12', post:'משולש = חצי מלבן' },
-      { kind:'choose', pre:'בחרו את הכתיב העשרוני של תשע מאיות', expr:'9/100', opts:['0.09','0.9'], answer:'0.09', post:'מאיות = הבית השני אחרי הנקודה' },
+      { kind:'choose', pre:'בחרו את הכתיב העשרוני של תשע מאיות', expr:'9/100', opts:['0.9','0.09'], answer:'0.09', post:'מאיות = הבית השני אחרי הנקודה' },
       { kind:'choose', pre:'בחרו את הממוצע של', expr:'4, 8, 6', opts:['6','9'], answer:'6', post:'סכום 18 חלקי 3' },
-      { kind:'choose', pre:'בחרו את שטח המקבילית (סמ"ר), בסיס 8 גובה 3', expr:'8 x 3', opts:['24','40'], answer:'24', post:'בסיס x גובה, לא הצלע הנטויה' }
+      { kind:'choose', pre:'בחרו את שטח המקבילית (סמ"ר), בסיס 8 גובה 3', expr:'8 x 3', opts:['40','24'], answer:'24', post:'בסיס x גובה, לא הצלע הנטויה' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

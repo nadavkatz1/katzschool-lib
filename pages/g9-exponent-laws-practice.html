@@ -1698,12 +1698,12 @@
     // no zero/negative exponents; division kept with m>n). Bank forms reused: x³·x⁴=x⁷, x⁵/x²=x³, (x²)³=x⁶,
     // 2³·2²=2⁵=32, (2x)³=8x³, plus the taught (a·b)ⁿ=aⁿ·bⁿ.
     var ROWS = [
-      { kind:'choose', pre:'בחרו את המעריך n', expr:'x³ · x⁴ = xⁿ', opts:['7','12'], answer:'7', post:'כפל חזקות: מחברים, 3 + 4 = 7', example:true },
+      { kind:'choose', pre:'בחרו את המעריך n', expr:'x³ · x⁴ = xⁿ', opts:['12','7'], answer:'7', post:'כפל חזקות: מחברים, 3 + 4 = 7', example:true },
       { kind:'choose', pre:'בחרו את המעריך n', expr:'x⁵ / x² = xⁿ', opts:['3','7'], answer:'3', post:'חילוק חזקות: מחסרים, 5 - 2 = 3' },
-      { kind:'choose', pre:'בחרו את המעריך n', expr:'(x²)³ = xⁿ', opts:['6','5'], answer:'6', post:'חזקת חזקה: מכפילים, 2 · 3 = 6' },
+      { kind:'choose', pre:'בחרו את המעריך n', expr:'(x²)³ = xⁿ', opts:['5','6'], answer:'6', post:'חזקת חזקה: מכפילים, 2 · 3 = 6' },
       { kind:'choose', pre:'בחרו את הפיתוח', expr:'(2x)³ =', opts:['8x³','2x³'], answer:'8x³', post:'חזקת מכפלה: גם המקדם בחזקה, 2³ = 8' },
       { kind:'choose', pre:'בחרו את הערך המספרי', expr:'2³ · 2² =', opts:['32','16'], answer:'32', post:'2³·2² = 2⁵ = 32' },
-      { kind:'choose', pre:'בחרו את הפיתוח', expr:'(ab)⁴ =', opts:['a⁴b⁴','a⁴b'], answer:'a⁴b⁴', post:'חזקת מכפלה: כל גורם מקבל את החזקה' }
+      { kind:'choose', pre:'בחרו את הפיתוח', expr:'(ab)⁴ =', opts:['a⁴b','a⁴b⁴'], answer:'a⁴b⁴', post:'חזקת מכפלה: כל גורם מקבל את החזקה' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

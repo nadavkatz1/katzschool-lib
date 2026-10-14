@@ -1684,10 +1684,10 @@
     //   infinite convergent series (|q| < 1): S = a₁/(1 - q).
     // Every value re-computed by hand (clean answers).
     var ROWS = [
-      { kind:'choose', pre:'מהו האבר a₂₀?', expr:'a₁ = 4, d = 3', opts:['61','64'], answer:'61', post:'aₙ = a₁ + (n-1)d, ולכן a₂₀ = 4 + 19·3 = 61', example:true },
-      { kind:'choose', pre:'מהו הסכום S₂₀?', expr:'a₁ = 4, d = 3', opts:['650','610'], answer:'650', post:'S₂₀ = 20(4 + 61)/2 = 650' },
+      { kind:'choose', pre:'מהו האבר a₂₀?', expr:'a₁ = 4, d = 3', opts:['64','61'], answer:'61', post:'aₙ = a₁ + (n-1)d, ולכן a₂₀ = 4 + 19·3 = 61', example:true },
+      { kind:'choose', pre:'מהו הסכום S₂₀?', expr:'a₁ = 4, d = 3', opts:['610','650'], answer:'650', post:'S₂₀ = 20(4 + 61)/2 = 650' },
       { kind:'choose', pre:'מהו האבר a₅?', expr:'a₁ = 3, q = 2', opts:['48','54'], answer:'48', post:'aₙ = a₁·q<sup>n−1</sup>, ולכן a₅ = 3·2⁴ = 48' },
-      { kind:'choose', pre:'מהו הסכום S₅?', expr:'a₁ = 3, q = 2', opts:['93','96'], answer:'93', post:'S₅ = 3(2⁵ - 1)/(2 - 1) = 3·31 = 93' },
+      { kind:'choose', pre:'מהו הסכום S₅?', expr:'a₁ = 3, q = 2', opts:['96','93'], answer:'93', post:'S₅ = 3(2⁵ - 1)/(2 - 1) = 3·31 = 93' },
       { kind:'choose', pre:'מהו סכום הטור האינסופי?', expr:'a₁ = 8, q = 1/2', opts:['16','8'], answer:'16', post:'|q| < 1, ולכן S = 8/(1 - 1/2) = 16' },
       { kind:'choose', pre:'מתכנס או מתבדר?', expr:'a₁ = 5, q = 2', opts:['מתבדר','מתכנס'], answer:'מתבדר', post:'|q| = 2 >= 1, ולכן הטור מתבדר, אין סכום סופי' }
     ];

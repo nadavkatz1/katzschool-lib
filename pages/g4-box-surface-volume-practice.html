@@ -1637,12 +1637,12 @@
     // Every answer re-derivable by hand from the teaching page:
     // parts 6/12/8; V = L×W×H (יח"ק); SA = 2×(LW+LH+WH) (יח"ר); cube 2×2×2 -> V 8.
     var ROWS = [
-      { kind:'choose', pre:'כמה פאות יש לתיבה?', opts:['6','8'], answer:'6', post:'תיבה = 6 פאות', example:true },
+      { kind:'choose', pre:'כמה פאות יש לתיבה?', opts:['8','6'], answer:'6', post:'תיבה = 6 פאות', example:true },
       { kind:'choose', pre:'כמה קדקודים (פינות) יש לתיבה?', opts:['8','6'], answer:'8', post:'תיבה = 8 קדקודים' },
-      { kind:'choose', pre:'מהו הנפח של תיבה 3×4×2?', opts:['24','20'], answer:'24', post:'נפח = 3×4×2 = 24 יח"ק' },
+      { kind:'choose', pre:'מהו הנפח של תיבה 3×4×2?', opts:['20','24'], answer:'24', post:'נפח = 3×4×2 = 24 יח"ק' },
       { kind:'choose', pre:'מהו שטח הפנים של תיבה 3×4×2?', opts:['52','26'], answer:'52', post:'שטח פנים = 2×26 = 52 יח"ר' },
       { kind:'choose', pre:'מהו הנפח של קובייה 2×2×2?', opts:['8','6'], answer:'8', post:'נפח = 2×2×2 = 8 יח"ק' },
-      { kind:'choose', pre:'באילו יחידות מודדים נפח?', opts:['מעוקבות','ריבועיות'], answer:'מעוקבות', post:'נפח ביחידות מעוקבות (יח"ק)' }
+      { kind:'choose', pre:'באילו יחידות מודדים נפח?', opts:['ריבועיות','מעוקבות'], answer:'מעוקבות', post:'נפח ביחידות מעוקבות (יח"ק)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

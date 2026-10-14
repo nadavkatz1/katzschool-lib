@@ -1686,10 +1686,10 @@
     // (power rule (xⁿ) → n·xⁿ⁻¹; derivative of a constant = 0; constant multiple; slope of the tangent = f'(x0); horizontal tangent where f'(x)=0).
     // NOTE: no ASCII apostrophe (prime) inside these single-quoted strings - the derivative is asked in Hebrew ("בחרו את הנגזרת") and answered in the pills.
     var ROWS = [
-      { kind:'choose', pre:'בחרו את הנגזרת', expr:'f(x) = x³ →', opts:['3x²','x²'], answer:'3x²', post:'כלל החזקה: מורידים את החזקה כמקדם ומקטינים אותה ב-1', example:true },
+      { kind:'choose', pre:'בחרו את הנגזרת', expr:'f(x) = x³ →', opts:['x²','3x²'], answer:'3x²', post:'כלל החזקה: מורידים את החזקה כמקדם ומקטינים אותה ב-1', example:true },
       { kind:'choose', pre:'בחרו את הנגזרת', expr:'f(x) = x⁵ →', opts:['5x⁴','5x⁵'], answer:'5x⁴', post:'לפי (xⁿ) → n·xⁿ⁻¹ מקבלים 5x⁴; הטעות הנפוצה: לא להקטין את החזקה' },
-      { kind:'choose', pre:'בחרו את הנגזרת של הקבוע', expr:'f(x) = 7 →', opts:['0','7'], answer:'0', post:'נגזרת של קבוע היא 0 - לישר אופקי אין שיפוע' },
-      { kind:'choose', pre:'בחרו את שיפוע המשיק', expr:'f(x) = x² , x = 4 →', opts:['8','16'], answer:'8', post:'הנגזרת 2x, ובהצבה 2·4 = 8 (16 זה f(4), לא השיפוע)' },
+      { kind:'choose', pre:'בחרו את הנגזרת של הקבוע', expr:'f(x) = 7 →', opts:['7','0'], answer:'0', post:'נגזרת של קבוע היא 0 - לישר אופקי אין שיפוע' },
+      { kind:'choose', pre:'בחרו את שיפוע המשיק', expr:'f(x) = x² , x = 4 →', opts:['16','8'], answer:'8', post:'הנגזרת 2x, ובהצבה 2·4 = 8 (16 זה f(4), לא השיפוע)' },
       { kind:'choose', pre:'בחרו את הנגזרת', expr:'f(x) = 2x³ →', opts:['6x²','6x³'], answer:'6x²', post:'2·3x² = 6x²; 6x³ שוכח להקטין את החזקה' },
       { kind:'choose', pre:'איפה המשיק אופקי?', expr:'f(x) = x² - 6x + 5 , x =', opts:['3','6'], answer:'3', post:'המשיק אופקי כאשר הנגזרת 0: 2x - 6 = 0 → x = 3' }
     ];

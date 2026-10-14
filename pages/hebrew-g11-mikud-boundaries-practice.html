@@ -1609,12 +1609,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:"כתיבה ממזגת של שני טקסטים למטרת סקירה", opts:["נכלל","אינו נכלל"], answer:"נכלל", post:"", example:true },
-      { kind:'choose', pre:"כתיבת עמדה אישית מנומקת בהיקף מצומצם", opts:["נכלל","אינו נכלל"], answer:"אינו נכלל", post:"" },
-      { kind:'choose', pre:"טקסטים בלתי מילוליים, כגון קריקטורות ואיורים", opts:["נכלל","אינו נכלל"], answer:"נכלל", post:"" },
+      { kind:'choose', pre:"כתיבה ממזגת של שני טקסטים למטרת סקירה", opts:["אינו נכלל","נכלל"], answer:"נכלל", post:"", example:true },
+      { kind:'choose', pre:"כתיבת עמדה אישית מנומקת בהיקף מצומצם", opts:["אינו נכלל","נכלל"], answer:"אינו נכלל", post:"" },
+      { kind:'choose', pre:"שימוש תקני בשם המספר: שברים", opts:["נכלל","אינו נכלל"], answer:"אינו נכלל", post:"" },
       { kind:'choose', pre:"ערכים אנציקלופדיים וויקיפדיים", opts:["נכלל","אינו נכלל"], answer:"אינו נכלל", post:"" },
       { kind:'choose', pre:"דיוקי הגייה בהקשר: נוֹצָרוֹת מול נוֹצְרוֹת", opts:["נכלל","אינו נכלל"], answer:"נכלל", post:"" },
-      { kind:'choose', pre:"שימוש תקני בשם המספר: שברים", opts:["נכלל","אינו נכלל"], answer:"אינו נכלל", post:"" }
+      { kind:'choose', pre:"טקסטים בלתי מילוליים, כגון קריקטורות ואיורים", opts:["נכלל","אינו נכלל"], answer:"נכלל", post:"" }
     ];
 
     var norm = function(s){ return String(s||'').trim().replace(/\s+/g,' ').replace(/[.?!]+$/,''); };

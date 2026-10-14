@@ -1535,11 +1535,11 @@
 
     var ROWS = [
       { kind:'choose', pre:'"הֵחֵל" - מהו המשלב?', opts:['גבוה/ספרותי','מדובר'], answer:'גבוה/ספרותי', post:'- המשלב', example:true },
-      { kind:'choose', pre:'"הִתְחִיל" - מהו המשלב?', opts:['גבוה/ספרותי','מדובר'], answer:'מדובר', post:'- המשלב' },
-      { kind:'choose', pre:'המקבילה המדוברת של "בְּרַם"', opts:['אֲבָל','אולם'], answer:'אֲבָל', post:'- המקבילה' },
-      { kind:'choose', pre:'המקבילה המדוברת של "עַלְמָה"', opts:['בַּחוּרָה','נערה'], answer:'בַּחוּרָה', post:'- המקבילה' },
+      { kind:'choose', pre:'"הִתְחִיל" - מהו המשלב?', opts:['מדובר','גבוה/ספרותי'], answer:'מדובר', post:'- המשלב' },
+      { kind:'choose', pre:'המקבילה המדוברת של "בְּרַם"', opts:['אולם','אֲבָל'], answer:'אֲבָל', post:'- המקבילה' },
+      { kind:'choose', pre:'המקבילה המדוברת של "עַלְמָה"', opts:['נערה','בַּחוּרָה'], answer:'בַּחוּרָה', post:'- המקבילה' },
       { kind:'choose', pre:'למשמעות "אבל", המילה שמתאימה לנאום', opts:['בְּרַם','אֲבָל'], answer:'בְּרַם', post:'- לנאום' },
-      { kind:'choose', pre:'"מדובר" הוא', opts:['משלב','רובד היסטורי'], answer:'משלב', post:'- הסוג' }
+      { kind:'choose', pre:'"מדובר" הוא', opts:['רובד היסטורי','משלב'], answer:'משלב', post:'- הסוג' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

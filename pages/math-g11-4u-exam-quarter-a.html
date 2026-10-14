@@ -1802,10 +1802,10 @@
     var ROWS = [
       { kind:'choose', pre:'בחרו את הזווית ההיקפית כשהמרכזית על אותה קשת היא 80°:', expr:'', opts:['40°','80°'], answer:'40°', post:'היקפית = מחצית המרכזית', example:true },
       { kind:'choose', pre:'בחרו את אורך המשיק מנקודה במרחק 13 מהמרכז, רדיוס 5:', expr:'', opts:['12','13'], answer:'12', post:'פיתגורס √(169 - 25)' },
-      { kind:'choose', pre:'בחרו את רדיוס המעגל', expr:'(x - 2)² + (y + 1)² = 25', opts:['5','25'], answer:'5', post:'r² = 25' },
+      { kind:'choose', pre:'בחרו את רדיוס המעגל', expr:'(x - 2)² + (y + 1)² = 25', opts:['25','5'], answer:'5', post:'r² = 25' },
       { kind:'choose', pre:'בחרו את הזווית הנגדית במרובע חסום כשאחת מהזוויות היא 70°:', expr:'', opts:['110°','70°'], answer:'110°', post:'סכום זוויות נגדיות 180°' },
-      { kind:'choose', pre:'בחרו את תחום ההגדרה של', expr:'f(x) = 1/(x - 2)', opts:['x ≠ 2','כל x'], answer:'x ≠ 2', post:'המכנה אסור להתאפס' },
-      { kind:'choose', pre:'בחרו את תחום ההגדרה של', expr:'g(x) = √(x - 4)', opts:['x ≥ 4','x ≥ -4'], answer:'x ≥ 4', post:'הביטוי תחת השורש ≥ 0' }
+      { kind:'choose', pre:'בחרו את תחום ההגדרה של', expr:'f(x) = 1/(x - 2)', opts:['כל x','x ≠ 2'], answer:'x ≠ 2', post:'המכנה אסור להתאפס' },
+      { kind:'choose', pre:'בחרו את תחום ההגדרה של', expr:'g(x) = √(x - 4)', opts:['x ≥ -4','x ≥ 4'], answer:'x ≥ 4', post:'הביטוי תחת השורש ≥ 0' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

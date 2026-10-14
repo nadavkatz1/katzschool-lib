@@ -1527,11 +1527,11 @@
     // or a reasonableness fact - all shown on the teaching page. Row 1 is a solved example.
     var ROWS = [
       { kind:'choose', pre:'מחוג קצר על', expr:'3', opts:['3','4'], answer:'3', post:'המחוג הקצר מראה את השעה → השעה 3', example:true },
-      { kind:'choose', pre:'מחוג קצר על', expr:'8', opts:['8','9'], answer:'8', post:'המחוג הקצר על 8 → השעה 8' },
+      { kind:'choose', pre:'מחוג קצר על', expr:'8', opts:['9','8'], answer:'8', post:'המחוג הקצר על 8 → השעה 8' },
       { kind:'choose', pre:'בשעה שלמה, המחוג הארוך עומד על...', opts:['12','6'], answer:'12', post:'בשעה שלמה הארוך על 12' },
       { kind:'choose', pre:'התחלנו ב-4 ועברה שעה אחת. מה השעה?', expr:'4+1', opts:['5','6'], answer:'5', post:'4+1=5, השעה 5' },
-      { kind:'choose', pre:'מי קודם ביום - שעה 8 או שעה 11?', opts:['8','11'], answer:'8', post:'8 קטנה מ-11 → קודמת' },
-      { kind:'choose', pre:'ארוחת צוהריים בשעה 9 בבוקר - סביר?', opts:['לא','כן'], answer:'לא', post:'9 בבוקר מוקדם מדי' }
+      { kind:'choose', pre:'מי קודם ביום - שעה 8 או שעה 11?', opts:['11','8'], answer:'8', post:'8 קטנה מ-11 → קודמת' },
+      { kind:'choose', pre:'ארוחת צוהריים בשעה 9 בבוקר - סביר?', opts:['כן','לא'], answer:'לא', post:'9 בבוקר מוקדם מדי' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

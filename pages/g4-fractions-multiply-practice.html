@@ -1612,11 +1612,11 @@
     // The wrong option is the classic "multiplied the denominator too" mistake (or a flip).
     var ROWS = [
       { kind:'choose', pre:'מה המכפלה?', expr:'3 x 1/4', opts:['3/4','3/12'], answer:'3/4', post:'המכנה נשמר, סופרים מונים: 3 רבעים', example:true },
-      { kind:'choose', pre:'מה המכפלה?', expr:'2 x 1/3', opts:['2/3','2/6'], answer:'2/3', post:'שני שלישים; המכנה 3 נשמר' },
+      { kind:'choose', pre:'מה המכפלה?', expr:'2 x 1/3', opts:['2/6','2/3'], answer:'2/3', post:'שני שלישים; המכנה 3 נשמר' },
       { kind:'choose', pre:'מה המכפלה?', expr:'4 x 1/5', opts:['4/5','5/4'], answer:'4/5', post:'ארבע חמישיות; המכנה נשאר 5' },
       { kind:'choose', pre:'מה המכפלה?', expr:'4 x 1/4', opts:['4/4','1/4'], answer:'4/4', post:'4 חלקים מתוך 4 = שלם אחד' },
-      { kind:'choose', pre:'מה המכפלה?', expr:'3 x 2/5', opts:['6/5','6/15'], answer:'6/5', post:'המונה 3x2=6, המכנה 5 נשמר' },
-      { kind:'choose', pre:'מה המכפלה?', expr:'4 x 2/3', opts:['8/3','8/12'], answer:'8/3', post:'המונה 4x2=8, המכנה 3 נשמר' }
+      { kind:'choose', pre:'מה המכפלה?', expr:'3 x 2/5', opts:['6/15','6/5'], answer:'6/5', post:'המונה 3x2=6, המכנה 5 נשמר' },
+      { kind:'choose', pre:'מה המכפלה?', expr:'4 x 2/3', opts:['8/12','8/3'], answer:'8/3', post:'המונה 4x2=8, המכנה 3 נשמר' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/[.?!]+$/,''); };

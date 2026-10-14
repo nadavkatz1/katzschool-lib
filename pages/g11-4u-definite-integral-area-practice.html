@@ -1698,12 +1698,12 @@
     // Every answer computed by antiderivative + F(b)-F(a), and for area split at crossings and take the sum of absolute
     // values - checked by hand against the 4-unit definite-integral-and-area teaching page.
     var ROWS = [
-      { kind:'choose', pre:'בחרו את ערך האינטגרל המסוים', expr:'∫₀² 2x dx →', opts:['4','2'], answer:'4', post:'F(x)=x²; F(2)-F(0)=4-0=4', example:true },
+      { kind:'choose', pre:'בחרו את ערך האינטגרל המסוים', expr:'∫₀² 2x dx →', opts:['2','4'], answer:'4', post:'F(x)=x²; F(2)-F(0)=4-0=4', example:true },
       { kind:'choose', pre:'בחרו את ערך האינטגרל המסוים', expr:'∫₀³ x² dx →', opts:['9','27'], answer:'9', post:'F(x)=x³/3; 27/3-0=9' },
       { kind:'choose', pre:'בחרו את ערך האינטגרל המסוים', expr:'∫₁⁴ 2 dx →', opts:['6','8'], answer:'6', post:'אינטגרל של קבוע: F(x)=2x; 8-2=6 (מלבן)' },
-      { kind:'choose', pre:'בחרו את השטח בין הגרף לציר x', expr:'f(x)=x²-4 , [-2,2] →', opts:['32/3','-32/3'], answer:'32/3', post:'|∫₋₂²(x²-4)dx|=|-32/3|=32/3; שטח חיובי (מאגר)' },
+      { kind:'choose', pre:'בחרו את השטח בין הגרף לציר x', expr:'f(x)=x²-4 , [-2,2] →', opts:['-32/3','32/3'], answer:'32/3', post:'|∫₋₂²(x²-4)dx|=|-32/3|=32/3; שטח חיובי (מאגר)' },
       { kind:'choose', pre:'בחרו את ערך האינטגרל המסוים', expr:'∫₀¹ 4x³ dx →', opts:['1','4'], answer:'1', post:'F(x)=x⁴; 1-0=1' },
-      { kind:'choose', pre:'בחרו את השטח בין שני הגרפים', expr:'g=x+2 , f=x² , [-1,2] →', opts:['4.5','9'], answer:'4.5', post:'∫₋₁²(x+2-x²)dx=4.5 (מאגר)' }
+      { kind:'choose', pre:'בחרו את השטח בין שני הגרפים', expr:'g=x+2 , f=x² , [-1,2] →', opts:['9','4.5'], answer:'4.5', post:'∫₋₁²(x+2-x²)dx=4.5 (מאגר)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

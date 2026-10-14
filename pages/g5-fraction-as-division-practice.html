@@ -1578,11 +1578,11 @@
     // ' : ' is the division sign, '/' the fraction slash; ASCII hyphen only elsewhere.
     var ROWS = [
       { kind:'choose', pre:'כמה זה', expr:'3 : 4', opts:['3/4','4/3'], answer:'3/4', post:'קו השבר הוא סימן חילוק: 3 : 4 = 3/4', example:true },
-      { kind:'choose', pre:'כמה זה', expr:'1 : 2', opts:['1/2','2/1'], answer:'1/2', post:'שלם אחד מחולק לשניים = חצי' },
+      { kind:'choose', pre:'כמה זה', expr:'1 : 2', opts:['2/1','1/2'], answer:'1/2', post:'שלם אחד מחולק לשניים = חצי' },
       { kind:'choose', pre:'כמה זה', expr:'2 : 5', opts:['2/5','5/2'], answer:'2/5', post:'שתי חמישיות: המונה 2, המכנה 5' },
       { kind:'choose', pre:'כמה זה', expr:'7 : 2', opts:['3 1/2','2 1/2'], answer:'3 1/2', post:'7 : 2 = 3 ושארית 1 → שלושה וחצי' },
-      { kind:'choose', pre:'כמה זה', expr:'25 : 4', opts:['6 1/4','5 1/4'], answer:'6 1/4', post:'25 : 4 = 6 ושארית 1 → שישה ורבע' },
-      { kind:'choose', pre:'כמה זה', expr:'9 : 4', opts:['2 1/4','2 1/2'], answer:'2 1/4', post:'9 : 4 = 2 ושארית 1 → שניים ורבע' }
+      { kind:'choose', pre:'כמה זה', expr:'25 : 4', opts:['5 1/4','6 1/4'], answer:'6 1/4', post:'25 : 4 = 6 ושארית 1 → שישה ורבע' },
+      { kind:'choose', pre:'כמה זה', expr:'9 : 4', opts:['2 1/2','2 1/4'], answer:'2 1/4', post:'9 : 4 = 2 ושארית 1 → שניים ורבע' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

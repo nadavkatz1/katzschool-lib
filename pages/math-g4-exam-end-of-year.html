@@ -1806,10 +1806,10 @@
     var ROWS = [
       { kind:'choose', pre:'בחרו את התוצאה של', expr:'7 + 3 x 5', opts:['22','50'], answer:'22', post:'הכפל קודם: 3 x 5 = 15', example:true },
       { kind:'choose', pre:'בחרו את התוצאה של', expr:'234 x 6', opts:['1404','1444'], answer:'1404', post:'1200 + 180 + 24' },
-      { kind:'choose', pre:'בחרו את התוצאה של', expr:'1536 / 3', opts:['512','502'], answer:'512', post:'500 + 10 + 2' },
-      { kind:'choose', pre:'בחרו את שטח המלבן (סמ"ר), אורך 8 רוחב 5', expr:'8 x 5', opts:['40','26'], answer:'40', post:'שטח = אורך x רוחב' },
+      { kind:'choose', pre:'בחרו את התוצאה של', expr:'1536 / 3', opts:['502','512'], answer:'512', post:'500 + 10 + 2' },
+      { kind:'choose', pre:'בחרו את שטח המלבן (סמ"ר), אורך 8 רוחב 5', expr:'8 x 5', opts:['26','40'], answer:'40', post:'שטח = אורך x רוחב' },
       { kind:'choose', pre:'בחרו את הסכום של', expr:'1/5 + 2/5', opts:['3/5','3/10'], answer:'3/5', post:'מכנה שווה, מחברים מונים' },
-      { kind:'choose', pre:'בחרו כמה ימים יש בשלושה שבועות', expr:'3 x 7', opts:['21','24'], answer:'21', post:'שבוע = 7 ימים' }
+      { kind:'choose', pre:'בחרו כמה ימים יש בשלושה שבועות', expr:'3 x 7', opts:['24','21'], answer:'21', post:'שבוע = 7 ימים' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

@@ -1542,12 +1542,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'הספר הכחול', opts:['שם-תואר','שייכות','צירוף-יחס'], answer:'שם-תואר', post:'- סוג הלוואי', example:true },
+      { kind:'choose', pre:'הספר הכחול', opts:['שייכות','שם-תואר','צירוף-יחס'], answer:'שם-תואר', post:'- סוג הלוואי', example:true },
       { kind:'choose', pre:'ספר התלמיד', opts:['שייכות','שם-תואר','צירוף-יחס'], answer:'שייכות', post:'- סוג הלוואי' },
       { kind:'choose', pre:'הספר שעל השולחן', opts:['צירוף-יחס','שם-תואר','שייכות'], answer:'צירוף-יחס', post:'- סוג הלוואי' },
-      { kind:'choose', pre:'ילדה חכמה', opts:['שם-תואר','שייכות','צירוף-יחס'], answer:'שם-תואר', post:'- סוג הלוואי' },
-      { kind:'choose', pre:'בית הספר', opts:['שייכות','שם-תואר','צירוף-יחס'], answer:'שייכות', post:'- סוג הלוואי' },
-      { kind:'choose', pre:'הבית שברחוב', opts:['צירוף-יחס','שם-תואר','שייכות'], answer:'צירוף-יחס', post:'- סוג הלוואי' }
+      { kind:'choose', pre:'הבית שברחוב', opts:['שייכות','שם-תואר','צירוף-יחס'], answer:'צירוף-יחס', post:'- סוג הלוואי' },
+      { kind:'choose', pre:'ילדה חכמה', opts:['שייכות','שם-תואר','צירוף-יחס'], answer:'שם-תואר', post:'- סוג הלוואי' },
+      { kind:'choose', pre:'בית הספר', opts:['צירוף-יחס','שם-תואר','שייכות'], answer:'שייכות', post:'- סוג הלוואי' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

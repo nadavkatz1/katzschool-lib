@@ -1577,12 +1577,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'המילה שפירושה מדיניות', opts:['سِيَاسَة','سُلْطَة'], answer:'سِيَاسَة', post:'(siyāsa)', example:true },
+      { kind:'choose', pre:'המילה שפירושה מדיניות', opts:['سُلْطَة','سِيَاسَة'], answer:'سِيَاسَة', post:'(siyāsa)', example:true },
       { kind:'choose', pre:'המילה שפירושה שלטון', opts:['سُلْطَة','لَجْنَة'], answer:'سُلْطَة', post:'(sulṭa)' },
-      { kind:'choose', pre:'המילה שפירושה החלטה', opts:['قَرَار','نِظَام'], answer:'قَرَار', post:'(qarār)' },
+      { kind:'choose', pre:'המילה שפירושה החלטה', opts:['نِظَام','قَرَار'], answer:'قَرَار', post:'(qarār)' },
       { kind:'choose', pre:'המילה שפירושה הסכם', opts:['اِتِّفَاق','أَزْمَة'], answer:'اِتِّفَاق', post:'(ittifāq)' },
       { kind:'choose', pre:'המילה שפירושה משבר', opts:['أَزْمَة','أَمْن'], answer:'أَزْمَة', post:'(azma)' },
-      { kind:'choose', pre:'הצירוף שפירושו הפסקת אש', opts:['وَقْف إِطْلَاق النَّار','مُؤْتَمَر قِمّة'], answer:'وَقْف إِطْلَاق النَّار', post:'(צירוף בכותרות)' }
+      { kind:'choose', pre:'הצירוף שפירושו הפסקת אש', opts:['مُؤْتَمَر قِمّة','وَقْف إِطْلَاق النَّار'], answer:'وَقْف إِطْلَاق النَّار', post:'(צירוף בכותרות)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

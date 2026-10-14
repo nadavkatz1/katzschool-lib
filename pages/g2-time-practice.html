@@ -1586,11 +1586,11 @@
     // Every answer re-checkable by hand. Digital time with a colon. Row 1 is a solved example.
     var ROWS = [
       { kind:'choose', pre:'המחוג הקצר על 3, הארוך על 12. מה השעה?', opts:['3:00','12:00'], answer:'3:00', post:'הארוך על 12 → שעה שלמה', example:true },
-      { kind:'choose', pre:'המחוג הארוך על 6. כמה מהשעה עבר?', opts:['חצי שעה','שעה שלמה'], answer:'חצי שעה', post:'6 הוא חצי הדרך מסביב ללוח' },
-      { kind:'choose', pre:'המחוג הקצר בין 8 ל-9, הארוך על 6. מה השעה?', opts:['8:30','9:30'], answer:'8:30', post:'הקצר כבר עבר את 8 → שמונה וחצי' },
+      { kind:'choose', pre:'המחוג הארוך על 6. כמה מהשעה עבר?', opts:['שעה שלמה','חצי שעה'], answer:'חצי שעה', post:'6 הוא חצי הדרך מסביב ללוח' },
+      { kind:'choose', pre:'המחוג הקצר בין 8 ל-9, הארוך על 6. מה השעה?', opts:['9:30','8:30'], answer:'8:30', post:'הקצר כבר עבר את 8 → שמונה וחצי' },
       { kind:'choose', pre:'"ארבע וחצי" בדיגיטלי היא...', opts:['4:30','4:00'], answer:'4:30', post:'וחצי → אחרי הנקודתיים כתוב 30' },
       { kind:'choose', pre:'השעה 2:00, עברה חצי שעה. מה השעה?', opts:['2:30','3:00'], answer:'2:30', post:'2:00 ועוד חצי שעה → 2:30' },
-      { kind:'choose', pre:'11:30 ועוד חצי שעה. מה השעה?', opts:['12:00','11:00'], answer:'12:00', post:'עוברים את 12 → 12:00' }
+      { kind:'choose', pre:'11:30 ועוד חצי שעה. מה השעה?', opts:['11:00','12:00'], answer:'12:00', post:'עוברים את 12 → 12:00' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

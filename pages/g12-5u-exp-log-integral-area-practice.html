@@ -1668,10 +1668,10 @@
     // ∫eˣdx=eˣ+c, ∫e<sup>ax</sup>dx=e<sup>ax</sup>/a+c, ∫(1/x)dx=ln|x|+c, the definite integral F(b)-F(a),
     // and area = integral because the functions are positive on the interval. Every value re-derived.
     var ROWS = [
-      { kind:'choose', pre:'מהי הפונקציה הקדומה של eˣ?', expr:'∫eˣdx', opts:['eˣ + c','x·eˣ + c'], answer:'eˣ + c', post:'הפונקציה המעריכית שווה לקדומה של עצמה (מאגר)', example:true },
+      { kind:'choose', pre:'מהי הפונקציה הקדומה של eˣ?', expr:'∫eˣdx', opts:['x·eˣ + c','eˣ + c'], answer:'eˣ + c', post:'הפונקציה המעריכית שווה לקדומה של עצמה (מאגר)', example:true },
       { kind:'choose', pre:'מהי הפונקציה הקדומה של 1/x?', expr:'∫(1/x)dx', opts:['ln|x| + c','-1/x² + c'], answer:'ln|x| + c', post:'הקדומה של 1/x היא הלוגריתם הטבעי בערך מוחלט (מאגר)' },
-      { kind:'choose', pre:'מהו האינטגרל המסוים?', expr:'∫₁<sup>e</sup> (1/x) dx', opts:['1','e'], answer:'1', post:'[ln x]₁<sup>e</sup> = ln e - ln 1 = 1 (מאגר)' },
-      { kind:'choose', pre:'מהי הפונקציה הקדומה של e<sup>2x</sup>?', expr:'∫e<sup>2x</sup>dx', opts:['e<sup>2x</sup>/2 + c','e<sup>2x</sup> + c'], answer:'e<sup>2x</sup>/2 + c', post:'מחלקים במקדם שבחזקה: e<sup>2x</sup>/2 + c (מאגר)' },
+      { kind:'choose', pre:'מהו האינטגרל המסוים?', expr:'∫₁<sup>e</sup> (1/x) dx', opts:['e','1'], answer:'1', post:'[ln x]₁<sup>e</sup> = ln e - ln 1 = 1 (מאגר)' },
+      { kind:'choose', pre:'מהי הפונקציה הקדומה של e<sup>2x</sup>?', expr:'∫e<sup>2x</sup>dx', opts:['e<sup>2x</sup> + c','e<sup>2x</sup>/2 + c'], answer:'e<sup>2x</sup>/2 + c', post:'מחלקים במקדם שבחזקה: e<sup>2x</sup>/2 + c (מאגר)' },
       { kind:'choose', pre:'מהו האינטגרל המסוים?', expr:'∫₀¹ eˣ dx', opts:['e - 1','1 - e'], answer:'e - 1', post:'e¹ - e⁰ = e - 1 (מאגר)' },
       { kind:'choose', pre:'מהו האינטגרל המסוים?', expr:'∫₁<sup>e²</sup> (1/x) dx', opts:['2','e²'], answer:'2', post:'[ln x]₁<sup>e²</sup> = ln e² - ln 1 = 2 (מאגר)' }
     ];

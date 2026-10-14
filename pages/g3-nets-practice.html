@@ -1547,12 +1547,12 @@
     // Row 1 is a solved example. No expr (nets have no numeric triplet). No degree sign,
     // no area numbers, no subtraction, so no U+2212.
     var ROWS = [
-      { kind:'choose', pre:'פריסה עם 6 ריבועים שווים בצורת צלב.', opts:['נסגרת','לא נסגרת'], answer:'נסגרת',    post:'צלב עם 6 פאות שוות, נסגרת לקובייה', example:true },
+      { kind:'choose', pre:'פריסה עם 6 ריבועים שווים בצורת צלב.', opts:['לא נסגרת','נסגרת'], answer:'נסגרת',    post:'צלב עם 6 פאות שוות, נסגרת לקובייה', example:true },
       { kind:'choose', pre:'פריסה עם 5 פאות בלבד.',              opts:['לא נסגרת','נסגרת'], answer:'לא נסגרת', post:'רק 5 פאות, נשאר חור' },
-      { kind:'choose', pre:'פריסה עם 6 מלבנים מתאימים.',        opts:['נסגרת','לא נסגרת'], answer:'נסגרת',    post:'6 פאות מתאימות, נסגרת לתיבה' },
-      { kind:'choose', pre:'פריסה שבקיפול שתי פאות חופפות.',    opts:['לא נסגרת','נסגרת'], answer:'לא נסגרת', post:'יש חפיפה, לא נסגרת' },
+      { kind:'choose', pre:'פריסה שנשאר בה חור בקיפול.',        opts:['נסגרת','לא נסגרת'], answer:'לא נסגרת', post:'נשאר חור, לא נסגרת' },
+      { kind:'choose', pre:'פריסה שבקיפול שתי פאות חופפות.',    opts:['נסגרת','לא נסגרת'], answer:'לא נסגרת', post:'יש חפיפה, לא נסגרת' },
       { kind:'choose', pre:'פריסה בצורת מדרגות עם 6 ריבועים שווים.', opts:['נסגרת','לא נסגרת'], answer:'נסגרת', post:'6 פאות שוות, נסגרת לקובייה' },
-      { kind:'choose', pre:'פריסה שנשאר בה חור בקיפול.',        opts:['לא נסגרת','נסגרת'], answer:'לא נסגרת', post:'נשאר חור, לא נסגרת' }
+      { kind:'choose', pre:'פריסה עם 6 מלבנים מתאימים.',        opts:['נסגרת','לא נסגרת'], answer:'נסגרת',    post:'6 פאות מתאימות, נסגרת לתיבה' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

@@ -1791,12 +1791,12 @@
     // against the grade-9 quarter-B teaching pages (quadratic function, quadratic inequalities,
     // algebraic fractions, rational equations, analytic geometry). Minus = ASCII hyphen.
     var ROWS = [
-      { kind:'choose', pre:'בחרו את קודקוד הפרבולה', expr:'y = (x - 3)² + 4', opts:['(3, 4)','(-3, 4)'], answer:'(3, 4)', post:'צורת הקודקוד (x - p)² + k ⟵ קודקוד (p, k)', example:true },
+      { kind:'choose', pre:'בחרו את קודקוד הפרבולה', expr:'y = (x - 3)² + 4', opts:['(-3, 4)','(3, 4)'], answer:'(3, 4)', post:'צורת הקודקוד (x - p)² + k ⟵ קודקוד (p, k)', example:true },
       { kind:'choose', pre:'בחרו את נקודות האפס של', expr:'y = (x - 2)(x + 3)', opts:['x = 2, -3','x = -2, 3'], answer:'x = 2, -3', post:'כל גורם מתאפס בנפרד' },
-      { kind:'choose', pre:'בחרו את פתרון האי-שוויון', expr:'x² - x - 6 < 0', opts:['-2 < x < 3','x < -2 או x > 3'], answer:'-2 < x < 3', post:'פרבולה כלפי מעלה שלילית בין האפסים' },
+      { kind:'choose', pre:'בחרו את פתרון האי-שוויון', expr:'x² - x - 6 < 0', opts:['x < -2 או x > 3','-2 < x < 3'], answer:'-2 < x < 3', post:'פרבולה כלפי מעלה שלילית בין האפסים' },
       { kind:'choose', pre:'בחרו את הצמצום של', expr:'(x² - 9) / (x - 3)', opts:['x + 3','x - 3'], answer:'x + 3', post:'מפרקים ל-(x - 3)(x + 3) ומצמצמים' },
       { kind:'choose', pre:'בחרו את הערך האסור של', expr:'3 / (x + 6)', opts:['x = -6','x = 6'], answer:'x = -6', post:'המכנה אסור להתאפס: x + 6 = 0' },
-      { kind:'choose', pre:'בחרו את אורך הקטע מ-(0, 0) אל', expr:'(3, 4)', opts:['5','7'], answer:'5', post:'הקטע הוא היתר: 3² + 4² = 25, ולכן 5' }
+      { kind:'choose', pre:'בחרו את אורך הקטע מ-(0, 0) אל', expr:'(3, 4)', opts:['7','5'], answer:'5', post:'הקטע הוא היתר: 3² + 4² = 25, ולכן 5' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

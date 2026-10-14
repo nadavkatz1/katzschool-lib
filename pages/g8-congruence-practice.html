@@ -1722,11 +1722,11 @@
     // Every answer traceable to the teaching page content/g8-congruence.js (zero invention).
     var ROWS = [
       { kind:'choose', pre:'שתי צלעות והזווית הכלואה ביניהן - לפי איזה משפט חופפים?', expr:'AB, ∠A, AC', opts:['צ.ז.צ','צ.צ.צ'], answer:'צ.ז.צ', post:'צלע-זווית-צלע: הזווית ∠A כלואה בין AB ל-AC', example:true },
-      { kind:'choose', pre:'שלוש צלעות מתאימות שוות - לפי איזה משפט חופפים?', expr:'AB, BC, CA', opts:['צ.צ.צ','ז.צ.צ'], answer:'צ.צ.צ', post:'צלע-צלע-צלע: שלוש צלעות מתאימות שוות' },
+      { kind:'choose', pre:'שלוש צלעות מתאימות שוות - לפי איזה משפט חופפים?', expr:'AB, BC, CA', opts:['ז.צ.צ','צ.צ.צ'], answer:'צ.צ.צ', post:'צלע-צלע-צלע: שלוש צלעות מתאימות שוות' },
       { kind:'choose', pre:'שתי זוויות והצלע שביניהן - לפי איזה משפט חופפים?', expr:'∠B, BC, ∠C', opts:['ז.צ.צ','צ.ז.צ'], answer:'ז.צ.צ', post:'זווית-צלע-זווית: הצלע BC כלואה בין ∠B ל-∠C' },
       { kind:'choose', pre:'נתונות רק שלוש זוויות שוות (ז.ז.ז) - מה נקבע?', expr:'∠A, ∠B, ∠C', opts:['דמיון בלבד','חפיפה'], answer:'דמיון בלבד', post:'שלוש זוויות שומרות על הצורה אך לא על הגודל - דמיון, לא חפיפה' },
-      { kind:'choose', pre:'במשולשים חופפים △ABC ≅ △DEF נתון AB = 7. מהי DE?', expr:'DE =', opts:['7','5'], answer:'7', post:'מחפיפה צלעות מתאימות שוות: DE = AB = 7' },
-      { kind:'choose', pre:'במשולשים חופפים △ABC ≅ △DEF נתון ∠B = 40°. מהי ∠E?', expr:'∠E =', opts:['40°','50°'], answer:'40°', post:'מחפיפה זוויות מתאימות שוות: ∠E = ∠B = 40°' }
+      { kind:'choose', pre:'במשולשים חופפים △ABC ≅ △DEF נתון AB = 7. מהי DE?', expr:'DE =', opts:['5','7'], answer:'7', post:'מחפיפה צלעות מתאימות שוות: DE = AB = 7' },
+      { kind:'choose', pre:'במשולשים חופפים △ABC ≅ △DEF נתון ∠B = 40°. מהי ∠E?', expr:'∠E =', opts:['50°','40°'], answer:'40°', post:'מחפיפה זוויות מתאימות שוות: ∠E = ∠B = 40°' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

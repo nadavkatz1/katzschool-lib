@@ -1688,11 +1688,11 @@
     // Every length is an integer from a Pythagorean triple; each value re-computed by hand.
     var ROWS = [
       { kind:'choose', pre:'משיק מנקודה במרחק 13, רדיוס 5. אורך המשיק?', expr:'t = √(d² - r²)', opts:['12','13'], answer:'12', post:'√(13² - 5²) = √144 = 12', example:true },
-      { kind:'choose', pre:'מנקודה במרחק 10, רדיוס 6. אורך המשיק?', expr:'d = 10, r = 6', opts:['8','9'], answer:'8', post:'√(10² - 6²) = √64 = 8 (שלשה 6-8-10)' },
-      { kind:'choose', pre:'רדיוס 8, אורך משיק 15. מהו המרחק d?', expr:'d = √(r² + t²)', opts:['17','23'], answer:'17', post:'√(8² + 15²) = √289 = 17 (23 הוא סכום שגוי)' },
+      { kind:'choose', pre:'מנקודה במרחק 10, רדיוס 6. אורך המשיק?', expr:'d = 10, r = 6', opts:['9','8'], answer:'8', post:'√(10² - 6²) = √64 = 8 (שלשה 6-8-10)' },
+      { kind:'choose', pre:'רדיוס 8, אורך משיק 15. מהו המרחק d?', expr:'d = √(r² + t²)', opts:['23','17'], answer:'17', post:'√(8² + 15²) = √289 = 17 (23 הוא סכום שגוי)' },
       { kind:'choose', pre:'שני משיקים מנקודה חיצונית, אחד באורך 9. השני?', expr:'PT₁ = PT₂', opts:['9','18'], answer:'9', post:'שני משיקים מנקודה חיצונית שווים באורכם' },
       { kind:'choose', pre:'מיתר במרחק 5 מהמרכז, רדיוס 13. חצי המיתר?', expr:'√(r² - h²)', opts:['12','8'], answer:'12', post:'האנך חוצה: √(13² - 5²) = 12' },
-      { kind:'choose', pre:'לאותו מיתר (רדיוס 13, מרחק 5): המיתר המלא?', expr:'2 · 12', opts:['24','12'], answer:'24', post:'המיתר המלא = 2 · חצי המיתר = 24' }
+      { kind:'choose', pre:'לאותו מיתר (רדיוס 13, מרחק 5): המיתר המלא?', expr:'2 · 12', opts:['12','24'], answer:'24', post:'המיתר המלא = 2 · חצי המיתר = 24' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

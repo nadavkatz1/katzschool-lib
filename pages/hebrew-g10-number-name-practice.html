@@ -1498,12 +1498,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'____ ספרים', opts:['שלושה','שלוש'], answer:'שלושה', post:'(זכר)', example:true },
-      { kind:'choose', pre:'____ מחברות', opts:['שלוש','שלושה'], answer:'שלוש', post:'(נקבה)' },
+      { kind:'choose', pre:'____ ספרים', opts:['שלוש','שלושה'], answer:'שלושה', post:'(זכר)', example:true },
+      { kind:'choose', pre:'____ מחברות', opts:['שלושה','שלוש'], answer:'שלוש', post:'(נקבה)' },
       { kind:'choose', pre:'____ שולחנות', opts:['חמישה','חמש'], answer:'חמישה', post:'(זכר)' },
-      { kind:'choose', pre:'____ שעות', opts:['חמש','חמישה'], answer:'חמש', post:'(נקבה)' },
+      { kind:'choose', pre:'____ שעות', opts:['חמישה','חמש'], answer:'חמש', post:'(נקבה)' },
       { kind:'choose', pre:'____ העקרונות', opts:['שלושת','שלוש'], answer:'שלושת', post:'(עיקרון זכר)' },
-      { kind:'choose', pre:'____ ההצעות', opts:['ששת','שש'], answer:'שש', post:'(הצעה נקבה)' }
+      { kind:'choose', pre:'____ ההצעות', opts:['שש','ששת'], answer:'שש', post:'(הצעה נקבה)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

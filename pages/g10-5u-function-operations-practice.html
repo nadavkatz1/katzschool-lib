@@ -1671,11 +1671,11 @@
     // the inverse f<sup>-1</sup>, and the sum (f+g)(x). Every value re-computed by hand (clean answers).
     var ROWS = [
       { kind:'choose', pre:'מהו ערך ההרכבה f(g(2))?', expr:'f(x) = x², g(x) = x + 1', opts:['9','6'], answer:'9', post:'g(2) = 3, ואז f(3) = 9', example:true },
-      { kind:'choose', pre:'בכמה יחידות זז הגרף של f(x-2) = (x-2)² ימינה?', expr:'f(x) = x²', opts:['2','-2'], answer:'2', post:'החלפת x ב-x-2 מזיזה 2 יחידות ימינה (סימן הפוך)' },
+      { kind:'choose', pre:'בכמה יחידות זז הגרף של f(x-2) = (x-2)² ימינה?', expr:'f(x) = x²', opts:['-2','2'], answer:'2', post:'החלפת x ב-x-2 מזיזה 2 יחידות ימינה (סימן הפוך)' },
       { kind:'choose', pre:'מהו הערך של -f(3), שיקוף סביב ציר x?', expr:'f(x) = x²', opts:['-9','9'], answer:'-9', post:'f(3) = 9, ולכן -f(3) = -9' },
       { kind:'choose', pre:'מהו ערך ההופכית ב-9?', expr:'f(x) = 2x + 1', opts:['4','5'], answer:'4', post:'f<sup>-1</sup>(x) = (x-1)/2, אז (9-1)/2 = 4' },
-      { kind:'choose', pre:'מהו ערך ההרכבה ההפוכה g(f(3))?', expr:'f(x) = x², g(x) = x + 1', opts:['10','16'], answer:'10', post:'f(3) = 9, ואז g(9) = 10 - הסדר חשוב' },
-      { kind:'choose', pre:'כמה שווה (f+g)(2)?', expr:'f(x) = x², g(x) = x + 1', opts:['7','8'], answer:'7', post:'(f+g)(2) = f(2) + g(2) = 4 + 3 = 7' }
+      { kind:'choose', pre:'מהו ערך ההרכבה ההפוכה g(f(3))?', expr:'f(x) = x², g(x) = x + 1', opts:['16','10'], answer:'10', post:'f(3) = 9, ואז g(9) = 10 - הסדר חשוב' },
+      { kind:'choose', pre:'כמה שווה (f+g)(2)?', expr:'f(x) = x², g(x) = x + 1', opts:['8','7'], answer:'7', post:'(f+g)(2) = f(2) + g(2) = 4 + 3 = 7' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

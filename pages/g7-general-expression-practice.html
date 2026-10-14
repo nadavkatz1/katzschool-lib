@@ -1704,10 +1704,10 @@
     var ROWS = [
       { kind:'choose', pre:'בחרו את ערך הביטוי (היקף 4x-6, עבור x=5)', expr:'4·5 - 6 =', opts:['14','20'], answer:'14', post:'מציבים x=5: 4·5=20, ואז 20-6=14', example:true },
       { kind:'choose', pre:'בחרו את היקף המלבן שאורכו x ורוחבו x-3', expr:'', opts:['4x - 6','2x - 3'], answer:'4x - 6', post:'היקף = 2(x + (x-3)) = 4x - 6' },
-      { kind:'choose', pre:'בחרו את שטח המלבן שאורכו x ורוחבו x-3', expr:'', opts:['x² - 3x','4x - 6'], answer:'x² - 3x', post:'שטח = x·(x-3) = x² - 3x (4x-6 הוא ההיקף)' },
-      { kind:'choose', pre:'בחרו את שטח הריבוע שצלעו x', expr:'', opts:['x²','4x'], answer:'x²', post:'שטח ריבוע = צלע כפול צלע: x·x = x² (4x הוא ההיקף)' },
+      { kind:'choose', pre:'בחרו את שטח המלבן שאורכו x ורוחבו x-3', expr:'', opts:['4x - 6','x² - 3x'], answer:'x² - 3x', post:'שטח = x·(x-3) = x² - 3x (4x-6 הוא ההיקף)' },
+      { kind:'choose', pre:'בחרו את שטח הריבוע שצלעו x', expr:'', opts:['4x','x²'], answer:'x²', post:'שטח ריבוע = צלע כפול צלע: x·x = x² (4x הוא ההיקף)' },
       { kind:'choose', pre:'בחרו את ערך שטח הריבוע x², עבור x=6', expr:'6² =', opts:['36','12'], answer:'36', post:'מציבים x=6: 6² = 36' },
-      { kind:'choose', pre:'בחרו: צלע ריבוע גדלה פי 3 - פי כמה גדל השטח?', expr:'', opts:['9','6'], answer:'9', post:'(3x)² = 9x² - השטח גדל פי 9' }
+      { kind:'choose', pre:'בחרו: צלע ריבוע גדלה פי 3 - פי כמה גדל השטח?', expr:'', opts:['6','9'], answer:'9', post:'(3x)² = 9x² - השטח גדל פי 9' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

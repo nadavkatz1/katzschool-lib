@@ -1507,12 +1507,12 @@
     // opts = answer pills · post = short Hebrew reminder of the rule (RTL).
     // Row 1 is a solved example. Every answer is re-derivable by hand.
     var ROWS = [
-      { kind:'choose', pre:'מחר נלך לבית הספר (ביום לימודים רגיל):', opts:['ודאי','בלתי אפשרי'], answer:'ודאי', post:'מאורע שבטוח יקרה', example:true },
+      { kind:'choose', pre:'מחר נלך לבית הספר (ביום לימודים רגיל):', opts:['בלתי אפשרי','ודאי'], answer:'ודאי', post:'מאורע שבטוח יקרה', example:true },
       { kind:'choose', pre:'נפגוש אריה משוטט ברחוב בדרך הביתה:', opts:['בלתי אפשרי','ודאי'], answer:'בלתי אפשרי', post:'לא יכול לקרות' },
-      { kind:'choose', pre:'ירד גשם בדרך חזרה מבית הספר:', opts:['אפשרי','ודאי'], answer:'אפשרי', post:'ייתכן שכן, ייתכן שלא' },
+      { kind:'choose', pre:'ירד גשם בדרך חזרה מבית הספר:', opts:['ודאי','אפשרי'], answer:'אפשרי', post:'ייתכן שכן, ייתכן שלא' },
       { kind:'choose', pre:'בשקית יש עדשים אדומים, כחולים ושחורים. נוציא ורוד:', opts:['בלתי אפשרי','אפשרי'], answer:'בלתי אפשרי', post:'אין ורוד בשקית' },
       { kind:'choose', pre:'בהטלת קובייה יתקבל מספר קטן מ-7:', opts:['ודאי','אפשרי'], answer:'ודאי', post:'כל הפאות 1 עד 6' },
-      { kind:'choose', pre:'מה יותר סביר בקובייה: מספר זוגי או מספר המתחלק ב-4?', opts:['זוגי','מתחלק ב-4'], answer:'זוגי', post:'3 מתוך 6 מול 1 מתוך 6' }
+      { kind:'choose', pre:'מה יותר סביר בקובייה: מספר זוגי או מספר המתחלק ב-4?', opts:['מתחלק ב-4','זוגי'], answer:'זוגי', post:'3 מתוך 6 מול 1 מתוך 6' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/[.?!]+$/,''); };

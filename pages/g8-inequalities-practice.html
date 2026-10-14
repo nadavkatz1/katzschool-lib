@@ -1720,11 +1720,11 @@
     // Every inequality SOLVED by hand; each sign-flip (divide/multiply by a negative) re-checked.
     var ROWS = [
       { kind:'choose', pre:'פתרו ומצאו את הגבול', expr:'2x + 1 < 9', opts:['4','5'], answer:'4', post:'2x < 8, ולכן x < 4; הגבול 4 (עיגול ריק, בלי היפוך)', example:true },
-      { kind:'choose', pre:'פתרו ומצאו את הגבול', expr:'3x - 6 ≥ 0', opts:['2','6'], answer:'2', post:'3x ≥ 6, ולכן x ≥ 2; הגבול 2 (עיגול מלא)' },
-      { kind:'choose', pre:'פתרו ומצאו את הגבול', expr:'x + 5 > 7', opts:['2','12'], answer:'2', post:'מעבירים 5: x > 2; הגבול 2 (עיגול ריק)' },
+      { kind:'choose', pre:'פתרו ומצאו את הגבול', expr:'3x - 6 ≥ 0', opts:['6','2'], answer:'2', post:'3x ≥ 6, ולכן x ≥ 2; הגבול 2 (עיגול מלא)' },
+      { kind:'choose', pre:'פתרו ומצאו את הגבול', expr:'x + 5 > 7', opts:['12','2'], answer:'2', post:'מעבירים 5: x > 2; הגבול 2 (עיגול ריק)' },
       { kind:'choose', pre:'חלקו ב-(-2), הפכו את הסימן, ומצאו את הגבול', expr:'-2x < 8', opts:['-4','4'], answer:'-4', post:'חילקנו בשלילי - הסימן מתהפך: x > -4; הגבול -4' },
       { kind:'choose', pre:'פתרו ומצאו את הגבול', expr:'3 - 2x ≥ 9', opts:['-3','3'], answer:'-3', post:'-2x ≥ 6, חילקנו בשלילי (היפוך): x ≤ -3; הגבול -3' },
-      { kind:'choose', pre:'מהו כיוון הפתרון?', expr:'5 - x ≤ 2', opts:['x ≥ 3','x ≤ 3'], answer:'x ≥ 3', post:'-x ≤ -3, חילקנו ב-(-1) (היפוך): x ≥ 3' }
+      { kind:'choose', pre:'מהו כיוון הפתרון?', expr:'5 - x ≤ 2', opts:['x ≤ 3','x ≥ 3'], answer:'x ≥ 3', post:'-x ≤ -3, חילקנו ב-(-1) (היפוך): x ≥ 3' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

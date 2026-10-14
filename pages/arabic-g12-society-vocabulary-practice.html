@@ -1596,12 +1596,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'המילה שפירושה תופעה', opts:['ظَاهِرَة','قَنَاة'], answer:'ظَاهِرَة', post:'(ẓāhira)', example:true },
+      { kind:'choose', pre:'המילה שפירושה תופעה', opts:['قَنَاة','ظَاهِرَة'], answer:'ظَاهِرَة', post:'(ẓāhira)', example:true },
       { kind:'choose', pre:'המילה שפירושה פליט', opts:['لَاجِئ','رَأْي'], answer:'لَاجِئ', post:'(lājiʾ)' },
-      { kind:'choose', pre:'המילה שפירושה מגזין', opts:['مَجَلَّة','مَبْدَأ'], answer:'مَجَلَّة', post:'(majalla)' },
+      { kind:'choose', pre:'המילה שפירושה מגזין', opts:['مَبْدَأ','مَجَلَّة'], answer:'مَجَلَّة', post:'(majalla)' },
       { kind:'choose', pre:'המילה שפירושה עיקרון', opts:['مَبْدَأ','قَنَاة'], answer:'مَبْدَأ', post:'(mabdaʾ)' },
       { kind:'choose', pre:'המילה שפירושה ערוץ', opts:['قَنَاة','جِنْسِيّة'], answer:'قَنَاة', post:'(qanāt)' },
-      { kind:'choose', pre:'המילה שפירושה דעה', opts:['رَأْي','مَجَلَّة'], answer:'رَأْي', post:'(raʾy)' }
+      { kind:'choose', pre:'המילה שפירושה דעה', opts:['مَجَلَّة','رَأْي'], answer:'رَأْي', post:'(raʾy)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

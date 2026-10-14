@@ -1664,10 +1664,10 @@
     // derivatives (e<sup>x</sup>)'=e<sup>x</sup> and (ln x)'=1/x with the quotient rule, and the extremum from f'(x)=0.
     // Every value re-computed by hand (clean / bank answers).
     var ROWS = [
-      { kind:'choose', pre:'מהו הגבול התחתון של תחום ההגדרה?', expr:'x - ln x', opts:['0','1'], answer:'0', post:'ln מוגדר רק על x>0, לכן התחום x>0', example:true },
-      { kind:'choose', pre:'מהי האסימפטוטה האופקית כאשר x שואף לאינסוף?', expr:'x/e<sup>x</sup>', opts:['y=0','y=1'], answer:'y=0', post:'e<sup>x</sup> גדל מהר, x/e<sup>x</sup> שואף ל-0 (מאגר)' },
+      { kind:'choose', pre:'מהו הגבול התחתון של תחום ההגדרה?', expr:'x - ln x', opts:['1','0'], answer:'0', post:'ln מוגדר רק על x>0, לכן התחום x>0', example:true },
+      { kind:'choose', pre:'מהי האסימפטוטה האופקית כאשר x שואף לאינסוף?', expr:'x/e<sup>x</sup>', opts:['y=1','y=0'], answer:'y=0', post:'e<sup>x</sup> גדל מהר, x/e<sup>x</sup> שואף ל-0 (מאגר)' },
       { kind:'choose', pre:'מהי הנגזרת?', expr:'x/e<sup>x</sup>', opts:['(1 - x)/e<sup>x</sup>','(1 + x)/e<sup>x</sup>'], answer:'(1 - x)/e<sup>x</sup>', post:'כלל המנה, e<sup>x</sup> בריבוע' },
-      { kind:'choose', pre:'באיזה x מתאפסת הנגזרת?', expr:"f'(x) = (1 - x)/e<sup>x</sup>", opts:['1','0'], answer:'1', post:'e<sup>x</sup>>0, לכן 1 - x = 0 (מאגר)' },
+      { kind:'choose', pre:'באיזה x מתאפסת הנגזרת?', expr:"f'(x) = (1 - x)/e<sup>x</sup>", opts:['0','1'], answer:'1', post:'e<sup>x</sup>>0, לכן 1 - x = 0 (מאגר)' },
       { kind:'choose', pre:'מהו סוג הקיצון ב-(1, 1/e)?', expr:'x/e<sup>x</sup>', opts:['max','min'], answer:'max', post:'עולה לפני x=1 ויורד אחריו (מאגר)' },
       { kind:'choose', pre:'מהי הנגזרת?', expr:'x - ln x', opts:['1 - 1/x','1 - x'], answer:'1 - 1/x', post:"(ln x)' = 1/x" }
     ];

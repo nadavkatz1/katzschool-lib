@@ -1737,11 +1737,11 @@
     // opts = answer pills (solution, equation or key-word) · post = Hebrew rule reminder (RTL).
     var ROWS = [
       { kind:'choose', pre:'בחרו את פתרון המשוואה', expr:'3x + 5 = 20', opts:['x = 5','x = 15'], answer:'x = 5', post:'מעבירים 5: 3x=15, ואז מחלקים ב-3: x=5. בדיקה: 3·5+5=20', example:true },
-      { kind:'choose', pre:'בחרו את פתרון המשוואה', expr:'x + 8 = 15', opts:['x = 7','x = 23'], answer:'x = 7', post:'מעבירים 8: x=15-8=7. בדיקה: 7+8=15' },
+      { kind:'choose', pre:'בחרו את פתרון המשוואה', expr:'x + 8 = 15', opts:['x = 23','x = 7'], answer:'x = 7', post:'מעבירים 8: x=15-8=7. בדיקה: 7+8=15' },
       { kind:'choose', pre:'בחרו את המשוואה המתאימה ל"מספר כפול 2 ועוד 6 שווה 20"', expr:'', opts:['2x + 6 = 20','2x - 6 = 20'], answer:'2x + 6 = 20', post:'"כפול 2" הוא 2x, "ועוד 6" הוא +6, "שווה 20" הוא =20' },
       { kind:'choose', pre:'בחרו את פתרון המשוואה', expr:'2x - 7 = 11', opts:['x = 9','x = 2'], answer:'x = 9', post:'מעבירים 7: 2x=18, ואז x=9. בדיקה: 2·9-7=11' },
-      { kind:'choose', pre:'בחרו את המילה שמסמנת בסיפור את סימן השוויון', expr:'', opts:['"סך הכול"','"כפול"'], answer:'"סך הכול"', post:'"סך הכול", "ביחד" ו"סכום" מסמנות היכן יושב סימן =' },
-      { kind:'choose', pre:'בחרו את הביטוי להיקף מלבן שרוחבו x ואורכו x + 4', expr:'', opts:['2(x + x + 4)','x + (x + 4)'], answer:'2(x + x + 4)', post:'היקף = פעמיים סכום הרוחב והאורך' }
+      { kind:'choose', pre:'בחרו את המילה שמסמנת בסיפור את סימן השוויון', expr:'', opts:['"כפול"','"סך הכול"'], answer:'"סך הכול"', post:'"סך הכול", "ביחד" ו"סכום" מסמנות היכן יושב סימן =' },
+      { kind:'choose', pre:'בחרו את הביטוי להיקף מלבן שרוחבו x ואורכו x + 4', expr:'', opts:['x + (x + 4)','2(x + x + 4)'], answer:'2(x + x + 4)', post:'היקף = פעמיים סכום הרוחב והאורך' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

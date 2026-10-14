@@ -1653,10 +1653,10 @@
     // Every value re-computed by hand (clean / bank answers).
     var ROWS = [
       { kind:'choose', pre:'מהו הגבול התחתון של תחום ההגדרה?', expr:'x - ln x', opts:['0','1'], answer:'0', post:'ln מוגדר רק על x>0, לכן התחום x>0', example:true },
-      { kind:'choose', pre:'היכן האסימפטוטה האנכית?', expr:'ln(x - 2)', opts:['x=2','x=0'], answer:'x=2', post:'בקצה התחום, x-2=0, לכן x=2 (מאגר)' },
+      { kind:'choose', pre:'היכן האסימפטוטה האנכית?', expr:'ln(x - 2)', opts:['x=0','x=2'], answer:'x=2', post:'בקצה התחום, x-2=0, לכן x=2 (מאגר)' },
       { kind:'choose', pre:'מהי הנגזרת?', expr:'x - ln x', opts:['1 - 1/x','1 - x'], answer:'1 - 1/x', post:'(ln x)\' = 1/x, לכן 1 - 1/x' },
-      { kind:'choose', pre:'באיזה x מתאפסת הנגזרת?', expr:'f\'(x) = 1 - 1/x', opts:['1','0'], answer:'1', post:'1/x = 1, לכן x = 1 (מאגר)' },
-      { kind:'choose', pre:'מהו שיעור ה-y של המינימום?', expr:'f(1) = 1 - ln 1', opts:['1','0'], answer:'1', post:'ln 1 = 0, לכן f(1) = 1 (מאגר)' },
+      { kind:'choose', pre:'באיזה x מתאפסת הנגזרת?', expr:'f\'(x) = 1 - 1/x', opts:['0','1'], answer:'1', post:'1/x = 1, לכן x = 1 (מאגר)' },
+      { kind:'choose', pre:'מהו שיעור ה-y של המינימום?', expr:'f(1) = 1 - ln 1', opts:['0','1'], answer:'1', post:'ln 1 = 0, לכן f(1) = 1 (מאגר)' },
       { kind:'choose', pre:'מהי הנגזרת?', expr:'ln(x - 2)', opts:['1/(x - 2)','x - 2'], answer:'1/(x - 2)', post:'שרשרת (ln u)\' = u\'/u, לכן 1/(x - 2)' }
     ];
 

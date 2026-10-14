@@ -1559,12 +1559,12 @@
     // Every result re-computed by hand, all within 0-100. Row 1 is a solved example.
     // Subtraction uses the minus sign U+2212 (−), matching the teaching page.
     var ROWS = [
-      { kind:'choose', pre:'כמה זה?', expr:'48 + 25', opts:['73','83'], answer:'73', post:'עשרות 60, יחידות 13 → 73', example:true },
+      { kind:'choose', pre:'כמה זה?', expr:'48 + 25', opts:['83','73'], answer:'73', post:'עשרות 60, יחידות 13 → 73', example:true },
       { kind:'choose', pre:'כמה זה?', expr:'34 + 23', opts:['57','47'], answer:'57', post:'עשרות 50, יחידות 7 → 57' },
       { kind:'choose', pre:'כמה זה?', expr:'46 + 7', opts:['53','52'], answer:'53', post:'6 ועוד 7 עובר עשרת → 53' },
-      { kind:'choose', pre:'כמה זה?', expr:'89 − 34', opts:['55','65'], answer:'55', post:'עשרות 50, יחידות 5 → 55' },
+      { kind:'choose', pre:'כמה זה?', expr:'89 − 34', opts:['65','55'], answer:'55', post:'עשרות 50, יחידות 5 → 55' },
       { kind:'choose', pre:'כמה חסר?', expr:'25 + ? = 38', opts:['13','12'], answer:'13', post:'מ-25 ל-38 מוסיפים 13' },
-      { kind:'choose', pre:'כמה זה?', expr:'14 + 23 + 16', opts:['53','52'], answer:'53', post:'14 ועוד 16 = 30, ועוד 23 → 53' }
+      { kind:'choose', pre:'כמה זה?', expr:'14 + 23 + 16', opts:['52','53'], answer:'53', post:'14 ועוד 16 = 30, ועוד 23 → 53' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

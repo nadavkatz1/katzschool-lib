@@ -1701,10 +1701,10 @@
     // pre = Hebrew lead-in (RTL) · expr = math expression rendered as an isolated LTR unit ·
     // opts = answer pills (algebraic expression) · post = Hebrew rule reminder (RTL).
     var ROWS = [
-      { kind:'choose', pre:'כנסו איברים דומים', expr:'7x + 3x =', opts:['10x','21x'], answer:'10x', post:'מחברים מקדמים: 7 + 3 = 10, ולכן 10x', example:true },
-      { kind:'choose', pre:'פתחו את הסוגריים', expr:'3(x + 4) =', opts:['3x + 12','3x + 4'], answer:'3x + 12', post:'מכפילים את 3 בכל איבר: 3·x = 3x ו-3·4 = 12' },
+      { kind:'choose', pre:'כנסו איברים דומים', expr:'7x + 3x =', opts:['21x','10x'], answer:'10x', post:'מחברים מקדמים: 7 + 3 = 10, ולכן 10x', example:true },
+      { kind:'choose', pre:'פתחו את הסוגריים', expr:'3(x + 4) =', opts:['3x + 4','3x + 12'], answer:'3x + 12', post:'מכפילים את 3 בכל איבר: 3·x = 3x ו-3·4 = 12' },
       { kind:'choose', pre:'כנסו איברים דומים', expr:'5x + 2 - 3x + 4 =', opts:['2x + 6','8x + 6'], answer:'2x + 6', post:'5x - 3x = 2x, ו-2 + 4 = 6' },
-      { kind:'choose', pre:'פתחו את הסוגריים', expr:'2(8x - 5) =', opts:['16x - 10','16x - 5'], answer:'16x - 10', post:'חוק הפילוג: מכפילים גם את 5, ולכן 16x - 10' },
+      { kind:'choose', pre:'פתחו את הסוגריים', expr:'2(8x - 5) =', opts:['16x - 5','16x - 10'], answer:'16x - 10', post:'חוק הפילוג: מכפילים גם את 5, ולכן 16x - 10' },
       { kind:'choose', pre:'פתחו (שימו לב לסימן)', expr:'-2(x - 3) =', opts:['-2x + 6','-2x - 6'], answer:'-2x + 6', post:'מספר שלילי מהפך סימן: -2·(-3) = +6' },
       { kind:'choose', pre:'פשטו את הביטוי', expr:'2(x + 3) + 4x =', opts:['6x + 6','6x + 12'], answer:'6x + 6', post:'2(x + 3) = 2x + 6, ואז 2x + 6 + 4x = 6x + 6' }
     ];

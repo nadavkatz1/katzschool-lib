@@ -1662,11 +1662,11 @@
     // the percent BELOW z from the page anchors (z=1 ~ 84%, z=2 ~ 97.5%, z=0 = 50%),
     // the 68-95-99.7 rule, and the reverse x = mu + z*sigma. Every value re-computed by hand.
     var ROWS = [
-      { kind:'choose', pre:'מהו ציון התקן z?', expr:'μ = 70, σ = 8, x = 78', opts:['1','2'], answer:'1', post:'z = (78 - 70)/8 = 1', example:true },
-      { kind:'choose', pre:'מהו ציון התקן z?', expr:'μ = 70, σ = 8, x = 62', opts:['-1','1'], answer:'-1', post:'z = (62 - 70)/8 = -1' },
+      { kind:'choose', pre:'מהו ציון התקן z?', expr:'μ = 70, σ = 8, x = 78', opts:['2','1'], answer:'1', post:'z = (78 - 70)/8 = 1', example:true },
+      { kind:'choose', pre:'מהו ציון התקן z?', expr:'μ = 70, σ = 8, x = 62', opts:['1','-1'], answer:'-1', post:'z = (62 - 70)/8 = -1' },
       { kind:'choose', pre:'כמה אחוז מתחת לציון 78?', expr:'μ = 70, σ = 8', opts:['84%','50%'], answer:'84%', post:'z = 1, ומהטבלה כ-84% מתחתיו' },
       { kind:'choose', pre:'מהו ציון התקן z?', expr:'μ = 70, σ = 8, x = 86', opts:['2','3'], answer:'2', post:'z = (86 - 70)/8 = 2' },
-      { kind:'choose', pre:'כמה אחוז מהתלמידים בין 62 ל-78?', expr:'μ = 70, σ = 8', opts:['68%','95%'], answer:'68%', post:'z = -1 עד z = 1, כלל 68-95-99.7' },
+      { kind:'choose', pre:'כמה אחוז מהתלמידים בין 62 ל-78?', expr:'μ = 70, σ = 8', opts:['95%','68%'], answer:'68%', post:'z = -1 עד z = 1, כלל 68-95-99.7' },
       { kind:'choose', pre:'מהו הערך x שציון התקן שלו z = 2?', expr:'μ = 70, σ = 8', opts:['86','78'], answer:'86', post:'x = μ + z·σ = 70 + 2·8 = 86' }
     ];
 

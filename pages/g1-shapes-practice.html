@@ -1615,11 +1615,11 @@
     // Row 1 is a solved example. No arithmetic here - just counting, so no minus sign.
     var ROWS = [
       { kind:'choose', pre:'למשולש כמה צלעות?', opts:['3','4'], answer:'3', post:'משולש = 3 צלעות', example:true },
-      { kind:'choose', pre:'למשולש כמה קודקודים?', opts:['3','2'], answer:'3', post:'מספר הקודקודים כמו מספר הצלעות' },
-      { kind:'choose', pre:'למרובע כמה צלעות?', opts:['4','3'], answer:'4', post:'מרובע = 4 צלעות' },
+      { kind:'choose', pre:'למשולש כמה קודקודים?', opts:['2','3'], answer:'3', post:'מספר הקודקודים כמו מספר הצלעות' },
+      { kind:'choose', pre:'למרובע כמה צלעות?', opts:['3','4'], answer:'4', post:'מרובע = 4 צלעות' },
       { kind:'choose', pre:'למלבן כמה פינות ישרות?', opts:['4','5'], answer:'4', post:'למלבן 4 פינות ישרות' },
       { kind:'choose', pre:'למחומש כמה צלעות?', opts:['5','4'], answer:'5', post:'מחומש = 5 צלעות' },
-      { kind:'choose', pre:'לעיגול כמה צלעות ישרות?', opts:['0','3'], answer:'0', post:'לעיגול אין צלעות ישרות' }
+      { kind:'choose', pre:'לעיגול כמה צלעות ישרות?', opts:['3','0'], answer:'0', post:'לעיגול אין צלעות ישרות' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

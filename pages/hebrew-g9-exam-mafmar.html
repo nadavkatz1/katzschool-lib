@@ -1668,10 +1668,10 @@
     var ROWS = [
       { kind:'choose', pre:'הִתְלַבֵּשׁ', opts:['התפעל','נפעל'], answer:'התפעל', post:'- הבניין', example:true },
       { kind:'choose', pre:'סִיפֵּר', opts:['פעיל','סביל'], answer:'פעיל', post:'- פעיל או סביל' },
-      { kind:'choose', pre:'כשהגענו לתחנה, האוטובוס כבר נסע', opts:['מורכב','איחוי (מחובר)'], answer:'מורכב', post:'- סוג המשפט' },
-      { kind:'choose', pre:'דני קרא ספר ורותם כתבה שיר', opts:['מורכב','איחוי (מחובר)'], answer:'איחוי (מחובר)', post:'- סוג המשפט' },
-      { kind:'choose', pre:'מַחְשְׁבוֹן', opts:['תצורה קווית','תצורה מסורגת'], answer:'תצורה קווית', post:'- דרך התצורה' },
-      { kind:'choose', pre:'הֵחֵל', opts:['משלב גבוה','משלב מדובר'], answer:'משלב גבוה', post:'- המשלב' }
+      { kind:'choose', pre:'כשהגענו לתחנה, האוטובוס כבר נסע', opts:['איחוי (מחובר)','מורכב'], answer:'מורכב', post:'- סוג המשפט' },
+      { kind:'choose', pre:'דני קרא ספר ורותם כתבה שיר', opts:['איחוי (מחובר)','מורכב'], answer:'איחוי (מחובר)', post:'- סוג המשפט' },
+      { kind:'choose', pre:'מַחְשְׁבוֹן', opts:['תצורה מסורגת','תצורה קווית'], answer:'תצורה קווית', post:'- דרך התצורה' },
+      { kind:'choose', pre:'הֵחֵל', opts:['משלב מדובר','משלב גבוה'], answer:'משלב גבוה', post:'- המשלב' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

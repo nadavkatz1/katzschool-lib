@@ -1803,11 +1803,11 @@
     // תשפ״ז: נפח גוף הסיבוב אינו נבחן בשאלון 571, ולכן הוא אינו מופיע כאן.
     var ROWS = [
       { kind:'choose', pre:'בחרו את הפונקציה הקדומה של x² (עד כדי קבוע):', expr:'∫x²dx', opts:['x³/3 + c','x³ + c'], answer:'x³/3 + c', post:'מעלים חזקה ומחלקים במעריך החדש', example:true },
-      { kind:'choose', pre:'בחרו את ערך האינטגרל המסוים (הקדומה x²):', expr:'∫₀³ 2x dx', opts:['9','6'], answer:'9', post:'[x²]₀³ = 9 - 0' },
+      { kind:'choose', pre:'בחרו את ערך האינטגרל המסוים (הקדומה x²):', expr:'∫₀³ 2x dx', opts:['6','9'], answer:'9', post:'[x²]₀³ = 9 - 0' },
       { kind:'choose', pre:'בחרו את הנגזרת של הפונקציה sin x:', expr:"(sin x)'", opts:['cos x','-sin x'], answer:'cos x', post:'נגזרת הסינוס היא הקוסינוס' },
       { kind:'choose', pre:'בחרו את ערך האינטגרל המסוים (הקדומה -cos x):', expr:'∫₀<sup>π</sup> sin x dx', opts:['2','0'], answer:'2', post:'[−cos x]₀<sup>π</sup> = 1 + 1' },
-      { kind:'choose', pre:'בחרו את השטח מתחת ל-y = x² מ-0 עד 2:', expr:'∫₀² x² dx', opts:['8/3','4'], answer:'8/3', post:'[x³/3]₀² = 8/3' },
-      { kind:'choose', pre:"נתון F(x) = ∫₀ˣ (t² - 4)dt. בחרו את F'(3):", expr:"F'(x) = x² - 4", opts:['5','9'], answer:'5', post:"לפי המשפט היסודי F' = g, ולכן 9 - 4 = 5" }
+      { kind:'choose', pre:'בחרו את השטח מתחת ל-y = x² מ-0 עד 2:', expr:'∫₀² x² dx', opts:['4','8/3'], answer:'8/3', post:'[x³/3]₀² = 8/3' },
+      { kind:'choose', pre:"נתון F(x) = ∫₀ˣ (t² - 4)dt. בחרו את F'(3):", expr:"F'(x) = x² - 4", opts:['9','5'], answer:'5', post:"לפי המשפט היסודי F' = g, ולכן 9 - 4 = 5" }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

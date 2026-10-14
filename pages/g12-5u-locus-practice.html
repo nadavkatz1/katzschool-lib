@@ -1669,12 +1669,12 @@
     // (perpendicular bisector), and constant-distance-from-a-point circle.
     // Every value re-computed by hand (clean / bank answers).
     var ROWS = [
-      { kind:'choose', pre:'מהו הרדיוס של המעגל', expr:'x²+y²=9', opts:['3','9'], answer:'3', post:'r²=9 → r=3 (מאגר)', example:true },
+      { kind:'choose', pre:'מהו הרדיוס של המעגל', expr:'x²+y²=9', opts:['9','3'], answer:'3', post:'r²=9 → r=3 (מאגר)', example:true },
       { kind:'choose', pre:'מהו הרדיוס של המעגל', expr:'x²+y²=25', opts:['5','25'], answer:'5', post:'r²=25 → r=5' },
-      { kind:'choose', pre:'מהי שיעור ה-x של מרכז המעגל', expr:'(x-2)²+y²=6', opts:['2','-2'], answer:'2', post:'הצורה (x-p)² נותנת p=2 (מאגר)' },
+      { kind:'choose', pre:'מהי שיעור ה-x של מרכז המעגל', expr:'(x-2)²+y²=6', opts:['-2','2'], answer:'2', post:'הצורה (x-p)² נותנת p=2 (מאגר)' },
       { kind:'choose', pre:'המקום שוֹוה-המרחק מ-(0,0) ומ-(4,0) הוא הישר', expr:'(0,0),(4,0)', opts:['x=2','x=4'], answer:'x=2', post:'חוצה-האנך של הקטע (מאגר)' },
       { kind:'choose', pre:'מהו המרחק בין', expr:'(0,0),(4,0)', opts:['4','8'], answer:'4', post:'√(16)=4 (מאגר)' },
-      { kind:'choose', pre:'המקום שמרחקו קבוע 3 מ-(0,0)', expr:'(0,0), r=3', opts:['x²+y²=9','x²+y²=3'], answer:'x²+y²=9', post:'מרחק קבוע 3 מהראשית (מאגר)' }
+      { kind:'choose', pre:'המקום שמרחקו קבוע 3 מ-(0,0)', expr:'(0,0), r=3', opts:['x²+y²=3','x²+y²=9'], answer:'x²+y²=9', post:'מרחק קבוע 3 מהראשית (מאגר)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

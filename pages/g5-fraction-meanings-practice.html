@@ -1551,10 +1551,10 @@
     var ROWS = [
       { kind:'choose', pre:'כמספר מעורב:', expr:'7/3', opts:['2⅓','3⅓'], answer:'2⅓', post:'שבעה שלישים = שני שלמים ועוד שליש = 2⅓', example:true },
       { kind:'choose', pre:'כמספר מעורב:', expr:'9/4', opts:['2¼','4¼'], answer:'2¼', post:'8 רבעים = 2 שלמים, ועוד רבע = 2¼' },
-      { kind:'choose', pre:'כשבר פשוט:', expr:'2¼', opts:['9/4','6/4'], answer:'9/4', post:'2 שלמים = 8 רבעים, ועוד רבע = 9/4' },
-      { kind:'choose', pre:'גדול או קטן משלם?', expr:'5/4', opts:['גדול','קטן'], answer:'גדול', post:'מונה 5 גדול ממכנה 4 → גדול משלם' },
+      { kind:'choose', pre:'כשבר פשוט:', expr:'2¼', opts:['6/4','9/4'], answer:'9/4', post:'2 שלמים = 8 רבעים, ועוד רבע = 9/4' },
+      { kind:'choose', pre:'גדול או קטן משלם?', expr:'5/4', opts:['קטן','גדול'], answer:'גדול', post:'מונה 5 גדול ממכנה 4 → גדול משלם' },
       { kind:'choose', pre:'שווה בדיוק לשלם אחד?', expr:'3/3', opts:['כן','לא'], answer:'כן', post:'מונה שווה למכנה → בדיוק שלם אחד' },
-      { kind:'choose', pre:'היכן על הישר:', expr:'7/4', opts:['בין 1 ל-2','בין 0 ל-1'], answer:'בין 1 ל-2', post:'7 רבעים = שלם ועוד 3 רבעים → בין 1 ל-2' }
+      { kind:'choose', pre:'היכן על הישר:', expr:'7/4', opts:['בין 0 ל-1','בין 1 ל-2'], answer:'בין 1 ל-2', post:'7 רבעים = שלם ועוד 3 רבעים → בין 1 ל-2' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

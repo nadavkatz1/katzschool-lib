@@ -1787,10 +1787,10 @@
     var ROWS = [
       { kind:'choose', pre:'בחרו את ההסתברות לקבל עץ בהטלת מטבע הוגן אחת:', expr:'', opts:['0.5','0.25'], answer:'0.5', post:'מטבע הוגן: ½', example:true },
       { kind:'choose', pre:'מטילים מטבע הוגן פעמיים. בחרו את ההסתברות לשני עצים:', expr:'', opts:['0.25','0.5'], answer:'0.25', post:'½ · ½ = ¼' },
-      { kind:'choose', pre:'אם P(A) = 0.4, בחרו את המשלים P(לא A):', expr:'', opts:['0.6','0.4'], answer:'0.6', post:'1 - 0.4 = 0.6' },
-      { kind:'choose', pre:'בחרו את מקדם הריבית של תהליך הצובר 5% בשנה:', expr:'', opts:['1.05','0.95'], answer:'1.05', post:'מקדם = 1 + 5/100' },
+      { kind:'choose', pre:'אם P(A) = 0.4, בחרו את המשלים P(לא A):', expr:'', opts:['0.4','0.6'], answer:'0.6', post:'1 - 0.4 = 0.6' },
+      { kind:'choose', pre:'בחרו את מקדם הריבית של תהליך הצובר 5% בשנה:', expr:'', opts:['0.95','1.05'], answer:'1.05', post:'מקדם = 1 + 5/100' },
       { kind:'choose', pre:'בחרו את החציון של הקבוצה', expr:'3, 6, 9, 12, 15, 18', opts:['10.5','9'], answer:'10.5', post:'ממוצע 9 ו-12' },
-      { kind:'choose', pre:'במשולשים דומים ביחס דמיון 4, בחרו את יחס השטחים:', expr:'', opts:['16','8'], answer:'16', post:'יחס שטחים = k² = 4²' }
+      { kind:'choose', pre:'במשולשים דומים ביחס דמיון 4, בחרו את יחס השטחים:', expr:'', opts:['8','16'], answer:'16', post:'יחס שטחים = k² = 4²' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

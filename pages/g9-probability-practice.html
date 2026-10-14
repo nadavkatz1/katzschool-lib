@@ -1738,10 +1738,10 @@
     var ROWS = [
       { kind:'choose', pre:'קובייה, מספר זוגי', expr:'P = 3/6 =', opts:['0.5','0.6'], answer:'0.5', post:'זוגי {2,4,6}: 3 מתוך 6', example:true },
       { kind:'choose', pre:'מטבע הוגן, "עץ"', expr:'P = 1/2 =', opts:['0.5','0.25'], answer:'0.5', post:'תוצאה אחת מתוך שתיים' },
-      { kind:'choose', pre:'מאורע משלים, נתון P(A) = 0.3', expr:'1 - 0.3 =', opts:['0.7','0.3'], answer:'0.7', post:'P(לא A) = 1 - P(A)' },
-      { kind:'choose', pre:'כד: 4 אדומים מתוך 10', expr:'P = 4/10 =', opts:['0.4','0.6'], answer:'0.4', post:'4 רצויים מתוך 10' },
+      { kind:'choose', pre:'מאורע משלים, נתון P(A) = 0.3', expr:'1 - 0.3 =', opts:['0.3','0.7'], answer:'0.7', post:'P(לא A) = 1 - P(A)' },
+      { kind:'choose', pre:'כד: 4 אדומים מתוך 10', expr:'P = 4/10 =', opts:['0.6','0.4'], answer:'0.4', post:'4 רצויים מתוך 10' },
       { kind:'choose', pre:'שתי הטלות מטבע, מספר הצירופים', expr:'2 · 2 =', opts:['4','2'], answer:'4', post:'עע, עפ, פע, פפ' },
-      { kind:'choose', pre:'קובייה רגילה, המספר 7', expr:'P(7) =', opts:['0','1'], answer:'0', post:'7 אינו במרחב המדגם: בלתי אפשרי' }
+      { kind:'choose', pre:'קובייה רגילה, המספר 7', expr:'P(7) =', opts:['1','0'], answer:'0', post:'7 אינו במרחב המדגם: בלתי אפשרי' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

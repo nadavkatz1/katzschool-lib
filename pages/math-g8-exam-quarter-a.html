@@ -1803,11 +1803,11 @@
     // opts = answer pills (LTR) · post = short Hebrew rule reminder (RTL). Every answer bank-checked.
     var ROWS = [
       { kind:'choose', pre:'בחרו את שיפוע הישר דרך', expr:'(1, 2) , (4, 8)', opts:['2','-2'], answer:'2', post:'עלייה חלקי צעד: (8 - 2)/(4 - 1)', example:true },
-      { kind:'choose', pre:'בחרו את החיתוך b של', expr:'y = 2x + 3', opts:['3','2'], answer:'3', post:'ב-y = mx + b, b הוא החיתוך עם ציר y' },
-      { kind:'choose', pre:'בחרו את השיפוע m של', expr:'y = -4x + 7', opts:['-4','4'], answer:'-4', post:'השיפוע הוא המקדם של x' },
+      { kind:'choose', pre:'בחרו את החיתוך b של', expr:'y = 2x + 3', opts:['2','3'], answer:'3', post:'ב-y = mx + b, b הוא החיתוך עם ציר y' },
+      { kind:'choose', pre:'בחרו את השיפוע m של', expr:'y = -4x + 7', opts:['4','-4'], answer:'-4', post:'השיפוע הוא המקדם של x' },
       { kind:'choose', pre:'בחרו את המחיר המקורי מתוך', expr:'1.15x = 230', opts:['200','230'], answer:'200', post:'מחלקים ב-1.15: 230 : 1.15' },
       { kind:'choose', pre:'בחרו את פתרון האי-שוויון', expr:'-2x < 8', opts:['x > -4','x < -4'], answer:'x > -4', post:'חילוק במספר שלילי הופך את כיוון הסימן' },
-      { kind:'choose', pre:'בחרו את הפתרון x של', expr:'x + y = 10 , x - y = 4', opts:['7','5'], answer:'7', post:'מחברים את המשוואות: 2x = 14' }
+      { kind:'choose', pre:'בחרו את הפתרון x של', expr:'x + y = 10 , x - y = 4', opts:['5','7'], answer:'7', post:'מחברים את המשוואות: 2x = 14' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

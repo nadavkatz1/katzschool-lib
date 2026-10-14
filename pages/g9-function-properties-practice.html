@@ -1693,11 +1693,11 @@
     // (y-int = f(0); zeros solve f(x)=0; extremum x = midpoint of zeros; up-opening parabola negative
     //  between the zeros; vertex form (x-p)²+k → (p,k), sign of the square coefficient → min/max).
     var ROWS = [
-      { kind:'choose', pre:'בחרו את החיתוך עם ציר y', expr:'f = (x - 2)(x + 3) → y(0) =', opts:['-6','6'], answer:'-6', post:'מציבים x=0: (0-2)(0+3) = -6', example:true },
+      { kind:'choose', pre:'בחרו את החיתוך עם ציר y', expr:'f = (x - 2)(x + 3) → y(0) =', opts:['6','-6'], answer:'-6', post:'מציבים x=0: (0-2)(0+3) = -6', example:true },
       { kind:'choose', pre:'בחרו את תחום השליליות', expr:'f = (x - 2)(x + 3) → f < 0 ב-', opts:['-3 < x < 2','x < -3 או x > 2'], answer:'-3 < x < 2', post:'פרבולה כלפי מעלה: שלילית בין האפסים' },
       { kind:'choose', pre:'בחרו את שיעור ה-y של הקיצון', expr:'y = (x - 2)² + 5 → קיצון y =', opts:['5','-5'], answer:'5', post:'בצורת הקודקוד k הוא שיעור ה-y של הקיצון' },
-      { kind:'choose', pre:'בחרו את תחום הירידה', expr:'y = (x - 2)² + 5 → יורדת ב-', opts:['x < 2','x > 2'], answer:'x < 2', post:'משמאל לקודקוד הפונקציה יורדת' },
-      { kind:'choose', pre:'בחרו את שיעור ה-x של הקיצון', expr:'f = (x + 1)(x - 5) → x =', opts:['2','3'], answer:'2', post:'אמצע האפסים: (-1 + 5) / 2 = 2' },
+      { kind:'choose', pre:'בחרו את תחום הירידה', expr:'y = (x - 2)² + 5 → יורדת ב-', opts:['x > 2','x < 2'], answer:'x < 2', post:'משמאל לקודקוד הפונקציה יורדת' },
+      { kind:'choose', pre:'בחרו את שיעור ה-x של הקיצון', expr:'f = (x + 1)(x - 5) → x =', opts:['3','2'], answer:'2', post:'אמצע האפסים: (-1 + 5) / 2 = 2' },
       { kind:'choose', pre:'בחרו את הקודקוד', expr:'y = -(x - 3)² + 4 → קודקוד', opts:['(3, 4)','(3, -4)'], answer:'(3, 4)', post:'קודקוד (p, k); מקסימום, כי המקדם שלילי' }
     ];
 

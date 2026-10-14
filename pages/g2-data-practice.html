@@ -1535,12 +1535,12 @@
     // difference ("בכמה יותר"). Row 1 is a solved example. → is U+2192. No minus glyph is used;
     // a difference is read with the Hebrew word "פחות".
     var ROWS = [
-      { kind:'choose', pre:'עמודה א בגובה 4, עמודה ב בגובה 7. מי גבוהה יותר?', opts:['ב','א'], answer:'ב', post:'7 גדול מ-4 → ב גבוהה', example:true },
+      { kind:'choose', pre:'עמודה א בגובה 4, עמודה ב בגובה 7. מי גבוהה יותר?', opts:['א','ב'], answer:'ב', post:'7 גדול מ-4 → ב גבוהה', example:true },
       { kind:'choose', pre:'עמודה א בגובה 8, עמודה ב בגובה 5. מי גבוהה יותר?', opts:['א','ב'], answer:'א', post:'8 גדול מ-5 → א גבוהה' },
-      { kind:'choose', pre:'עמודה א בגובה 6, עמודה ב בגובה 2. מי נמוכה יותר?', opts:['ב','א'], answer:'ב', post:'2 קטן מ-6 → ב נמוכה' },
+      { kind:'choose', pre:'עמודה א בגובה 6, עמודה ב בגובה 2. מי נמוכה יותר?', opts:['א','ב'], answer:'ב', post:'2 קטן מ-6 → ב נמוכה' },
       { kind:'choose', pre:'עמודה א בגובה 5, עמודה ב בגובה 5. האם הן שוות?', opts:['שוות','לא שוות'], answer:'שוות', post:'אותו מספר → אותו גובה' },
       { kind:'choose', pre:'כדורגל 7, שחייה 4. בכמה יותר בחרו כדורגל?', opts:['3','4'], answer:'3', post:'ההפרש: 7 פחות 4 שווה 3' },
-      { kind:'choose', pre:'בפיקטוגרם כל ⚽ שווה ילד אחד. כדורגל 6 ציורים, ריצה 2. בכמה יותר?', opts:['4','8'], answer:'4', post:'6 פחות 2 שווה 4 ילדים' }
+      { kind:'choose', pre:'בפיקטוגרם כל ⚽ שווה ילד אחד. כדורגל 6 ציורים, ריצה 2. בכמה יותר?', opts:['8','4'], answer:'4', post:'6 פחות 2 שווה 4 ילדים' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

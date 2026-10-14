@@ -1696,11 +1696,11 @@
     // Every answer verified by hand: set the two y-expressions equal, solve, substitute back.
     var ROWS = [
       { kind:'choose', pre:'בחרו את שיעור ה-x הגדול של נקודת החיתוך', expr:'y = x², y = x + 2  →  x² - x - 2 = 0', opts:['2','-1'], answer:'2', post:'מפרקים (x - 2)(x + 1) = 0, ולכן x = 2 או x = -1; הגדול הוא 2', example:true },
-      { kind:'choose', pre:'בחרו את שיעור ה-x החיובי של החיתוך', expr:'y = x², y = 9  →  x² = 9', opts:['3','9'], answer:'3', post:'מוציאים שורש: x = 3 או x = -3; החיובי הוא 3 (9 הוא שיעור ה-y, לא ה-x)' },
+      { kind:'choose', pre:'בחרו את שיעור ה-x החיובי של החיתוך', expr:'y = x², y = 9  →  x² = 9', opts:['9','3'], answer:'3', post:'מוציאים שורש: x = 3 או x = -3; החיובי הוא 3 (9 הוא שיעור ה-y, לא ה-x)' },
       { kind:'choose', pre:'בחרו את שורש החיתוך השונה מאפס', expr:'y = x², y = 4x  →  x(x - 4) = 0', opts:['4','0'], answer:'4', post:'x = 0 או x = 4; השורש השונה מאפס הוא 4' },
       { kind:'choose', pre:'בחרו את שיעור ה-y המשותף לשתי נקודות החיתוך', expr:'y = x² + 1, y = 2x² - 3  →  x² = 4', opts:['5','4'], answer:'5', post:'מציבים x² = 4 ב-y = x² + 1: y = 4 + 1 = 5 (4 הוא x², לא y)' },
-      { kind:'choose', pre:'בחרו את מספר נקודות החיתוך', expr:'y = x², y = 0  →  x² = 0', opts:['1','2'], answer:'1', post:'שורש כפול x = 0, ולכן נקודת חיתוך אחת (הישר משיק בקודקוד)' },
-      { kind:'choose', pre:'בחרו את מספר נקודות החיתוך', expr:'y = x², y = -1  →  x² = -1', opts:['0','2'], answer:'0', post:'אין מספר ממשי שהריבוע שלו שלילי, ולכן אין נקודות חיתוך' }
+      { kind:'choose', pre:'בחרו את מספר נקודות החיתוך', expr:'y = x², y = 0  →  x² = 0', opts:['2','1'], answer:'1', post:'שורש כפול x = 0, ולכן נקודת חיתוך אחת (הישר משיק בקודקוד)' },
+      { kind:'choose', pre:'בחרו את מספר נקודות החיתוך', expr:'y = x², y = -1  →  x² = -1', opts:['2','0'], answer:'0', post:'אין מספר ממשי שהריבוע שלו שלילי, ולכן אין נקודות חיתוך' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

@@ -1730,10 +1730,10 @@
     var ROWS = [
       { kind:'choose', pre:'בחרו את הפתרון', expr:'(x - 2)(x + 3) < 0 →', opts:['-3 < x < 2','-2 < x < 3'], answer:'-3 < x < 2', post:'שלילי בין האפסים -3 ו-2', example:true },
       { kind:'choose', pre:'בחרו את הפתרון', expr:'x² - 4 < 0 →', opts:['-2 < x < 2','-4 < x < 4'], answer:'-2 < x < 2', post:'(x-2)(x+2) < 0, שלילי בין האפסים' },
-      { kind:'choose', pre:'מהו הגבול העליון של הפתרון', expr:'x² - 9 < 0 →', opts:['3','9'], answer:'3', post:'הקטע -3 < x < 3; הגבול העליון הוא 3' },
+      { kind:'choose', pre:'מהו הגבול העליון של הפתרון', expr:'x² - 9 < 0 →', opts:['9','3'], answer:'3', post:'הקטע -3 < x < 3; הגבול העליון הוא 3' },
       { kind:'choose', pre:'כמה פתרונות שלמים בקטע', expr:'-3 < x < 3 →', opts:['5','7'], answer:'5', post:'המספרים -2, -1, 0, 1, 2' },
-      { kind:'choose', pre:'האם האפסים נכללים בפתרון', expr:'x² - 9 ≤ 0 →', opts:['כן','לא'], answer:'כן', post:'סימן חלש (≤): -3 ≤ x ≤ 3, האפסים נכללים' },
-      { kind:'choose', pre:'בחרו את הפתרון (פרבולה כלפי מטה)', expr:'-x² + 4 > 0 →', opts:['-2 < x < 2','x < -2 או x > 2'], answer:'-2 < x < 2', post:'כלפי מטה: חיובית בין האפסים' }
+      { kind:'choose', pre:'האם האפסים נכללים בפתרון', expr:'x² - 9 ≤ 0 →', opts:['לא','כן'], answer:'כן', post:'סימן חלש (≤): -3 ≤ x ≤ 3, האפסים נכללים' },
+      { kind:'choose', pre:'בחרו את הפתרון (פרבולה כלפי מטה)', expr:'-x² + 4 > 0 →', opts:['x < -2 או x > 2','-2 < x < 2'], answer:'-2 < x < 2', post:'כלפי מטה: חיובית בין האפסים' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

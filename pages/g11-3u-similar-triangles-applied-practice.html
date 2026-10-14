@@ -1704,10 +1704,10 @@
     var ROWS = [
       { kind:'choose', pre:'שיטת הצל: מקל 1 מ׳ מטיל צל 0.5 מ׳, עץ מטיל צל 8 מ׳. גובה העץ (במטרים)?', expr:'1/0.5 = 2', opts:['16','10'], answer:'16', post:'8 · 2 = 16 מ׳', example:true },
       { kind:'choose', pre:'מהו יחס ההיקפים?', expr:'k = 3', opts:['3','9'], answer:'3', post:'יחס היקפים = k = 3 (לא בריבוע)' },
-      { kind:'choose', pre:'מהו יחס השטחים?', expr:'k = 2', opts:['4','2'], answer:'4', post:'יחס שטחים = k² = 2² = 4' },
+      { kind:'choose', pre:'מהו יחס השטחים?', expr:'k = 2', opts:['2','4'], answer:'4', post:'יחס שטחים = k² = 2² = 4' },
       { kind:'choose', pre:'קנה מידה 1:1000, מרחק במפה 5 ס״מ. המרחק האמיתי (במטרים)?', expr:'·1000', opts:['50','500'], answer:'50', post:'5 · 1000 = 5000 ס״מ = 50 מ׳' },
-      { kind:'choose', pre:'הצלע המתאימה במשולש הגדול?', expr:'k = 2.5, צלע 4', opts:['10','8'], answer:'10', post:'4 · 2.5 = 10' },
-      { kind:'choose', pre:'שטח המשולש הקטן 20 סמ״ר. מהו שטח הגדול?', expr:'k = 3', opts:['180','60'], answer:'180', post:'שטח · k² = 20 · 9 = 180 סמ״ר' }
+      { kind:'choose', pre:'הצלע המתאימה במשולש הגדול?', expr:'k = 2.5, צלע 4', opts:['8','10'], answer:'10', post:'4 · 2.5 = 10' },
+      { kind:'choose', pre:'שטח המשולש הקטן 20 סמ״ר. מהו שטח הגדול?', expr:'k = 3', opts:['60','180'], answer:'180', post:'שטח · k² = 20 · 9 = 180 סמ״ר' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

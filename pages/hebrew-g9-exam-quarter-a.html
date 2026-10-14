@@ -1675,12 +1675,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'ירד גשם ונשארנו בבית', opts:['איחוי (מחובר)','מורכב'], answer:'איחוי (מחובר)', post:'- סוג המשפט', example:true },
+      { kind:'choose', pre:'ירד גשם ונשארנו בבית', opts:['מורכב','איחוי (מחובר)'], answer:'איחוי (מחובר)', post:'- סוג המשפט', example:true },
       { kind:'choose', pre:'נשארנו בבית כי ירד גשם', opts:['איחוי (מחובר)','מורכב'], answer:'מורכב', post:'- סוג המשפט' },
       { kind:'choose', pre:'התלמידים סיימו את המטלה', opts:['פשוט','מורכב'], answer:'פשוט', post:'- סוג המשפט' },
       { kind:'choose', pre:'נִכְתַּב', opts:['פעיל','סביל'], answer:'סביל', post:'- פעיל או סביל' },
       { kind:'choose', pre:'מִגְדָּל', opts:['תצורה מסורגת','תצורה קווית'], answer:'תצורה מסורגת', post:'- דרך התצורה' },
-      { kind:'choose', pre:'מַחְשְׁבוֹן', opts:['תצורה מסורגת','תצורה קווית'], answer:'תצורה קווית', post:'- דרך התצורה' }
+      { kind:'choose', pre:'מַחְשְׁבוֹן', opts:['תצורה קווית','תצורה מסורגת'], answer:'תצורה קווית', post:'- דרך התצורה' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

@@ -1557,11 +1557,11 @@
     // → is U+2192. No subtraction here, so no U+2212. No en/em dashes.
     var ROWS = [
       { kind:'choose', pre:'מה משותף לכל הכפולות של 10?', opts:['נגמרות ב-0','נגמרות ב-5'], answer:'נגמרות ב-0', post:'כל קפיצה מוסיפה עשרת שלמה', example:true },
-      { kind:'choose', pre:'הכפולה הבאה של 3 אחרי', expr:'12', opts:['15','14'], answer:'15', post:'12 ועוד 3 = 15' },
-      { kind:'choose', pre:'מה משותף לכל הכפולות של 2?', opts:['כולן זוגיות','כולן אי-זוגיות'], answer:'כולן זוגיות', post:'נגמרות ב-0, 2, 4, 6 או 8' },
+      { kind:'choose', pre:'הכפולה הבאה של 3 אחרי', expr:'12', opts:['14','15'], answer:'15', post:'12 ועוד 3 = 15' },
+      { kind:'choose', pre:'מה משותף לכל הכפולות של 2?', opts:['כולן אי-זוגיות','כולן זוגיות'], answer:'כולן זוגיות', post:'נגמרות ב-0, 2, 4, 6 או 8' },
       { kind:'choose', pre:'איזה תרגיל שווה ל-', expr:'4 × 7', opts:['7 × 4','4 + 7'], answer:'7 × 4', post:'חוק החילוף: 4 × 7 = 7 × 4' },
       { kind:'choose', pre:'כמה זה', expr:'(2 × 5) × 3', opts:['30','25'], answer:'30', post:'2 × 5 = 10, ואז 10 × 3 = 30' },
-      { kind:'choose', pre:'כמה זה', expr:'9 × 1', opts:['9','1'], answer:'9', post:'כפל ב-1 משאיר את המספר' }
+      { kind:'choose', pre:'כמה זה', expr:'9 × 1', opts:['1','9'], answer:'9', post:'כפל ב-1 משאיר את המספר' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

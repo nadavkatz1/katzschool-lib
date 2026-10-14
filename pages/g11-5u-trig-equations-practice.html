@@ -1716,10 +1716,10 @@
     var ROWS = [
       { kind:'choose', pre:'sin 2x = ½ בתחום 0-360: הפתרון הקטן ביותר הוא', expr:'x = 30 / 2 =', opts:['15','30'], answer:'15', post:'2 sin x cos x = ½ → sin 2x = ½; 2x = 30 → x = 15', example:true },
       { kind:'choose', pre:'sin 2x = ½ בתחום 0-360: כמה פתרונות יש?', expr:'מספר הפתרונות =', opts:['4','2'], answer:'4', post:'2x רץ עד 720, לכן 4 פתרונות: 15, 75, 195, 255' },
-      { kind:'choose', pre:'cos 2x = 0 בתחום 0-360: הפתרון הקטן ביותר הוא', expr:'x = 90 / 2 =', opts:['45','90'], answer:'45', post:'cos θ = 0 ב-90; 2x = 90 → x = 45' },
-      { kind:'choose', pre:'sin x = cos x בתחום 0-360: הפתרון ברביע III הוא', expr:'x = 180 + 45 =', opts:['225','135'], answer:'225', post:'sin x = cos x → tan x = 1 → x = 45 ו-x = 225' },
+      { kind:'choose', pre:'cos 2x = 0 בתחום 0-360: הפתרון הקטן ביותר הוא', expr:'x = 90 / 2 =', opts:['90','45'], answer:'45', post:'cos θ = 0 ב-90; 2x = 90 → x = 45' },
+      { kind:'choose', pre:'sin x = cos x בתחום 0-360: הפתרון ברביע III הוא', expr:'x = 180 + 45 =', opts:['135','225'], answer:'225', post:'sin x = cos x → tan x = 1 → x = 45 ו-x = 225' },
       { kind:'choose', pre:'cos 2x = ½ בתחום 0-360: הפתרון הקטן ביותר הוא', expr:'x = 60 / 2 =', opts:['30','60'], answer:'30', post:'cos θ = ½ ב-60; 2x = 60 → x = 30' },
-      { kind:'choose', pre:'sin 2x = ½ בתחום 0-360: הפתרון הגדול ביותר הוא', expr:'x = 510 / 2 =', opts:['255','195'], answer:'255', post:'2x = 510 → x = 255 (הגדול מבין 15, 75, 195, 255)' }
+      { kind:'choose', pre:'sin 2x = ½ בתחום 0-360: הפתרון הגדול ביותר הוא', expr:'x = 510 / 2 =', opts:['195','255'], answer:'255', post:'2x = 510 → x = 255 (הגדול מבין 15, 75, 195, 255)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

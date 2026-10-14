@@ -1795,11 +1795,11 @@
     // investigation).
     var ROWS = [
       { kind:'choose', pre:'בחרו את האיבר החמישי a₅ בסדרה חשבונית a₁=4, d=3:', expr:'', opts:['16','20'], answer:'16', post:'a₅ = 4 + 4·3 = 16', example:true },
-      { kind:'choose', pre:'בחרו את האיבר החמישי a₅ בסדרה הנדסית a₁=3, q=2:', expr:'', opts:['48','24'], answer:'48', post:'a₅ = 3·2⁴ = 48' },
-      { kind:'choose', pre:'בחרו את סכום הסכום ההנדסי האינסופי a₁=16, q=½:', expr:'', opts:['32','16'], answer:'32', post:'S = 16/(1 - ½) = 32' },
+      { kind:'choose', pre:'בחרו את האיבר החמישי a₅ בסדרה הנדסית a₁=3, q=2:', expr:'', opts:['24','48'], answer:'48', post:'a₅ = 3·2⁴ = 48' },
+      { kind:'choose', pre:'בחרו את סכום הסכום ההנדסי האינסופי a₁=16, q=½:', expr:'', opts:['16','32'], answer:'32', post:'S = 16/(1 - ½) = 32' },
       { kind:'choose', pre:'בחרו את מקדם הגדילה השנתי של גדילה ב-3% לשנה:', expr:'', opts:['1.03','0.97'], answer:'1.03', post:'1 + 3/100 = 1.03' },
       { kind:'choose', pre:'בחרו את שיעור ה-x של הקיצון של f(x)=x·eˣ (הנגזרת (1+x)eˣ):', expr:'', opts:['-1','0'], answer:'-1', post:'1 + x = 0 נותן x = -1' },
-      { kind:'choose', pre:'בחרו את תחום ההגדרה של f(x)=x - ln x:', expr:'', opts:['x > 0','כל x'], answer:'x > 0', post:'ln מוגדר רק על מספר חיובי' }
+      { kind:'choose', pre:'בחרו את תחום ההגדרה של f(x)=x - ln x:', expr:'', opts:['כל x','x > 0'], answer:'x > 0', post:'ln מוגדר רק על מספר חיובי' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

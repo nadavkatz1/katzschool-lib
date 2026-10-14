@@ -1529,12 +1529,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'שָׁ', opts:['פתוחה','סגורה'], answer:'פתוחה', post:'- ההברה', example:true },
+      { kind:'choose', pre:'שָׁ', opts:['סגורה','פתוחה'], answer:'פתוחה', post:'- ההברה', example:true },
       { kind:'choose', pre:'יִם', opts:['פתוחה','סגורה'], answer:'סגורה', post:'- ההברה' },
-      { kind:'choose', pre:'פָּ', opts:['פתוחה','סגורה'], answer:'פתוחה', post:'- ההברה' },
+      { kind:'choose', pre:'כַּלְ', opts:['סגורה','פתוחה'], answer:'סגורה', post:'- ההברה' },
       { kind:'choose', pre:'מִדְ', opts:['פתוחה','סגורה'], answer:'סגורה', post:'- ההברה' },
       { kind:'choose', pre:'חָה', opts:['פתוחה','סגורה'], answer:'פתוחה', post:'- ההברה' },
-      { kind:'choose', pre:'כַּלְ', opts:['פתוחה','סגורה'], answer:'סגורה', post:'- ההברה' }
+      { kind:'choose', pre:'פָּ', opts:['פתוחה','סגורה'], answer:'פתוחה', post:'- ההברה' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

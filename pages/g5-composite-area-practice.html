@@ -1565,11 +1565,11 @@
     // '=' equals, 'x' shown as multiply, '/' as divide, ASCII hyphen only for minus/other dashes.
     var ROWS = [
       { kind:'choose', pre:'אות L: מלבן 8×3 ומלבן 3×4 - השטח (סמ"ר)?', opts:['36','44'], answer:'36', post:'פירוק: 24 + 12 = 36', example:true },
-      { kind:'choose', pre:'מלבן שאורכו 7 ורוחבו 5 - השטח (סמ"ר)?', opts:['35','12'], answer:'35', post:'אורך × רוחב = 7 × 5 = 35' },
+      { kind:'choose', pre:'מלבן שאורכו 7 ורוחבו 5 - השטח (סמ"ר)?', opts:['12','35'], answer:'35', post:'אורך × רוחב = 7 × 5 = 35' },
       { kind:'choose', pre:'משולש ישר-זווית בסיס 6 גובה 4 - השטח (סמ"ר)?', opts:['12','24'], answer:'12', post:'בסיס × גובה : 2 = 6 × 4 : 2 = 12' },
       { kind:'choose', pre:'מגרש מלבן 10×6 עם בליטה משולשת בסיס 6 גובה 4 - השטח (מ"ר)?', opts:['72','60'], answer:'72', post:'פירוק: 60 + 12 = 72' },
-      { kind:'choose', pre:'מסגרת: מלבן חיצוני 10×8, חור מלבני 6×4 - השטח (סמ"ר)?', opts:['56','104'], answer:'56', post:'משלימים וחיסרים: 80 - 24 = 56, לא מחברים' },
-      { kind:'choose', pre:'מגרש כולל 72, המלבן לבדו 60 - הבליטה (מ"ר)?', opts:['12','132'], answer:'12', post:'חיסור: 72 - 60 = 12' }
+      { kind:'choose', pre:'מסגרת: מלבן חיצוני 10×8, חור מלבני 6×4 - השטח (סמ"ר)?', opts:['104','56'], answer:'56', post:'משלימים וחיסרים: 80 - 24 = 56, לא מחברים' },
+      { kind:'choose', pre:'מגרש כולל 72, המלבן לבדו 60 - הבליטה (מ"ר)?', opts:['132','12'], answer:'12', post:'חיסור: 72 - 60 = 12' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

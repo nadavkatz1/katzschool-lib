@@ -1596,8 +1596,8 @@
      (4 + 6 + 8) : 3 = 6 · a full turn is 360 · 6 x 4 : 2 = 12.
      Nothing here is asked outside what the six chapters teach: no multiplying of
      fractions, no multiplying of decimals, no percentages, no circle.
-     The correct choice is deliberately NOT always the first one: rows 2, 4 and 6
-     carry it second, so the map cannot be aced by picking a position.           */
+     The correct choice is deliberately NOT always the first one, and its position
+     follows no fixed cycle, so the map cannot be aced by picking a position.    */
   (function(){
     var host = document.getElementById('rmxRows');
     if(!host) return;
@@ -1606,12 +1606,12 @@
     var mapEl    = document.getElementById('rmxMap');
 
     var ROWS = [
-      { ch:1, name:'שברים פשוטים',        pre:'כמה הם רבע ועוד חצי?',   expr:'',           opts:['שלושה רבעים','שתי שישיות'], answer:'שלושה רבעים', post:'מכנה משותף, ואז רק המונים', href:'summer-math-g5-g6-ch1.html' },
+      { ch:1, name:'שברים פשוטים',        pre:'כמה הם רבע ועוד חצי?',   expr:'',           opts:['שתי שישיות','שלושה רבעים'], answer:'שלושה רבעים', post:'מכנה משותף, ואז רק המונים', href:'summer-math-g5-g6-ch1.html' },
       { ch:2, name:'מספרים עשרוניים',     pre:'כמה הם',                 expr:'0.5 + 0.25', opts:['0.30','0.75'], answer:'0.75', post:'נקודה מתחת לנקודה',        href:'summer-math-g5-g6-ch2.html' },
       { ch:3, name:'מספרים גדולים ואומדן', pre:'חשבו לפי סדר הפעולות',  expr:'6 + 8 : 2',  opts:['10','7'],      answer:'10',   post:'חילוק לפני חיבור',          href:'summer-math-g5-g6-ch3.html' },
-      { ch:4, name:'ממוצע, שכיחות וקצב',  pre:'מהו הממוצע של 4, 6 ו-8?', expr:'',          opts:['18','6'],      answer:'6',    post:'סכום חלקי מספר האיברים',    href:'summer-math-g5-g6-ch4.html' },
-      { ch:5, name:'מצולעים וזוויות',     pre:'כמה מעלות בסיבוב שלם סביב נקודה?', expr:'', opts:['360','180'],   answer:'360',  post:'קו ישר הוא 180',            href:'summer-math-g5-g6-ch5.html' },
-      { ch:6, name:'שטחים, היקפים ונפח',  pre:'שטח משולש שבסיסו 6 וגובהו 4, בסמ"ר', expr:'', opts:['24','12'],   answer:'12',   post:'בסיס כפול גובה, ואז חצי',   href:'summer-math-g5-g6-ch6.html' }
+      { ch:4, name:'ממוצע, שכיחות וקצב',  pre:'מהו הממוצע של 4, 6 ו-8?', expr:'',          opts:['6','18'],      answer:'6',    post:'סכום חלקי מספר האיברים',    href:'summer-math-g5-g6-ch4.html' },
+      { ch:5, name:'מצולעים וזוויות',     pre:'כמה מעלות בסיבוב שלם סביב נקודה?', expr:'', opts:['180','360'],   answer:'360',  post:'קו ישר הוא 180',            href:'summer-math-g5-g6-ch5.html' },
+      { ch:6, name:'שטחים, היקפים ונפח',  pre:'שטח משולש שבסיסו 6 וגובהו 4, בסמ"ר', expr:'', opts:['12','24'],   answer:'12',   post:'בסיס כפול גובה, ואז חצי',   href:'summer-math-g5-g6-ch6.html' }
     ];
 
     var norm = function(s){ return String(s||'').trim().replace(/\s+/g,''); };

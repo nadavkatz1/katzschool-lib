@@ -1691,10 +1691,10 @@
     var ROWS = [
       { kind:'choose', pre:'מהו a של האליפסה', expr:'x²/25+y²/16=1', opts:['5','25'], answer:'5', post:'a²=25 → a=√25=5 (מאגר)', example:true },
       { kind:'choose', pre:'מהו c של האליפסה', expr:'x²/25+y²/16=1', opts:['3','4'], answer:'3', post:'c²=25-16=9 → c=3 (מאגר)' },
-      { kind:'choose', pre:'מהו c של ההיפרבולה', expr:'x²/9-y²/16=1', opts:['5','7'], answer:'5', post:'c²=9+16=25 → c=5 (מאגר)' },
-      { kind:'choose', pre:'איזה חתך חרוט מתארת', expr:'x²/9-y²/16=1', opts:['היפרבולה','אליפסה'], answer:'היפרבולה', post:'סימן מינוס → היפרבולה (מאגר)' },
+      { kind:'choose', pre:'מהו c של ההיפרבולה', expr:'x²/9-y²/16=1', opts:['7','5'], answer:'5', post:'c²=9+16=25 → c=5 (מאגר)' },
+      { kind:'choose', pre:'איזה חתך חרוט מתארת', expr:'x²/9-y²/16=1', opts:['אליפסה','היפרבולה'], answer:'היפרבולה', post:'סימן מינוס → היפרבולה (מאגר)' },
       { kind:'choose', pre:'מהם הקודקודים של', expr:'x²/25+y²/16=1', opts:['(±5,0)','(±3,0)'], answer:'(±5,0)', post:'קודקודים (±a,0), a=5 (מאגר)' },
-      { kind:'choose', pre:'מהם המוקדים של', expr:'x²/9-y²/16=1', opts:['(±5,0)','(±3,0)'], answer:'(±5,0)', post:'c=5, מוקדים (±c,0) (מאגר)' }
+      { kind:'choose', pre:'מהם המוקדים של', expr:'x²/9-y²/16=1', opts:['(±3,0)','(±5,0)'], answer:'(±5,0)', post:'c=5, מוקדים (±c,0) (מאגר)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

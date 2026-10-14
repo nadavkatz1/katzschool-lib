@@ -1674,11 +1674,11 @@
 
     var ROWS = [
       { kind:'choose', pre:'הִדְלִיק', opts:['בניין הפעיל','בניין נפעל'], answer:'בניין הפעיל', post:'- הבניין', example:true },
-      { kind:'choose', pre:'הֻדְלַק', opts:['סביל','פעיל'], answer:'סביל', post:'- מצב הפעולה' },
+      { kind:'choose', pre:'הֻדְלַק', opts:['פעיל','סביל'], answer:'סביל', post:'- מצב הפעולה' },
       { kind:'choose', pre:'הַדְלָקָה', opts:['שם הפעולה','שם הפועל'], answer:'שם הפעולה', post:'- סוג הצורה' },
       { kind:'choose', pre:'רמזור', opts:['הלחם בסיסים','גזירה מסורגת'], answer:'הלחם בסיסים', post:'- דרך התצורה' },
-      { kind:'choose', pre:'״הספר שקנינו מעניין״', opts:['פסוקית לוואי','פסוקית מושא'], answer:'פסוקית לוואי', post:'- סוג הפסוקית ״שקנינו״' },
-      { kind:'choose', pre:'״דוד, אחי, נסע״', opts:['תמורה','הסגר'], answer:'תמורה', post:'- תפקיד ״אחי״' }
+      { kind:'choose', pre:'״הספר שקנינו מעניין״', opts:['פסוקית מושא','פסוקית לוואי'], answer:'פסוקית לוואי', post:'- סוג הפסוקית ״שקנינו״' },
+      { kind:'choose', pre:'״דוד, אחי, נסע״', opts:['הסגר','תמורה'], answer:'תמורה', post:'- תפקיד ״אחי״' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

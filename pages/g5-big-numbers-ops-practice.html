@@ -1562,12 +1562,12 @@
     // Row 5 is the wrong-order trap (add-before-divide gives 7 instead of 11).
     // '=' equals, 'x' shown as multiply, '/' as divide, ASCII hyphen only for minus/other dashes.
     var ROWS = [
-      { kind:'choose', pre:'לפי סדר הפעולות: 8 + 12 : 4 = ? (קודם החילוק)', opts:['11','5'], answer:'11', post:'12 : 4=3, ואז 8+3 = 11', example:true },
+      { kind:'choose', pre:'לפי סדר הפעולות: 8 + 12 : 4 = ? (קודם החילוק)', opts:['5','11'], answer:'11', post:'12 : 4=3, ואז 8+3 = 11', example:true },
       { kind:'choose', pre:'אמדו את 6,120×48 בעיגול הגורמים (בערך)?', opts:['300,000','30,000'], answer:'300,000', post:'6,000×50 = 300,000' },
-      { kind:'choose', pre:'בלי לחשב: 3,200×10 מול 3,200×5×2 - הסימן?', opts:['=','>'], answer:'=', post:'5×2=10, אז שני הצדדים שווים' },
+      { kind:'choose', pre:'בלי לחשב: 3,200×10 מול 3,200×5×2 - הסימן?', opts:['>','='], answer:'=', post:'5×2=10, אז שני הצדדים שווים' },
       { kind:'choose', pre:'פרקו וחשבו: 99×7 = 100×7 - 7 = ?', opts:['693','707'], answer:'693', post:'700 - 7 = 693' },
       { kind:'choose', pre:'8 + 6 : 2 - התוצאה הנכונה? (לא 7!)', opts:['11','7'], answer:'11', post:'קודם 6 : 2=3, ואז 8+3 = 11' },
-      { kind:'choose', pre:'איזה מספר בא מיד אחרי 999,999?', opts:['1,000,000','100,000'], answer:'1,000,000', post:'אחרי מאות-אלפים בא המיליון' }
+      { kind:'choose', pre:'איזה מספר בא מיד אחרי 999,999?', opts:['100,000','1,000,000'], answer:'1,000,000', post:'אחרי מאות-אלפים בא המיליון' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

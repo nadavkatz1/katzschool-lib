@@ -1610,12 +1610,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:"\"הישיבה נדחתה בשבוע\"", opts:["פשוט","מורכב","איחוי"], answer:"פשוט", post:"", example:true },
-      { kind:'choose', pre:"\"המנהל הודיע שהפעילות תידחה\"", opts:["פשוט","מורכב","איחוי"], answer:"מורכב", post:"" },
-      { kind:'choose', pre:"\"הגשם ירד, והשיעור בוטל\"", opts:["פשוט","מורכב","איחוי"], answer:"איחוי", post:"" },
-      { kind:'choose', pre:"\"התלמידים והמורים הגיעו לאולם\"", opts:["פשוט","מורכב","איחוי"], answer:"פשוט", post:"" },
-      { kind:'choose', pre:"\"מי שהגיע מוקדם קיבל מקום\"", opts:["פשוט","מורכב","איחוי"], answer:"מורכב", post:"" },
-      { kind:'choose', pre:"\"היא סיימה את העבודה, אך לא הגישה אותה\"", opts:["פשוט","מורכב","איחוי"], answer:"איחוי", post:"" }
+      { kind:'choose', pre:"\"הישיבה נדחתה בשבוע\"", opts:["איחוי","מורכב","פשוט"], answer:"פשוט", post:"", example:true },
+      { kind:'choose', pre:"\"המנהל הודיע שהפעילות תידחה\"", opts:["מורכב","פשוט","איחוי"], answer:"מורכב", post:"" },
+      { kind:'choose', pre:"\"מי שהגיע מוקדם קיבל מקום\"", opts:["פשוט","איחוי","מורכב"], answer:"מורכב", post:"" },
+      { kind:'choose', pre:"\"התלמידים והמורים הגיעו לאולם\"", opts:["מורכב","פשוט","איחוי"], answer:"פשוט", post:"" },
+      { kind:'choose', pre:"\"הגשם ירד, והשיעור בוטל\"", opts:["פשוט","איחוי","מורכב"], answer:"איחוי", post:"" },
+      { kind:'choose', pre:"\"היא סיימה את העבודה, אך לא הגישה אותה\"", opts:["איחוי","מורכב","פשוט"], answer:"איחוי", post:"" }
     ];
 
     var norm = function(s){ return String(s||'').trim().replace(/\s+/g,' ').replace(/[.?!]+$/,''); };

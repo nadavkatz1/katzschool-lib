@@ -1707,12 +1707,12 @@
     // is equidistant from the two endpoints (PA = PB), the angle bisector is equidistant from the
     // two sides, and the circumcenter is equidistant from the three vertices. Every value re-computed by hand.
     var ROWS = [
-      { kind:'choose', pre:'החלק מהקודקוד (למרכז הכובד)?', expr:'d = 12', opts:['8','4'], answer:'8', post:'יחס 2:1: 12 / 3 = 4, ומהקודקוד 2 * 4 = 8', example:true },
+      { kind:'choose', pre:'החלק מהקודקוד (למרכז הכובד)?', expr:'d = 12', opts:['4','8'], answer:'8', post:'יחס 2:1: 12 / 3 = 4, ומהקודקוד 2 * 4 = 8', example:true },
       { kind:'choose', pre:'החלק אל הצלע?', expr:'d = 12', opts:['4','8'], answer:'4', post:'חלק אחד מתוך שלושה: 12 / 3 = 4' },
       { kind:'choose', pre:'PB, אם P על האנך האמצעי לקטע?', expr:'PA = 7', opts:['7','14'], answer:'7', post:'על האנך האמצעי מתקיים PA = PB, ולכן PB = 7' },
-      { kind:'choose', pre:'המרחק לצלע השנייה (P על חוצה הזווית)?', expr:'d = 5', opts:['5','10'], answer:'5', post:'חוצה הזווית שומר על מרחק שווה משתי השוקיים' },
+      { kind:'choose', pre:'המרחק לצלע השנייה (P על חוצה הזווית)?', expr:'d = 5', opts:['10','5'], answer:'5', post:'חוצה הזווית שומר על מרחק שווה משתי השוקיים' },
       { kind:'choose', pre:'המרחק לקודקוד אחר (מרכז המעגל החוסם)?', expr:'R = 10', opts:['10','5'], answer:'10', post:'מרכז המעגל החוסם שוות-מרחק משלושת הקודקודים (הרדיוס)' },
-      { kind:'choose', pre:'החלק מהקודקוד?', expr:'d = 15', opts:['10','5'], answer:'10', post:'שני שלישים מהתיכון: (2 / 3) * 15 = 10' }
+      { kind:'choose', pre:'החלק מהקודקוד?', expr:'d = 15', opts:['5','10'], answer:'10', post:'שני שלישים מהתיכון: (2 / 3) * 15 = 10' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

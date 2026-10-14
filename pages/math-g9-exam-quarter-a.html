@@ -1781,11 +1781,11 @@
     // against the grade-9 teaching pages (special products, factoring, quadratic equation, exponents).
     var ROWS = [
       { kind:'choose', pre:'בחרו את פיתוח', expr:'(x + 4)²', opts:['x² + 8x + 16','x² + 16'], answer:'x² + 8x + 16', post:'ריבוע סכום: a² + 2ab + b²', example:true },
-      { kind:'choose', pre:'בחרו את הפירוק של', expr:'x² + 5x + 6', opts:['(x + 2)(x + 3)','(x + 1)(x + 6)'], answer:'(x + 2)(x + 3)', post:'שני מספרים שמכפלתם 6 וסכומם 5' },
+      { kind:'choose', pre:'בחרו את הפירוק של', expr:'x² + 5x + 6', opts:['(x + 1)(x + 6)','(x + 2)(x + 3)'], answer:'(x + 2)(x + 3)', post:'שני מספרים שמכפלתם 6 וסכומם 5' },
       { kind:'choose', pre:'בחרו את הפירוק של', expr:'x² - 9', opts:['(x - 3)(x + 3)','(x - 3)²'], answer:'(x - 3)(x + 3)', post:'הפרש ריבועים: a² - b²' },
       { kind:'choose', pre:'בחרו את פתרונות המשוואה', expr:'x² - 5x + 6 = 0', opts:['x = 2, 3','x = -2, -3'], answer:'x = 2, 3', post:'מפרקים ל-(x - 2)(x - 3) = 0' },
-      { kind:'choose', pre:'בחרו את המעריך בתוצאה של', expr:'x³ · x⁴', opts:['7','12'], answer:'7', post:'כפל חזקות: מחברים מעריכים 3 + 4' },
-      { kind:'choose', pre:'בחרו את הדיסקרימיננטה של', expr:'x² + 2x - 8 = 0', opts:['36','4'], answer:'36', post:'Δ = 2² - 4·1·(-8) = 4 + 32' }
+      { kind:'choose', pre:'בחרו את המעריך בתוצאה של', expr:'x³ · x⁴', opts:['12','7'], answer:'7', post:'כפל חזקות: מחברים מעריכים 3 + 4' },
+      { kind:'choose', pre:'בחרו את הדיסקרימיננטה של', expr:'x² + 2x - 8 = 0', opts:['4','36'], answer:'36', post:'Δ = 2² - 4·1·(-8) = 4 + 32' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

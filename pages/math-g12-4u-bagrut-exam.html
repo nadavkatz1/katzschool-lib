@@ -1799,14 +1799,14 @@
     // infinite series, exponential growth/decay, exp/log function investigation, exp/log derivatives,
     // exp/log integral & area, space geometry, vectors in space).
     var ROWS = [
-      { kind:'choose', pre:'בחרו את האיבר החמישי a₅ בסדרה חשבונית a₁=4, d=3:', expr:'', opts:['16','20'], answer:'16', post:'a₅ = 4 + 4·3 = 16', example:true },
+      { kind:'choose', pre:'בחרו את האיבר החמישי a₅ בסדרה חשבונית a₁=4, d=3:', expr:'', opts:['20','16'], answer:'16', post:'a₅ = 4 + 4·3 = 16', example:true },
       { kind:'choose', pre:'בחרו את סכום הסכום ההנדסי האינסופי a₁=16, q=½:', expr:'', opts:['32','16'], answer:'32', post:'S = 16/(1 - ½) = 32' },
       { kind:'choose', pre:'בחרו את מקדם הגדילה השנתי של גדילה ב-3% לשנה:', expr:'', opts:['1.03','0.97'], answer:'1.03', post:'1 + 3/100 = 1.03' },
-      { kind:'choose', pre:'בחרו את הנגזרת של f(x)=e<sup>2x</sup>:', expr:'', opts:['2e<sup>2x</sup>','e<sup>2x</sup>'], answer:'2e<sup>2x</sup>', post:'כלל השרשרת: הנגזרת של 2x היא 2' },
-      { kind:'choose', pre:'בחרו את הערך של ∫₀¹ eˣ dx (מעוגל):', expr:'', opts:['1.718','2.718'], answer:'1.718', post:'e - 1 ≈ 1.718' },
+      { kind:'choose', pre:'בחרו את הנגזרת של f(x)=e<sup>2x</sup>:', expr:'', opts:['e<sup>2x</sup>','2e<sup>2x</sup>'], answer:'2e<sup>2x</sup>', post:'כלל השרשרת: הנגזרת של 2x היא 2' },
+      { kind:'choose', pre:'בחרו את הערך של ∫₀¹ eˣ dx (מעוגל):', expr:'', opts:['2.718','1.718'], answer:'1.718', post:'e - 1 ≈ 1.718' },
       { kind:'choose', pre:'בחרו את אורך הווקטור |(2, 3, 6)|:', expr:'', opts:['7','11'], answer:'7', post:'√(4 + 9 + 36) = √49 = 7' },
       { kind:'choose', pre:'בחרו את נפח התיבה שממדיה 3×4×5:', expr:'', opts:['60','12'], answer:'60', post:'V = 3·4·5 = 60' },
-      { kind:'choose', pre:'בחרו את תחום ההגדרה של f(x)=x - ln x:', expr:'', opts:['x > 0','כל x'], answer:'x > 0', post:'ln מוגדר רק על מספר חיובי' }
+      { kind:'choose', pre:'בחרו את תחום ההגדרה של f(x)=x - ln x:', expr:'', opts:['כל x','x > 0'], answer:'x > 0', post:'ln מוגדר רק על מספר חיובי' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

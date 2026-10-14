@@ -1709,10 +1709,10 @@
     var ROWS = [
       { kind:'choose', pre:'מהו השורש הגדול?', expr:'(x - 1)(x - 3)', opts:['3','1'], answer:'3', post:'הגורם x - 3 מתאפס ב-x = 3', example:true },
       { kind:'choose', pre:'מהו ערך החיתוך עם ציר ה-y?', expr:'(x - 1)(x - 3)', opts:['3','-3'], answer:'3', post:'מציבים x = 0: (-1)(-3) = 3' },
-      { kind:'choose', pre:'מהו השורש השלילי?', expr:'(x + 2)(x - 4)', opts:['-2','2'], answer:'-2', post:'x + 2 = 0 נותן x = -2' },
-      { kind:'choose', pre:'כמה שורשים יש לפונקציה?', expr:'(x + 2)(x - 4)', opts:['2','1'], answer:'2', post:'שני גורמים שונים נותנים שני שורשים' },
+      { kind:'choose', pre:'מהו השורש השלילי?', expr:'(x + 2)(x - 4)', opts:['2','-2'], answer:'-2', post:'x + 2 = 0 נותן x = -2' },
+      { kind:'choose', pre:'כמה שורשים יש לפונקציה?', expr:'(x + 2)(x - 4)', opts:['1','2'], answer:'2', post:'שני גורמים שונים נותנים שני שורשים' },
       { kind:'choose', pre:'מהו סימן f ב-x = 2? (1 חיובי, -1 שלילי)', expr:'(x - 1)(x - 3)', opts:['-1','1'], answer:'-1', post:'בדיקה: (+)(-) = - , כלומר f שלילית' },
-      { kind:'choose', pre:'מהו השורש היחיד (הכפול)?', expr:'(x - 3)²', opts:['3','9'], answer:'3', post:'(x - 3)² מתאפס רק כאשר x = 3' }
+      { kind:'choose', pre:'מהו השורש היחיד (הכפול)?', expr:'(x - 3)²', opts:['9','3'], answer:'3', post:'(x - 3)² מתאפס רק כאשר x = 3' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

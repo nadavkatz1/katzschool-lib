@@ -1674,10 +1674,10 @@
     var ROWS = [
       { kind:'choose', pre:'בחרו את ערך הלוגריתם', expr:'log₂8 =  ( 2<sup>?</sup> = 8 )', opts:['3','4'], answer:'3', post:'2³ = 8, ולכן log₂8 = 3', example:true },
       { kind:'choose', pre:'בחרו את ערך הלוגריתם', expr:'log₃81 =  ( 3<sup>?</sup> = 81 )', opts:['4','3'], answer:'4', post:'3⁴ = 81, ולכן log₃81 = 4' },
-      { kind:'choose', pre:'בחרו את הביטוי המאוחד', expr:'log2(8) + log2(4) =', opts:['log2(32)','log2(12)'], answer:'log2(32)', post:'חוק המכפלה: חיבור לוגריתמים הוא לוגריתם של המכפלה 8 · 4 = 32' },
-      { kind:'choose', pre:'בחרו את הערך', expr:'27<sup>2/3</sup> =  ( cube root of 27, squared )', opts:['9','18'], answer:'9', post:'שורש שלישי של 27 הוא 3, ובריבוע 9' },
+      { kind:'choose', pre:'בחרו את הביטוי המאוחד', expr:'log2(8) + log2(4) =', opts:['log2(12)','log2(32)'], answer:'log2(32)', post:'חוק המכפלה: חיבור לוגריתמים הוא לוגריתם של המכפלה 8 · 4 = 32' },
+      { kind:'choose', pre:'בחרו את הערך', expr:'27<sup>2/3</sup> =  ( cube root of 27, squared )', opts:['18','9'], answer:'9', post:'שורש שלישי של 27 הוא 3, ובריבוע 9' },
       { kind:'choose', pre:'בחרו את פתרון המשוואה', expr:'3<sup>x + 1</sup> = 27 = 3³', opts:['x = 2','x = 3'], answer:'x = 2', post:'משווים מעריכים: x + 1 = 3, ולכן x = 2' },
-      { kind:'choose', pre:'בחרו את פתרון האי-שוויון', expr:'log2(x) < 3   ( plus the domain x > 0 )', opts:['0 < x < 8','x < 8'], answer:'0 < x < 8', post:'תחום ההגדרה נותן x > 0, והבסיס גדול מ-1 נותן x < 8' }
+      { kind:'choose', pre:'בחרו את פתרון האי-שוויון', expr:'log2(x) < 3   ( plus the domain x > 0 )', opts:['x < 8','0 < x < 8'], answer:'0 < x < 8', post:'תחום ההגדרה נותן x > 0, והבסיס גדול מ-1 נותן x < 8' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

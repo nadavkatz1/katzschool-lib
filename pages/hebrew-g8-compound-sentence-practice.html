@@ -1513,12 +1513,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'מילת הקישור "ו" מבטאת קשר של', opts:['הוספה','ניגוד'], answer:'הוספה', post:'- הקשר הלוגי', example:true },
-      { kind:'choose', pre:'מילת הקישור "אבל" מבטאת קשר של', opts:['ניגוד','תוצאה'], answer:'ניגוד', post:'- הקשר הלוגי' },
+      { kind:'choose', pre:'מילת הקישור "ו" מבטאת קשר של', opts:['ניגוד','הוספה'], answer:'הוספה', post:'- הקשר הלוגי', example:true },
+      { kind:'choose', pre:'מילת הקישור "אבל" מבטאת קשר של', opts:['תוצאה','ניגוד'], answer:'ניגוד', post:'- הקשר הלוגי' },
       { kind:'choose', pre:'מילת הקישור "לכן" מבטאת קשר של', opts:['תוצאה','ברירה'], answer:'תוצאה', post:'- הקשר הלוגי' },
       { kind:'choose', pre:'מילת הקישור "או" מבטאת קשר של', opts:['ברירה','הוספה'], answer:'ברירה', post:'- הקשר הלוגי' },
-      { kind:'choose', pre:'המשפט "הכלב נבח בקול רם" הוא', opts:['פשוט','מחובר'], answer:'פשוט', post:'- הסוג' },
-      { kind:'choose', pre:'המשפט "אכלנו ארוחה והלכנו לישון" הוא', opts:['פשוט','מחובר'], answer:'מחובר', post:'- הסוג' }
+      { kind:'choose', pre:'המשפט "הכלב נבח בקול רם" הוא', opts:['מחובר','פשוט'], answer:'פשוט', post:'- הסוג' },
+      { kind:'choose', pre:'המשפט "אכלנו ארוחה והלכנו לישון" הוא', opts:['מחובר','פשוט'], answer:'מחובר', post:'- הסוג' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

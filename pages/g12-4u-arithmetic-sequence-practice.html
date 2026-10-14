@@ -1683,10 +1683,10 @@
     var ROWS = [
       { kind:'choose', pre:'מהו האיבר העשירי של 2, 5, 8, …?', expr:'a1=2, d=3, n=10', opts:['29','32'], answer:'29', post:'a10 = 2 + 9·3 = 29', example:true },
       { kind:'choose', pre:'מהו האיבר העשרים כאשר a1=4, d=3?', expr:'4 + 19·3', opts:['61','64'], answer:'61', post:'a20 = 4 + 57 = 61 (מאגר)' },
-      { kind:'choose', pre:'מהו סכום עשרים האיברים (a1=4, a20=61)?', expr:'20·(4+61)/2', opts:['650','1300'], answer:'650', post:'S20 = 20·65/2 = 650 (מאגר)' },
+      { kind:'choose', pre:'מהו סכום עשרים האיברים (a1=4, a20=61)?', expr:'20·(4+61)/2', opts:['1300','650'], answer:'650', post:'S20 = 20·65/2 = 650 (מאגר)' },
       { kind:'choose', pre:'מהו ההפרש d כאשר a3=10 ו-a7=22?', expr:'(22-10)/(7-3)', opts:['3','4'], answer:'3', post:'d = 12/4 = 3 (מאגר)' },
-      { kind:'choose', pre:'מהו האיבר הראשון a1 (a3=10, d=3)?', expr:'10 - 2·3', opts:['4','2'], answer:'4', post:'a1 = a3 - 2d = 4 (מאגר)' },
-      { kind:'choose', pre:'מהו סכום עשרת האיברים של 2, 5, 8, …?', expr:'10·(2+29)/2', opts:['155','150'], answer:'155', post:'S10 = 10·31/2 = 155 (מאגר)' }
+      { kind:'choose', pre:'מהו האיבר הראשון a1 (a3=10, d=3)?', expr:'10 - 2·3', opts:['2','4'], answer:'4', post:'a1 = a3 - 2d = 4 (מאגר)' },
+      { kind:'choose', pre:'מהו סכום עשרת האיברים של 2, 5, 8, …?', expr:'10·(2+29)/2', opts:['150','155'], answer:'155', post:'S10 = 10·31/2 = 155 (מאגר)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

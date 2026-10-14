@@ -1673,12 +1673,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'שולחן העץ', opts:['צירוף','משפט'], answer:'צירוף', post:'- איזו יחידה תחבירית', example:true },
+      { kind:'choose', pre:'שולחן העץ', opts:['משפט','צירוף'], answer:'צירוף', post:'- איזו יחידה תחבירית', example:true },
       { kind:'choose', pre:'הילדים משחקים', opts:['התאם תקין','אין התאם'], answer:'התאם תקין', post:'- ההתאם בין הנושא לנשוא' },
       { kind:'choose', pre:'שְלושה יְלָדים', opts:['צורת זכר','צורת נקבה'], answer:'צורת זכר', post:'- צורת המספר' },
-      { kind:'choose', pre:'מִכְתָּב', opts:['כ-ת-ב','מ-כ-ת'], answer:'כ-ת-ב', post:'- השורש' },
+      { kind:'choose', pre:'מִכְתָּב', opts:['מ-כ-ת','כ-ת-ב'], answer:'כ-ת-ב', post:'- השורש' },
       { kind:'choose', pre:'שמח / עצוב', opts:['ניגוד','נרדפות'], answer:'ניגוד', post:'- יחס המשמעות' },
-      { kind:'choose', pre:'עַיִן', opts:['רב-משמעות','נרדפת'], answer:'רב-משמעות', post:'- התכונה של המילה' }
+      { kind:'choose', pre:'עַיִן', opts:['נרדפת','רב-משמעות'], answer:'רב-משמעות', post:'- התכונה של המילה' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

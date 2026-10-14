@@ -1533,12 +1533,12 @@
     var scoreEl = document.getElementById('psScore');
 
     var ROWS = [
-      { kind:'choose', pre:'"הילד התמהמה בדרך, ולכן איחר." התמהמה =', opts:['התעכב','רץ','שכח'], answer:'התעכב', post:'(רמז ההקשר)', example:true },
+      { kind:'choose', pre:'"הילד התמהמה בדרך, ולכן איחר." התמהמה =', opts:['רץ','התעכב','שכח'], answer:'התעכב', post:'(רמז ההקשר)', example:true },
       { kind:'choose', pre:'"הוא נטש את הכיתה באמצע השיעור." נטש =', opts:['עזב','ניקה','שאל'], answer:'עזב', post:'(רמז ההקשר)' },
-      { kind:'choose', pre:'"מכתבה" - איזה שורש?', opts:['כ-ת-ב','מ-כ-ת','ת-ב-ה'], answer:'כ-ת-ב', post:'(רמז השורש)' },
-      { kind:'choose', pre:'התבנית מִקְטָלָה נותנת לרוב', opts:['מקומות','מחלות','מקצועות'], answer:'מקומות', post:'(רמז התבנית)' },
+      { kind:'choose', pre:'"מכתבה" - איזה שורש?', opts:['מ-כ-ת','כ-ת-ב','ת-ב-ה'], answer:'כ-ת-ב', post:'(רמז השורש)' },
+      { kind:'choose', pre:'התבנית מִקְטָלָה נותנת לרוב', opts:['מקצועות','מחלות','מקומות'], answer:'מקומות', post:'(רמז התבנית)' },
       { kind:'choose', pre:'התבנית קַטֶּלֶת נותנת לרוב', opts:['מחלות','כלים','מקומות'], answer:'מחלות', post:'(רמז התבנית)' },
-      { kind:'choose', pre:'"קרן השמש חדרה לחדר." קרן =', opts:['אור','של חיה','כספית'], answer:'אור', post:'(בחירה מן המילון)' }
+      { kind:'choose', pre:'"קרן השמש חדרה לחדר." קרן =', opts:['כספית','של חיה','אור'], answer:'אור', post:'(בחירה מן המילון)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

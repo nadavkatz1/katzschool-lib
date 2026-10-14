@@ -1697,10 +1697,10 @@
     // (domain 1/(x-3) -> x!=3; solve 1/(x-3)=2 -> x=3.5; domain (2x-1)/((x-2)(x-5)) -> x!=2,5;
     //  x²/(x-3)=9/(x-3) -> x=-3 (reject x=3); domain 4/(x²-9) -> x!=3,-3; x/(x-2)=2/(x-2) -> no admissible solution).
     var ROWS = [
-      { kind:'choose', pre:'בחרו את תחום ההצבה (הערך האסור)', expr:'1 / (x - 3)', opts:['x ≠ 3','x ≠ -3'], answer:'x ≠ 3', post:'המכנה x - 3 מתאפס כאשר x = 3', example:true },
+      { kind:'choose', pre:'בחרו את תחום ההצבה (הערך האסור)', expr:'1 / (x - 3)', opts:['x ≠ -3','x ≠ 3'], answer:'x ≠ 3', post:'המכנה x - 3 מתאפס כאשר x = 3', example:true },
       { kind:'choose', pre:'בחרו את הפתרון', expr:'1/(x - 3) = 2', opts:['x = 3.5','x = 3'], answer:'x = 3.5', post:'מכפילים ב-(x - 3): 1 = 2(x - 3), x = 3.5 קביל' },
-      { kind:'choose', pre:'בחרו את תחום ההצבה', expr:'(2x - 1) / ((x - 2)(x - 5))', opts:['x ≠ 2 , x ≠ 5','x ≠ 7'], answer:'x ≠ 2 , x ≠ 5', post:'כל גורם שמתאפס נותן ערך אסור' },
-      { kind:'choose', pre:'בחרו את הפתרון הקביל', expr:'x²/(x - 3) = 9/(x - 3)', opts:['x = -3','x = 3'], answer:'x = -3', post:'x = 3 מאפס את המכנה ולכן נפסל' },
+      { kind:'choose', pre:'בחרו את תחום ההצבה', expr:'(2x - 1) / ((x - 2)(x - 5))', opts:['x ≠ 7','x ≠ 2 , x ≠ 5'], answer:'x ≠ 2 , x ≠ 5', post:'כל גורם שמתאפס נותן ערך אסור' },
+      { kind:'choose', pre:'בחרו את הפתרון הקביל', expr:'x²/(x - 3) = 9/(x - 3)', opts:['x = 3','x = -3'], answer:'x = -3', post:'x = 3 מאפס את המכנה ולכן נפסל' },
       { kind:'choose', pre:'בחרו את תחום ההצבה', expr:'4 / (x² - 9)', opts:['x ≠ 3 , x ≠ -3','x ≠ 9'], answer:'x ≠ 3 , x ≠ -3', post:'x² - 9 = (x - 3)(x + 3)' },
       { kind:'choose', pre:'בחרו את מספר הפתרונות הקבילים', expr:'x/(x - 2) = 2/(x - 2)', opts:['אין פתרון קביל','פתרון אחד'], answer:'אין פתרון קביל', post:'x = 2 אסור בתחום ולכן נמחק' }
     ];

@@ -1532,13 +1532,13 @@
     // reminder. Row 1 is a solved example. Every fact is grounded in the teaching page.
     var ROWS = [
       { kind:'choose', pre:"ידוע ש-9 + 6 = 15. כמה זה 15 − 6?", opts:["9","6"], answer:"9", post:"מורידים בחזרה את מה שהוספנו", example:true },
-      { kind:'choose', pre:"איך בודקים את התרגיל 17 − 8 = 9?", opts:["מחשבים 9 + 8","מחשבים 17 + 8"], answer:"מחשבים 9 + 8", post:"מחזירים את מה שהורדנו" },
+      { kind:'choose', pre:"איך בודקים את התרגיל 17 − 8 = 9?", opts:["מחשבים 17 + 8","מחשבים 9 + 8"], answer:"מחשבים 9 + 8", post:"מחזירים את מה שהורדנו" },
       { kind:'choose', pre:"כמה זה 23 + 0?", opts:["23","0"], answer:"23", post:"לא הוספנו כלום" },
-      { kind:'choose', pre:"כמה זה 38 − 38?", opts:["38","0"], answer:"0", post:"שני מספרים שווים" },
-      { kind:'choose', pre:"מה שווה לסכום 6 + 9?", opts:["9 + 6","9 − 6"], answer:"9 + 6", post:"בחיבור אפשר להחליף סדר" },
+      { kind:'choose', pre:"כמה זה 38 − 38?", opts:["0","38"], answer:"0", post:"שני מספרים שווים" },
+      { kind:'choose', pre:"מה שווה לסכום 6 + 9?", opts:["9 − 6","9 + 6"], answer:"9 + 6", post:"בחיבור אפשר להחליף סדר" },
       { kind:'choose', pre:"מה הדרך הנוחה לחשב 4 + 6 + 12?", opts:["קודם 4 + 6","קודם 6 + 12"], answer:"קודם 4 + 6", post:"4 ועוד 6 עושים עשרת" },
-      { kind:'choose', pre:"איזה סכום גדול יותר: 30 + 5 או 30 + 12?", opts:["30 + 12","30 + 5"], answer:"30 + 12", post:"אותו מחובר ראשון, מוסיפים יותר" },
-      { kind:'choose', pre:"איזה הפרש גדול יותר: 50 − 10 או 50 − 20?", opts:["50 − 10","50 − 20"], answer:"50 − 10", post:"אותו מחוסר, מורידים פחות" }
+      { kind:'choose', pre:"איזה סכום גדול יותר: 30 + 5 או 30 + 12?", opts:["30 + 5","30 + 12"], answer:"30 + 12", post:"אותו מחובר ראשון, מוסיפים יותר" },
+      { kind:'choose', pre:"איזה הפרש גדול יותר: 50 − 10 או 50 − 20?", opts:["50 − 20","50 − 10"], answer:"50 − 10", post:"אותו מחוסר, מורידים פחות" }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

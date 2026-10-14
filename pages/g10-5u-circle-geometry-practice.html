@@ -1708,12 +1708,12 @@
     // cyclic-quadrilateral opposite angles sum to 180, tangent length = sqrt(OP<sup>2</sup> - r<sup>2</sup>),
     // and the perpendicular from the centre bisects the chord. Every value re-computed by hand.
     var ROWS = [
-      { kind:'choose', pre:'זווית היקפית על אותה קשת?', expr:'∠AOB = 100°', opts:['50','100'], answer:'50', post:'היקפית = מחצית המרכזית: 100 / 2 = 50', example:true },
+      { kind:'choose', pre:'זווית היקפית על אותה קשת?', expr:'∠AOB = 100°', opts:['100','50'], answer:'50', post:'היקפית = מחצית המרכזית: 100 / 2 = 50', example:true },
       { kind:'choose', pre:'הזווית המרכזית על אותה קשת?', expr:'∠ACB = 30°', opts:['60','15'], answer:'60', post:'מרכזית = פי שניים מההיקפית: 2 · 30 = 60' },
-      { kind:'choose', pre:'הזווית הנגדית במרובע חסום?', expr:'∠A = 70°', opts:['110','70'], answer:'110', post:'נגדיות משלימות ל-180: 180 - 70 = 110' },
+      { kind:'choose', pre:'הזווית הנגדית במרובע חסום?', expr:'∠A = 70°', opts:['70','110'], answer:'110', post:'נגדיות משלימות ל-180: 180 - 70 = 110' },
       { kind:'choose', pre:'אורך המשיק מ-P?', expr:'OP = 13, r = 5', opts:['12','8'], answer:'12', post:'PT = √(13² - 5²) = √144 = 12' },
       { kind:'choose', pre:'הזווית ההיקפית על קוטר?', expr:'∠AOB = 180°', opts:['90','180'], answer:'90', post:'מחצית הזווית השטוחה: 180 / 2 = 90' },
-      { kind:'choose', pre:'מרחק המיתר מהמרכז?', expr:'chord = 16, r = 10', opts:['6','8'], answer:'6', post:'חצי מיתר = 8; √(10² - 8²) = √36 = 6' }
+      { kind:'choose', pre:'מרחק המיתר מהמרכז?', expr:'chord = 16, r = 10', opts:['8','6'], answer:'6', post:'חצי מיתר = 8; √(10² - 8²) = √36 = 6' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

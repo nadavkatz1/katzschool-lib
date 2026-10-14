@@ -1676,10 +1676,10 @@
     var ROWS = [
       { kind:'choose', pre:"מהו שיעור ה-x החיובי שבו f'(x)=0?", expr:'f(x) = x + 1/x', opts:['1','-1'], answer:'1', post:"f'(x) = 1 - 1/x²; x² = 1, x = ±1, והחיובי הוא 1", example:true },
       { kind:'choose', pre:'מהו ערך המינימום f(1)?', expr:'f(x) = x + 1/x', opts:['2','-2'], answer:'2', post:"f(1) = 1 + 1 = 2" },
-      { kind:'choose', pre:'מהו ערך ה-x של האסימפטוטה האנכית?', expr:'f(x) = 5/(x - 2)', opts:['2','5'], answer:'2', post:"המכנה x - 2 = 0, כלומר x = 2" },
+      { kind:'choose', pre:'מהו ערך ה-x של האסימפטוטה האנכית?', expr:'f(x) = 5/(x - 2)', opts:['5','2'], answer:'2', post:"המכנה x - 2 = 0, כלומר x = 2" },
       { kind:'choose', pre:'מהו הערך הקטן ביותר של x בתחום?', expr:'f(x) = √(x - 3)', opts:['3','-3'], answer:'3', post:"x - 3 ≥ 0, כלומר x ≥ 3" },
-      { kind:'choose', pre:'מהו ערך ה-y של האסימפטוטה האופקית?', expr:'f(x) = 2/x', opts:['0','2'], answer:'0', post:"מעלת המכנה גדולה מהמונה, ולכן y = 0" },
-      { kind:'choose', pre:'מהו ערך המקסימום f(-2)?', expr:'f(x) = x + 4/x', opts:['-4','4'], answer:'-4', post:"f(-2) = -2 - 2 = -4" }
+      { kind:'choose', pre:'מהו ערך ה-y של האסימפטוטה האופקית?', expr:'f(x) = 2/x', opts:['2','0'], answer:'0', post:"מעלת המכנה גדולה מהמונה, ולכן y = 0" },
+      { kind:'choose', pre:'מהו ערך המקסימום f(-2)?', expr:'f(x) = x + 4/x', opts:['4','-4'], answer:'-4', post:"f(-2) = -2 - 2 = -4" }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

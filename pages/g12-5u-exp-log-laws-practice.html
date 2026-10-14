@@ -1681,10 +1681,10 @@
     var ROWS = [
       { kind:'choose', pre:'מהו ln(e³)?', expr:'ln(e³)', opts:['3','e³'], answer:'3', post:'ln(e<sup>x</sup>)=x, ולכן ln(e³)=3', example:true },
       { kind:'choose', pre:'מהו e<sup>ln 5</sup>?', expr:'e<sup>ln 5</sup>', opts:['5','ln 5'], answer:'5', post:'e<sup>ln x</sup>=x עבור x>0 (מאגר)' },
-      { kind:'choose', pre:'לפי חוק המכפלה, ל-ln(xy) שווה?', expr:'ln(xy)', opts:['ln x + ln y','ln x · ln y'], answer:'ln x + ln y', post:'כפל הופך לחיבור (מאגר)' },
-      { kind:'choose', pre:'לפי חוק החזקה, ל-ln(2³) שווה?', expr:'ln(2³)', opts:['3·ln 2','3 + ln 2'], answer:'3·ln 2', post:'המעריך הופך למקדם בכפל (מאגר)' },
+      { kind:'choose', pre:'לפי חוק המכפלה, ל-ln(xy) שווה?', expr:'ln(xy)', opts:['ln x · ln y','ln x + ln y'], answer:'ln x + ln y', post:'כפל הופך לחיבור (מאגר)' },
+      { kind:'choose', pre:'לפי חוק החזקה, ל-ln(2³) שווה?', expr:'ln(2³)', opts:['3 + ln 2','3·ln 2'], answer:'3·ln 2', post:'המעריך הופך למקדם בכפל (מאגר)' },
       { kind:'choose', pre:'פתרו 2<sup>x</sup> = 8. מהו x?', expr:'2<sup>x</sup> = 8', opts:['3','8'], answer:'3', post:'8 = 2³, ולכן x=3 (מאגר)' },
-      { kind:'choose', pre:'פתרו ln x = 0. מהו x?', expr:'ln x = 0', opts:['1','0'], answer:'1', post:'x = e⁰ = 1 (מאגר)' }
+      { kind:'choose', pre:'פתרו ln x = 0. מהו x?', expr:'ln x = 0', opts:['0','1'], answer:'1', post:'x = e⁰ = 1 (מאגר)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

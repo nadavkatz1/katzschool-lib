@@ -1568,11 +1568,11 @@
     // error (shifted too few houses, or read the digit's face value instead of its place value).
     var ROWS = [
       { kind:'choose', pre:'כמה זה?', expr:'7,000 × 10', opts:['70,000','7,700'], answer:'70,000', post:'פי 10: כל ספרה בית אחד שמאלה', example:true },
-      { kind:'choose', pre:'כמה זה?', expr:'850 × 100', opts:['85,000','8,500'], answer:'85,000', post:'פי 100: שני בתים שמאלה' },
-      { kind:'choose', pre:'כמה זה?', expr:'700 × 1,000', opts:['700,000','70,000'], answer:'700,000', post:'פי 1,000: שלושה בתים שמאלה' },
+      { kind:'choose', pre:'כמה זה?', expr:'850 × 100', opts:['8,500','85,000'], answer:'85,000', post:'פי 100: שני בתים שמאלה' },
+      { kind:'choose', pre:'כמה זה?', expr:'700 × 1,000', opts:['70,000','700,000'], answer:'700,000', post:'פי 1,000: שלושה בתים שמאלה' },
       { kind:'choose', pre:'כמה שווה הספרה 5 ב-', expr:'352,000', opts:['50,000','5,000'], answer:'50,000', post:'ה-5 יושבת בבית עשרות-האלפים' },
       { kind:'choose', pre:'כמה אלפים שלמים ב-', expr:'254,000', opts:['254','25'], answer:'254', post:'254,000 : 1,000 = 254' },
-      { kind:'choose', pre:'איזה מספר בא מיד אחרי', expr:'999,999', opts:['1,000,000','900,000'], answer:'1,000,000', post:'השכן שאחרי 999,999 הוא מיליון' }
+      { kind:'choose', pre:'איזה מספר בא מיד אחרי', expr:'999,999', opts:['900,000','1,000,000'], answer:'1,000,000', post:'השכן שאחרי 999,999 הוא מיליון' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/[.?!]+$/,''); };

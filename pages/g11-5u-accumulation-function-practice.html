@@ -1672,11 +1672,11 @@
     // monotonicity by the sign of g, and the extremum type by the direction of g's sign change. Every value re-derived.
     var ROWS = [
       { kind:'choose', pre:'מהי הנגזרת של פונקציית ההצטברות F?', expr:'F(x) = ∫ₐˣ g(t)dt', opts:['g(x)','a'], answer:'g(x)', post:'המשפט היסודי: הנגזרת היא g (מאגר)', example:true },
-      { kind:'choose', pre:'עבור g(x) = x² - 4, מהו האפס החיובי?', expr:'g(x) = x² - 4', opts:['2','4'], answer:'2', post:'פותרים x² - 4 = 0 ומקבלים x = ±2 (מאגר)' },
-      { kind:'choose', pre:'עבור g(x) = x² - 4, ב-x = -2 מקבלת F:', expr:'g: + → -', opts:['מקסימום','מינימום'], answer:'מקסימום', post:'g עוברת מ+ ל- ← מקסימום (מאגר)' },
+      { kind:'choose', pre:'עבור g(x) = x² - 4, מהו האפס החיובי?', expr:'g(x) = x² - 4', opts:['4','2'], answer:'2', post:'פותרים x² - 4 = 0 ומקבלים x = ±2 (מאגר)' },
+      { kind:'choose', pre:'עבור g(x) = x² - 4, ב-x = -2 מקבלת F:', expr:'g: + → -', opts:['מינימום','מקסימום'], answer:'מקסימום', post:'g עוברת מ+ ל- ← מקסימום (מאגר)' },
       { kind:'choose', pre:'עבור g(x) = x² - 4, ב-x = 2 מקבלת F:', expr:'g: - → +', opts:['מינימום','מקסימום'], answer:'מינימום', post:'g עוברת מ- ל+ ← מינימום (מאגר)' },
       { kind:'choose', pre:'היכן ש-g > 0, הפונקציה F:', expr:'g > 0', opts:['עולה','יורדת'], answer:'עולה', post:'g חיובית ← F עולה (מאגר)' },
-      { kind:'choose', pre:'עבור g(x) = 4 - x², ב-x = -2 מקבלת F:', expr:'g: - → +', opts:['מינימום','מקסימום'], answer:'מינימום', post:'כאן הסימן הפוך: מ- ל+ ← מינימום (מאגר)' }
+      { kind:'choose', pre:'עבור g(x) = 4 - x², ב-x = -2 מקבלת F:', expr:'g: - → +', opts:['מקסימום','מינימום'], answer:'מינימום', post:'כאן הסימן הפוך: מ- ל+ ← מינימום (מאגר)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

@@ -1737,11 +1737,11 @@
     // Every slope re-derived by hand as m = (y2 - y1)/(x2 - x1) against the slope teaching page.
     var ROWS = [
       { kind:'choose', pre:'חשבו את השיפוע m', expr:'(1, 2), (3, 8) → m =', opts:['3','6'], answer:'3', post:'m = (8 - 2) / (3 - 1) = 6 / 2 = 3', example:true },
-      { kind:'choose', pre:'חשבו את השיפוע m', expr:'(0, 0), (2, 6) → m =', opts:['3','2'], answer:'3', post:'m = 6 / 2 = 3 - קצב שינוי 3' },
-      { kind:'choose', pre:'חשבו את השיפוע m', expr:'(0, 5), (5, 0) → m =', opts:['-1','1'], answer:'-1', post:'m = (0 - 5) / (5 - 0) = -1 - הישר יורד' },
+      { kind:'choose', pre:'חשבו את השיפוע m', expr:'(0, 0), (2, 6) → m =', opts:['2','3'], answer:'3', post:'m = 6 / 2 = 3 - קצב שינוי 3' },
+      { kind:'choose', pre:'חשבו את השיפוע m', expr:'(0, 5), (5, 0) → m =', opts:['1','-1'], answer:'-1', post:'m = (0 - 5) / (5 - 0) = -1 - הישר יורד' },
       { kind:'choose', pre:'חשבו את השיפוע m', expr:'(0, 0), (4, 2) → m =', opts:['0.5','2'], answer:'0.5', post:'m = 2 / 4 = 0.5 - שיפוע שברי' },
       { kind:'choose', pre:'חשבו את השיפוע m', expr:'(2, 3), (4, 3) → m =', opts:['0','1'], answer:'0', post:'ערכי ה-y שווים - שיפוע 0, ישר אופקי' },
-      { kind:'choose', pre:'חשבו את השיפוע m', expr:'(2, 1), (5, 7) → m =', opts:['2','3'], answer:'2', post:'m = (7 - 1) / (5 - 2) = 6 / 3 = 2' }
+      { kind:'choose', pre:'חשבו את השיפוע m', expr:'(2, 1), (5, 7) → m =', opts:['3','2'], answer:'2', post:'m = (7 - 1) / (5 - 2) = 6 / 3 = 2' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

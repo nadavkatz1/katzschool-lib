@@ -1605,10 +1605,10 @@
     var ROWS = [
       { kind:'choose', pre:'המילה שפירושה סב', opts:['جَدّ','جَار'], answer:'جَدّ', post:'(jadd)', example:true },
       { kind:'choose', pre:'הפועל שפירושו נכנס', opts:['دَخَلَ','خَرَجَ'], answer:'دَخَلَ', post:'(dakhala)' },
-      { kind:'choose', pre:'המילה שפירושה חורף', opts:['شِتَاء','صَيْف'], answer:'شِتَاء', post:'(shitāʾ)' },
-      { kind:'choose', pre:'המילה שפירושה חג', opts:['عِيد','جَار'], answer:'عِيد', post:'(ʿīd)' },
+      { kind:'choose', pre:'המילה שפירושה חורף', opts:['صَيْف','شِتَاء'], answer:'شِتَاء', post:'(shitāʾ)' },
+      { kind:'choose', pre:'המילה שפירושה חג', opts:['جَار','عِيد'], answer:'عِيد', post:'(ʿīd)' },
       { kind:'choose', pre:'דוד מצד האם', opts:['خَال','عَمّ'], answer:'خَال', post:'(khāl · לעומת عَمّ מצד האב)' },
-      { kind:'choose', pre:'המילה שפירושה יום שישי', opts:['يَوْم الجُمْعَة','يَوْم السَّبْت'], answer:'يَوْم الجُمْعَة', post:'(yawm al-jumʿa)' }
+      { kind:'choose', pre:'המילה שפירושה יום שישי', opts:['يَوْم السَّبْت','يَوْم الجُمْعَة'], answer:'يَوْم الجُمْعَة', post:'(yawm al-jumʿa)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

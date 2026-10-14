@@ -1798,11 +1798,11 @@
     // against the g6 teaching pages (decimal multiply/divide, percent, circle, fractions).
     var ROWS = [
       { kind:'choose', pre:'בחרו את המכפלה של', expr:'0.6 x 0.4', opts:['0.24','2.4'], answer:'0.24', post:'סופרים 2 ספרות אחרי הנקודה', example:true },
-      { kind:'choose', pre:'בחרו את התוצאה של', expr:'2.4 / 0.8', opts:['3','0.3'], answer:'3', post:'x10 לשניהם: 24 / 8' },
-      { kind:'choose', pre:'בחרו כמה הם 25% מ-80', expr:'0.25 x 80', opts:['20','25'], answer:'20', post:'25% = רבע' },
+      { kind:'choose', pre:'בחרו את התוצאה של', expr:'2.4 / 0.8', opts:['0.3','3'], answer:'3', post:'x10 לשניהם: 24 / 8' },
+      { kind:'choose', pre:'בחרו כמה הם 25% מ-80', expr:'0.25 x 80', opts:['25','20'], answer:'20', post:'25% = רבע' },
       { kind:'choose', pre:'בחרו את היקף המעגל (ס"מ), רדיוס 5', expr:'2 x 3.14 x 5', opts:['31.4','15.7'], answer:'31.4', post:'היקף = 2 x פאי x רדיוס' },
       { kind:'choose', pre:'בחרו את שטח העיגול (סמ"ר), רדיוס 5', expr:'3.14 x 5 x 5', opts:['78.5','15.7'], answer:'78.5', post:'קודם ריבוע, אחר כך פאי' },
-      { kind:'choose', pre:'בחרו את המכפלה של', expr:'2/3 x 3/4', opts:['1/2','5/7'], answer:'1/2', post:'מונה במונה, מכנה במכנה' }
+      { kind:'choose', pre:'בחרו את המכפלה של', expr:'2/3 x 3/4', opts:['5/7','1/2'], answer:'1/2', post:'מונה במונה, מכנה במכנה' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

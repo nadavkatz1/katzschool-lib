@@ -1705,12 +1705,12 @@
     //   sin x = 0.6 (QI) -> cos x = 0.8 ; sin 2x = 0.96 ; cos 2x = 0.28 (all three forms agree).
     //   sin x = 0.8 (QII) -> cos x = -0.6 ; 2 sin 15 cos 15 = sin 30 = 0.5.
     var ROWS = [
-      { kind:'choose', pre:'sin x = 0.6, x ברביע I: מהו cos x?', expr:'x = sqrt(1 - 0.36) =', opts:['0.8','0.6'], answer:'0.8', post:'cos²x = 0.64, וברביע I הקוסינוס חיובי → cos x = 0.8', example:true },
+      { kind:'choose', pre:'sin x = 0.6, x ברביע I: מהו cos x?', expr:'x = sqrt(1 - 0.36) =', opts:['0.6','0.8'], answer:'0.8', post:'cos²x = 0.64, וברביע I הקוסינוס חיובי → cos x = 0.8', example:true },
       { kind:'choose', pre:'לאותם נתונים: מהו sin 2x?', expr:'2·0.6·0.8 =', opts:['0.96','1.2'], answer:'0.96', post:'sin 2x = 2 sin x cos x = 0.96' },
       { kind:'choose', pre:'לאותם נתונים: cos 2x בעזרת 1 - 2 sin²x', expr:'1 - 2·0.36 =', opts:['0.28','0.64'], answer:'0.28', post:'cos 2x = 1 - 0.72 = 0.28' },
-      { kind:'choose', pre:'sin x = 0.8, x ברביע II: מהו cos x?', expr:'רביע II → הסימן של cos', opts:['-0.6','0.6'], answer:'-0.6', post:'cos²x = 0.36, וברביע II הקוסינוס שלילי → cos x = -0.6' },
+      { kind:'choose', pre:'sin x = 0.8, x ברביע II: מהו cos x?', expr:'רביע II → הסימן של cos', opts:['0.6','-0.6'], answer:'-0.6', post:'cos²x = 0.36, וברביע II הקוסינוס שלילי → cos x = -0.6' },
       { kind:'choose', pre:'פשטו: 2 sin 15° cos 15° =', expr:'sin(2·15°) =', opts:['0.5','1'], answer:'0.5', post:'2 sin x cos x = sin 2x → sin 30° = 0.5' },
-      { kind:'choose', pre:'cos x = 0.8: cos 2x בעזרת 2 cos²x - 1', expr:'2·0.64 - 1 =', opts:['0.28','1.28'], answer:'0.28', post:'2 cos²x - 1 = 1.28 - 1 = 0.28 (מסכים עם 1 - 2 sin²x)' }
+      { kind:'choose', pre:'cos x = 0.8: cos 2x בעזרת 2 cos²x - 1', expr:'2·0.64 - 1 =', opts:['1.28','0.28'], answer:'0.28', post:'2 cos²x - 1 = 1.28 - 1 = 0.28 (מסכים עם 1 - 2 sin²x)' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

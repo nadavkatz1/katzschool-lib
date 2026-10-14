@@ -1787,11 +1787,11 @@
     // analytic quadrilaterals, special points & lines, loci, trigonometry & triangle area).
     var ROWS = [
       { kind:'choose', pre:'גזרו את', expr:'f(x) = x²', opts:["f'(x) = 2x","f'(x) = x²"], answer:"f'(x) = 2x", post:'כלל החזקה (xⁿ)′ = n·xⁿ⁻¹', example:true },
-      { kind:'choose', pre:'בחרו את שיפוע המשיק ל-f(x) = x² בנקודה x = 3:', expr:'', opts:['6','9'], answer:'6', post:"f'(3) = 2·3" },
-      { kind:'choose', pre:'בחרו את שטח המשולש עם צלעות 6 ו-8 וזווית 30° ביניהן:', expr:'', opts:['12','24'], answer:'12', post:'S = ½·6·8·sin30°' },
+      { kind:'choose', pre:'בחרו את שיפוע המשיק ל-f(x) = x² בנקודה x = 3:', expr:'', opts:['9','6'], answer:'6', post:"f'(3) = 2·3" },
+      { kind:'choose', pre:'בחרו את שטח המשולש עם צלעות 6 ו-8 וזווית 30° ביניהן:', expr:'', opts:['24','12'], answer:'12', post:'S = ½·6·8·sin30°' },
       { kind:'choose', pre:'נקודת מפגש התיכונים מחלקת תיכון באורך 12 לחלקים:', expr:'', opts:['8 ו-4','6 ו-6'], answer:'8 ו-4', post:'יחס 2:1 מהקדקוד' },
       { kind:'choose', pre:'בחרו את סוג המרובע', expr:'A(0,0), B(4,0), C(4,3), D(0,3)', opts:['מלבן','מעוין'], answer:'מלבן', post:'צלעות סמוכות ניצבות' },
-      { kind:'choose', pre:'שני משולשים דומים ביחס 3:5. לצלע 6 בקטן מתאימה בגדול:', expr:'', opts:['10','8'], answer:'10', post:'6 · 5 / 3 = 10' }
+      { kind:'choose', pre:'שני משולשים דומים ביחס 3:5. לצלע 6 בקטן מתאימה בגדול:', expr:'', opts:['8','10'], answer:'10', post:'6 · 5 / 3 = 10' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

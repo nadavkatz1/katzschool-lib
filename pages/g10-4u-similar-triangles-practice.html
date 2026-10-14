@@ -1699,10 +1699,10 @@
     var ROWS = [
       { kind:'choose', pre:'משולשים דומים ביחס 3:5. הצלע המתאימה לצלע 6?', expr:'k = 5/3', opts:['10','8'], answer:'10', post:'6 · 5/3 = 10', example:true },
       { kind:'choose', pre:'מהו יחס השטחים?', expr:'k = 2', opts:['4','2'], answer:'4', post:'יחס שטחים = k² = 2² = 4' },
-      { kind:'choose', pre:'מהו יחס ההיקפים?', expr:'k = 3', opts:['3','9'], answer:'3', post:'יחס היקפים = k = 3 (לא בריבוע)' },
+      { kind:'choose', pre:'מהו יחס ההיקפים?', expr:'k = 3', opts:['9','3'], answer:'3', post:'יחס היקפים = k = 3 (לא בריבוע)' },
       { kind:'choose', pre:'יחס השטחים הוא 100 : 25. מהו יחס הדמיון k?', expr:'100 : 25', opts:['2','4'], answer:'2', post:'k² = 100/25 = 4, ולכן k = 2' },
-      { kind:'choose', pre:'ישר DE מקביל ל-BC. מהו DE?', expr:'k = 3/5, BC = 10', opts:['6','8'], answer:'6', post:'DE = 3/5 · 10 = 6 (משולש דומה)' },
-      { kind:'choose', pre:'שטח המשולש הקטן 15. מהו שטח הגדול?', expr:'k = 2', opts:['60','30'], answer:'60', post:'שטח · k² = 15 · 4 = 60' }
+      { kind:'choose', pre:'ישר DE מקביל ל-BC. מהו DE?', expr:'k = 3/5, BC = 10', opts:['8','6'], answer:'6', post:'DE = 3/5 · 10 = 6 (משולש דומה)' },
+      { kind:'choose', pre:'שטח המשולש הקטן 15. מהו שטח הגדול?', expr:'k = 2', opts:['30','60'], answer:'60', post:'שטח · k² = 15 · 4 = 60' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

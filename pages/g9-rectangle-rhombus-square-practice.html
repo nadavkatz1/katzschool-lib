@@ -1726,11 +1726,11 @@
     // Every answer traceable to the teaching page content/g9-rectangle-rhombus-square.js (zero invention).
     var ROWS = [
       { kind:'choose', pre:'מקבילית שאלכסוניה שווים היא...', expr:'AC = BD  ⇒', opts:['מלבן','מעוין'], answer:'מלבן', post:'משפט הופכי: שוויון אלכסונים ← מלבן', example:true },
-      { kind:'choose', pre:'מקבילית שאלכסוניה מאונכים היא...', expr:'AC ⊥ BD  ⇒', opts:['מעוין','מלבן'], answer:'מעוין', post:'משפט הופכי: ניצבות אלכסונים ← מעוין' },
-      { kind:'choose', pre:'מקבילית שאלכסוניה שווים וגם מאונכים היא...', expr:'AC = BD , AC ⊥ BD  ⇒', opts:['ריבוע','מלבן'], answer:'ריבוע', post:'גם מלבן וגם מעוין ← ריבוע' },
+      { kind:'choose', pre:'מקבילית שאלכסוניה מאונכים היא...', expr:'AC ⊥ BD  ⇒', opts:['מלבן','מעוין'], answer:'מעוין', post:'משפט הופכי: ניצבות אלכסונים ← מעוין' },
+      { kind:'choose', pre:'מקבילית שאלכסוניה שווים וגם מאונכים היא...', expr:'AC = BD , AC ⊥ BD  ⇒', opts:['מלבן','ריבוע'], answer:'ריבוע', post:'גם מלבן וגם מעוין ← ריבוע' },
       { kind:'choose', pre:'כמה מעלות היא כל אחת מזוויות המלבן?', expr:'∠ =', opts:['90°','60°'], answer:'90°', post:'במלבן כל הזוויות ישרות (90°)' },
       { kind:'choose', pre:'במעוין האלכסונים מאונכים, וגם...', expr:'⇒', opts:['חוצים את הזוויות','שווים זה לזה'], answer:'חוצים את הזוויות', post:'אלכסוני המעוין חוצים את זוויות המעוין' },
-      { kind:'choose', pre:'בריבוע האלכסון AC = 10. מהו האלכסון השני BD?', expr:'BD =', opts:['10','5'], answer:'10', post:'הריבוע הוא מלבן, ולכן האלכסונים שווים: BD = AC = 10' }
+      { kind:'choose', pre:'בריבוע האלכסון AC = 10. מהו האלכסון השני BD?', expr:'BD =', opts:['5','10'], answer:'10', post:'הריבוע הוא מלבן, ולכן האלכסונים שווים: BD = AC = 10' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

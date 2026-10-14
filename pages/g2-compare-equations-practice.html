@@ -1512,12 +1512,12 @@
     // Every answer re-checkable by one subtraction (or one addition for a missing minuend),
     // all within 0-100 and NON-NEGATIVE. Row 1 is a solved example.
     var ROWS = [
-      { kind:'choose', pre:'בכמה 9 גדול מ-4?', opts:['5','13'], answer:'5', post:'9 פחות 4 → 5', example:true },
+      { kind:'choose', pre:'בכמה 9 גדול מ-4?', opts:['13','5'], answer:'5', post:'9 פחות 4 → 5', example:true },
       { kind:'choose', pre:'60 פחות __ = 25. מה החסר?', opts:['35','85'], answer:'35', post:'60 פחות 25 → 35' },
       { kind:'choose', pre:'25 ועוד __ = 38. מה החסר?', opts:['13','63'], answer:'13', post:'38 פחות 25 → 13' },
-      { kind:'choose', pre:'5 ועוד __ = 8. מה החסר?', opts:['3','13'], answer:'3', post:'8 פחות 5 → 3' },
+      { kind:'choose', pre:'5 ועוד __ = 8. מה החסר?', opts:['13','3'], answer:'3', post:'8 פחות 5 → 3' },
       { kind:'choose', pre:'לענת 45 ולגיל 45. בכמה לענת יש יותר?', opts:['0','90'], answer:'0', post:'שווים → 0' },
-      { kind:'choose', pre:'8 פחות __ = 3. מה החסר?', opts:['5','11'], answer:'5', post:'8 פחות 3 → 5' }
+      { kind:'choose', pre:'8 פחות __ = 3. מה החסר?', opts:['11','5'], answer:'5', post:'8 פחות 3 → 5' }
     ];
 
     var norm = function(s){ return String(s||'').trim().toLowerCase().replace(/\s+/g,' ').replace(/’/g,"'").replace(/[.?!]+$/,''); };

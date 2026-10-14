@@ -1676,10 +1676,10 @@
     // aN = a1*q<sup>n−1</sup>, finite sum Sn = a1(q<sup>n</sup> - 1)/(q - 1), infinite convergent sum
     // S = a1/(1 - q) for |q| < 1, and the convergence test. Every value re-derived by hand.
     var ROWS = [
-      { kind:'choose', pre:'מהו האיבר החמישי כאשר a1=3, q=2?', expr:'a1=3, q=2, n=5', opts:['48','96'], answer:'48', post:'a5 = 3·2⁴ = 48 (מאגר)', example:true },
+      { kind:'choose', pre:'מהו האיבר החמישי כאשר a1=3, q=2?', expr:'a1=3, q=2, n=5', opts:['96','48'], answer:'48', post:'a5 = 3·2⁴ = 48 (מאגר)', example:true },
       { kind:'choose', pre:'מהו האיבר הרביעי כאשר a1=5, q=3?', expr:'5·3³', opts:['135','120'], answer:'135', post:'a4 = 5·27 = 135' },
-      { kind:'choose', pre:'מהו סכום חמשת האיברים (a1=3, q=2)?', expr:'3(2⁵ - 1)/(2 - 1)', opts:['93','96'], answer:'93', post:'S5 = 3·31 = 93 (מאגר)' },
-      { kind:'choose', pre:'מהו סכום הסדרה האינסופית (a1=16, q=½)?', expr:'16/(1 - ½)', opts:['32','16'], answer:'32', post:'S = 16/(½) = 32 (מאגר)' },
+      { kind:'choose', pre:'מהו סכום חמשת האיברים (a1=3, q=2)?', expr:'3(2⁵ - 1)/(2 - 1)', opts:['96','93'], answer:'93', post:'S5 = 3·31 = 93 (מאגר)' },
+      { kind:'choose', pre:'מהו סכום הסדרה האינסופית (a1=16, q=½)?', expr:'16/(1 - ½)', opts:['16','32'], answer:'32', post:'S = 16/(½) = 32 (מאגר)' },
       { kind:'choose', pre:'האם הסדרה עם q=3 מתכנסת?', expr:'|q| = 3 ≥ 1', opts:['מתבדר','מתכנס'], answer:'מתבדר', post:'|q| ≥ 1 → אין סכום אינסופי' },
       { kind:'choose', pre:'מהו סכום הסדרה האינסופית (a1=9, q=⅓)?', expr:'9/(1 - ⅓)', opts:['13.5','12'], answer:'13.5', post:'S = 9/(⅔) = 13.5' }
     ];
